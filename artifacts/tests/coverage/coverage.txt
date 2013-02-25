@@ -1,12 +1,12 @@
 
 
 Code Coverage Report 
-  2013-02-25 00:23:11
+  2013-02-25 01:33:38
 
  Summary: 
-  Classes: 100.00% (14/14)
+  Classes: 100.00% (15/15)
   Methods: 100.00% (277/277)
-  Lines:   100.00% (1674/1674)
+  Lines:   100.00% (1678/1678)
 
 \Icecave\Collections::AssociativeKeyGenerator
   Methods: 100.00% ( 4/ 4)   Lines: 100.00% ( 41/ 41)
@@ -19,7 +19,7 @@ Code Coverage Report
 \Icecave\Collections::Queue
   Methods: 100.00% (14/14)   Lines: 100.00% ( 54/ 54)
 \Icecave\Collections::Set
-  Methods: 100.00% (38/38)   Lines: 100.00% (223/223)
+  Methods: 100.00% (34/34)   Lines: 100.00% (213/213)
 \Icecave\Collections::Stack
   Methods: 100.00% (14/14)   Lines: 100.00% ( 58/ 58)
 \Icecave\Collections::Vector
@@ -36,3 +36,5 @@ Code Coverage Report
   Methods: 100.00% ( 7/ 7)   Lines: 100.00% ( 20/ 20)
 \Icecave\Collections\Iterator::RandomAccessIterator
   Methods: 100.00% ( 7/ 7)   Lines: 100.00% ( 18/ 18)
+\Icecave\Collections\Iterator::SequentialKeyIterator
+  Methods: 100.00% ( 4/ 4)   Lines: 100.00% ( 14/ 14)
