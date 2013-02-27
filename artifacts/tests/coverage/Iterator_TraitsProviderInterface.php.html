@@ -2,7 +2,7 @@
 <html lang="en">
  <head>
   <meta charset="UTF-8">
-  <title>Code Coverage for /home/travis/build/IcecaveStudios/collections/lib/Icecave/Collections/MutableCollectionInterface.php</title>
+  <title>Code Coverage for /home/travis/build/IcecaveStudios/collections/lib/Icecave/Collections/Iterator/TraitsProviderInterface.php</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -18,7 +18,8 @@
      <div class="span12">
       <ul class="breadcrumb">
         <li><a href="index.html">/home/travis/build/IcecaveStudios/collections/lib/Icecave/Collections</a> <span class="divider">/</span></li>
-        <li class="active">MutableCollectionInterface.php</li>
+        <li><a href="Iterator.html">Iterator</a> <span class="divider">/</span></li>
+        <li class="active">TraitsProviderInterface.php</li>
 
       </ul>
      </div>
@@ -60,18 +61,17 @@
    <table class="table table-borderless table-condensed">
     <tbody>
      <tr><td><div align="right"><a name="1"></a><a href="#1">1</a></div></td><td class="codeLine"><span class="default">&lt;?php</span></td></tr>
-     <tr><td><div align="right"><a name="2"></a><a href="#2">2</a></div></td><td class="codeLine"><span class="keyword">namespace</span><span class="default">&nbsp;</span><span class="default">Icecave</span><span class="default">\</span><span class="default">Collections</span><span class="keyword">;</span></td></tr>
+     <tr><td><div align="right"><a name="2"></a><a href="#2">2</a></div></td><td class="codeLine"><span class="keyword">namespace</span><span class="default">&nbsp;</span><span class="default">Icecave</span><span class="default">\</span><span class="default">Collections</span><span class="default">\</span><span class="default">Iterator</span><span class="keyword">;</span></td></tr>
      <tr><td><div align="right"><a name="3"></a><a href="#3">3</a></div></td><td class="codeLine"></td></tr>
-     <tr><td><div align="right"><a name="4"></a><a href="#4">4</a></div></td><td class="codeLine"><span class="comment">/**</span></td></tr>
-     <tr><td><div align="right"><a name="5"></a><a href="#5">5</a></div></td><td class="codeLine"><span class="comment">&nbsp;*&nbsp;A&nbsp;mutable&nbsp;collection&nbsp;is&nbsp;a&nbsp;collection&nbsp;on&nbsp;which&nbsp;elements&nbsp;can&nbsp;be&nbsp;added&nbsp;and&nbsp;removed.</span></td></tr>
-     <tr><td><div align="right"><a name="6"></a><a href="#6">6</a></div></td><td class="codeLine"><span class="comment">&nbsp;*/</span></td></tr>
-     <tr><td><div align="right"><a name="7"></a><a href="#7">7</a></div></td><td class="codeLine"><span class="keyword">interface</span><span class="default">&nbsp;</span><span class="default">MutableCollectionInterface</span><span class="default">&nbsp;</span><span class="keyword">extends</span><span class="default">&nbsp;</span><span class="default">CollectionInterface</span></td></tr>
-     <tr><td><div align="right"><a name="8"></a><a href="#8">8</a></div></td><td class="codeLine"><span class="keyword">{</span></td></tr>
-     <tr><td><div align="right"><a name="9"></a><a href="#9">9</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">/**</span></td></tr>
-     <tr><td><div align="right"><a name="10"></a><a href="#10">10</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;Remove&nbsp;all&nbsp;elements&nbsp;from&nbsp;the&nbsp;collection.</span></td></tr>
-     <tr><td><div align="right"><a name="11"></a><a href="#11">11</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/</span></td></tr>
-     <tr><td><div align="right"><a name="12"></a><a href="#12">12</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">public</span><span class="default">&nbsp;</span><span class="keyword">function</span><span class="default">&nbsp;</span><span class="default">clear</span><span class="keyword">(</span><span class="keyword">)</span><span class="keyword">;</span></td></tr>
-     <tr><td><div align="right"><a name="13"></a><a href="#13">13</a></div></td><td class="codeLine"><span class="keyword">}</span></td></tr>
+     <tr><td><div align="right"><a name="4"></a><a href="#4">4</a></div></td><td class="codeLine"><span class="keyword">interface</span><span class="default">&nbsp;</span><span class="default">TraitsProviderInterface</span></td></tr>
+     <tr><td><div align="right"><a name="5"></a><a href="#5">5</a></div></td><td class="codeLine"><span class="keyword">{</span></td></tr>
+     <tr><td><div align="right"><a name="6"></a><a href="#6">6</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">/**</span></td></tr>
+     <tr><td><div align="right"><a name="7"></a><a href="#7">7</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;Return&nbsp;traits&nbsp;describing&nbsp;the&nbsp;collection's&nbsp;iteration&nbsp;capabilities.</span></td></tr>
+     <tr><td><div align="right"><a name="8"></a><a href="#8">8</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</span></td></tr>
+     <tr><td><div align="right"><a name="9"></a><a href="#9">9</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@return&nbsp;Traits</span></td></tr>
+     <tr><td><div align="right"><a name="10"></a><a href="#10">10</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/</span></td></tr>
+     <tr><td><div align="right"><a name="11"></a><a href="#11">11</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">public</span><span class="default">&nbsp;</span><span class="keyword">function</span><span class="default">&nbsp;</span><span class="default">iteratorTraits</span><span class="keyword">(</span><span class="keyword">)</span><span class="keyword">;</span></td></tr>
+     <tr><td><div align="right"><a name="12"></a><a href="#12">12</a></div></td><td class="codeLine"><span class="keyword">}</span></td></tr>
 
     </tbody>
    </table>
