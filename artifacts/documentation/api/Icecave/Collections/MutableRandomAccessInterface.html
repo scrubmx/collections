@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Icecave\Collections\MutableRandomAccessInterface | icecave/collections API</title>
+                    <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../../classes.html">Classes</a></li>
+                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                        <li><a href="../../interfaces.html">Interfaces</a></li>
+            <li><a href="../../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">icecave/collections API</div>
+
+            <div class="type">Interface</div>
+    <h1><a href="../../Icecave/Collections.html">Icecave\Collections</a>\MutableRandomAccessInterface</h1>
+    </div>
+        <div class="content">
+                <p>interface    <strong>MutableRandomAccessInterface</strong>        implements
+        <a href="../../Icecave/Collections/RandomAccessInterface.html"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a>, <a href="../../Icecave/Collections/MutableSequenceInterface.html"><abbr title="Icecave\Collections\MutableSequenceInterface">MutableSequenceInterface</abbr></a></p>
+
+            <div class="description">
+            <p>A mutable random access sequence is a sequence that allows for insertion and removal of elements by their position in the sequence.</p>
+            <p></p>
+        </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_get">get</a>(mixed $index)
+                    <p>Fetch the element at the given index.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../Icecave/Collections/RandomAccessInterface.html#method_get"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../Icecave/Collections/SequenceInterface.html"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_slice">slice</a>(integer $index, integer|null $count = null)
+                    <p>Extract a range of elements.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../Icecave/Collections/RandomAccessInterface.html#method_slice"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../Icecave/Collections/SequenceInterface.html"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_range">range</a>(integer $begin, integer $end)
+                    <p>Extract a range of elements.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../Icecave/Collections/RandomAccessInterface.html#method_range"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    integer|null
+                </td>
+                <td class="last">
+                    <a href="#method_indexOf">indexOf</a>(mixed $element, integer $startIndex)
+                    <p>Find the index of the first instance of a particular element in the sequence.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../Icecave/Collections/RandomAccessInterface.html#method_indexOf"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    integer|null
+                </td>
+                <td class="last">
+                    <a href="#method_indexOfLast">indexOfLast</a>(mixed $element, integer|null $startIndex = null)
+                    <p>Find the index of the last instance of a particular element in the sequence.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../Icecave/Collections/RandomAccessInterface.html#method_indexOfLast"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    integer|null
+                </td>
+                <td class="last">
+                    <a href="#method_find">find</a>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate, integer $startIndex)
+                    <p>Find the index of the first instance of an element matching given criteria.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../Icecave/Collections/RandomAccessInterface.html#method_find"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    integer|null
+                </td>
+                <td class="last">
+                    <a href="#method_findLast">findLast</a>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate, integer|null $startIndex = null)
+                    <p>Find the index of the last instance of an element matching given criteria.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../Icecave/Collections/RandomAccessInterface.html#method_findLast"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_sort">sort</a>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $comparator = null)
+                    <p>Sort this sequence in-place.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../Icecave/Collections/MutableSequenceInterface.html#method_sort"><abbr title="Icecave\Collections\MutableSequenceInterface">MutableSequenceInterface</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_reverse">reverse</a>()
+                    <p>Reverse this sequence in-place.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../Icecave/Collections/MutableSequenceInterface.html#method_reverse"><abbr title="Icecave\Collections\MutableSequenceInterface">MutableSequenceInterface</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_append">append</a>($sequence)
+                    <p>Appending elements in the given sequence to this sequence.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../Icecave/Collections/MutableSequenceInterface.html#method_append"><abbr title="Icecave\Collections\MutableSequenceInterface">MutableSequenceInterface</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_pushFront">pushFront</a>(mixed $element)
+                    <p>Add a new element to the front of the sequence.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../Icecave/Collections/MutableSequenceInterface.html#method_pushFront"><abbr title="Icecave\Collections\MutableSequenceInterface">MutableSequenceInterface</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_popFront">popFront</a>()
+                    <p>Remove and return the element at the front of the sequence.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../Icecave/Collections/MutableSequenceInterface.html#method_popFront"><abbr title="Icecave\Collections\MutableSequenceInterface">MutableSequenceInterface</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_tryPopFront">tryPopFront</a>(mixed $element = null)
+                    <p>Remove the element at the front of the sequence.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../Icecave/Collections/MutableSequenceInterface.html#method_tryPopFront"><abbr title="Icecave\Collections\MutableSequenceInterface">MutableSequenceInterface</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_pushBack">pushBack</a>(mixed $element)
+                    <p>Add a new element to the back of the sequence.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../Icecave/Collections/MutableSequenceInterface.html#method_pushBack"><abbr title="Icecave\Collections\MutableSequenceInterface">MutableSequenceInterface</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_popBack">popBack</a>()
+                    <p>Remove and return the element at the back of the sequence.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../Icecave/Collections/MutableSequenceInterface.html#method_popBack"><abbr title="Icecave\Collections\MutableSequenceInterface">MutableSequenceInterface</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_tryPopBack">tryPopBack</a>(mixed $element = null)
+                    <p>Remove the element at the back of the sequence.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../Icecave/Collections/MutableSequenceInterface.html#method_tryPopBack"><abbr title="Icecave\Collections\MutableSequenceInterface">MutableSequenceInterface</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_resize">resize</a>(integer $size, mixed $element = null)
+                    <p>Resize the sequence.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../Icecave/Collections/MutableSequenceInterface.html#method_resize"><abbr title="Icecave\Collections\MutableSequenceInterface">MutableSequenceInterface</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_set">set</a>(integer $index, mixed $element)
+                    <p>Replace the element at a particular position in the sequence.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_insert">insert</a>(integer $index, mixed $element)
+                    <p>Insert an element at a particular index.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_insertMany">insertMany</a>(integer $index, <abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $elements)
+                    <p>Insert a range of elements at a particular index.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_remove">remove</a>(integer $index)
+                    <p>Remove the element at a given index.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_removeMany">removeMany</a>(integer $index, integer|null $count = null)
+                    <p>Remove a range of elements at a given index.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_removeRange">removeRange</a>(integer $begin, integer $end)
+                    <p>Remove a range of elements between two indices.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_replace">replace</a>(integer $index, <abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $elements, integer|null $count = null)
+                    <p>Replace a range of elements with a second set of elements.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_replaceRange">replaceRange</a>(integer $begin, integer $end, <abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $elements)
+                    <p>Replace a range of elements with a second set of elements.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_swap">swap</a>(integer $index1, integer $index2)
+                    <p>Swap the elements at two index positions.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_trySwap">trySwap</a>(integer $index1, integer $index2)
+                    <p>Swap the elements at two index positions.</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_get">
+        <div class="location">in <a href="../../Icecave/Collections/RandomAccessInterface.html#method_get"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a> at line 17</div>
+        <code>            public            mixed
+    <strong>get</strong>(mixed $index)</code>
+    </h3>
+    <div class="details">
+        <p>Fetch the element at the given index.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$index</td>
+                <td>The index of the element to fetch, if index is a negative number the element that far from the end of the sequence is returned.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>The element at $index.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Exception\IndexException">IndexException</abbr></td>
+                <td>if no such index exists.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_slice">
+        <div class="location">in <a href="../../Icecave/Collections/RandomAccessInterface.html#method_slice"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a> at line 30</div>
+        <code>            public            <a href="../../Icecave/Collections/SequenceInterface.html"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a>
+    <strong>slice</strong>(integer $index, integer|null $count = null)</code>
+    </h3>
+    <div class="details">
+        <p>Extract a range of elements.</p>
+        <p>It is not guaranteed that the concrete type of the slice collection will match this collection.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>integer</td>
+                <td>$index</td>
+                <td>The index from which the slice will start. If index is a negative number the slice will begin that far from the end of the sequence.</td>
+            </tr>
+                    <tr>
+                <td>integer|null</td>
+                <td>$count</td>
+                <td>The maximum number of elements to include in the slice, or null to include all elements from $index to the end of the sequence.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../Icecave/Collections/SequenceInterface.html"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a></td>
+            <td>The sliced sequence.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Exception\IndexException">IndexException</abbr></td>
+                <td>if $index is out of range.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_range">
+        <div class="location">in <a href="../../Icecave/Collections/RandomAccessInterface.html#method_range"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a> at line 45</div>
+        <code>            public            <a href="../../Icecave/Collections/SequenceInterface.html"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a>
+    <strong>range</strong>(integer $begin, integer $end)</code>
+    </h3>
+    <div class="details">
+        <p>Extract a range of elements.</p>
+        <p>It is not guaranteed that the concrete type of the slice collection will match this collection.<br />
+<br />
+ Extracts all elements in the range [$begin, $end), i.e. $begin is inclusive, $end is exclusive.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>integer</td>
+                <td>$begin</td>
+                <td>The index from which the slice will start. If begin is a negative number the slice will begin that far from the end of the sequence.</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$end</td>
+                <td>The index at which the slice will end. If end is a negative number the slice will end that far from the end of the sequence.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../Icecave/Collections/SequenceInterface.html"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a></td>
+            <td>The sliced sequence.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Exception\IndexException">IndexException</abbr></td>
+                <td>if $index is out of range.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_indexOf">
+        <div class="location">in <a href="../../Icecave/Collections/RandomAccessInterface.html#method_indexOf"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a> at line 56</div>
+        <code>            public            integer|null
+    <strong>indexOf</strong>(mixed $element, integer $startIndex)</code>
+    </h3>
+    <div class="details">
+        <p>Find the index of the first instance of a particular element in the sequence.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$element</td>
+                <td>The element to search for.</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$startIndex</td>
+                <td>The index to start searching from.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>integer|null</td>
+            <td>The index of the element, or null if is not present in the sequence.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Exception\IndexException">IndexException</abbr></td>
+                <td>if $startIndex is out of range.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_indexOfLast">
+        <div class="location">in <a href="../../Icecave/Collections/RandomAccessInterface.html#method_indexOfLast"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a> at line 67</div>
+        <code>            public            integer|null
+    <strong>indexOfLast</strong>(mixed $element, integer|null $startIndex = null)</code>
+    </h3>
+    <div class="details">
+        <p>Find the index of the last instance of a particular element in the sequence.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$element</td>
+                <td>The element to search for.</td>
+            </tr>
+                    <tr>
+                <td>integer|null</td>
+                <td>$startIndex</td>
+                <td>The index to start searching from, or null to use the last index.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>integer|null</td>
+            <td>The index of the element, or null if is not present in the sequence.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Exception\IndexException">IndexException</abbr></td>
+                <td>if $startIndex is out of range.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_find">
+        <div class="location">in <a href="../../Icecave/Collections/RandomAccessInterface.html#method_find"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a> at line 78</div>
+        <code>            public            integer|null
+    <strong>find</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate, integer $startIndex)</code>
+    </h3>
+    <div class="details">
+        <p>Find the index of the first instance of an element matching given criteria.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Icecave\Collections\callable">callable</abbr></td>
+                <td>$predicate</td>
+                <td>A predicate function used to determine which element constitutes a match.</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$startIndex</td>
+                <td>The index to start searching from.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>integer|null</td>
+            <td>The index of the element, or null if is not present in the sequence.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Exception\IndexException">IndexException</abbr></td>
+                <td>if $startIndex is out of range.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_findLast">
+        <div class="location">in <a href="../../Icecave/Collections/RandomAccessInterface.html#method_findLast"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a> at line 89</div>
+        <code>            public            integer|null
+    <strong>findLast</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate, integer|null $startIndex = null)</code>
+    </h3>
+    <div class="details">
+        <p>Find the index of the last instance of an element matching given criteria.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Icecave\Collections\callable">callable</abbr></td>
+                <td>$predicate</td>
+                <td>A predicate function used to determine which element constitutes a match.</td>
+            </tr>
+                    <tr>
+                <td>integer|null</td>
+                <td>$startIndex</td>
+                <td>The index to start searching from, or null to use the last index.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>integer|null</td>
+            <td>The index of the element, or null if is not present in the sequence.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Exception\IndexException">IndexException</abbr></td>
+                <td>if $startIndex is out of range.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_sort">
+        <div class="location">in <a href="../../Icecave/Collections/MutableSequenceInterface.html#method_sort"><abbr title="Icecave\Collections\MutableSequenceInterface">MutableSequenceInterface</abbr></a> at line 16</div>
+        <code>            public            
+    <strong>sort</strong>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $comparator = null)</code>
+    </h3>
+    <div class="details">
+        <p>Sort this sequence in-place.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Icecave\Collections\callable">callable</abbr>|null</td>
+                <td>$comparator</td>
+                <td>A strcmp style comparator function.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_reverse">
+        <div class="location">in <a href="../../Icecave/Collections/MutableSequenceInterface.html#method_reverse"><abbr title="Icecave\Collections\MutableSequenceInterface">MutableSequenceInterface</abbr></a> at line 21</div>
+        <code>            public            
+    <strong>reverse</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Reverse this sequence in-place.</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_append">
+        <div class="location">in <a href="../../Icecave/Collections/MutableSequenceInterface.html#method_append"><abbr title="Icecave\Collections\MutableSequenceInterface">MutableSequenceInterface</abbr></a> at line 29</div>
+        <code>            public            
+    <strong>append</strong>($sequence)</code>
+    </h3>
+    <div class="details">
+        <p>Appending elements in the given sequence to this sequence.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$sequence</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_pushFront">
+        <div class="location">in <a href="../../Icecave/Collections/MutableSequenceInterface.html#method_pushFront"><abbr title="Icecave\Collections\MutableSequenceInterface">MutableSequenceInterface</abbr></a> at line 36</div>
+        <code>            public            
+    <strong>pushFront</strong>(mixed $element)</code>
+    </h3>
+    <div class="details">
+        <p>Add a new element to the front of the sequence.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$element</td>
+                <td>The element to prepend.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_popFront">
+        <div class="location">in <a href="../../Icecave/Collections/MutableSequenceInterface.html#method_popFront"><abbr title="Icecave\Collections\MutableSequenceInterface">MutableSequenceInterface</abbr></a> at line 44</div>
+        <code>            public            mixed
+    <strong>popFront</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Remove and return the element at the front of the sequence.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>The element at the front of the sequence.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Exception\EmptyCollectionException">EmptyCollectionException</abbr></td>
+                <td>if the collection is empty.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_tryPopFront">
+        <div class="location">in <a href="../../Icecave/Collections/MutableSequenceInterface.html#method_tryPopFront"><abbr title="Icecave\Collections\MutableSequenceInterface">MutableSequenceInterface</abbr></a> at line 53</div>
+        <code>            public            boolean
+    <strong>tryPopFront</strong>(mixed $element = null)</code>
+    </h3>
+    <div class="details">
+        <p>Remove the element at the front of the sequence.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$element</td>
+                <td>&amp;$element Assigned the removed element.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
+            <td>True if the front element is removed and assigned to $element; otherwise, false.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_pushBack">
+        <div class="location">in <a href="../../Icecave/Collections/MutableSequenceInterface.html#method_pushBack"><abbr title="Icecave\Collections\MutableSequenceInterface">MutableSequenceInterface</abbr></a> at line 60</div>
+        <code>            public            
+    <strong>pushBack</strong>(mixed $element)</code>
+    </h3>
+    <div class="details">
+        <p>Add a new element to the back of the sequence.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$element</td>
+                <td>The element to append.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_popBack">
+        <div class="location">in <a href="../../Icecave/Collections/MutableSequenceInterface.html#method_popBack"><abbr title="Icecave\Collections\MutableSequenceInterface">MutableSequenceInterface</abbr></a> at line 68</div>
+        <code>            public            mixed
+    <strong>popBack</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Remove and return the element at the back of the sequence.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>The element at the back of the sequence.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Exception\EmptyCollectionException">EmptyCollectionException</abbr></td>
+                <td>if the collection is empty.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_tryPopBack">
+        <div class="location">in <a href="../../Icecave/Collections/MutableSequenceInterface.html#method_tryPopBack"><abbr title="Icecave\Collections\MutableSequenceInterface">MutableSequenceInterface</abbr></a> at line 77</div>
+        <code>            public            boolean
+    <strong>tryPopBack</strong>(mixed $element = null)</code>
+    </h3>
+    <div class="details">
+        <p>Remove the element at the back of the sequence.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$element</td>
+                <td>&amp;$element Assigned the removed element.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
+            <td>True if the back element is removed and assigned to $element; otherwise, false.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_resize">
+        <div class="location">in <a href="../../Icecave/Collections/MutableSequenceInterface.html#method_resize"><abbr title="Icecave\Collections\MutableSequenceInterface">MutableSequenceInterface</abbr></a> at line 85</div>
+        <code>            public            
+    <strong>resize</strong>(integer $size, mixed $element = null)</code>
+    </h3>
+    <div class="details">
+        <p>Resize the sequence.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>integer</td>
+                <td>$size</td>
+                <td>The new size of the collection.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$element</td>
+                <td>The value to use for populating new elements when $size &gt; $this-&gt;size().</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_set">
+        <div class="location">at line 17</div>
+        <code>            public            
+    <strong>set</strong>(integer $index, mixed $element)</code>
+    </h3>
+    <div class="details">
+        <p>Replace the element at a particular position in the sequence.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>integer</td>
+                <td>$index</td>
+                <td>The index of the element to set, if index is a negative number the element that far from the end of the sequence is set.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$element</td>
+                <td>The element to set.</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Exception\IndexException">IndexException</abbr></td>
+                <td>if $index is out of range.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_insert">
+        <div class="location">at line 27</div>
+        <code>            public            
+    <strong>insert</strong>(integer $index, mixed $element)</code>
+    </h3>
+    <div class="details">
+        <p>Insert an element at a particular index.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>integer</td>
+                <td>$index</td>
+                <td>The index at which the element is inserted, if index is a negative number the element is inserted that far from the end of the sequence.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$element</td>
+                <td>The element to insert.</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Exception\IndexException">IndexException</abbr></td>
+                <td>if $index is out of range.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_insertMany">
+        <div class="location">at line 35</div>
+        <code>            public            
+    <strong>insertMany</strong>(integer $index, <abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $elements)</code>
+    </h3>
+    <div class="details">
+        <p>Insert a range of elements at a particular index.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>integer</td>
+                <td>$index</td>
+                <td>The index at which the elements are inserted, if index is a negative number the elements are inserted that far from the end of the sequence.</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr></td>
+                <td>$elements</td>
+                <td>The elements to insert.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_remove">
+        <div class="location">at line 46</div>
+        <code>            public            
+    <strong>remove</strong>(integer $index)</code>
+    </h3>
+    <div class="details">
+        <p>Remove the element at a given index.</p>
+        <p>Elements after the given endex are moved forward by one.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>integer</td>
+                <td>$index</td>
+                <td>The index of the element to remove, if index is a negative number the element that far from the end of the sequence is removed.</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Exception\IndexException">IndexException</abbr></td>
+                <td>if $index is out of range.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_removeMany">
+        <div class="location">at line 56</div>
+        <code>            public            
+    <strong>removeMany</strong>(integer $index, integer|null $count = null)</code>
+    </h3>
+    <div class="details">
+        <p>Remove a range of elements at a given index.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>integer</td>
+                <td>$index</td>
+                <td>The index of the first element to remove, if index is a negative number the removal begins that far from the end of the sequence.</td>
+            </tr>
+                    <tr>
+                <td>integer|null</td>
+                <td>$count</td>
+                <td>The number of elements to remove, or null to remove all elements up to the end of the sequence.</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Exception\IndexException">IndexException</abbr></td>
+                <td>if $index is out of range.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_removeRange">
+        <div class="location">at line 68</div>
+        <code>            public            
+    <strong>removeRange</strong>(integer $begin, integer $end)</code>
+    </h3>
+    <div class="details">
+        <p>Remove a range of elements between two indices.</p>
+        <p>Removes all elements in the range [$begin, $end), i.e. $begin is inclusive, $end is exclusive.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>integer</td>
+                <td>$begin</td>
+                <td>The index of the first element to remove, if begin is a negative number the removal begins that far from the end of the sequence.</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$end</td>
+                <td>The index of the last element to remove, if end is a negative number the removal ends that far from the end of the sequence.</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Exception\IndexException">IndexException</abbr></td>
+                <td>if $index is out of range.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_replace">
+        <div class="location">at line 77</div>
+        <code>            public            
+    <strong>replace</strong>(integer $index, <abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $elements, integer|null $count = null)</code>
+    </h3>
+    <div class="details">
+        <p>Replace a range of elements with a second set of elements.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>integer</td>
+                <td>$index</td>
+                <td>The index of the first element to replace, if index is a negative number the replace begins that far from the end of the sequence.</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr></td>
+                <td>$elements</td>
+                <td>The elements to insert.</td>
+            </tr>
+                    <tr>
+                <td>integer|null</td>
+                <td>$count</td>
+                <td>The number of elements to replace, or null to replace all elements up to the end of the sequence.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_replaceRange">
+        <div class="location">at line 88</div>
+        <code>            public            
+    <strong>replaceRange</strong>(integer $begin, integer $end, <abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $elements)</code>
+    </h3>
+    <div class="details">
+        <p>Replace a range of elements with a second set of elements.</p>
+        <p>Replaces all elements in the range [$begin, $end), i.e. $begin is inclusive, $end is exclusive.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>integer</td>
+                <td>$begin</td>
+                <td>The index of the first element to replace, if begin is a negative number the replace begins that far from the end of the sequence.</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$end</td>
+                <td>The index of the last element to replace, if end is a negativ enumber the replace ends that far from the end of the sequence.</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr></td>
+                <td>$elements</td>
+                <td>The elements to insert.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_swap">
+        <div class="location">at line 98</div>
+        <code>            public            
+    <strong>swap</strong>(integer $index1, integer $index2)</code>
+    </h3>
+    <div class="details">
+        <p>Swap the elements at two index positions.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>integer</td>
+                <td>$index1</td>
+                <td>The index of the first element.</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$index2</td>
+                <td>The index of the second element.</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Exception\IndexException">IndexException</abbr></td>
+                <td>if $index1 or $index2 is out of range.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_trySwap">
+        <div class="location">at line 108</div>
+        <code>            public            boolean
+    <strong>trySwap</strong>(integer $index1, integer $index2)</code>
+    </h3>
+    <div class="details">
+        <p>Swap the elements at two index positions.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>integer</td>
+                <td>$index1</td>
+                <td>The index of the first element.</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$index2</td>
+                <td>The index of the second element.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
+            <td>True if $index1 and $index2 are in range and the swap is successful.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

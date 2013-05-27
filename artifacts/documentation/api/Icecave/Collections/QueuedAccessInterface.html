@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Icecave\Collections\QueuedAccessInterface | icecave/collections API</title>
+                    <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../../classes.html">Classes</a></li>
+                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                        <li><a href="../../interfaces.html">Interfaces</a></li>
+            <li><a href="../../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">icecave/collections API</div>
+
+            <div class="type">Interface</div>
+    <h1><a href="../../Icecave/Collections.html">Icecave\Collections</a>\QueuedAccessInterface</h1>
+    </div>
+        <div class="content">
+                <p>interface    <strong>QueuedAccessInterface</strong>        implements
+        <a href="../../Icecave/Collections/MutableCollectionInterface.html"><abbr title="Icecave\Collections\MutableCollectionInterface">MutableCollectionInterface</abbr></a></p>
+
+            <div class="description">
+            <p>A [LF]IFO queue.</p>
+            <p></p>
+        </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_clear">clear</a>()
+                    <p>Remove all elements from the collection.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../Icecave/Collections/MutableCollectionInterface.html#method_clear"><abbr title="Icecave\Collections\MutableCollectionInterface">MutableCollectionInterface</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_next">next</a>()
+                    <p>Fetch the element next to be returned by pop(), without removing it from the collection.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_tryNext">tryNext</a>(mixed $element)
+                    <p>Fetch the element next to be returned by pop(), without removing it from the collection.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_push">push</a>(mixed $element)
+                    <p>Add a new element.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_pop">pop</a>()
+                    <p>Remove and return the next element.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_tryPop">tryPop</a>(mixed $element = null)
+                    <p>Remove the next element.</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_clear">
+        <div class="location">in <a href="../../Icecave/Collections/MutableCollectionInterface.html#method_clear"><abbr title="Icecave\Collections\MutableCollectionInterface">MutableCollectionInterface</abbr></a> at line 12</div>
+        <code>            public            
+    <strong>clear</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Remove all elements from the collection.</p>
+        <p></p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_next">
+        <div class="location">at line 15</div>
+        <code>            public            mixed
+    <strong>next</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Fetch the element next to be returned by pop(), without removing it from the collection.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>The next element.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Exception\EmptyCollectionException">EmptyCollectionException</abbr></td>
+                <td>if the collection is empty.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_tryNext">
+        <div class="location">at line 24</div>
+        <code>            public            boolean
+    <strong>tryNext</strong>(mixed $element)</code>
+    </h3>
+    <div class="details">
+        <p>Fetch the element next to be returned by pop(), without removing it from the collection.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$element</td>
+                <td>&amp;$element Assigned the next element.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
+            <td>True is the element exists and was assigned to $element; otherwise, false.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_push">
+        <div class="location">at line 31</div>
+        <code>            public            
+    <strong>push</strong>(mixed $element)</code>
+    </h3>
+    <div class="details">
+        <p>Add a new element.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$element</td>
+                <td>The element to add.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_pop">
+        <div class="location">at line 39</div>
+        <code>            public            mixed
+    <strong>pop</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Remove and return the next element.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>The next element.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Exception\EmptyCollectionException">EmptyCollectionException</abbr></td>
+                <td>if the collection is empty.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_tryPop">
+        <div class="location">at line 48</div>
+        <code>            public            boolean
+    <strong>tryPop</strong>(mixed $element = null)</code>
+    </h3>
+    <div class="details">
+        <p>Remove the next element.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$element</td>
+                <td>&amp;$element Assigned the removed element.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
+            <td>True if the next element is removed and assigned to $element; otherwise, false.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

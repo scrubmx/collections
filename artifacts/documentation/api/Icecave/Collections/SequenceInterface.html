@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Icecave\Collections\SequenceInterface | icecave/collections API</title>
+                    <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../../classes.html">Classes</a></li>
+                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                        <li><a href="../../interfaces.html">Interfaces</a></li>
+            <li><a href="../../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">icecave/collections API</div>
+
+            <div class="type">Interface</div>
+    <h1><a href="../../Icecave/Collections.html">Icecave\Collections</a>\SequenceInterface</h1>
+    </div>
+        <div class="content">
+                <p>interface    <strong>SequenceInterface</strong>        implements
+        <a href="../../Icecave/Collections/CollectionInterface.html"><abbr title="Icecave\Collections\CollectionInterface">CollectionInterface</abbr></a></p>
+
+            <div class="description">
+            <p>A Sequence is a variable-sized collection whose elements are arranged in a strict linear order.</p>
+            <p></p>
+        </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    integer
+                </td>
+                <td class="last">
+                    <a href="#method_size">size</a>()
+                    <p>Fetch the number of elements in the collection.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../Icecave/Collections/CollectionInterface.html#method_size"><abbr title="Icecave\Collections\CollectionInterface">CollectionInterface</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_isEmpty">isEmpty</a>()
+                    <p>Check if the collection is empty.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../Icecave/Collections/CollectionInterface.html#method_isEmpty"><abbr title="Icecave\Collections\CollectionInterface">CollectionInterface</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method___toString">__toString</a>()
+                    <p>Fetch a string representation of the collection.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../Icecave/Collections/CollectionInterface.html#method___toString"><abbr title="Icecave\Collections\CollectionInterface">CollectionInterface</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_front">front</a>()
+                    <p>Fetch the first element in the sequence.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_tryFront">tryFront</a>(mixed $element)
+                    <p>Fetch the first element in the sequence.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_back">back</a>()
+                    <p>Fetch the last element in the sequence.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_tryBack">tryBack</a>(mixed $element)
+                    <p>Fetch the last element in the sequence.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../Icecave/Collections/SequenceInterface.html"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_sorted">sorted</a>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $comparator = null)
+                    <p>Create a new sequence with the elements from this sequence in sorted order.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../Icecave/Collections/SequenceInterface.html"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_reversed">reversed</a>()
+                    <p>Create a new sequence with the elements from this sequence in reverse order.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../Icecave/Collections/SequenceInterface.html"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_join">join</a>($sequence)
+                    <p>Create a new sequence by appending the elements in the given sequence to this sequence.</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_size">
+        <div class="location">in <a href="../../Icecave/Collections/CollectionInterface.html#method_size"><abbr title="Icecave\Collections\CollectionInterface">CollectionInterface</abbr></a> at line 16</div>
+        <code>            public            integer
+    <strong>size</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Fetch the number of elements in the collection.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>integer</td>
+            <td>The number of elements in the collection.</td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table>
+                    <tr>
+                <td>CollectionInterface::isEmpty()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+                <h3 id="method_isEmpty">
+        <div class="location">in <a href="../../Icecave/Collections/CollectionInterface.html#method_isEmpty"><abbr title="Icecave\Collections\CollectionInterface">CollectionInterface</abbr></a> at line 23</div>
+        <code>            public            boolean
+    <strong>isEmpty</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Check if the collection is empty.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
+            <td>True if the collection is empty; otherwise, false.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method___toString">
+        <div class="location">in <a href="../../Icecave/Collections/CollectionInterface.html#method___toString"><abbr title="Icecave\Collections\CollectionInterface">CollectionInterface</abbr></a> at line 33</div>
+        <code>            public            string
+    <strong>__toString</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Fetch a string representation of the collection.</p>
+        <p>The string may not describe all elements of the collection, but should at least<br />
+ provide information on the type and state of the collection.</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>A string representation of the collection.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_front">
+        <div class="location">at line 15</div>
+        <code>            public            mixed
+    <strong>front</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Fetch the first element in the sequence.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>The first element in the sequence.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Exception\EmptyCollectionException">EmptyCollectionException</abbr></td>
+                <td>if the collection is empty.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_tryFront">
+        <div class="location">at line 24</div>
+        <code>            public            boolean
+    <strong>tryFront</strong>(mixed $element)</code>
+    </h3>
+    <div class="details">
+        <p>Fetch the first element in the sequence.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$element</td>
+                <td>&amp;$element Assigned the element at the front of collection.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
+            <td>True is the element exists and was assigned to $element; otherwise, false.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_back">
+        <div class="location">at line 32</div>
+        <code>            public            mixed
+    <strong>back</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Fetch the last element in the sequence.</p>
+        <p></p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>The first element in the sequence.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Exception\EmptyCollectionException">EmptyCollectionException</abbr></td>
+                <td>if the collection is empty.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_tryBack">
+        <div class="location">at line 41</div>
+        <code>            public            boolean
+    <strong>tryBack</strong>(mixed $element)</code>
+    </h3>
+    <div class="details">
+        <p>Fetch the last element in the sequence.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$element</td>
+                <td>&amp;$element Assigned the element at the front of collection.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
+            <td>True is the element exists and was assigned to $element; otherwise, false.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_sorted">
+        <div class="location">at line 52</div>
+        <code>            public            <a href="../../Icecave/Collections/SequenceInterface.html"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a>
+    <strong>sorted</strong>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $comparator = null)</code>
+    </h3>
+    <div class="details">
+        <p>Create a new sequence with the elements from this sequence in sorted order.</p>
+        <p>It is not guaranteed that the concrete type of the sorted collection will match this collection.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Icecave\Collections\callable">callable</abbr>|null</td>
+                <td>$comparator</td>
+                <td>A strcmp style comparator function.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../Icecave/Collections/SequenceInterface.html"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_reversed">
+        <div class="location">at line 61</div>
+        <code>            public            <a href="../../Icecave/Collections/SequenceInterface.html"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a>
+    <strong>reversed</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Create a new sequence with the elements from this sequence in reverse order.</p>
+        <p>It is not guaranteed that the concrete type of the reversed collection will match this collection.</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../Icecave/Collections/SequenceInterface.html"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a></td>
+            <td>The reversed sequence.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_join">
+        <div class="location">at line 71</div>
+        <code>            public            <a href="../../Icecave/Collections/SequenceInterface.html"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a>
+    <strong>join</strong>($sequence)</code>
+    </h3>
+    <div class="details">
+        <p>Create a new sequence by appending the elements in the given sequence to this sequence.</p>
+        <p></p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$sequence</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../Icecave/Collections/SequenceInterface.html"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a></td>
+            <td>A new sequence containing all elements from this sequence and $sequence.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>
