@@ -25,6 +25,10 @@
                 <p>class    <strong>Map</strong>        implements
         <a href="../../Icecave/Collections/MutableAssociativeInterface.html"><abbr title="Icecave\Collections\MutableAssociativeInterface">MutableAssociativeInterface</abbr></a>, <a href="http://php.net/Countable"><abbr title="Countable">Countable</abbr></a>, <a href="http://php.net/Iterator"><abbr title="Iterator">Iterator</abbr></a>, <a href="http://php.net/ArrayAccess"><abbr title="ArrayAccess">ArrayAccess</abbr></a>, <a href="http://php.net/Serializable"><abbr title="Serializable">Serializable</abbr></a></p>
 
+            <div class="description">
+            <p>A map of keys of arbitrary type to values.</p>
+            <p></p>
+        </div>
     
     
     
@@ -567,7 +571,7 @@
                 </td>
                 <td class="last">
                     <a href="#method_serialize">serialize</a>()
-                    <p></p>
+                    <p>Serialize the collection.</p>
                 </td>
                 <td></td>
             </tr>
@@ -577,7 +581,7 @@
                 </td>
                 <td class="last">
                     <a href="#method_unserialize">unserialize</a>(string $packet)
-                    <p></p>
+                    <p>Unserialize collection data.</p>
                 </td>
                 <td></td>
             </tr>
@@ -587,7 +591,7 @@
         <h2>Details</h2>
 
                         <h3 id="method___construct">
-        <div class="location">at line 18</div>
+        <div class="location">at line 21</div>
         <code>            public            
     <strong>__construct</strong>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr>|null $collection = null, <abbr title="Icecave\Collections\callable">callable</abbr>|null $hashFunction = null)</code>
     </h3>
@@ -617,7 +621,7 @@
     </div>
 
                 <h3 id="method_size">
-        <div class="location">at line 47</div>
+        <div class="location">at line 50</div>
         <code>            public            integer
     <strong>size</strong>()</code>
     </h3>
@@ -650,7 +654,7 @@
     </div>
 
                 <h3 id="method_isEmpty">
-        <div class="location">at line 59</div>
+        <div class="location">at line 62</div>
         <code>            public            boolean
     <strong>isEmpty</strong>()</code>
     </h3>
@@ -674,7 +678,7 @@
     </div>
 
                 <h3 id="method___toString">
-        <div class="location">at line 74</div>
+        <div class="location">at line 77</div>
         <code>            public            string
     <strong>__toString</strong>()</code>
     </h3>
@@ -699,7 +703,7 @@
     </div>
 
                 <h3 id="method_clear">
-        <div class="location">at line 112</div>
+        <div class="location">at line 115</div>
         <code>            public            
     <strong>clear</strong>()</code>
     </h3>
@@ -714,7 +718,7 @@
     </div>
 
                 <h3 id="method_iteratorTraits">
-        <div class="location">at line 128</div>
+        <div class="location">at line 131</div>
         <code>            public            <a href="../../Icecave/Collections/Iterator/Traits.html"><abbr title="Icecave\Collections\Iterator\Traits">Traits</abbr></a>
     <strong>iteratorTraits</strong>()</code>
     </h3>
@@ -738,7 +742,7 @@
     </div>
 
                 <h3 id="method_elements">
-        <div class="location">at line 144</div>
+        <div class="location">at line 147</div>
         <code>            public            array
     <strong>elements</strong>()</code>
     </h3>
@@ -762,7 +766,7 @@
     </div>
 
                 <h3 id="method_contains">
-        <div class="location">at line 158</div>
+        <div class="location">at line 161</div>
         <code>            public            boolean
     <strong>contains</strong>(mixed $value)</code>
     </h3>
@@ -796,7 +800,7 @@
     </div>
 
                 <h3 id="method_filtered">
-        <div class="location">at line 182</div>
+        <div class="location">at line 185</div>
         <code>            public            <a href="../../Icecave/Collections/Map.html"><abbr title="Icecave\Collections\Map">Map</abbr></a>
     <strong>filtered</strong>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)</code>
     </h3>
@@ -831,7 +835,7 @@
     </div>
 
                 <h3 id="method_map">
-        <div class="location">at line 217</div>
+        <div class="location">at line 220</div>
         <code>            public            <a href="../../Icecave/Collections/IterableInterface.html"><abbr title="Icecave\Collections\IterableInterface">IterableInterface</abbr></a>
     <strong>map</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)</code>
     </h3>
@@ -869,7 +873,7 @@
     </div>
 
                 <h3 id="method_partition">
-        <div class="location">at line 245</div>
+        <div class="location">at line 248</div>
         <code>            public            <abbr title="Icecave\Collections\tuple&lt;IterableInterface,">tuple&lt;IterableInterface,</abbr>
     <strong>partition</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate)</code>
     </h3>
@@ -906,7 +910,7 @@
     </div>
 
                 <h3 id="method_each">
-        <div class="location">at line 273</div>
+        <div class="location">at line 276</div>
         <code>            public            
     <strong>each</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $callback)</code>
     </h3>
@@ -934,7 +938,7 @@
     </div>
 
                 <h3 id="method_all">
-        <div class="location">at line 294</div>
+        <div class="location">at line 297</div>
         <code>            public            boolean
     <strong>all</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate)</code>
     </h3>
@@ -971,7 +975,7 @@
     </div>
 
                 <h3 id="method_any">
-        <div class="location">at line 319</div>
+        <div class="location">at line 322</div>
         <code>            public            boolean
     <strong>any</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate)</code>
     </h3>
@@ -1008,7 +1012,7 @@
     </div>
 
                 <h3 id="method_filter">
-        <div class="location">at line 344</div>
+        <div class="location">at line 347</div>
         <code>            public            
     <strong>filter</strong>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)</code>
     </h3>
@@ -1034,7 +1038,7 @@
     </div>
 
                 <h3 id="method_apply">
-        <div class="location">at line 372</div>
+        <div class="location">at line 375</div>
         <code>            public            
     <strong>apply</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)</code>
     </h3>
@@ -1062,7 +1066,7 @@
     </div>
 
                 <h3 id="method_hasKey">
-        <div class="location">at line 393</div>
+        <div class="location">at line 396</div>
         <code>            public            boolean
     <strong>hasKey</strong>(mixed $key)</code>
     </h3>
@@ -1096,7 +1100,7 @@
     </div>
 
                 <h3 id="method_get">
-        <div class="location">at line 408</div>
+        <div class="location">at line 411</div>
         <code>            public            mixed
     <strong>get</strong>(mixed $key)</code>
     </h3>
@@ -1139,7 +1143,7 @@
     </div>
 
                 <h3 id="method_tryGet">
-        <div class="location">at line 428</div>
+        <div class="location">at line 431</div>
         <code>            public            boolean
     <strong>tryGet</strong>(mixed $key, mixed $value)</code>
     </h3>
@@ -1178,7 +1182,7 @@
     </div>
 
                 <h3 id="method_getWithDefault">
-        <div class="location">at line 452</div>
+        <div class="location">at line 455</div>
         <code>            public            mixed
     <strong>getWithDefault</strong>(mixed $key, mixed $default = null)</code>
     </h3>
@@ -1217,7 +1221,7 @@
     </div>
 
                 <h3 id="method_cascade">
-        <div class="location">at line 476</div>
+        <div class="location">at line 479</div>
         <code>            public            mixed
     <strong>cascade</strong>($key)</code>
     </h3>
@@ -1261,7 +1265,7 @@
     </div>
 
                 <h3 id="method_cascadeWithDefault">
-        <div class="location">at line 492</div>
+        <div class="location">at line 495</div>
         <code>            public            mixed
     <strong>cascadeWithDefault</strong>($default, $key)</code>
     </h3>
@@ -1300,7 +1304,7 @@
     </div>
 
                 <h3 id="method_cascadeIterable">
-        <div class="location">at line 513</div>
+        <div class="location">at line 516</div>
         <code>            public            mixed
     <strong>cascadeIterable</strong>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $keys)</code>
     </h3>
@@ -1344,7 +1348,7 @@
     </div>
 
                 <h3 id="method_cascadeIterableWithDefault">
-        <div class="location">at line 538</div>
+        <div class="location">at line 541</div>
         <code>            public            mixed
     <strong>cascadeIterableWithDefault</strong>(mixed $default, <abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $keys)</code>
     </h3>
@@ -1384,7 +1388,7 @@
     </div>
 
                 <h3 id="method_keys">
-        <div class="location">at line 559</div>
+        <div class="location">at line 562</div>
         <code>            public            array
     <strong>keys</strong>()</code>
     </h3>
@@ -1408,7 +1412,7 @@
     </div>
 
                 <h3 id="method_values">
-        <div class="location">at line 579</div>
+        <div class="location">at line 582</div>
         <code>            public            array
     <strong>values</strong>()</code>
     </h3>
@@ -1432,7 +1436,7 @@
     </div>
 
                 <h3 id="method_combine">
-        <div class="location">at line 603</div>
+        <div class="location">at line 606</div>
         <code>            public            <a href="../../Icecave/Collections/AssociativeInterface.html"><abbr title="Icecave\Collections\AssociativeInterface">AssociativeInterface</abbr></a>
     <strong>combine</strong>(<a href="../../Icecave/Collections/AssociativeInterface.html"><abbr title="Icecave\Collections\AssociativeInterface">AssociativeInterface</abbr></a> $collection)</code>
     </h3>
@@ -1467,7 +1471,7 @@
     </div>
 
                 <h3 id="method_project">
-        <div class="location">at line 629</div>
+        <div class="location">at line 632</div>
         <code>            public            <a href="../../Icecave/Collections/AssociativeInterface.html"><abbr title="Icecave\Collections\AssociativeInterface">AssociativeInterface</abbr></a>
     <strong>project</strong>($key)</code>
     </h3>
@@ -1501,7 +1505,7 @@
     </div>
 
                 <h3 id="method_projectIterable">
-        <div class="location">at line 645</div>
+        <div class="location">at line 648</div>
         <code>            public            <a href="../../Icecave/Collections/AssociativeInterface.html"><abbr title="Icecave\Collections\AssociativeInterface">AssociativeInterface</abbr></a>
     <strong>projectIterable</strong>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $keys)</code>
     </h3>
@@ -1535,7 +1539,7 @@
     </div>
 
                 <h3 id="method_set">
-        <div class="location">at line 676</div>
+        <div class="location">at line 679</div>
         <code>            public            
     <strong>set</strong>(mixed $key, mixed $value)</code>
     </h3>
@@ -1578,7 +1582,7 @@
     </div>
 
                 <h3 id="method_add">
-        <div class="location">at line 698</div>
+        <div class="location">at line 701</div>
         <code>            public            
     <strong>add</strong>(mixed $key, mixed $value)</code>
     </h3>
@@ -1634,7 +1638,7 @@
     </div>
 
                 <h3 id="method_tryAdd">
-        <div class="location">at line 719</div>
+        <div class="location">at line 722</div>
         <code>            public            boolean
     <strong>tryAdd</strong>(mixed $key, mixed $value)</code>
     </h3>
@@ -1682,7 +1686,7 @@
     </div>
 
                 <h3 id="method_replace">
-        <div class="location">at line 748</div>
+        <div class="location">at line 751</div>
         <code>            public            mixed
     <strong>replace</strong>(mixed $key, mixed $value)</code>
     </h3>
@@ -1747,7 +1751,7 @@
     </div>
 
                 <h3 id="method_tryReplace">
-        <div class="location">at line 773</div>
+        <div class="location">at line 776</div>
         <code>            public            boolean
     <strong>tryReplace</strong>(mixed $key, mixed $value, mixed $previous = null)</code>
     </h3>
@@ -1800,7 +1804,7 @@
     </div>
 
                 <h3 id="method_remove">
-        <div class="location">at line 796</div>
+        <div class="location">at line 799</div>
         <code>            public            mixed
     <strong>remove</strong>(mixed $key)</code>
     </h3>
@@ -1843,7 +1847,7 @@
     </div>
 
                 <h3 id="method_tryRemove">
-        <div class="location">at line 816</div>
+        <div class="location">at line 819</div>
         <code>            public            boolean
     <strong>tryRemove</strong>(mixed $key, mixed $value = null)</code>
     </h3>
@@ -1882,7 +1886,7 @@
     </div>
 
                 <h3 id="method_merge">
-        <div class="location">at line 840</div>
+        <div class="location">at line 843</div>
         <code>            public            
     <strong>merge</strong>(<a href="../../Icecave/Collections/AssociativeInterface.html"><abbr title="Icecave\Collections\AssociativeInterface">AssociativeInterface</abbr></a> $collection)</code>
     </h3>
@@ -1907,7 +1911,7 @@
     </div>
 
                 <h3 id="method_swap">
-        <div class="location">at line 860</div>
+        <div class="location">at line 863</div>
         <code>            public            
     <strong>swap</strong>(mixed $key1, mixed $key2)</code>
     </h3>
@@ -1946,7 +1950,7 @@
     </div>
 
                 <h3 id="method_trySwap">
-        <div class="location">at line 886</div>
+        <div class="location">at line 889</div>
         <code>            public            boolean
     <strong>trySwap</strong>(mixed $key1, mixed $key2)</code>
     </h3>
@@ -1985,7 +1989,7 @@
     </div>
 
                 <h3 id="method_move">
-        <div class="location">at line 918</div>
+        <div class="location">at line 921</div>
         <code>            public            
     <strong>move</strong>(mixed $source, mixed $target)</code>
     </h3>
@@ -2041,7 +2045,7 @@
     </div>
 
                 <h3 id="method_tryMove">
-        <div class="location">at line 938</div>
+        <div class="location">at line 941</div>
         <code>            public            boolean
     <strong>tryMove</strong>(mixed $source, mixed $target)</code>
     </h3>
@@ -2097,7 +2101,7 @@
     </div>
 
                 <h3 id="method_rename">
-        <div class="location">at line 967</div>
+        <div class="location">at line 970</div>
         <code>            public            
     <strong>rename</strong>(mixed $source, mixed $target)</code>
     </h3>
@@ -2157,7 +2161,7 @@
     </div>
 
                 <h3 id="method_tryRename">
-        <div class="location">at line 1002</div>
+        <div class="location">at line 1005</div>
         <code>            public            boolean
     <strong>tryRename</strong>(mixed $source, mixed $target)</code>
     </h3>
@@ -2213,7 +2217,7 @@
     </div>
 
                 <h3 id="method_count">
-        <div class="location">at line 1029</div>
+        <div class="location">at line 1032</div>
         <code>            public            
     <strong>count</strong>()</code>
     </h3>
@@ -2228,7 +2232,7 @@
     </div>
 
                 <h3 id="method_current">
-        <div class="location">at line 1040</div>
+        <div class="location">at line 1043</div>
         <code>            public            
     <strong>current</strong>()</code>
     </h3>
@@ -2243,7 +2247,7 @@
     </div>
 
                 <h3 id="method_key">
-        <div class="location">at line 1050</div>
+        <div class="location">at line 1053</div>
         <code>            public            
     <strong>key</strong>()</code>
     </h3>
@@ -2258,7 +2262,7 @@
     </div>
 
                 <h3 id="method_next">
-        <div class="location">at line 1060</div>
+        <div class="location">at line 1063</div>
         <code>            public            
     <strong>next</strong>()</code>
     </h3>
@@ -2273,7 +2277,7 @@
     </div>
 
                 <h3 id="method_rewind">
-        <div class="location">at line 1067</div>
+        <div class="location">at line 1070</div>
         <code>            public            
     <strong>rewind</strong>()</code>
     </h3>
@@ -2288,7 +2292,7 @@
     </div>
 
                 <h3 id="method_valid">
-        <div class="location">at line 1074</div>
+        <div class="location">at line 1077</div>
         <code>            public            
     <strong>valid</strong>()</code>
     </h3>
@@ -2303,7 +2307,7 @@
     </div>
 
                 <h3 id="method_offsetExists">
-        <div class="location">at line 1092</div>
+        <div class="location">at line 1095</div>
         <code>            public            boolean
     <strong>offsetExists</strong>(mixed $offset)</code>
     </h3>
@@ -2337,7 +2341,7 @@
     </div>
 
                 <h3 id="method_offsetGet">
-        <div class="location">at line 1107</div>
+        <div class="location">at line 1110</div>
         <code>            public            mixed
     <strong>offsetGet</strong>(mixed $offset)</code>
     </h3>
@@ -2380,7 +2384,7 @@
     </div>
 
                 <h3 id="method_offsetSet">
-        <div class="location">at line 1122</div>
+        <div class="location">at line 1125</div>
         <code>            public            
     <strong>offsetSet</strong>(mixed $offset, mixed $value)</code>
     </h3>
@@ -2410,7 +2414,7 @@
     </div>
 
                 <h3 id="method_offsetUnset">
-        <div class="location">at line 1134</div>
+        <div class="location">at line 1137</div>
         <code>            public            
     <strong>offsetUnset</strong>(mixed $offset)</code>
     </h3>
@@ -2435,12 +2439,12 @@
     </div>
 
                 <h3 id="method_serialize">
-        <div class="location">at line 1148</div>
+        <div class="location">at line 1153</div>
         <code>            public            string
     <strong>serialize</strong>()</code>
     </h3>
     <div class="details">
-        <p></p>
+        <p>Serialize the collection.</p>
         <p></p>
         <div class="tags">
             
@@ -2459,12 +2463,12 @@
     </div>
 
                 <h3 id="method_unserialize">
-        <div class="location">at line 1163</div>
+        <div class="location">at line 1170</div>
         <code>            public            
     <strong>unserialize</strong>(string $packet)</code>
     </h3>
     <div class="details">
-        <p></p>
+        <p>Unserialize collection data.</p>
         <p></p>
         <div class="tags">
                             <h4>Parameters</h4>

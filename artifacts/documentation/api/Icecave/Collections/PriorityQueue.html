@@ -26,7 +26,7 @@
         <a href="http://php.net/Serializable"><abbr title="Serializable">Serializable</abbr></a></p>
 
             <div class="description">
-            <p>A prioritized queue.</p>
+            <p>A prioritized first-in/first-out (FIFO) queue of elements.</p>
             <p>Higher priority values are moved closer to the front of the queue.<br />
 <br />
  Prioritization is provided by the prioritzation function specified in the constructor, but may<br />
@@ -164,7 +164,7 @@
                 </td>
                 <td class="last">
                     <a href="#method_serialize">serialize</a>()
-                    <p></p>
+                    <p>Serialize the collection.</p>
                 </td>
                 <td></td>
             </tr>
@@ -174,7 +174,7 @@
                 </td>
                 <td class="last">
                     <a href="#method_unserialize">unserialize</a>(string $packet)
-                    <p></p>
+                    <p>Unserialize collection data.</p>
                 </td>
                 <td></td>
             </tr>
@@ -214,7 +214,7 @@
     </div>
 
                 <h3 id="method___clone">
-        <div class="location">in <a href="../../Icecave/Collections/Queue.html#method___clone"><abbr title="Icecave\Collections\Queue">Queue</abbr></a> at line 28</div>
+        <div class="location">in <a href="../../Icecave/Collections/Queue.html#method___clone"><abbr title="Icecave\Collections\Queue">Queue</abbr></a> at line 31</div>
         <code>            public            
     <strong>__clone</strong>()</code>
     </h3>
@@ -229,7 +229,7 @@
     </div>
 
                 <h3 id="method_size">
-        <div class="location">in <a href="../../Icecave/Collections/Queue.html#method_size"><abbr title="Icecave\Collections\Queue">Queue</abbr></a> at line 46</div>
+        <div class="location">in <a href="../../Icecave/Collections/Queue.html#method_size"><abbr title="Icecave\Collections\Queue">Queue</abbr></a> at line 49</div>
         <code>            public            integer
     <strong>size</strong>()</code>
     </h3>
@@ -262,7 +262,7 @@
     </div>
 
                 <h3 id="method_isEmpty">
-        <div class="location">in <a href="../../Icecave/Collections/Queue.html#method_isEmpty"><abbr title="Icecave\Collections\Queue">Queue</abbr></a> at line 58</div>
+        <div class="location">in <a href="../../Icecave/Collections/Queue.html#method_isEmpty"><abbr title="Icecave\Collections\Queue">Queue</abbr></a> at line 61</div>
         <code>            public            boolean
     <strong>isEmpty</strong>()</code>
     </h3>
@@ -359,7 +359,7 @@
     </div>
 
                 <h3 id="method_tryNext">
-        <div class="location">in <a href="../../Icecave/Collections/Queue.html#method_tryNext"><abbr title="Icecave\Collections\Queue">Queue</abbr></a> at line 128</div>
+        <div class="location">in <a href="../../Icecave/Collections/Queue.html#method_tryNext"><abbr title="Icecave\Collections\Queue">Queue</abbr></a> at line 131</div>
         <code>            public            boolean
     <strong>tryNext</strong>(mixed $element)</code>
     </h3>
@@ -456,7 +456,7 @@
     </div>
 
                 <h3 id="method_tryPop">
-        <div class="location">in <a href="../../Icecave/Collections/Queue.html#method_tryPop"><abbr title="Icecave\Collections\Queue">Queue</abbr></a> at line 177</div>
+        <div class="location">in <a href="../../Icecave/Collections/Queue.html#method_tryPop"><abbr title="Icecave\Collections\Queue">Queue</abbr></a> at line 180</div>
         <code>            public            boolean
     <strong>tryPop</strong>(mixed $element = null)</code>
     </h3>
@@ -490,7 +490,7 @@
     </div>
 
                 <h3 id="method_count">
-        <div class="location">in <a href="../../Icecave/Collections/Queue.html#method_count"><abbr title="Icecave\Collections\Queue">Queue</abbr></a> at line 194</div>
+        <div class="location">in <a href="../../Icecave/Collections/Queue.html#method_count"><abbr title="Icecave\Collections\Queue">Queue</abbr></a> at line 197</div>
         <code>            public            
     <strong>count</strong>()</code>
     </h3>
@@ -505,12 +505,12 @@
     </div>
 
                 <h3 id="method_serialize">
-        <div class="location">at line 132</div>
+        <div class="location">at line 134</div>
         <code>            public            string
     <strong>serialize</strong>()</code>
     </h3>
     <div class="details">
-        <p></p>
+        <p>Serialize the collection.</p>
         <p></p>
         <div class="tags">
             
@@ -529,12 +529,12 @@
     </div>
 
                 <h3 id="method_unserialize">
-        <div class="location">at line 147</div>
+        <div class="location">at line 151</div>
         <code>            public            
     <strong>unserialize</strong>(string $packet)</code>
     </h3>
     <div class="details">
-        <p></p>
+        <p>Unserialize collection data.</p>
         <p></p>
         <div class="tags">
                             <h4>Parameters</h4>
