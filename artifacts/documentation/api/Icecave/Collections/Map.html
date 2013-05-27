@@ -26,7 +26,7 @@
         <a href="../../Icecave/Collections/MutableAssociativeInterface.html"><abbr title="Icecave\Collections\MutableAssociativeInterface">MutableAssociativeInterface</abbr></a>, <a href="http://php.net/Countable"><abbr title="Countable">Countable</abbr></a>, <a href="http://php.net/Iterator"><abbr title="Iterator">Iterator</abbr></a>, <a href="http://php.net/ArrayAccess"><abbr title="ArrayAccess">ArrayAccess</abbr></a>, <a href="http://php.net/Serializable"><abbr title="Serializable">Serializable</abbr></a></p>
 
             <div class="description">
-            <p>A map of keys of arbitrary type to values.</p>
+            <p>An associative collection with efficient access by key.</p>
             <p></p>
         </div>
     
@@ -137,7 +137,7 @@
             </tr>
                     <tr>
                 <td class="type">
-                    <abbr title="Icecave\Collections\tuple&lt;IterableInterface,">tuple&lt;IterableInterface,</abbr>
+                    <abbr title="Icecave\Collections\tuple&lt;IterableInterface,IterableInterface&gt;">tuple&lt;IterableInterface,IterableInterface&gt;</abbr>
                 </td>
                 <td class="last">
                     <a href="#method_partition">partition</a>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate)
@@ -874,7 +874,7 @@
 
                 <h3 id="method_partition">
         <div class="location">at line 248</div>
-        <code>            public            <abbr title="Icecave\Collections\tuple&lt;IterableInterface,">tuple&lt;IterableInterface,</abbr>
+        <code>            public            <abbr title="Icecave\Collections\tuple&lt;IterableInterface,IterableInterface&gt;">tuple&lt;IterableInterface,IterableInterface&gt;</abbr>
     <strong>partition</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate)</code>
     </h3>
     <div class="details">
@@ -899,8 +899,8 @@
 
                     <table>
         <tr>
-            <td><abbr title="Icecave\Collections\tuple&lt;IterableInterface,">tuple&lt;IterableInterface,</abbr></td>
-            <td>IterableInterface&gt; A 2-tuple containing the partitioned collections. The first collection contains the element for which the predicate returned true.</td>
+            <td><abbr title="Icecave\Collections\tuple&lt;IterableInterface,IterableInterface&gt;">tuple&lt;IterableInterface,IterableInterface&gt;</abbr></td>
+            <td>A 2-tuple containing the partitioned collections. The first collection contains the element for which the predicate returned true.</td>
         </tr>
     </table>
 
