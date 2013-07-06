@@ -1,17 +1,17 @@
 
 
 Code Coverage Report 
-  2013-06-06 00:12:53
+  2013-07-06 02:42:37
 
  Summary: 
   Classes: 100.00% (17/17)
   Methods: 100.00% (316/316)
-  Lines:   100.00% (1958/1958)
+  Lines:   100.00% (1960/1960)
 
 \Icecave\Collections::AssociativeKeyGenerator
   Methods: 100.00% ( 4/ 4)   Lines: 100.00% ( 41/ 41)
 \Icecave\Collections::Collection
-  Methods: 100.00% (18/18)   Lines: 100.00% (168/168)
+  Methods: 100.00% (18/18)   Lines: 100.00% (170/170)
 \Icecave\Collections::LinkedList
   Methods: 100.00% (67/67)   Lines: 100.00% (506/506)
 \Icecave\Collections::Map
