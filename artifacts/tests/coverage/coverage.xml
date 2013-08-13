@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1373253166">
-  <project timestamp="1373253166">
+<coverage generated="1376391182">
+  <project timestamp="1376391182">
     <file name="/home/travis/build/IcecaveStudios/collections/lib/Icecave/Collections/AssociativeInterface.php">
       <metrics loc="154" ncloc="31" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
@@ -174,7 +174,7 @@
         <line num="305" type="stmt" count="15"/>
         <line num="306" type="stmt" count="15"/>
         <line num="308" type="stmt" count="15"/>
-        <line num="323" type="method" name="filtered" crap="2" count="15"/>
+        <line num="323" type="method" name="filter" crap="2" count="15"/>
         <line num="325" type="stmt" count="15"/>
         <line num="327" type="stmt" count="15"/>
         <line num="328" type="stmt" count="15"/>
@@ -324,7 +324,7 @@
         <line num="194" type="stmt" count="1"/>
         <line num="196" type="stmt" count="1"/>
         <line num="198" type="stmt" count="1"/>
-        <line num="208" type="method" name="filtered" crap="4" count="2"/>
+        <line num="208" type="method" name="copyAndFilter" crap="4" count="2"/>
         <line num="210" type="stmt" count="2"/>
         <line num="212" type="stmt" count="2"/>
         <line num="213" type="stmt" count="1"/>
@@ -338,7 +338,7 @@
         <line num="223" type="stmt" count="2"/>
         <line num="224" type="stmt" count="2"/>
         <line num="226" type="stmt" count="2"/>
-        <line num="239" type="method" name="map" crap="2" count="2"/>
+        <line num="239" type="method" name="copyAndMap" crap="2" count="2"/>
         <line num="241" type="stmt" count="2"/>
         <line num="243" type="stmt" count="2"/>
         <line num="245" type="stmt" count="2"/>
@@ -398,7 +398,7 @@
         <line num="377" type="stmt" count="2"/>
         <line num="379" type="stmt" count="2"/>
         <line num="380" type="stmt" count="2"/>
-        <line num="389" type="method" name="apply" crap="2" count="1"/>
+        <line num="389" type="method" name="map" crap="2" count="1"/>
         <line num="391" type="stmt" count="1"/>
         <line num="393" type="stmt" count="1"/>
         <line num="394" type="stmt" count="1"/>
@@ -426,19 +426,19 @@
         <line num="468" type="stmt" count="1"/>
         <line num="471" type="stmt" count="1"/>
         <line num="473" type="stmt" count="1"/>
-        <line num="483" type="method" name="sorted" crap="1" count="2"/>
+        <line num="483" type="method" name="copyAndSort" crap="1" count="2"/>
         <line num="485" type="stmt" count="2"/>
         <line num="487" type="stmt" count="2"/>
         <line num="488" type="stmt" count="2"/>
         <line num="490" type="stmt" count="2"/>
-        <line num="500" type="method" name="reversed" crap="2" count="1"/>
+        <line num="500" type="method" name="copyAndReverse" crap="2" count="1"/>
         <line num="502" type="stmt" count="1"/>
         <line num="504" type="stmt" count="1"/>
         <line num="506" type="stmt" count="1"/>
         <line num="507" type="stmt" count="1"/>
         <line num="508" type="stmt" count="1"/>
         <line num="510" type="stmt" count="1"/>
-        <line num="521" type="method" name="join" crap="2" count="1"/>
+        <line num="521" type="method" name="copyAndAppend" crap="2" count="1"/>
         <line num="523" type="stmt" count="1"/>
         <line num="525" type="stmt" count="1"/>
         <line num="526" type="stmt" count="1"/>
@@ -887,7 +887,7 @@
         <line num="168" type="stmt" count="1"/>
         <line num="170" type="stmt" count="1"/>
         <line num="172" type="stmt" count="1"/>
-        <line num="185" type="method" name="filtered" crap="4" count="2"/>
+        <line num="185" type="method" name="copyAndFilter" crap="4" count="2"/>
         <line num="187" type="stmt" count="2"/>
         <line num="189" type="stmt" count="2"/>
         <line num="190" type="stmt" count="1"/>
@@ -902,7 +902,7 @@
         <line num="201" type="stmt" count="2"/>
         <line num="202" type="stmt" count="2"/>
         <line num="204" type="stmt" count="2"/>
-        <line num="220" type="method" name="map" crap="2" count="1"/>
+        <line num="220" type="method" name="copyAndMap" crap="2" count="1"/>
         <line num="222" type="stmt" count="1"/>
         <line num="224" type="stmt" count="1"/>
         <line num="226" type="stmt" count="1"/>
@@ -957,7 +957,7 @@
         <line num="361" type="stmt" count="2"/>
         <line num="362" type="stmt" count="2"/>
         <line num="363" type="stmt" count="2"/>
-        <line num="375" type="method" name="apply" crap="2" count="1"/>
+        <line num="375" type="method" name="map" crap="2" count="1"/>
         <line num="377" type="stmt" count="1"/>
         <line num="379" type="stmt" count="1"/>
         <line num="380" type="stmt" count="1"/>
@@ -1027,7 +1027,7 @@
         <line num="589" type="stmt" count="1"/>
         <line num="590" type="stmt" count="1"/>
         <line num="592" type="stmt" count="1"/>
-        <line num="606" type="method" name="combine" crap="3" count="1"/>
+        <line num="606" type="method" name="copyAndMerge" crap="3" count="1"/>
         <line num="608" type="stmt" count="1"/>
         <line num="610" type="stmt" count="1"/>
         <line num="612" type="stmt" count="1"/>
@@ -1411,7 +1411,7 @@
         <line num="162" type="stmt" count="8"/>
         <line num="164" type="stmt" count="8"/>
         <line num="166" type="stmt" count="8"/>
-        <line num="179" type="method" name="filtered" crap="4" count="2"/>
+        <line num="179" type="method" name="copyAndFilter" crap="4" count="2"/>
         <line num="181" type="stmt" count="2"/>
         <line num="183" type="stmt" count="2"/>
         <line num="184" type="stmt" count="1"/>
@@ -1425,7 +1425,7 @@
         <line num="194" type="stmt" count="2"/>
         <line num="195" type="stmt" count="2"/>
         <line num="197" type="stmt" count="2"/>
-        <line num="213" type="method" name="map" crap="2" count="2"/>
+        <line num="213" type="method" name="copyAndMap" crap="2" count="2"/>
         <line num="215" type="stmt" count="2"/>
         <line num="217" type="stmt" count="2"/>
         <line num="219" type="stmt" count="2"/>
@@ -1476,7 +1476,7 @@
         <line num="338" type="stmt" count="2"/>
         <line num="339" type="stmt" count="2"/>
         <line num="340" type="stmt" count="2"/>
-        <line num="352" type="method" name="apply" crap="1" count="1"/>
+        <line num="352" type="method" name="map" crap="1" count="1"/>
         <line num="354" type="stmt" count="1"/>
         <line num="356" type="stmt" count="1"/>
         <line num="357" type="stmt" count="1"/>
@@ -1617,12 +1617,12 @@
         <line num="729" type="stmt" count="1"/>
         <line num="731" type="stmt" count="1"/>
         <line num="733" type="stmt" count="2"/>
-        <line num="742" type="method" name="complement" crap="1" count="2"/>
+        <line num="742" type="method" name="difference" crap="1" count="2"/>
         <line num="744" type="stmt" count="2"/>
         <line num="746" type="stmt" count="2"/>
         <line num="747" type="stmt" count="2"/>
         <line num="749" type="stmt" count="2"/>
-        <line num="757" type="method" name="complementInPlace" crap="4" count="2"/>
+        <line num="757" type="method" name="differenceInPlace" crap="4" count="2"/>
         <line num="759" type="stmt" count="2"/>
         <line num="761" type="stmt" count="2"/>
         <line num="762" type="stmt" count="1"/>
@@ -1776,7 +1776,7 @@
         <line num="167" type="method" name="contains" crap="1" count="1"/>
         <line num="169" type="stmt" count="1"/>
         <line num="171" type="stmt" count="1"/>
-        <line num="181" type="method" name="filtered" crap="5" count="2"/>
+        <line num="181" type="method" name="copyAndFilter" crap="5" count="2"/>
         <line num="183" type="stmt" count="2"/>
         <line num="185" type="stmt" count="2"/>
         <line num="186" type="stmt" count="1"/>
@@ -1793,7 +1793,7 @@
         <line num="199" type="stmt" count="2"/>
         <line num="200" type="stmt" count="2"/>
         <line num="202" type="stmt" count="2"/>
-        <line num="215" type="method" name="map" crap="3" count="2"/>
+        <line num="215" type="method" name="copyAndMap" crap="3" count="2"/>
         <line num="217" type="stmt" count="2"/>
         <line num="219" type="stmt" count="2"/>
         <line num="220" type="stmt" count="2"/>
@@ -1860,7 +1860,7 @@
         <line num="359" type="stmt" count="3"/>
         <line num="360" type="stmt" count="3"/>
         <line num="361" type="stmt" count="3"/>
-        <line num="370" type="method" name="apply" crap="3" count="1"/>
+        <line num="370" type="method" name="map" crap="3" count="1"/>
         <line num="372" type="stmt" count="1"/>
         <line num="374" type="stmt" count="1"/>
         <line num="375" type="stmt" count="1"/>
@@ -1890,7 +1890,7 @@
         <line num="452" type="stmt" count="1"/>
         <line num="454" type="stmt" count="1"/>
         <line num="456" type="stmt" count="1"/>
-        <line num="466" type="method" name="sorted" crap="2" count="2"/>
+        <line num="466" type="method" name="copyAndSort" crap="2" count="2"/>
         <line num="468" type="stmt" count="2"/>
         <line num="470" type="stmt" count="2"/>
         <line num="472" type="stmt" count="2"/>
@@ -1898,7 +1898,7 @@
         <line num="474" type="stmt" count="1"/>
         <line num="475" type="stmt" count="1"/>
         <line num="478" type="stmt" count="2"/>
-        <line num="488" type="method" name="reversed" crap="3" count="1"/>
+        <line num="488" type="method" name="copyAndReverse" crap="3" count="1"/>
         <line num="490" type="stmt" count="1"/>
         <line num="492" type="stmt" count="1"/>
         <line num="493" type="stmt" count="1"/>
@@ -1909,7 +1909,7 @@
         <line num="500" type="stmt" count="1"/>
         <line num="502" type="stmt" count="1"/>
         <line num="504" type="stmt" count="1"/>
-        <line num="515" type="method" name="join" crap="2" count="2"/>
+        <line num="515" type="method" name="copyAndAppend" crap="2" count="2"/>
         <line num="517" type="stmt" count="2"/>
         <line num="519" type="stmt" count="2"/>
         <line num="520" type="stmt" count="2"/>

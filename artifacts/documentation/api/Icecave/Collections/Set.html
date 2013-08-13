@@ -120,7 +120,7 @@
                     <a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_filtered">filtered</a>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)
+                    <a href="#method_copyAndFilter">copyAndFilter</a>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)
                     <p>Fetch a new collection with a subset of the elements from this collection.</p>
                 </td>
                 <td></td>
@@ -130,7 +130,7 @@
                     <a href="../../Icecave/Collections/IterableInterface.html"><abbr title="Icecave\Collections\IterableInterface">IterableInterface</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_map">map</a>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)
+                    <a href="#method_copyAndMap">copyAndMap</a>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)
                     <p>Produce a new collection by applying a transformation to each element.</p>
                 </td>
                 <td></td>
@@ -190,7 +190,7 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method_apply">apply</a>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)
+                    <a href="#method_map">map</a>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)
                     <p>Replace each element in the collection with the result of a transformation on that element.</p>
                 </td>
                 <td></td>
@@ -390,8 +390,8 @@
                     <a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_complement">complement</a>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $elements)
-                    <p>Compute the complement (or difference) of this set and another.</p>
+                    <a href="#method_difference">difference</a>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $elements)
+                    <p>Compute the difference (or complement) of this set and another.</p>
                 </td>
                 <td></td>
             </tr>
@@ -400,8 +400,8 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method_complementInPlace">complementInPlace</a>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $elements)
-                    <p>Compute the complement (or difference) of this set and another, in place.</p>
+                    <a href="#method_differenceInPlace">differenceInPlace</a>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $elements)
+                    <p>Compute the difference (or complement) of this set and another, in place.</p>
                 </td>
                 <td></td>
             </tr>
@@ -619,10 +619,10 @@
                     </div>
     </div>
 
-                <h3 id="method_filtered">
+                <h3 id="method_copyAndFilter">
         <div class="location">at line 179</div>
         <code>            public            <a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>
-    <strong>filtered</strong>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)</code>
+    <strong>copyAndFilter</strong>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)</code>
     </h3>
     <div class="details">
         <p>Fetch a new collection with a subset of the elements from this collection.</p>
@@ -654,10 +654,10 @@
                     </div>
     </div>
 
-                <h3 id="method_map">
+                <h3 id="method_copyAndMap">
         <div class="location">at line 213</div>
         <code>            public            <a href="../../Icecave/Collections/IterableInterface.html"><abbr title="Icecave\Collections\IterableInterface">IterableInterface</abbr></a>
-    <strong>map</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)</code>
+    <strong>copyAndMap</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)</code>
     </h3>
     <div class="details">
         <p>Produce a new collection by applying a transformation to each element.</p>
@@ -845,10 +845,10 @@
                     </div>
     </div>
 
-                <h3 id="method_apply">
+                <h3 id="method_map">
         <div class="location">at line 352</div>
         <code>            public            
-    <strong>apply</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)</code>
+    <strong>map</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)</code>
     </h3>
     <div class="details">
         <p>Replace each element in the collection with the result of a transformation on that element.</p>
@@ -1474,13 +1474,13 @@
                     </div>
     </div>
 
-                <h3 id="method_complement">
+                <h3 id="method_difference">
         <div class="location">at line 742</div>
         <code>            public            <a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>
-    <strong>complement</strong>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $elements)</code>
+    <strong>difference</strong>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $elements)</code>
     </h3>
     <div class="details">
-        <p>Compute the complement (or difference) of this set and another.</p>
+        <p>Compute the difference (or complement) of this set and another.</p>
         <p></p>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -1508,13 +1508,13 @@
                     </div>
     </div>
 
-                <h3 id="method_complementInPlace">
+                <h3 id="method_differenceInPlace">
         <div class="location">at line 757</div>
         <code>            public            
-    <strong>complementInPlace</strong>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $elements)</code>
+    <strong>differenceInPlace</strong>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $elements)</code>
     </h3>
     <div class="details">
-        <p>Compute the complement (or difference) of this set and another, in place.</p>
+        <p>Compute the difference (or complement) of this set and another, in place.</p>
         <p></p>
         <div class="tags">
                             <h4>Parameters</h4>
