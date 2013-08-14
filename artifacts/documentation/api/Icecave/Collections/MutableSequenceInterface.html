@@ -80,57 +80,57 @@
                     <a href="../../Icecave/Collections/SequenceInterface.html"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_copyAndSort">copyAndSort</a>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $comparator = null)
+                    <a href="#method_sort">sort</a>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $comparator = null)
                     <p>Create a new sequence with the elements from this sequence in sorted order.</p>
                 </td>
-                <td><small>from&nbsp;<a href="../../Icecave/Collections/SequenceInterface.html#method_copyAndSort"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="../../Icecave/Collections/SequenceInterface.html#method_sort"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
                     <a href="../../Icecave/Collections/SequenceInterface.html"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_copyAndReverse">copyAndReverse</a>()
+                    <a href="#method_reverse">reverse</a>()
                     <p>Create a new sequence with the elements from this sequence in reverse order.</p>
                 </td>
-                <td><small>from&nbsp;<a href="../../Icecave/Collections/SequenceInterface.html#method_copyAndReverse"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="../../Icecave/Collections/SequenceInterface.html#method_reverse"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
                     <a href="../../Icecave/Collections/SequenceInterface.html"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_copyAndAppend">copyAndAppend</a>($sequence)
+                    <a href="#method_join">join</a>($sequence)
                     <p>Create a new sequence by appending the elements in the given sequence to this sequence.</p>
                 </td>
-                <td><small>from&nbsp;<a href="../../Icecave/Collections/SequenceInterface.html#method_copyAndAppend"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="../../Icecave/Collections/SequenceInterface.html#method_join"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
                     
                 </td>
                 <td class="last">
-                    <a href="#method_filter">filter</a>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)
+                    <a href="#method_filterInPlace">filterInPlace</a>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)
                     <p>Filter this collection in-place.</p>
                 </td>
-                <td><small>from&nbsp;<a href="../../Icecave/Collections/MutableIterableInterface.html#method_filter"><abbr title="Icecave\Collections\MutableIterableInterface">MutableIterableInterface</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="../../Icecave/Collections/MutableIterableInterface.html#method_filterInPlace"><abbr title="Icecave\Collections\MutableIterableInterface">MutableIterableInterface</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
                     
                 </td>
                 <td class="last">
-                    <a href="#method_map">map</a>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)
+                    <a href="#method_mapInPlace">mapInPlace</a>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)
                     <p>Replace each element in the collection with the result of a transformation on that element.</p>
                 </td>
-                <td><small>from&nbsp;<a href="../../Icecave/Collections/MutableIterableInterface.html#method_map"><abbr title="Icecave\Collections\MutableIterableInterface">MutableIterableInterface</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="../../Icecave/Collections/MutableIterableInterface.html#method_mapInPlace"><abbr title="Icecave\Collections\MutableIterableInterface">MutableIterableInterface</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
                     
                 </td>
                 <td class="last">
-                    <a href="#method_sort">sort</a>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $comparator = null)
+                    <a href="#method_sortInPlace">sortInPlace</a>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $comparator = null)
                     <p>Sort this sequence in-place.</p>
                 </td>
                 <td></td>
@@ -140,7 +140,7 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method_reverse">reverse</a>()
+                    <a href="#method_reverseInPlace">reverseInPlace</a>()
                     <p>Reverse this sequence in-place.</p>
                 </td>
                 <td></td>
@@ -364,10 +364,10 @@
                     </div>
     </div>
 
-                <h3 id="method_copyAndSort">
-        <div class="location">in <a href="../../Icecave/Collections/SequenceInterface.html#method_copyAndSort"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a> at line 52</div>
+                <h3 id="method_sort">
+        <div class="location">in <a href="../../Icecave/Collections/SequenceInterface.html#method_sort"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a> at line 52</div>
         <code>            public            <a href="../../Icecave/Collections/SequenceInterface.html"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a>
-    <strong>copyAndSort</strong>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $comparator = null)</code>
+    <strong>sort</strong>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $comparator = null)</code>
     </h3>
     <div class="details">
         <p>Create a new sequence with the elements from this sequence in sorted order.</p>
@@ -398,10 +398,10 @@
                     </div>
     </div>
 
-                <h3 id="method_copyAndReverse">
-        <div class="location">in <a href="../../Icecave/Collections/SequenceInterface.html#method_copyAndReverse"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a> at line 61</div>
+                <h3 id="method_reverse">
+        <div class="location">in <a href="../../Icecave/Collections/SequenceInterface.html#method_reverse"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a> at line 61</div>
         <code>            public            <a href="../../Icecave/Collections/SequenceInterface.html"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a>
-    <strong>copyAndReverse</strong>()</code>
+    <strong>reverse</strong>()</code>
     </h3>
     <div class="details">
         <p>Create a new sequence with the elements from this sequence in reverse order.</p>
@@ -422,10 +422,10 @@
                     </div>
     </div>
 
-                <h3 id="method_copyAndAppend">
-        <div class="location">in <a href="../../Icecave/Collections/SequenceInterface.html#method_copyAndAppend"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a> at line 71</div>
+                <h3 id="method_join">
+        <div class="location">in <a href="../../Icecave/Collections/SequenceInterface.html#method_join"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a> at line 71</div>
         <code>            public            <a href="../../Icecave/Collections/SequenceInterface.html"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a>
-    <strong>copyAndAppend</strong>($sequence)</code>
+    <strong>join</strong>($sequence)</code>
     </h3>
     <div class="details">
         <p>Create a new sequence by appending the elements in the given sequence to this sequence.</p>
@@ -456,10 +456,10 @@
                     </div>
     </div>
 
-                <h3 id="method_filter">
-        <div class="location">in <a href="../../Icecave/Collections/MutableIterableInterface.html#method_filter"><abbr title="Icecave\Collections\MutableIterableInterface">MutableIterableInterface</abbr></a> at line 14</div>
+                <h3 id="method_filterInPlace">
+        <div class="location">in <a href="../../Icecave/Collections/MutableIterableInterface.html#method_filterInPlace"><abbr title="Icecave\Collections\MutableIterableInterface">MutableIterableInterface</abbr></a> at line 14</div>
         <code>            public            
-    <strong>filter</strong>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)</code>
+    <strong>filterInPlace</strong>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)</code>
     </h3>
     <div class="details">
         <p>Filter this collection in-place.</p>
@@ -481,10 +481,10 @@
                     </div>
     </div>
 
-                <h3 id="method_map">
-        <div class="location">in <a href="../../Icecave/Collections/MutableIterableInterface.html#method_map"><abbr title="Icecave\Collections\MutableIterableInterface">MutableIterableInterface</abbr></a> at line 23</div>
+                <h3 id="method_mapInPlace">
+        <div class="location">in <a href="../../Icecave/Collections/MutableIterableInterface.html#method_mapInPlace"><abbr title="Icecave\Collections\MutableIterableInterface">MutableIterableInterface</abbr></a> at line 23</div>
         <code>            public            
-    <strong>map</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)</code>
+    <strong>mapInPlace</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)</code>
     </h3>
     <div class="details">
         <p>Replace each element in the collection with the result of a transformation on that element.</p>
@@ -506,10 +506,10 @@
                     </div>
     </div>
 
-                <h3 id="method_sort">
+                <h3 id="method_sortInPlace">
         <div class="location">at line 16</div>
         <code>            public            
-    <strong>sort</strong>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $comparator = null)</code>
+    <strong>sortInPlace</strong>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $comparator = null)</code>
     </h3>
     <div class="details">
         <p>Sort this sequence in-place.</p>
@@ -531,10 +531,10 @@
                     </div>
     </div>
 
-                <h3 id="method_reverse">
+                <h3 id="method_reverseInPlace">
         <div class="location">at line 21</div>
         <code>            public            
-    <strong>reverse</strong>()</code>
+    <strong>reverseInPlace</strong>()</code>
     </h3>
     <div class="details">
         <p>Reverse this sequence in-place.</p>

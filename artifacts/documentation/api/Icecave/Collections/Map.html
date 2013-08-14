@@ -120,7 +120,7 @@
                     <a href="../../Icecave/Collections/Map.html"><abbr title="Icecave\Collections\Map">Map</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_copyAndFilter">copyAndFilter</a>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)
+                    <a href="#method_filter">filter</a>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)
                     <p>Fetch a new collection with a subset of the elements from this collection.</p>
                 </td>
                 <td></td>
@@ -130,7 +130,7 @@
                     <a href="../../Icecave/Collections/IterableInterface.html"><abbr title="Icecave\Collections\IterableInterface">IterableInterface</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_copyAndMap">copyAndMap</a>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)
+                    <a href="#method_map">map</a>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)
                     <p>Produce a new collection by applying a transformation to each element.</p>
                 </td>
                 <td></td>
@@ -180,7 +180,7 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method_filter">filter</a>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)
+                    <a href="#method_filterInPlace">filterInPlace</a>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)
                     <p>Filter this collection in-place.</p>
                 </td>
                 <td></td>
@@ -190,7 +190,7 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method_map">map</a>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)
+                    <a href="#method_mapInPlace">mapInPlace</a>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)
                     <p>Replace each element in the collection with the result of a transformation on that element.</p>
                 </td>
                 <td></td>
@@ -300,7 +300,7 @@
                     <a href="../../Icecave/Collections/AssociativeInterface.html"><abbr title="Icecave\Collections\AssociativeInterface">AssociativeInterface</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_copyAndMerge">copyAndMerge</a>(<a href="../../Icecave/Collections/AssociativeInterface.html"><abbr title="Icecave\Collections\AssociativeInterface">AssociativeInterface</abbr></a> $collection)
+                    <a href="#method_merge">merge</a>(<a href="../../Icecave/Collections/AssociativeInterface.html"><abbr title="Icecave\Collections\AssociativeInterface">AssociativeInterface</abbr></a> $collection)
                     <p>Produce a new collection containing the elements of this collection and one or more other collections.</p>
                 </td>
                 <td></td>
@@ -400,7 +400,7 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method_merge">merge</a>(<a href="../../Icecave/Collections/AssociativeInterface.html"><abbr title="Icecave\Collections\AssociativeInterface">AssociativeInterface</abbr></a> $collection)
+                    <a href="#method_mergeInPlace">mergeInPlace</a>(<a href="../../Icecave/Collections/AssociativeInterface.html"><abbr title="Icecave\Collections\AssociativeInterface">AssociativeInterface</abbr></a> $collection)
                     <p>Add the elements from one or more other collections to this collection.</p>
                 </td>
                 <td></td>
@@ -799,10 +799,10 @@
                     </div>
     </div>
 
-                <h3 id="method_copyAndFilter">
+                <h3 id="method_filter">
         <div class="location">at line 185</div>
         <code>            public            <a href="../../Icecave/Collections/Map.html"><abbr title="Icecave\Collections\Map">Map</abbr></a>
-    <strong>copyAndFilter</strong>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)</code>
+    <strong>filter</strong>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)</code>
     </h3>
     <div class="details">
         <p>Fetch a new collection with a subset of the elements from this collection.</p>
@@ -834,10 +834,10 @@
                     </div>
     </div>
 
-                <h3 id="method_copyAndMap">
+                <h3 id="method_map">
         <div class="location">at line 220</div>
         <code>            public            <a href="../../Icecave/Collections/IterableInterface.html"><abbr title="Icecave\Collections\IterableInterface">IterableInterface</abbr></a>
-    <strong>copyAndMap</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)</code>
+    <strong>map</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)</code>
     </h3>
     <div class="details">
         <p>Produce a new collection by applying a transformation to each element.</p>
@@ -1011,10 +1011,10 @@
                     </div>
     </div>
 
-                <h3 id="method_filter">
+                <h3 id="method_filterInPlace">
         <div class="location">at line 347</div>
         <code>            public            
-    <strong>filter</strong>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)</code>
+    <strong>filterInPlace</strong>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)</code>
     </h3>
     <div class="details">
         <p>Filter this collection in-place.</p>
@@ -1037,10 +1037,10 @@
                     </div>
     </div>
 
-                <h3 id="method_map">
+                <h3 id="method_mapInPlace">
         <div class="location">at line 375</div>
         <code>            public            
-    <strong>map</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)</code>
+    <strong>mapInPlace</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)</code>
     </h3>
     <div class="details">
         <p>Replace each element in the collection with the result of a transformation on that element.</p>
@@ -1435,10 +1435,10 @@
                     </div>
     </div>
 
-                <h3 id="method_copyAndMerge">
+                <h3 id="method_merge">
         <div class="location">at line 606</div>
         <code>            public            <a href="../../Icecave/Collections/AssociativeInterface.html"><abbr title="Icecave\Collections\AssociativeInterface">AssociativeInterface</abbr></a>
-    <strong>copyAndMerge</strong>(<a href="../../Icecave/Collections/AssociativeInterface.html"><abbr title="Icecave\Collections\AssociativeInterface">AssociativeInterface</abbr></a> $collection)</code>
+    <strong>merge</strong>(<a href="../../Icecave/Collections/AssociativeInterface.html"><abbr title="Icecave\Collections\AssociativeInterface">AssociativeInterface</abbr></a> $collection)</code>
     </h3>
     <div class="details">
         <p>Produce a new collection containing the elements of this collection and one or more other collections.</p>
@@ -1885,10 +1885,10 @@
                     </div>
     </div>
 
-                <h3 id="method_merge">
+                <h3 id="method_mergeInPlace">
         <div class="location">at line 843</div>
         <code>            public            
-    <strong>merge</strong>(<a href="../../Icecave/Collections/AssociativeInterface.html"><abbr title="Icecave\Collections\AssociativeInterface">AssociativeInterface</abbr></a> $collection)</code>
+    <strong>mergeInPlace</strong>(<a href="../../Icecave/Collections/AssociativeInterface.html"><abbr title="Icecave\Collections\AssociativeInterface">AssociativeInterface</abbr></a> $collection)</code>
     </h3>
     <div class="details">
         <p>Add the elements from one or more other collections to this collection.</p>

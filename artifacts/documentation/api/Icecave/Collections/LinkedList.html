@@ -130,7 +130,7 @@
                     <a href="../../Icecave/Collections/LinkedList.html"><abbr title="Icecave\Collections\LinkedList">LinkedList</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_copyAndFilter">copyAndFilter</a>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)
+                    <a href="#method_filter">filter</a>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)
                     <p>Fetch a new collection with a subset of the elements from this collection.</p>
                 </td>
                 <td></td>
@@ -140,7 +140,7 @@
                     <a href="../../Icecave/Collections/IterableInterface.html"><abbr title="Icecave\Collections\IterableInterface">IterableInterface</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_copyAndMap">copyAndMap</a>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)
+                    <a href="#method_map">map</a>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)
                     <p>Produce a new collection by applying a transformation to each element.</p>
                 </td>
                 <td></td>
@@ -190,7 +190,7 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method_filter">filter</a>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)
+                    <a href="#method_filterInPlace">filterInPlace</a>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)
                     <p>Filter this collection in-place.</p>
                 </td>
                 <td></td>
@@ -200,7 +200,7 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method_map">map</a>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)
+                    <a href="#method_mapInPlace">mapInPlace</a>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)
                     <p>Replace each element in the collection with the result of a transformation on that element.</p>
                 </td>
                 <td></td>
@@ -250,7 +250,7 @@
                     <a href="../../Icecave/Collections/LinkedList.html"><abbr title="Icecave\Collections\LinkedList">LinkedList</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_copyAndSort">copyAndSort</a>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $comparator = null)
+                    <a href="#method_sort">sort</a>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $comparator = null)
                     <p>Create a new sequence with the elements from this sequence in sorted order.</p>
                 </td>
                 <td></td>
@@ -260,7 +260,7 @@
                     <a href="../../Icecave/Collections/LinkedList.html"><abbr title="Icecave\Collections\LinkedList">LinkedList</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_copyAndReverse">copyAndReverse</a>()
+                    <a href="#method_reverse">reverse</a>()
                     <p>Create a new sequence with the elements from this sequence in reverse order.</p>
                 </td>
                 <td></td>
@@ -270,7 +270,7 @@
                     <a href="../../Icecave/Collections/SequenceInterface.html"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_copyAndAppend">copyAndAppend</a>($sequence)
+                    <a href="#method_join">join</a>($sequence)
                     <p>Create a new sequence by appending the elements in the given sequence to this sequence.</p>
                 </td>
                 <td></td>
@@ -280,7 +280,7 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method_sort">sort</a>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $comparator = null)
+                    <a href="#method_sortInPlace">sortInPlace</a>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $comparator = null)
                     <p>Sort this sequence in-place.</p>
                 </td>
                 <td></td>
@@ -290,7 +290,7 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method_reverse">reverse</a>()
+                    <a href="#method_reverseInPlace">reverseInPlace</a>()
                     <p>Reverse this sequence in-place.</p>
                 </td>
                 <td></td>
@@ -849,10 +849,10 @@
                     </div>
     </div>
 
-                <h3 id="method_copyAndFilter">
+                <h3 id="method_filter">
         <div class="location">at line 208</div>
         <code>            public            <a href="../../Icecave/Collections/LinkedList.html"><abbr title="Icecave\Collections\LinkedList">LinkedList</abbr></a>
-    <strong>copyAndFilter</strong>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)</code>
+    <strong>filter</strong>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)</code>
     </h3>
     <div class="details">
         <p>Fetch a new collection with a subset of the elements from this collection.</p>
@@ -883,10 +883,10 @@
                     </div>
     </div>
 
-                <h3 id="method_copyAndMap">
+                <h3 id="method_map">
         <div class="location">at line 239</div>
         <code>            public            <a href="../../Icecave/Collections/IterableInterface.html"><abbr title="Icecave\Collections\IterableInterface">IterableInterface</abbr></a>
-    <strong>copyAndMap</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)</code>
+    <strong>map</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)</code>
     </h3>
     <div class="details">
         <p>Produce a new collection by applying a transformation to each element.</p>
@@ -1045,10 +1045,10 @@
                     </div>
     </div>
 
-                <h3 id="method_filter">
+                <h3 id="method_filterInPlace">
         <div class="location">at line 348</div>
         <code>            public            
-    <strong>filter</strong>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)</code>
+    <strong>filterInPlace</strong>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)</code>
     </h3>
     <div class="details">
         <p>Filter this collection in-place.</p>
@@ -1070,10 +1070,10 @@
                     </div>
     </div>
 
-                <h3 id="method_map">
+                <h3 id="method_mapInPlace">
         <div class="location">at line 389</div>
         <code>            public            
-    <strong>map</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)</code>
+    <strong>mapInPlace</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)</code>
     </h3>
     <div class="details">
         <p>Replace each element in the collection with the result of a transformation on that element.</p>
@@ -1229,10 +1229,10 @@
                     </div>
     </div>
 
-                <h3 id="method_copyAndSort">
+                <h3 id="method_sort">
         <div class="location">at line 483</div>
         <code>            public            <a href="../../Icecave/Collections/LinkedList.html"><abbr title="Icecave\Collections\LinkedList">LinkedList</abbr></a>
-    <strong>copyAndSort</strong>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $comparator = null)</code>
+    <strong>sort</strong>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $comparator = null)</code>
     </h3>
     <div class="details">
         <p>Create a new sequence with the elements from this sequence in sorted order.</p>
@@ -1263,10 +1263,10 @@
                     </div>
     </div>
 
-                <h3 id="method_copyAndReverse">
+                <h3 id="method_reverse">
         <div class="location">at line 500</div>
         <code>            public            <a href="../../Icecave/Collections/LinkedList.html"><abbr title="Icecave\Collections\LinkedList">LinkedList</abbr></a>
-    <strong>copyAndReverse</strong>()</code>
+    <strong>reverse</strong>()</code>
     </h3>
     <div class="details">
         <p>Create a new sequence with the elements from this sequence in reverse order.</p>
@@ -1287,10 +1287,10 @@
                     </div>
     </div>
 
-                <h3 id="method_copyAndAppend">
+                <h3 id="method_join">
         <div class="location">at line 521</div>
         <code>            public            <a href="../../Icecave/Collections/SequenceInterface.html"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a>
-    <strong>copyAndAppend</strong>($sequence)</code>
+    <strong>join</strong>($sequence)</code>
     </h3>
     <div class="details">
         <p>Create a new sequence by appending the elements in the given sequence to this sequence.</p>
@@ -1321,10 +1321,10 @@
                     </div>
     </div>
 
-                <h3 id="method_sort">
+                <h3 id="method_sortInPlace">
         <div class="location">at line 546</div>
         <code>            public            
-    <strong>sort</strong>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $comparator = null)</code>
+    <strong>sortInPlace</strong>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $comparator = null)</code>
     </h3>
     <div class="details">
         <p>Sort this sequence in-place.</p>
@@ -1346,10 +1346,10 @@
                     </div>
     </div>
 
-                <h3 id="method_reverse">
+                <h3 id="method_reverseInPlace">
         <div class="location">at line 634</div>
         <code>            public            
-    <strong>reverse</strong>()</code>
+    <strong>reverseInPlace</strong>()</code>
     </h3>
     <div class="details">
         <p>Reverse this sequence in-place.</p>
