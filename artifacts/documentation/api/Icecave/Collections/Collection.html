@@ -205,6 +205,36 @@
                 </td>
                 <td></td>
             </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;
+                </td>
+                <td class="last">
+                    <a href="#method_lowerBound">lowerBound</a>(array|<a href="http://php.net/ArrayAccess"><abbr title="ArrayAccess">ArrayAccess</abbr></a> $collection, mixed $element, <abbr title="Icecave\Collections\callable">callable</abbr> $comparator, integer $startIndex, integer|null $endIndex = null)
+                    <p>Return the index of the first element in a sorted collection that is not less than the given element.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;
+                </td>
+                <td class="last">
+                    <a href="#method_upperBound">upperBound</a>(array|<a href="http://php.net/ArrayAccess"><abbr title="ArrayAccess">ArrayAccess</abbr></a> $collection, mixed $element, <abbr title="Icecave\Collections\callable">callable</abbr> $comparator, integer $startIndex, integer|null $endIndex = null)
+                    <p>Return the index of the first element in a sorted collection that is greater than the given element.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;integer|null
+                </td>
+                <td class="last">
+                    <a href="#method_binarySearch">binarySearch</a>(array|<a href="http://php.net/ArrayAccess"><abbr title="ArrayAccess">ArrayAccess</abbr></a> $collection, mixed $element, <abbr title="Icecave\Collections\callable">callable</abbr> $comparator, integer $startIndex, integer|null $endIndex = null, integer|null $insertIndex = null)
+                    <p>Perform a binary search on a sorted sequence.</p>
+                </td>
+                <td></td>
+            </tr>
             </table>
 
 
@@ -885,6 +915,158 @@
             <td><a href="../../Icecave/Collections/Iterator/Traits.html"><abbr title="Icecave\Collections\Iterator\Traits">Traits</abbr></a></td>
             <td>
 </td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_lowerBound">
+        <div class="location">at line 490</div>
+        <code>        static    public            
+    <strong>lowerBound</strong>(array|<a href="http://php.net/ArrayAccess"><abbr title="ArrayAccess">ArrayAccess</abbr></a> $collection, mixed $element, <abbr title="Icecave\Collections\callable">callable</abbr> $comparator, integer $startIndex, integer|null $endIndex = null)</code>
+    </h3>
+    <div class="details">
+        <p>Return the index of the first element in a sorted collection that is not less than the given element.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>array|<a href="http://php.net/ArrayAccess"><abbr title="ArrayAccess">ArrayAccess</abbr></a></td>
+                <td>$collection</td>
+                <td>The sorted collection to search.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$element</td>
+                <td>The element to search for.</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Icecave\Collections\callable">callable</abbr></td>
+                <td>$comparator</td>
+                <td>The comparator used to compare elements.</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$startIndex</td>
+                <td>The index at which to start the search.</td>
+            </tr>
+                    <tr>
+                <td>integer|null</td>
+                <td>$endIndex</td>
+                <td>The index at which to stop the search, or null to use the entire collection.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_upperBound">
+        <div class="location">at line 524</div>
+        <code>        static    public            
+    <strong>upperBound</strong>(array|<a href="http://php.net/ArrayAccess"><abbr title="ArrayAccess">ArrayAccess</abbr></a> $collection, mixed $element, <abbr title="Icecave\Collections\callable">callable</abbr> $comparator, integer $startIndex, integer|null $endIndex = null)</code>
+    </h3>
+    <div class="details">
+        <p>Return the index of the first element in a sorted collection that is greater than the given element.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>array|<a href="http://php.net/ArrayAccess"><abbr title="ArrayAccess">ArrayAccess</abbr></a></td>
+                <td>$collection</td>
+                <td>The sorted collection to search.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$element</td>
+                <td>The element to search for.</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Icecave\Collections\callable">callable</abbr></td>
+                <td>$comparator</td>
+                <td>The comparator used to compare elements.</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$startIndex</td>
+                <td>The index at which to start the search.</td>
+            </tr>
+                    <tr>
+                <td>integer|null</td>
+                <td>$endIndex</td>
+                <td>The index at which to stop the search, or null to use the entire collection.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_binarySearch">
+        <div class="location">at line 561</div>
+        <code>        static    public            integer|null
+    <strong>binarySearch</strong>(array|<a href="http://php.net/ArrayAccess"><abbr title="ArrayAccess">ArrayAccess</abbr></a> $collection, mixed $element, <abbr title="Icecave\Collections\callable">callable</abbr> $comparator, integer $startIndex, integer|null $endIndex = null, integer|null $insertIndex = null)</code>
+    </h3>
+    <div class="details">
+        <p>Perform a binary search on a sorted sequence.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>array|<a href="http://php.net/ArrayAccess"><abbr title="ArrayAccess">ArrayAccess</abbr></a></td>
+                <td>$collection</td>
+                <td>The collection to search.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$element</td>
+                <td>The element to search for.</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Icecave\Collections\callable">callable</abbr></td>
+                <td>$comparator</td>
+                <td>The comparator used to compare elements.</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$startIndex</td>
+                <td>The index at which to start the search.</td>
+            </tr>
+                    <tr>
+                <td>integer|null</td>
+                <td>$endIndex</td>
+                <td>The index at which to stop the search, or null to use the entire collection.</td>
+            </tr>
+                    <tr>
+                <td>integer|null</td>
+                <td>$insertIndex</td>
+                <td>Assigned the index at which $element must be inserted to maintain sortedness.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>integer|null</td>
+            <td>The index at which an element equal to $element is present in $collection.</td>
         </tr>
     </table>
 

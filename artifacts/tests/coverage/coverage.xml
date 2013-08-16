@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1376470093">
-  <project timestamp="1376470093">
+<coverage generated="1376627429">
+  <project timestamp="1376627429">
     <file name="/home/travis/build/IcecaveStudios/collections/lib/Icecave/Collections/AssociativeInterface.php">
       <metrics loc="154" ncloc="31" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
@@ -58,21 +58,21 @@
       </file>
       <file name="/home/travis/build/IcecaveStudios/collections/lib/Icecave/Collections/Collection.php">
         <class name="Collection" namespace="Icecave\Collections">
-          <metrics methods="18" coveredmethods="18" conditionals="0" coveredconditionals="0" statements="170" coveredstatements="170" elements="188" coveredelements="188"/>
+          <metrics methods="21" coveredmethods="21" conditionals="0" coveredconditionals="0" statements="210" coveredstatements="210" elements="231" coveredelements="231"/>
         </class>
         <line num="28" type="method" name="isEmpty" crap="2" count="5"/>
         <line num="30" type="stmt" count="5"/>
         <line num="32" type="stmt" count="5"/>
         <line num="33" type="stmt" count="2"/>
         <line num="36" type="stmt" count="3"/>
-        <line num="46" type="method" name="size" crap="5" count="8"/>
-        <line num="48" type="stmt" count="8"/>
-        <line num="50" type="stmt" count="8"/>
+        <line num="46" type="method" name="size" crap="5" count="25"/>
+        <line num="48" type="stmt" count="25"/>
+        <line num="50" type="stmt" count="25"/>
         <line num="51" type="stmt" count="2"/>
-        <line num="52" type="stmt" count="6"/>
+        <line num="52" type="stmt" count="23"/>
         <line num="53" type="stmt" count="2"/>
-        <line num="54" type="stmt" count="4"/>
-        <line num="55" type="stmt" count="2"/>
+        <line num="54" type="stmt" count="21"/>
+        <line num="55" type="stmt" count="19"/>
         <line num="58" type="stmt" count="2"/>
         <line num="59" type="stmt" count="2"/>
         <line num="60" type="stmt" count="2"/>
@@ -246,8 +246,51 @@
         <line num="474" type="stmt" count="3"/>
         <line num="475" type="stmt" count="1"/>
         <line num="477" type="stmt" count="2"/>
-        <line num="481" type="stmt" count="0"/>
-        <metrics loc="480" ncloc="325" classes="1" methods="18" coveredmethods="18" conditionals="0" coveredconditionals="0" statements="169" coveredstatements="169" elements="187" coveredelements="187"/>
+        <line num="490" type="method" name="lowerBound" crap="4" count="23"/>
+        <line num="492" type="stmt" count="23"/>
+        <line num="494" type="stmt" count="23"/>
+        <line num="495" type="stmt" count="6"/>
+        <line num="496" type="stmt" count="6"/>
+        <line num="498" type="stmt" count="23"/>
+        <line num="500" type="stmt" count="23"/>
+        <line num="501" type="stmt" count="23"/>
+        <line num="502" type="stmt" count="23"/>
+        <line num="504" type="stmt" count="23"/>
+        <line num="505" type="stmt" count="15"/>
+        <line num="506" type="stmt" count="15"/>
+        <line num="507" type="stmt" count="15"/>
+        <line num="508" type="stmt" count="18"/>
+        <line num="510" type="stmt" count="23"/>
+        <line num="512" type="stmt" count="23"/>
+        <line num="524" type="method" name="upperBound" crap="4" count="12"/>
+        <line num="526" type="stmt" count="12"/>
+        <line num="528" type="stmt" count="12"/>
+        <line num="529" type="stmt" count="6"/>
+        <line num="530" type="stmt" count="6"/>
+        <line num="532" type="stmt" count="12"/>
+        <line num="534" type="stmt" count="12"/>
+        <line num="535" type="stmt" count="12"/>
+        <line num="536" type="stmt" count="12"/>
+        <line num="538" type="stmt" count="12"/>
+        <line num="539" type="stmt" count="10"/>
+        <line num="540" type="stmt" count="10"/>
+        <line num="541" type="stmt" count="10"/>
+        <line num="542" type="stmt" count="7"/>
+        <line num="544" type="stmt" count="12"/>
+        <line num="546" type="stmt" count="12"/>
+        <line num="561" type="method" name="binarySearch" crap="4" count="11"/>
+        <line num="563" type="stmt" count="11"/>
+        <line num="565" type="stmt" count="11"/>
+        <line num="566" type="stmt" count="5"/>
+        <line num="567" type="stmt" count="5"/>
+        <line num="569" type="stmt" count="11"/>
+        <line num="571" type="stmt" count="11"/>
+        <line num="572" type="stmt" count="3"/>
+        <line num="573" type="stmt" count="8"/>
+        <line num="574" type="stmt" count="3"/>
+        <line num="577" type="stmt" count="5"/>
+        <line num="580" type="stmt" count="0"/>
+        <metrics loc="579" ncloc="394" classes="1" methods="21" coveredmethods="21" conditionals="0" coveredconditionals="0" statements="209" coveredstatements="209" elements="230" coveredelements="230"/>
       </file>
       <file name="/home/travis/build/IcecaveStudios/collections/lib/Icecave/Collections/LinkedList.php">
         <class name="LinkedList" namespace="Icecave\Collections">
@@ -2483,6 +2526,6 @@
     <file name="/home/travis/build/IcecaveStudios/collections/lib/Icecave/Collections/SequenceInterface.php">
       <metrics loc="72" ncloc="19" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
-    <metrics files="30" loc="7461" ncloc="4265" classes="17" methods="320" coveredmethods="320" conditionals="0" coveredconditionals="0" statements="2005" coveredstatements="2005" elements="2325" coveredelements="2325"/>
+    <metrics files="30" loc="7560" ncloc="4334" classes="17" methods="323" coveredmethods="323" conditionals="0" coveredconditionals="0" statements="2045" coveredstatements="2045" elements="2368" coveredelements="2368"/>
   </project>
 </coverage>
