@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="robots" content="index, follow, all" />
-        <title>Icecave\Collections\Set | Collections API</title>
+        <title>Icecave\Collections\HashSet | Collections API</title>
                     <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
                             </head>
         <body id="class">
@@ -19,10 +19,10 @@
         <div id="title">Collections API</div>
 
             <div class="type">Class</div>
-    <h1><a href="../../Icecave/Collections.html">Icecave\Collections</a>\Set</h1>
+    <h1><a href="../../Icecave/Collections.html">Icecave\Collections</a>\HashSet</h1>
     </div>
         <div class="content">
-                <p>class    <strong>Set</strong>        implements
+                <p>class    <strong>HashSet</strong>        implements
         <a href="../../Icecave/Collections/MutableIterableInterface.html"><abbr title="Icecave\Collections\MutableIterableInterface">MutableIterableInterface</abbr></a>, <a href="http://php.net/Countable"><abbr title="Countable">Countable</abbr></a>, <a href="http://php.net/IteratorAggregate"><abbr title="IteratorAggregate">IteratorAggregate</abbr></a>, <a href="http://php.net/Serializable"><abbr title="Serializable">Serializable</abbr></a></p>
 
             <div class="description">
@@ -41,18 +41,7 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method___construct">__construct</a>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr>|null $collection = null, <abbr title="Icecave\Collections\callable">callable</abbr>|null $comparator = null)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    
-                </td>
-                <td class="last">
-                    <a href="#method___clone">__clone</a>()
+                    <a href="#method___construct">__construct</a>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr>|null $collection = null, <abbr title="Icecave\Collections\callable">callable</abbr>|null $hashFunction = null)
                     <p>
 </p>
                 </td>
@@ -130,7 +119,7 @@
             </tr>
                     <tr>
                 <td class="type">
-                    <a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>
+                    <a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a>
                 </td>
                 <td class="last">
                     <a href="#method_filter">filter</a>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)
@@ -335,7 +324,7 @@
                     boolean
                 </td>
                 <td class="last">
-                    <a href="#method_isEqualSet">isEqualSet</a>(<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a> $set)
+                    <a href="#method_isEqualSet">isEqualSet</a>(<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a> $set)
                     <p>Check if this set is equal to another.</p>
                 </td>
                 <td></td>
@@ -345,7 +334,7 @@
                     boolean
                 </td>
                 <td class="last">
-                    <a href="#method_isSuperSet">isSuperSet</a>(<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a> $set)
+                    <a href="#method_isSuperSet">isSuperSet</a>(<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a> $set)
                     <p>Check if this set is a superset of another.</p>
                 </td>
                 <td></td>
@@ -355,7 +344,7 @@
                     boolean
                 </td>
                 <td class="last">
-                    <a href="#method_isSubSet">isSubSet</a>(<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a> $set)
+                    <a href="#method_isSubSet">isSubSet</a>(<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a> $set)
                     <p>Check if this set is a subset of another.</p>
                 </td>
                 <td></td>
@@ -365,7 +354,7 @@
                     boolean
                 </td>
                 <td class="last">
-                    <a href="#method_isProperSuperSet">isProperSuperSet</a>(<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a> $set)
+                    <a href="#method_isProperSuperSet">isProperSuperSet</a>(<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a> $set)
                     <p>Check if this set is a proper superset of another.</p>
                 </td>
                 <td></td>
@@ -375,7 +364,7 @@
                     boolean
                 </td>
                 <td class="last">
-                    <a href="#method_isProperSubSet">isProperSubSet</a>(<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a> $set)
+                    <a href="#method_isProperSubSet">isProperSubSet</a>(<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a> $set)
                     <p>Check if this set is a proper subset of another.</p>
                 </td>
                 <td></td>
@@ -385,17 +374,17 @@
                     boolean
                 </td>
                 <td class="last">
-                    <a href="#method_isIntersecting">isIntersecting</a>(<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a> $set)
+                    <a href="#method_isIntersecting">isIntersecting</a>(<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a> $set)
                     <p>Check if this set is intersecting another.</p>
                 </td>
                 <td></td>
             </tr>
                     <tr>
                 <td class="type">
-                    <a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>
+                    <a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_union">union</a>(<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a> $set)
+                    <a href="#method_union">union</a>(<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a> $set)
                     <p>Compute the union of this set and another.</p>
                 </td>
                 <td></td>
@@ -405,17 +394,17 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method_unionInPlace">unionInPlace</a>(<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a> $set)
+                    <a href="#method_unionInPlace">unionInPlace</a>(<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a> $set)
                     <p>Compute the union of this set and another, in place.</p>
                 </td>
                 <td></td>
             </tr>
                     <tr>
                 <td class="type">
-                    <a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>
+                    <a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_intersect">intersect</a>(<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a> $set)
+                    <a href="#method_intersect">intersect</a>(<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a> $set)
                     <p>Compute the intersection of this set and another.</p>
                 </td>
                 <td></td>
@@ -425,17 +414,17 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method_intersectInPlace">intersectInPlace</a>(<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a> $set)
+                    <a href="#method_intersectInPlace">intersectInPlace</a>(<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a> $set)
                     <p>Compute the intersection of this set and another, in place.</p>
                 </td>
                 <td></td>
             </tr>
                     <tr>
                 <td class="type">
-                    <a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>
+                    <a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_diff">diff</a>(<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a> $set)
+                    <a href="#method_diff">diff</a>(<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a> $set)
                     <p>Compute the difference (or complement) of this set and another.</p>
                 </td>
                 <td></td>
@@ -445,17 +434,17 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method_diffInPlace">diffInPlace</a>(<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a> $set)
+                    <a href="#method_diffInPlace">diffInPlace</a>(<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a> $set)
                     <p>Compute the difference (or complement) of this set and another, in place.</p>
                 </td>
                 <td></td>
             </tr>
                     <tr>
                 <td class="type">
-                    <a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>
+                    <a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_symmetricDiff">symmetricDiff</a>(<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a> $set)
+                    <a href="#method_symmetricDiff">symmetricDiff</a>(<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a> $set)
                     <p>Compute the symmetric difference (or complement) of this set and another.</p>
                 </td>
                 <td></td>
@@ -465,7 +454,7 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method_symmetricDiffInPlace">symmetricDiffInPlace</a>(<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a> $set)
+                    <a href="#method_symmetricDiffInPlace">symmetricDiffInPlace</a>(<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a> $set)
                     <p>Compute the symmetric difference (or complement) of this set and another, in place.</p>
                 </td>
                 <td></td>
@@ -476,9 +465,9 @@
         <h2>Details</h2>
 
                         <h3 id="method___construct">
-        <div class="location">at line 21</div>
+        <div class="location">at line 23</div>
         <code>            public            
-    <strong>__construct</strong>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr>|null $collection = null, <abbr title="Icecave\Collections\callable">callable</abbr>|null $comparator = null)</code>
+    <strong>__construct</strong>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr>|null $collection = null, <abbr title="Icecave\Collections\callable">callable</abbr>|null $hashFunction = null)</code>
     </h3>
     <div class="details">
         <p>
@@ -496,8 +485,8 @@
             </tr>
                     <tr>
                 <td><abbr title="Icecave\Collections\callable">callable</abbr>|null</td>
-                <td>$comparator</td>
-                <td>The function to use for comparing elements, or null to use the default.</td>
+                <td>$hashFunction</td>
+                <td>The function to use for generating hashes of elements, or null to use the default.</td>
             </tr>
             </table>
 
@@ -507,25 +496,8 @@
                     </div>
     </div>
 
-                <h3 id="method___clone">
-        <div class="location">at line 39</div>
-        <code>            public            
-    <strong>__clone</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
                 <h3 id="method_size">
-        <div class="location">at line 57</div>
+        <div class="location">at line 52</div>
         <code>            public            integer
     <strong>size</strong>()</code>
     </h3>
@@ -550,7 +522,7 @@
 
                     <table>
                     <tr>
-                <td>Set::isEmpty()</td>
+                <td>HashSet::isEmpty()</td>
                 <td></td>
             </tr>
             </table>
@@ -559,7 +531,7 @@
     </div>
 
                 <h3 id="method_isEmpty">
-        <div class="location">at line 69</div>
+        <div class="location">at line 64</div>
         <code>            public            boolean
     <strong>isEmpty</strong>()</code>
     </h3>
@@ -584,7 +556,7 @@
     </div>
 
                 <h3 id="method___toString">
-        <div class="location">at line 84</div>
+        <div class="location">at line 79</div>
         <code>            public            string
     <strong>__toString</strong>()</code>
     </h3>
@@ -609,7 +581,7 @@ provide information on the type and state of the collection.</p>
     </div>
 
                 <h3 id="method_clear">
-        <div class="location">at line 115</div>
+        <div class="location">at line 111</div>
         <code>            public            
     <strong>clear</strong>()</code>
     </h3>
@@ -625,7 +597,7 @@ provide information on the type and state of the collection.</p>
     </div>
 
                 <h3 id="method_iteratorTraits">
-        <div class="location">at line 131</div>
+        <div class="location">at line 127</div>
         <code>            public            <a href="../../Icecave/Collections/Iterator/Traits.html"><abbr title="Icecave\Collections\Iterator\Traits">Traits</abbr></a>
     <strong>iteratorTraits</strong>()</code>
     </h3>
@@ -651,7 +623,7 @@ provide information on the type and state of the collection.</p>
     </div>
 
                 <h3 id="method_elements">
-        <div class="location">at line 147</div>
+        <div class="location">at line 143</div>
         <code>            public            array
     <strong>elements</strong>()</code>
     </h3>
@@ -676,7 +648,7 @@ provide information on the type and state of the collection.</p>
     </div>
 
                 <h3 id="method_contains">
-        <div class="location">at line 161</div>
+        <div class="location">at line 157</div>
         <code>            public            boolean
     <strong>contains</strong>(mixed $element)</code>
     </h3>
@@ -711,8 +683,8 @@ provide information on the type and state of the collection.</p>
     </div>
 
                 <h3 id="method_filter">
-        <div class="location">at line 178</div>
-        <code>            public            <a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>
+        <div class="location">at line 177</div>
+        <code>            public            <a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a>
     <strong>filter</strong>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)</code>
     </h3>
     <div class="details">
@@ -735,7 +707,7 @@ provide information on the type and state of the collection.</p>
 
                     <table>
         <tr>
-            <td><a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a></td>
+            <td><a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a></td>
             <td>The filtered collection.</td>
         </tr>
     </table>
@@ -746,7 +718,7 @@ provide information on the type and state of the collection.</p>
     </div>
 
                 <h3 id="method_map">
-        <div class="location">at line 201</div>
+        <div class="location">at line 211</div>
         <code>            public            <a href="../../Icecave/Collections/IterableInterface.html"><abbr title="Icecave\Collections\IterableInterface">IterableInterface</abbr></a>
     <strong>map</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)</code>
     </h3>
@@ -784,7 +756,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_partition">
-        <div class="location">at line 222</div>
+        <div class="location">at line 232</div>
         <code>            public            <abbr title="Icecave\Collections\tuple&lt;IterableInterface,IterableInterface&gt;">tuple&lt;IterableInterface,IterableInterface&gt;</abbr>
     <strong>partition</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate)</code>
     </h3>
@@ -818,7 +790,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_each">
-        <div class="location">at line 247</div>
+        <div class="location">at line 257</div>
         <code>            public            
     <strong>each</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $callback)</code>
     </h3>
@@ -843,7 +815,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_all">
-        <div class="location">at line 263</div>
+        <div class="location">at line 275</div>
         <code>            public            boolean
     <strong>all</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate)</code>
     </h3>
@@ -878,7 +850,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_any">
-        <div class="location">at line 279</div>
+        <div class="location">at line 297</div>
         <code>            public            boolean
     <strong>any</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate)</code>
     </h3>
@@ -913,7 +885,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_filterInPlace">
-        <div class="location">at line 298</div>
+        <div class="location">at line 322</div>
         <code>            public            
     <strong>filterInPlace</strong>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)</code>
     </h3>
@@ -939,7 +911,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_mapInPlace">
-        <div class="location">at line 315</div>
+        <div class="location">at line 349</div>
         <code>            public            
     <strong>mapInPlace</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)</code>
     </h3>
@@ -967,7 +939,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_count">
-        <div class="location">at line 327</div>
+        <div class="location">at line 373</div>
         <code>            public            
     <strong>count</strong>()</code>
     </h3>
@@ -984,7 +956,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_getIterator">
-        <div class="location">at line 338</div>
+        <div class="location">at line 384</div>
         <code>            public            
     <strong>getIterator</strong>()</code>
     </h3>
@@ -1001,7 +973,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_serialize">
-        <div class="location">at line 354</div>
+        <div class="location">at line 402</div>
         <code>            public            string
     <strong>serialize</strong>()</code>
     </h3>
@@ -1026,7 +998,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_unserialize">
-        <div class="location">at line 371</div>
+        <div class="location">at line 419</div>
         <code>            public            
     <strong>unserialize</strong>(string $packet)</code>
     </h3>
@@ -1052,7 +1024,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_cascade">
-        <div class="location">at line 393</div>
+        <div class="location">at line 440</div>
         <code>            public            mixed
     <strong>cascade</strong>($element)</code>
     </h3>
@@ -1097,7 +1069,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_cascadeWithDefault">
-        <div class="location">at line 409</div>
+        <div class="location">at line 456</div>
         <code>            public            mixed
     <strong>cascadeWithDefault</strong>($default, $element)</code>
     </h3>
@@ -1139,13 +1111,13 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_cascadeIterable">
-        <div class="location">at line 430</div>
+        <div class="location">at line 477</div>
         <code>            public            mixed
     <strong>cascadeIterable</strong>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $elements)</code>
     </h3>
     <div class="details">
         <p>Return the first of the given elements that is contained in the set.</p>
-        <p>Behaves as per {see Set::cascade()} except that the elements are provided as
+        <p>Behaves as per {see HashSet::cascade()} except that the elements are provided as
 a traversable (eg, array) instead of via a variable argument list.</p>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -1183,13 +1155,13 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_cascadeIterableWithDefault">
-        <div class="location">at line 454</div>
+        <div class="location">at line 501</div>
         <code>            public            mixed
     <strong>cascadeIterableWithDefault</strong>(mixed $default, <abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $elements)</code>
     </h3>
     <div class="details">
         <p>Return the first of the given elements that is contained in the set, or a default if none are found.</p>
-        <p>Behaves as per {see Set::cascadeDefault()} except that the elements are provided as
+        <p>Behaves as per {see HashSet::cascadeDefault()} except that the elements are provided as
 a traversable (eg, array) instead of via a variable argument list.</p>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -1223,7 +1195,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_add">
-        <div class="location">at line 474</div>
+        <div class="location">at line 521</div>
         <code>            public            boolean
     <strong>add</strong>(mixed $element)</code>
     </h3>
@@ -1258,7 +1230,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_addMany">
-        <div class="location">at line 496</div>
+        <div class="location">at line 540</div>
         <code>            public            
     <strong>addMany</strong>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $elements)</code>
     </h3>
@@ -1284,7 +1256,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
 
                     <table>
                     <tr>
-                <td>Set::unionInPlace()</td>
+                <td>HashSet::unionInPlace()</td>
                 <td>may be faster when adding all elements from a another set.</td>
             </tr>
             </table>
@@ -1293,7 +1265,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_remove">
-        <div class="location">at line 512</div>
+        <div class="location">at line 557</div>
         <code>            public            boolean
     <strong>remove</strong>(mixed $element)</code>
     </h3>
@@ -1328,7 +1300,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_removeMany">
-        <div class="location">at line 534</div>
+        <div class="location">at line 576</div>
         <code>            public            
     <strong>removeMany</strong>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $elements)</code>
     </h3>
@@ -1354,7 +1326,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
 
                     <table>
                     <tr>
-                <td>Set::diffInPlace()</td>
+                <td>HashSet::diffInPlace()</td>
                 <td>may be faster when removing all elements from a another set.</td>
             </tr>
             </table>
@@ -1363,9 +1335,9 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_isEqualSet">
-        <div class="location">at line 550</div>
+        <div class="location">at line 593</div>
         <code>            public            boolean
-    <strong>isEqualSet</strong>(<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a> $set)</code>
+    <strong>isEqualSet</strong>(<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a> $set)</code>
     </h3>
     <div class="details">
         <p>Check if this set is equal to another.</p>
@@ -1376,7 +1348,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
 
                     <table>
                     <tr>
-                <td><a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a></td>
+                <td><a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a></td>
                 <td>$set</td>
                 <td>The set to compare against.</td>
             </tr>
@@ -1398,9 +1370,9 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_isSuperSet">
-        <div class="location">at line 586</div>
+        <div class="location">at line 619</div>
         <code>            public            boolean
-    <strong>isSuperSet</strong>(<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a> $set)</code>
+    <strong>isSuperSet</strong>(<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a> $set)</code>
     </h3>
     <div class="details">
         <p>Check if this set is a superset of another.</p>
@@ -1411,7 +1383,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
 
                     <table>
                     <tr>
-                <td><a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a></td>
+                <td><a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a></td>
                 <td>$set</td>
                 <td>The set to compare against.</td>
             </tr>
@@ -1433,9 +1405,9 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_isSubSet">
-        <div class="location">at line 632</div>
+        <div class="location">at line 645</div>
         <code>            public            boolean
-    <strong>isSubSet</strong>(<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a> $set)</code>
+    <strong>isSubSet</strong>(<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a> $set)</code>
     </h3>
     <div class="details">
         <p>Check if this set is a subset of another.</p>
@@ -1446,7 +1418,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
 
                     <table>
                     <tr>
-                <td><a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a></td>
+                <td><a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a></td>
                 <td>$set</td>
                 <td>The set to compare against.</td>
             </tr>
@@ -1468,9 +1440,9 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_isProperSuperSet">
-        <div class="location">at line 648</div>
+        <div class="location">at line 661</div>
         <code>            public            boolean
-    <strong>isProperSuperSet</strong>(<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a> $set)</code>
+    <strong>isProperSuperSet</strong>(<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a> $set)</code>
     </h3>
     <div class="details">
         <p>Check if this set is a proper superset of another.</p>
@@ -1481,7 +1453,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
 
                     <table>
                     <tr>
-                <td><a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a></td>
+                <td><a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a></td>
                 <td>$set</td>
                 <td>The set to compare against.</td>
             </tr>
@@ -1503,9 +1475,9 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_isProperSubSet">
-        <div class="location">at line 672</div>
+        <div class="location">at line 687</div>
         <code>            public            boolean
-    <strong>isProperSubSet</strong>(<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a> $set)</code>
+    <strong>isProperSubSet</strong>(<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a> $set)</code>
     </h3>
     <div class="details">
         <p>Check if this set is a proper subset of another.</p>
@@ -1516,7 +1488,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
 
                     <table>
                     <tr>
-                <td><a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a></td>
+                <td><a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a></td>
                 <td>$set</td>
                 <td>The set to compare against.</td>
             </tr>
@@ -1538,9 +1510,9 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_isIntersecting">
-        <div class="location">at line 688</div>
+        <div class="location">at line 703</div>
         <code>            public            boolean
-    <strong>isIntersecting</strong>(<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a> $set)</code>
+    <strong>isIntersecting</strong>(<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a> $set)</code>
     </h3>
     <div class="details">
         <p>Check if this set is intersecting another.</p>
@@ -1551,7 +1523,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
 
                     <table>
                     <tr>
-                <td><a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a></td>
+                <td><a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a></td>
                 <td>$set</td>
                 <td>The set to compare against.</td>
             </tr>
@@ -1573,9 +1545,9 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_union">
-        <div class="location">at line 753</div>
-        <code>            public            <a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>
-    <strong>union</strong>(<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a> $set)</code>
+        <div class="location">at line 725</div>
+        <code>            public            <a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a>
+    <strong>union</strong>(<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a> $set)</code>
     </h3>
     <div class="details">
         <p>Compute the union of this set and another.</p>
@@ -1586,7 +1558,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
 
                     <table>
                     <tr>
-                <td><a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a></td>
+                <td><a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a></td>
                 <td>$set</td>
                 <td>The second set.</td>
             </tr>
@@ -1597,7 +1569,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
 
                     <table>
         <tr>
-            <td><a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a></td>
+            <td><a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a></td>
             <td>A set containing all elements of $this and $elements.</td>
         </tr>
     </table>
@@ -1608,9 +1580,9 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_unionInPlace">
-        <div class="location">at line 859</div>
+        <div class="location">at line 742</div>
         <code>            public            
-    <strong>unionInPlace</strong>(<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a> $set)</code>
+    <strong>unionInPlace</strong>(<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a> $set)</code>
     </h3>
     <div class="details">
         <p>Compute the union of this set and another, in place.</p>
@@ -1621,7 +1593,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
 
                     <table>
                     <tr>
-                <td><a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a></td>
+                <td><a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a></td>
                 <td>$set</td>
                 <td>The second set.</td>
             </tr>
@@ -1634,9 +1606,9 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_intersect">
-        <div class="location">at line 953</div>
-        <code>            public            <a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>
-    <strong>intersect</strong>(<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a> $set)</code>
+        <div class="location">at line 758</div>
+        <code>            public            <a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a>
+    <strong>intersect</strong>(<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a> $set)</code>
     </h3>
     <div class="details">
         <p>Compute the intersection of this set and another.</p>
@@ -1647,7 +1619,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
 
                     <table>
                     <tr>
-                <td><a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a></td>
+                <td><a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a></td>
                 <td>$set</td>
                 <td>The second set.</td>
             </tr>
@@ -1658,7 +1630,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
 
                     <table>
         <tr>
-            <td><a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a></td>
+            <td><a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a></td>
             <td>A set containing only the elements present in $this and $elements.</td>
         </tr>
     </table>
@@ -1669,9 +1641,9 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_intersectInPlace">
-        <div class="location">at line 1026</div>
+        <div class="location">at line 775</div>
         <code>            public            
-    <strong>intersectInPlace</strong>(<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a> $set)</code>
+    <strong>intersectInPlace</strong>(<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a> $set)</code>
     </h3>
     <div class="details">
         <p>Compute the intersection of this set and another, in place.</p>
@@ -1682,7 +1654,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
 
                     <table>
                     <tr>
-                <td><a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a></td>
+                <td><a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a></td>
                 <td>$set</td>
                 <td>The second set.</td>
             </tr>
@@ -1695,9 +1667,9 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_diff">
-        <div class="location">at line 1109</div>
-        <code>            public            <a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>
-    <strong>diff</strong>(<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a> $set)</code>
+        <div class="location">at line 795</div>
+        <code>            public            <a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a>
+    <strong>diff</strong>(<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a> $set)</code>
     </h3>
     <div class="details">
         <p>Compute the difference (or complement) of this set and another.</p>
@@ -1708,7 +1680,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
 
                     <table>
                     <tr>
-                <td><a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a></td>
+                <td><a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a></td>
                 <td>$set</td>
                 <td>The second set.</td>
             </tr>
@@ -1719,7 +1691,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
 
                     <table>
         <tr>
-            <td><a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a></td>
+            <td><a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a></td>
             <td>A set containing only the elements present in $this, but not $elements.</td>
         </tr>
     </table>
@@ -1730,9 +1702,9 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_diffInPlace">
-        <div class="location">at line 1201</div>
+        <div class="location">at line 812</div>
         <code>            public            
-    <strong>diffInPlace</strong>(<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a> $set)</code>
+    <strong>diffInPlace</strong>(<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a> $set)</code>
     </h3>
     <div class="details">
         <p>Compute the difference (or complement) of this set and another, in place.</p>
@@ -1743,7 +1715,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
 
                     <table>
                     <tr>
-                <td><a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a></td>
+                <td><a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a></td>
                 <td>$set</td>
                 <td>The second set.</td>
             </tr>
@@ -1756,9 +1728,9 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_symmetricDiff">
-        <div class="location">at line 1275</div>
-        <code>            public            <a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>
-    <strong>symmetricDiff</strong>(<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a> $set)</code>
+        <div class="location">at line 832</div>
+        <code>            public            <a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a>
+    <strong>symmetricDiff</strong>(<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a> $set)</code>
     </h3>
     <div class="details">
         <p>Compute the symmetric difference (or complement) of this set and another.</p>
@@ -1768,7 +1740,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
 
                     <table>
                     <tr>
-                <td><a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a></td>
+                <td><a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a></td>
                 <td>$set</td>
                 <td>The second set.</td>
             </tr>
@@ -1779,7 +1751,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
 
                     <table>
         <tr>
-            <td><a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a></td>
+            <td><a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a></td>
             <td>A set containing only the elements present in $this, or $elements, but not both.</td>
         </tr>
     </table>
@@ -1790,9 +1762,9 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_symmetricDiffInPlace">
-        <div class="location">at line 1378</div>
+        <div class="location">at line 853</div>
         <code>            public            
-    <strong>symmetricDiffInPlace</strong>(<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a> $set)</code>
+    <strong>symmetricDiffInPlace</strong>(<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a> $set)</code>
     </h3>
     <div class="details">
         <p>Compute the symmetric difference (or complement) of this set and another, in place.</p>
@@ -1802,7 +1774,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
 
                     <table>
                     <tr>
-                <td><a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a></td>
+                <td><a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a></td>
                 <td>$set</td>
                 <td>The second set.</td>
             </tr>
