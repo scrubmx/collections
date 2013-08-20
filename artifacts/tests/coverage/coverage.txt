@@ -1,12 +1,12 @@
 
 
 Code Coverage Report 
-  2013-08-20 04:55:55
+  2013-08-20 11:54:43
 
  Summary: 
   Classes: 100.00% (19/19)
   Methods: 100.00% (379/379)
-  Lines:   100.00% (2666/2666)
+  Lines:   100.00% (2668/2668)
 
 \Icecave\Collections::Collection
   Methods: 100.00% (21/21)   Lines: 100.00% (210/210)
@@ -25,7 +25,7 @@ Code Coverage Report
 \Icecave\Collections::Stack
   Methods: 100.00% (14/14)   Lines: 100.00% ( 58/ 58)
 \Icecave\Collections::Vector
-  Methods: 100.00% (74/74)   Lines: 100.00% (496/496)
+  Methods: 100.00% (74/74)   Lines: 100.00% (498/498)
 \Icecave\Collections\Exception::DuplicateKeyException
   Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  3/  3)
 \Icecave\Collections\Exception::EmptyCollectionException
