@@ -71,7 +71,7 @@
                     integer|null
                 </td>
                 <td class="last">
-                    <a href="#method_indexOf">indexOf</a>(mixed $element, integer $startIndex)
+                    <a href="#method_indexOf">indexOf</a>(mixed $element, integer $begin, integer|null $end = null)
                     <p>Find the index of the first instance of a particular element in the sequence.</p>
                 </td>
                 <td><small>from&nbsp;<a href="../../Icecave/Collections/RandomAccessInterface.html#method_indexOf"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a></small></td>
@@ -81,7 +81,7 @@
                     integer|null
                 </td>
                 <td class="last">
-                    <a href="#method_indexOfLast">indexOfLast</a>(mixed $element, integer|null $startIndex = null)
+                    <a href="#method_indexOfLast">indexOfLast</a>(mixed $element, integer $begin, integer|null $end = null)
                     <p>Find the index of the last instance of a particular element in the sequence.</p>
                 </td>
                 <td><small>from&nbsp;<a href="../../Icecave/Collections/RandomAccessInterface.html#method_indexOfLast"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a></small></td>
@@ -91,7 +91,7 @@
                     integer|null
                 </td>
                 <td class="last">
-                    <a href="#method_find">find</a>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate, integer $startIndex)
+                    <a href="#method_find">find</a>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate, integer $begin, integer|null $end = null)
                     <p>Find the index of the first instance of an element matching given criteria.</p>
                 </td>
                 <td><small>from&nbsp;<a href="../../Icecave/Collections/RandomAccessInterface.html#method_find"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a></small></td>
@@ -101,7 +101,7 @@
                     integer|null
                 </td>
                 <td class="last">
-                    <a href="#method_findLast">findLast</a>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate, integer|null $startIndex = null)
+                    <a href="#method_findLast">findLast</a>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate, integer $begin, integer|null $end = null)
                     <p>Find the index of the last instance of an element matching given criteria.</p>
                 </td>
                 <td><small>from&nbsp;<a href="../../Icecave/Collections/RandomAccessInterface.html#method_findLast"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a></small></td>
@@ -464,9 +464,9 @@
     </div>
 
                 <h3 id="method_indexOf">
-        <div class="location">in <a href="../../Icecave/Collections/RandomAccessInterface.html#method_indexOf"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a> at line 56</div>
+        <div class="location">in <a href="../../Icecave/Collections/RandomAccessInterface.html#method_indexOf"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a> at line 57</div>
         <code>            public            integer|null
-    <strong>indexOf</strong>(mixed $element, integer $startIndex)</code>
+    <strong>indexOf</strong>(mixed $element, integer $begin, integer|null $end = null)</code>
     </h3>
     <div class="details">
         <p>Find the index of the first instance of a particular element in the sequence.</p>
@@ -483,8 +483,13 @@
             </tr>
                     <tr>
                 <td>integer</td>
-                <td>$startIndex</td>
+                <td>$begin</td>
                 <td>The index to start searching from.</td>
+            </tr>
+                    <tr>
+                <td>integer|null</td>
+                <td>$end</td>
+                <td>The index to to stop searching at, or null to search to the end of the sequence.</td>
             </tr>
             </table>
 
@@ -504,7 +509,7 @@
                     <table>
                     <tr>
                 <td><abbr title="Exception\IndexException">IndexException</abbr></td>
-                <td>if $startIndex is out of range.</td>
+                <td>if $begin or $end is out of range.</td>
             </tr>
             </table>
 
@@ -513,9 +518,9 @@
     </div>
 
                 <h3 id="method_indexOfLast">
-        <div class="location">in <a href="../../Icecave/Collections/RandomAccessInterface.html#method_indexOfLast"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a> at line 67</div>
+        <div class="location">in <a href="../../Icecave/Collections/RandomAccessInterface.html#method_indexOfLast"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a> at line 69</div>
         <code>            public            integer|null
-    <strong>indexOfLast</strong>(mixed $element, integer|null $startIndex = null)</code>
+    <strong>indexOfLast</strong>(mixed $element, integer $begin, integer|null $end = null)</code>
     </h3>
     <div class="details">
         <p>Find the index of the last instance of a particular element in the sequence.</p>
@@ -531,9 +536,14 @@
                 <td>The element to search for.</td>
             </tr>
                     <tr>
+                <td>integer</td>
+                <td>$begin</td>
+                <td>The index to start searching from.</td>
+            </tr>
+                    <tr>
                 <td>integer|null</td>
-                <td>$startIndex</td>
-                <td>The index to start searching from, or null to use the last index.</td>
+                <td>$end</td>
+                <td>The index to to stop searching at, or null to search to the end of the sequence.</td>
             </tr>
             </table>
 
@@ -553,7 +563,7 @@
                     <table>
                     <tr>
                 <td><abbr title="Exception\IndexException">IndexException</abbr></td>
-                <td>if $startIndex is out of range.</td>
+                <td>if $begin is out of range.</td>
             </tr>
             </table>
 
@@ -562,9 +572,9 @@
     </div>
 
                 <h3 id="method_find">
-        <div class="location">in <a href="../../Icecave/Collections/RandomAccessInterface.html#method_find"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a> at line 78</div>
+        <div class="location">in <a href="../../Icecave/Collections/RandomAccessInterface.html#method_find"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a> at line 81</div>
         <code>            public            integer|null
-    <strong>find</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate, integer $startIndex)</code>
+    <strong>find</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate, integer $begin, integer|null $end = null)</code>
     </h3>
     <div class="details">
         <p>Find the index of the first instance of an element matching given criteria.</p>
@@ -581,8 +591,13 @@
             </tr>
                     <tr>
                 <td>integer</td>
-                <td>$startIndex</td>
+                <td>$begin</td>
                 <td>The index to start searching from.</td>
+            </tr>
+                    <tr>
+                <td>integer|null</td>
+                <td>$end</td>
+                <td>The index to to stop searching at, or null to search to the end of the sequence.</td>
             </tr>
             </table>
 
@@ -602,7 +617,7 @@
                     <table>
                     <tr>
                 <td><abbr title="Exception\IndexException">IndexException</abbr></td>
-                <td>if $startIndex is out of range.</td>
+                <td>if $begin is out of range.</td>
             </tr>
             </table>
 
@@ -611,9 +626,9 @@
     </div>
 
                 <h3 id="method_findLast">
-        <div class="location">in <a href="../../Icecave/Collections/RandomAccessInterface.html#method_findLast"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a> at line 89</div>
+        <div class="location">in <a href="../../Icecave/Collections/RandomAccessInterface.html#method_findLast"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a> at line 93</div>
         <code>            public            integer|null
-    <strong>findLast</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate, integer|null $startIndex = null)</code>
+    <strong>findLast</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate, integer $begin, integer|null $end = null)</code>
     </h3>
     <div class="details">
         <p>Find the index of the last instance of an element matching given criteria.</p>
@@ -629,9 +644,14 @@
                 <td>A predicate function used to determine which element constitutes a match.</td>
             </tr>
                     <tr>
+                <td>integer</td>
+                <td>$begin</td>
+                <td>The index to start searching from.</td>
+            </tr>
+                    <tr>
                 <td>integer|null</td>
-                <td>$startIndex</td>
-                <td>The index to start searching from, or null to use the last index.</td>
+                <td>$end</td>
+                <td>The index to to stop searching at, or null to search to the end of the sequence.</td>
             </tr>
             </table>
 
@@ -651,7 +671,7 @@
                     <table>
                     <tr>
                 <td><abbr title="Exception\IndexException">IndexException</abbr></td>
-                <td>if $startIndex is out of range.</td>
+                <td>if $begin is out of range.</td>
             </tr>
             </table>
 

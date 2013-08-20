@@ -413,7 +413,7 @@
                     integer|null
                 </td>
                 <td class="last">
-                    <a href="#method_indexOf">indexOf</a>(mixed $element, integer $startIndex)
+                    <a href="#method_indexOf">indexOf</a>(mixed $element, integer $begin, integer|null $end = null)
                     <p>Find the index of the first instance of a particular element in the sequence.</p>
                 </td>
                 <td></td>
@@ -423,7 +423,7 @@
                     integer|null
                 </td>
                 <td class="last">
-                    <a href="#method_indexOfLast">indexOfLast</a>(mixed $element, integer|null $startIndex = null)
+                    <a href="#method_indexOfLast">indexOfLast</a>(mixed $element, integer $begin, integer|null $end = null)
                     <p>Find the index of the last instance of a particular element in the sequence.</p>
                 </td>
                 <td></td>
@@ -433,7 +433,7 @@
                     integer|null
                 </td>
                 <td class="last">
-                    <a href="#method_find">find</a>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate, integer $startIndex)
+                    <a href="#method_find">find</a>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate, integer $begin, integer|null $end = null)
                     <p>Find the index of the first instance of an element matching given criteria.</p>
                 </td>
                 <td></td>
@@ -443,7 +443,7 @@
                     integer|null
                 </td>
                 <td class="last">
-                    <a href="#method_findLast">findLast</a>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate, integer|null $startIndex = null)
+                    <a href="#method_findLast">findLast</a>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate, integer $begin, integer|null $end = null)
                     <p>Find the index of the last instance of an element matching given criteria.</p>
                 </td>
                 <td></td>
@@ -1881,9 +1881,9 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_indexOf">
-        <div class="location">at line 797</div>
+        <div class="location">at line 798</div>
         <code>            public            integer|null
-    <strong>indexOf</strong>(mixed $element, integer $startIndex)</code>
+    <strong>indexOf</strong>(mixed $element, integer $begin, integer|null $end = null)</code>
     </h3>
     <div class="details">
         <p>Find the index of the first instance of a particular element in the sequence.</p>
@@ -1900,8 +1900,13 @@ It is not guaranteed that the concrete type of the resulting collection will mat
             </tr>
                     <tr>
                 <td>integer</td>
-                <td>$startIndex</td>
+                <td>$begin</td>
                 <td>The index to start searching from.</td>
+            </tr>
+                    <tr>
+                <td>integer|null</td>
+                <td>$end</td>
+                <td>The index to to stop searching at, or null to search to the end of the sequence.</td>
             </tr>
             </table>
 
@@ -1921,7 +1926,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
                     <table>
                     <tr>
                 <td><abbr title="Exception\IndexException">IndexException</abbr></td>
-                <td>if $startIndex is out of range.</td>
+                <td>if $begin or $end is out of range.</td>
             </tr>
             </table>
 
@@ -1930,9 +1935,9 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_indexOfLast">
-        <div class="location">at line 817</div>
+        <div class="location">at line 819</div>
         <code>            public            integer|null
-    <strong>indexOfLast</strong>(mixed $element, integer|null $startIndex = null)</code>
+    <strong>indexOfLast</strong>(mixed $element, integer $begin, integer|null $end = null)</code>
     </h3>
     <div class="details">
         <p>Find the index of the last instance of a particular element in the sequence.</p>
@@ -1948,9 +1953,14 @@ It is not guaranteed that the concrete type of the resulting collection will mat
                 <td>The element to search for.</td>
             </tr>
                     <tr>
+                <td>integer</td>
+                <td>$begin</td>
+                <td>The index to start searching from.</td>
+            </tr>
+                    <tr>
                 <td>integer|null</td>
-                <td>$startIndex</td>
-                <td>The index to start searching from, or null to use the last index.</td>
+                <td>$end</td>
+                <td>The index to to stop searching at, or null to search to the end of the sequence.</td>
             </tr>
             </table>
 
@@ -1970,7 +1980,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
                     <table>
                     <tr>
                 <td><abbr title="Exception\IndexException">IndexException</abbr></td>
-                <td>if $startIndex is out of range.</td>
+                <td>if $begin is out of range.</td>
             </tr>
             </table>
 
@@ -1979,9 +1989,9 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_find">
-        <div class="location">at line 837</div>
+        <div class="location">at line 840</div>
         <code>            public            integer|null
-    <strong>find</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate, integer $startIndex)</code>
+    <strong>find</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate, integer $begin, integer|null $end = null)</code>
     </h3>
     <div class="details">
         <p>Find the index of the first instance of an element matching given criteria.</p>
@@ -1998,8 +2008,13 @@ It is not guaranteed that the concrete type of the resulting collection will mat
             </tr>
                     <tr>
                 <td>integer</td>
-                <td>$startIndex</td>
+                <td>$begin</td>
                 <td>The index to start searching from.</td>
+            </tr>
+                    <tr>
+                <td>integer|null</td>
+                <td>$end</td>
+                <td>The index to to stop searching at, or null to search to the end of the sequence.</td>
             </tr>
             </table>
 
@@ -2019,7 +2034,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
                     <table>
                     <tr>
                 <td><abbr title="Exception\IndexException">IndexException</abbr></td>
-                <td>if $startIndex is out of range.</td>
+                <td>if $begin is out of range.</td>
             </tr>
             </table>
 
@@ -2028,9 +2043,9 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_findLast">
-        <div class="location">at line 865</div>
+        <div class="location">at line 870</div>
         <code>            public            integer|null
-    <strong>findLast</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate, integer|null $startIndex = null)</code>
+    <strong>findLast</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate, integer $begin, integer|null $end = null)</code>
     </h3>
     <div class="details">
         <p>Find the index of the last instance of an element matching given criteria.</p>
@@ -2046,9 +2061,14 @@ It is not guaranteed that the concrete type of the resulting collection will mat
                 <td>A predicate function used to determine which element constitutes a match.</td>
             </tr>
                     <tr>
+                <td>integer</td>
+                <td>$begin</td>
+                <td>The index to start searching from.</td>
+            </tr>
+                    <tr>
                 <td>integer|null</td>
-                <td>$startIndex</td>
-                <td>The index to start searching from, or null to use the last index.</td>
+                <td>$end</td>
+                <td>The index to to stop searching at, or null to search to the end of the sequence.</td>
             </tr>
             </table>
 
@@ -2068,7 +2088,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
                     <table>
                     <tr>
                 <td><abbr title="Exception\IndexException">IndexException</abbr></td>
-                <td>if $startIndex is out of range.</td>
+                <td>if $begin is out of range.</td>
             </tr>
             </table>
 
@@ -2077,7 +2097,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_set">
-        <div class="location">at line 896</div>
+        <div class="location">at line 900</div>
         <code>            public            
     <strong>set</strong>(integer $index, mixed $element)</code>
     </h3>
@@ -2117,7 +2137,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_insert">
-        <div class="location">at line 912</div>
+        <div class="location">at line 916</div>
         <code>            public            
     <strong>insert</strong>(integer $index, mixed $element)</code>
     </h3>
@@ -2157,7 +2177,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_insertMany">
-        <div class="location">at line 925</div>
+        <div class="location">at line 929</div>
         <code>            public            
     <strong>insertMany</strong>(integer $index, <abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $elements)</code>
     </h3>
@@ -2188,7 +2208,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_insertRange">
-        <div class="location">at line 971</div>
+        <div class="location">at line 975</div>
         <code>            public            
     <strong>insertRange</strong>($index, <a href="../../Icecave/Collections/RandomAccessInterface.html"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a> $elements, $begin, $end = null)</code>
     </h3>
@@ -2242,7 +2262,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_remove">
-        <div class="location">at line 997</div>
+        <div class="location">at line 1001</div>
         <code>            public            
     <strong>remove</strong>(integer $index)</code>
     </h3>
@@ -2276,7 +2296,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_removeMany">
-        <div class="location">at line 1012</div>
+        <div class="location">at line 1016</div>
         <code>            public            
     <strong>removeMany</strong>(integer $index, integer|null $count = null)</code>
     </h3>
@@ -2316,7 +2336,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_removeRange">
-        <div class="location">at line 1033</div>
+        <div class="location">at line 1037</div>
         <code>            public            
     <strong>removeRange</strong>(integer $begin, integer $end)</code>
     </h3>
@@ -2355,7 +2375,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_replace">
-        <div class="location">at line 1051</div>
+        <div class="location">at line 1055</div>
         <code>            public            
     <strong>replace</strong>(integer $index, <abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $elements, integer|null $count = null)</code>
     </h3>
@@ -2390,7 +2410,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_replaceRange">
-        <div class="location">at line 1091</div>
+        <div class="location">at line 1095</div>
         <code>            public            
     <strong>replaceRange</strong>(integer $begin, integer $end, <abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $elements)</code>
     </h3>
@@ -2426,7 +2446,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_swap">
-        <div class="location">at line 1108</div>
+        <div class="location">at line 1112</div>
         <code>            public            
     <strong>swap</strong>(integer $index1, integer $index2)</code>
     </h3>
@@ -2466,7 +2486,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_trySwap">
-        <div class="location">at line 1128</div>
+        <div class="location">at line 1132</div>
         <code>            public            boolean
     <strong>trySwap</strong>(integer $index1, integer $index2)</code>
     </h3>
@@ -2506,7 +2526,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_count">
-        <div class="location">at line 1159</div>
+        <div class="location">at line 1163</div>
         <code>            public            
     <strong>count</strong>()</code>
     </h3>
@@ -2523,7 +2543,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_current">
-        <div class="location">at line 1170</div>
+        <div class="location">at line 1174</div>
         <code>            public            
     <strong>current</strong>()</code>
     </h3>
@@ -2540,7 +2560,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_key">
-        <div class="location">at line 1177</div>
+        <div class="location">at line 1181</div>
         <code>            public            
     <strong>key</strong>()</code>
     </h3>
@@ -2557,7 +2577,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_next">
-        <div class="location">at line 1184</div>
+        <div class="location">at line 1188</div>
         <code>            public            
     <strong>next</strong>()</code>
     </h3>
@@ -2574,7 +2594,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_rewind">
-        <div class="location">at line 1191</div>
+        <div class="location">at line 1195</div>
         <code>            public            
     <strong>rewind</strong>()</code>
     </h3>
@@ -2591,7 +2611,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_valid">
-        <div class="location">at line 1198</div>
+        <div class="location">at line 1202</div>
         <code>            public            
     <strong>valid</strong>()</code>
     </h3>
@@ -2608,7 +2628,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_seek">
-        <div class="location">at line 1215</div>
+        <div class="location">at line 1219</div>
         <code>            public            
     <strong>seek</strong>(integer $index)</code>
     </h3>
@@ -2636,7 +2656,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_offsetExists">
-        <div class="location">at line 1243</div>
+        <div class="location">at line 1247</div>
         <code>            public            boolean
     <strong>offsetExists</strong>(mixed $offset)</code>
     </h3>
@@ -2673,7 +2693,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_offsetGet">
-        <div class="location">at line 1257</div>
+        <div class="location">at line 1261</div>
         <code>            public            mixed
     <strong>offsetGet</strong>(integer $offset)</code>
     </h3>
@@ -2710,7 +2730,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_offsetSet">
-        <div class="location">at line 1268</div>
+        <div class="location">at line 1272</div>
         <code>            public            
     <strong>offsetSet</strong>(integer|null $offset, mixed $value)</code>
     </h3>
@@ -2744,7 +2764,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_offsetUnset">
-        <div class="location">at line 1282</div>
+        <div class="location">at line 1286</div>
         <code>            public            
     <strong>offsetUnset</strong>(integer $offset)</code>
     </h3>
@@ -2772,7 +2792,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_serialize">
-        <div class="location">at line 1300</div>
+        <div class="location">at line 1304</div>
         <code>            public            string
     <strong>serialize</strong>()</code>
     </h3>
@@ -2797,7 +2817,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_unserialize">
-        <div class="location">at line 1312</div>
+        <div class="location">at line 1316</div>
         <code>            public            
     <strong>unserialize</strong>(string $packet)</code>
     </h3>
@@ -2823,7 +2843,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_capacity">
-        <div class="location">at line 1329</div>
+        <div class="location">at line 1333</div>
         <code>            public            integer
     <strong>capacity</strong>()</code>
     </h3>
@@ -2848,7 +2868,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_reserve">
-        <div class="location">at line 1341</div>
+        <div class="location">at line 1345</div>
         <code>            public            
     <strong>reserve</strong>(integer $size)</code>
     </h3>
@@ -2875,7 +2895,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_shrink">
-        <div class="location">at line 1353</div>
+        <div class="location">at line 1357</div>
         <code>            public            
     <strong>shrink</strong>()</code>
     </h3>

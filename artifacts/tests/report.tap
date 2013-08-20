@@ -3,117 +3,117 @@ ok 1 - Icecave\Collections\CollectionTest::testIsEmpty with data set #0 (array(1
 ok 2 - Icecave\Collections\CollectionTest::testIsEmpty with data set #1 (<Vector 3 [1, 2, 3]>)
 ok 3 - Icecave\Collections\CollectionTest::testIsEmpty with data set #2 (<Map 3 [0 => 1, 1 => 2, 2 => 3]>)
 ok 4 - Icecave\Collections\CollectionTest::testIsEmpty with data set #3 (ArrayIterator)
-ok 5 - Icecave\Collections\CollectionTest::testIsEmpty with data set #4 (LimitIterator_PHAKE5212d2cd01ccb)
+ok 5 - Icecave\Collections\CollectionTest::testIsEmpty with data set #4 (LimitIterator_PHAKE5212e45416adc)
 ok 6 - Icecave\Collections\CollectionTest::testSize with data set #0 (array(1, 2, 3))
 ok 7 - Icecave\Collections\CollectionTest::testSize with data set #1 (<Vector 3 [1, 2, 3]>)
 ok 8 - Icecave\Collections\CollectionTest::testSize with data set #2 (<Map 3 [0 => 1, 1 => 2, 2 => 3]>)
 ok 9 - Icecave\Collections\CollectionTest::testSize with data set #3 (ArrayIterator)
-ok 10 - Icecave\Collections\CollectionTest::testSize with data set #4 (LimitIterator_PHAKE5212d2cd01ccb)
+ok 10 - Icecave\Collections\CollectionTest::testSize with data set #4 (LimitIterator_PHAKE5212e45416adc)
 ok 11 - Icecave\Collections\CollectionTest::testGet with data set #0 (array(1, 2, 3))
 ok 12 - Icecave\Collections\CollectionTest::testGet with data set #1 (<Vector 3 [1, 2, 3]>)
 ok 13 - Icecave\Collections\CollectionTest::testGet with data set #2 (<Map 3 [0 => 1, 1 => 2, 2 => 3]>)
 ok 14 - Icecave\Collections\CollectionTest::testGet with data set #3 (ArrayIterator)
-ok 15 - Icecave\Collections\CollectionTest::testGet with data set #4 (LimitIterator_PHAKE5212d2cd01ccb)
+ok 15 - Icecave\Collections\CollectionTest::testGet with data set #4 (LimitIterator_PHAKE5212e45416adc)
 ok 16 - Icecave\Collections\CollectionTest::testGetFailure with data set #0 (array(1, 2, 3))
 ok 17 - Icecave\Collections\CollectionTest::testGetFailure with data set #1 (<Vector 3 [1, 2, 3]>)
 ok 18 - Icecave\Collections\CollectionTest::testGetFailure with data set #2 (<Map 3 [0 => 1, 1 => 2, 2 => 3]>)
 ok 19 - Icecave\Collections\CollectionTest::testGetFailure with data set #3 (ArrayIterator)
-ok 20 - Icecave\Collections\CollectionTest::testGetFailure with data set #4 (LimitIterator_PHAKE5212d2cd01ccb)
+ok 20 - Icecave\Collections\CollectionTest::testGetFailure with data set #4 (LimitIterator_PHAKE5212e45416adc)
 ok 21 - Icecave\Collections\CollectionTest::testTryGet with data set #0 (array(1, 2, 3))
 ok 22 - Icecave\Collections\CollectionTest::testTryGet with data set #1 (<Vector 3 [1, 2, 3]>)
 ok 23 - Icecave\Collections\CollectionTest::testTryGet with data set #2 (<Map 3 [0 => 1, 1 => 2, 2 => 3]>)
 ok 24 - Icecave\Collections\CollectionTest::testTryGet with data set #3 (ArrayIterator)
-ok 25 - Icecave\Collections\CollectionTest::testTryGet with data set #4 (LimitIterator_PHAKE5212d2cd01ccb)
+ok 25 - Icecave\Collections\CollectionTest::testTryGet with data set #4 (LimitIterator_PHAKE5212e45416adc)
 ok 26 - Icecave\Collections\CollectionTest::testTryGetFailure with data set #0 (array(1, 2, 3))
 ok 27 - Icecave\Collections\CollectionTest::testTryGetFailure with data set #1 (<Vector 3 [1, 2, 3]>)
 ok 28 - Icecave\Collections\CollectionTest::testTryGetFailure with data set #2 (<Map 3 [0 => 1, 1 => 2, 2 => 3]>)
 ok 29 - Icecave\Collections\CollectionTest::testTryGetFailure with data set #3 (ArrayIterator)
-ok 30 - Icecave\Collections\CollectionTest::testTryGetFailure with data set #4 (LimitIterator_PHAKE5212d2cd01ccb)
+ok 30 - Icecave\Collections\CollectionTest::testTryGetFailure with data set #4 (LimitIterator_PHAKE5212e45416adc)
 ok 31 - Icecave\Collections\CollectionTest::testGetWithDefault with data set #0 (array(1, 2, 3))
 ok 32 - Icecave\Collections\CollectionTest::testGetWithDefault with data set #1 (<Vector 3 [1, 2, 3]>)
 ok 33 - Icecave\Collections\CollectionTest::testGetWithDefault with data set #2 (<Map 3 [0 => 1, 1 => 2, 2 => 3]>)
 ok 34 - Icecave\Collections\CollectionTest::testGetWithDefault with data set #3 (ArrayIterator)
-ok 35 - Icecave\Collections\CollectionTest::testGetWithDefault with data set #4 (LimitIterator_PHAKE5212d2cd01ccb)
+ok 35 - Icecave\Collections\CollectionTest::testGetWithDefault with data set #4 (LimitIterator_PHAKE5212e45416adc)
 ok 36 - Icecave\Collections\CollectionTest::testGetWithDefaultFailure with data set #0 (array(1, 2, 3))
 ok 37 - Icecave\Collections\CollectionTest::testGetWithDefaultFailure with data set #1 (<Vector 3 [1, 2, 3]>)
 ok 38 - Icecave\Collections\CollectionTest::testGetWithDefaultFailure with data set #2 (<Map 3 [0 => 1, 1 => 2, 2 => 3]>)
 ok 39 - Icecave\Collections\CollectionTest::testGetWithDefaultFailure with data set #3 (ArrayIterator)
-ok 40 - Icecave\Collections\CollectionTest::testGetWithDefaultFailure with data set #4 (LimitIterator_PHAKE5212d2cd01ccb)
+ok 40 - Icecave\Collections\CollectionTest::testGetWithDefaultFailure with data set #4 (LimitIterator_PHAKE5212e45416adc)
 ok 41 - Icecave\Collections\CollectionTest::testHasKey with data set #0 (array(1, 2, 3))
 ok 42 - Icecave\Collections\CollectionTest::testHasKey with data set #1 (<Vector 3 [1, 2, 3]>)
 ok 43 - Icecave\Collections\CollectionTest::testHasKey with data set #2 (<Map 3 [0 => 1, 1 => 2, 2 => 3]>)
 ok 44 - Icecave\Collections\CollectionTest::testHasKey with data set #3 (ArrayIterator)
-ok 45 - Icecave\Collections\CollectionTest::testHasKey with data set #4 (LimitIterator_PHAKE5212d2cd01ccb)
+ok 45 - Icecave\Collections\CollectionTest::testHasKey with data set #4 (LimitIterator_PHAKE5212e45416adc)
 ok 46 - Icecave\Collections\CollectionTest::testContains with data set #0 (array(1, 2, 3))
 ok 47 - Icecave\Collections\CollectionTest::testContains with data set #1 (<Vector 3 [1, 2, 3]>)
 ok 48 - Icecave\Collections\CollectionTest::testContains with data set #2 (<Map 3 [0 => 1, 1 => 2, 2 => 3]>)
 ok 49 - Icecave\Collections\CollectionTest::testContains with data set #3 (ArrayIterator)
-ok 50 - Icecave\Collections\CollectionTest::testContains with data set #4 (LimitIterator_PHAKE5212d2cd01ccb)
+ok 50 - Icecave\Collections\CollectionTest::testContains with data set #4 (LimitIterator_PHAKE5212e45416adc)
 ok 51 - Icecave\Collections\CollectionTest::testKeys with data set #0 (array(1, 2, 3))
 ok 52 - Icecave\Collections\CollectionTest::testKeys with data set #1 (<Vector 3 [1, 2, 3]>)
 ok 53 - Icecave\Collections\CollectionTest::testKeys with data set #2 (<Map 3 [0 => 1, 1 => 2, 2 => 3]>)
 ok 54 - Icecave\Collections\CollectionTest::testKeys with data set #3 (ArrayIterator)
-ok 55 - Icecave\Collections\CollectionTest::testKeys with data set #4 (LimitIterator_PHAKE5212d2cd01ccb)
+ok 55 - Icecave\Collections\CollectionTest::testKeys with data set #4 (LimitIterator_PHAKE5212e45416adc)
 ok 56 - Icecave\Collections\CollectionTest::testValues with data set #0 (array(1, 2, 3))
 ok 57 - Icecave\Collections\CollectionTest::testValues with data set #1 (<Vector 3 [1, 2, 3]>)
 ok 58 - Icecave\Collections\CollectionTest::testValues with data set #2 (<Map 3 [0 => 1, 1 => 2, 2 => 3]>)
 ok 59 - Icecave\Collections\CollectionTest::testValues with data set #3 (ArrayIterator)
-ok 60 - Icecave\Collections\CollectionTest::testValues with data set #4 (LimitIterator_PHAKE5212d2cd01ccb)
+ok 60 - Icecave\Collections\CollectionTest::testValues with data set #4 (LimitIterator_PHAKE5212e45416adc)
 ok 61 - Icecave\Collections\CollectionTest::testElements with data set #0 (array(1, 2, 3))
 ok 62 - Icecave\Collections\CollectionTest::testElements with data set #1 (<Vector 3 [1, 2, 3]>)
 ok 63 - Icecave\Collections\CollectionTest::testElements with data set #2 (<Map 3 [0 => 1, 1 => 2, 2 => 3]>)
 ok 64 - Icecave\Collections\CollectionTest::testElements with data set #3 (ArrayIterator)
-ok 65 - Icecave\Collections\CollectionTest::testElements with data set #4 (LimitIterator_PHAKE5212d2cd01ccb)
+ok 65 - Icecave\Collections\CollectionTest::testElements with data set #4 (LimitIterator_PHAKE5212e45416adc)
 ok 66 - Icecave\Collections\CollectionTest::testMap with data set #0 (array(1, 2, 3))
 ok 67 - Icecave\Collections\CollectionTest::testMap with data set #1 (<Vector 3 [1, 2, 3]>)
 ok 68 - Icecave\Collections\CollectionTest::testMap with data set #2 (<Map 3 [0 => 1, 1 => 2, 2 => 3]>)
 ok 69 - Icecave\Collections\CollectionTest::testMap with data set #3 (ArrayIterator)
-ok 70 - Icecave\Collections\CollectionTest::testMap with data set #4 (LimitIterator_PHAKE5212d2cd01ccb)
+ok 70 - Icecave\Collections\CollectionTest::testMap with data set #4 (LimitIterator_PHAKE5212e45416adc)
 ok 71 - Icecave\Collections\CollectionTest::testMapWithArrayAccess with data set #0 (array(1, 2, 3))
 ok 72 - Icecave\Collections\CollectionTest::testMapWithArrayAccess with data set #1 (<Vector 3 [1, 2, 3]>)
 ok 73 - Icecave\Collections\CollectionTest::testMapWithArrayAccess with data set #2 (<Map 3 [0 => 1, 1 => 2, 2 => 3]>)
 ok 74 - Icecave\Collections\CollectionTest::testMapWithArrayAccess with data set #3 (ArrayIterator)
-ok 75 - Icecave\Collections\CollectionTest::testMapWithArrayAccess with data set #4 (LimitIterator_PHAKE5212d2cd01ccb)
+ok 75 - Icecave\Collections\CollectionTest::testMapWithArrayAccess with data set #4 (LimitIterator_PHAKE5212e45416adc)
 ok 76 - Icecave\Collections\CollectionTest::testMapWithExplicitArray with data set #0 (array(1, 2, 3))
 ok 77 - Icecave\Collections\CollectionTest::testMapWithExplicitArray with data set #1 (<Vector 3 [1, 2, 3]>)
 ok 78 - Icecave\Collections\CollectionTest::testMapWithExplicitArray with data set #2 (<Map 3 [0 => 1, 1 => 2, 2 => 3]>)
 ok 79 - Icecave\Collections\CollectionTest::testMapWithExplicitArray with data set #3 (ArrayIterator)
-ok 80 - Icecave\Collections\CollectionTest::testMapWithExplicitArray with data set #4 (LimitIterator_PHAKE5212d2cd01ccb)
+ok 80 - Icecave\Collections\CollectionTest::testMapWithExplicitArray with data set #4 (LimitIterator_PHAKE5212e45416adc)
 ok 81 - Icecave\Collections\CollectionTest::testFilter with data set #0 (array(1, 2, 3))
 ok 82 - Icecave\Collections\CollectionTest::testFilter with data set #1 (<Vector 3 [1, 2, 3]>)
 ok 83 - Icecave\Collections\CollectionTest::testFilter with data set #2 (<Map 3 [0 => 1, 1 => 2, 2 => 3]>)
 ok 84 - Icecave\Collections\CollectionTest::testFilter with data set #3 (ArrayIterator)
-ok 85 - Icecave\Collections\CollectionTest::testFilter with data set #4 (LimitIterator_PHAKE5212d2cd01ccb)
+ok 85 - Icecave\Collections\CollectionTest::testFilter with data set #4 (LimitIterator_PHAKE5212e45416adc)
 ok 86 - Icecave\Collections\CollectionTest::testFilterWithArrayAccess with data set #0 (array(1, 2, 3))
 ok 87 - Icecave\Collections\CollectionTest::testFilterWithArrayAccess with data set #1 (<Vector 3 [1, 2, 3]>)
 ok 88 - Icecave\Collections\CollectionTest::testFilterWithArrayAccess with data set #2 (<Map 3 [0 => 1, 1 => 2, 2 => 3]>)
 ok 89 - Icecave\Collections\CollectionTest::testFilterWithArrayAccess with data set #3 (ArrayIterator)
-ok 90 - Icecave\Collections\CollectionTest::testFilterWithArrayAccess with data set #4 (LimitIterator_PHAKE5212d2cd01ccb)
+ok 90 - Icecave\Collections\CollectionTest::testFilterWithArrayAccess with data set #4 (LimitIterator_PHAKE5212e45416adc)
 ok 91 - Icecave\Collections\CollectionTest::testFilterWithExplicitArray with data set #0 (array(1, 2, 3))
 ok 92 - Icecave\Collections\CollectionTest::testFilterWithExplicitArray with data set #1 (<Vector 3 [1, 2, 3]>)
 ok 93 - Icecave\Collections\CollectionTest::testFilterWithExplicitArray with data set #2 (<Map 3 [0 => 1, 1 => 2, 2 => 3]>)
 ok 94 - Icecave\Collections\CollectionTest::testFilterWithExplicitArray with data set #3 (ArrayIterator)
-ok 95 - Icecave\Collections\CollectionTest::testFilterWithExplicitArray with data set #4 (LimitIterator_PHAKE5212d2cd01ccb)
+ok 95 - Icecave\Collections\CollectionTest::testFilterWithExplicitArray with data set #4 (LimitIterator_PHAKE5212e45416adc)
 ok 96 - Icecave\Collections\CollectionTest::testEach with data set #0 (array(1, 2, 3))
 ok 97 - Icecave\Collections\CollectionTest::testEach with data set #1 (<Vector 3 [1, 2, 3]>)
 ok 98 - Icecave\Collections\CollectionTest::testEach with data set #2 (<Map 3 [0 => 1, 1 => 2, 2 => 3]>)
 ok 99 - Icecave\Collections\CollectionTest::testEach with data set #3 (ArrayIterator)
-ok 100 - Icecave\Collections\CollectionTest::testEach with data set #4 (LimitIterator_PHAKE5212d2cd01ccb)
+ok 100 - Icecave\Collections\CollectionTest::testEach with data set #4 (LimitIterator_PHAKE5212e45416adc)
 ok 101 - Icecave\Collections\CollectionTest::testAll with data set #0 (array(1, 2, 3))
 ok 102 - Icecave\Collections\CollectionTest::testAll with data set #1 (<Vector 3 [1, 2, 3]>)
 ok 103 - Icecave\Collections\CollectionTest::testAll with data set #2 (<Map 3 [0 => 1, 1 => 2, 2 => 3]>)
 ok 104 - Icecave\Collections\CollectionTest::testAll with data set #3 (ArrayIterator)
-ok 105 - Icecave\Collections\CollectionTest::testAll with data set #4 (LimitIterator_PHAKE5212d2cd01ccb)
+ok 105 - Icecave\Collections\CollectionTest::testAll with data set #4 (LimitIterator_PHAKE5212e45416adc)
 ok 106 - Icecave\Collections\CollectionTest::testAny with data set #0 (array(1, 2, 3))
 ok 107 - Icecave\Collections\CollectionTest::testAny with data set #1 (<Vector 3 [1, 2, 3]>)
 ok 108 - Icecave\Collections\CollectionTest::testAny with data set #2 (<Map 3 [0 => 1, 1 => 2, 2 => 3]>)
 ok 109 - Icecave\Collections\CollectionTest::testAny with data set #3 (ArrayIterator)
-ok 110 - Icecave\Collections\CollectionTest::testAny with data set #4 (LimitIterator_PHAKE5212d2cd01ccb)
+ok 110 - Icecave\Collections\CollectionTest::testAny with data set #4 (LimitIterator_PHAKE5212e45416adc)
 ok 111 - Icecave\Collections\CollectionTest::testIsSequential with data set #0 (array(1, 2, 3))
 ok 112 - Icecave\Collections\CollectionTest::testIsSequential with data set #1 (<Vector 3 [1, 2, 3]>)
 ok 113 - Icecave\Collections\CollectionTest::testIsSequential with data set #2 (<Map 3 [0 => 1, 1 => 2, 2 => 3]>)
 ok 114 - Icecave\Collections\CollectionTest::testIsSequential with data set #3 (ArrayIterator)
-ok 115 - Icecave\Collections\CollectionTest::testIsSequential with data set #4 (LimitIterator_PHAKE5212d2cd01ccb)
+ok 115 - Icecave\Collections\CollectionTest::testIsSequential with data set #4 (LimitIterator_PHAKE5212e45416adc)
 ok 116 - Icecave\Collections\CollectionTest::testIteratorTraits with data set #0 (Icecave\Collections\Iterator\Traits, array())
 ok 117 - Icecave\Collections\CollectionTest::testIteratorTraits with data set #1 (Icecave\Collections\Iterator\Traits, SplDoublyLinkedList)
 ok 118 - Icecave\Collections\CollectionTest::testIteratorTraits with data set #2 (Icecave\Collections\Iterator\Traits, SplStack)
@@ -124,7 +124,7 @@ ok 122 - Icecave\Collections\CollectionTest::testIteratorTraits with data set #6
 ok 123 - Icecave\Collections\CollectionTest::testIteratorTraits with data set #7 (Icecave\Collections\Iterator\Traits, SplFixedArray)
 ok 124 - Icecave\Collections\CollectionTest::testIteratorTraits with data set #8 (Icecave\Collections\Iterator\Traits, SplObjectStorage)
 ok 125 - Icecave\Collections\CollectionTest::testIteratorTraits with data set #9 (Icecave\Collections\Iterator\Traits, ArrayIterator)
-ok 126 - Icecave\Collections\CollectionTest::testIteratorTraits with data set #10 (Icecave\Collections\Iterator\Traits, LimitIterator_PHAKE5212d2cd01ccb)
+ok 126 - Icecave\Collections\CollectionTest::testIteratorTraits with data set #10 (Icecave\Collections\Iterator\Traits, LimitIterator_PHAKE5212e45416adc)
 ok 127 - Icecave\Collections\CollectionTest::testIteratorTraitsWithProvider
 ok 128 - Icecave\Collections\CollectionTest::testLowerBound with data set "not found, start" (5, 0, NULL, 0)
 ok 129 - Icecave\Collections\CollectionTest::testLowerBound with data set "found, start" (10, 0, NULL, 0)
@@ -696,348 +696,380 @@ ok 694 - Icecave\Collections\LinkedListTest::testSliceWithNegativeIndexAndCount
 ok 695 - Icecave\Collections\LinkedListTest::testRange
 ok 696 - Icecave\Collections\LinkedListTest::testRangeWithNegativeIndices
 ok 697 - Icecave\Collections\LinkedListTest::testRangeWithEndBeforeBegin
-ok 698 - Icecave\Collections\LinkedListTest::testIndexOf
-ok 699 - Icecave\Collections\LinkedListTest::testIndexOfWithStartIndex
-ok 700 - Icecave\Collections\LinkedListTest::testIndexOfWithNoMatch
-ok 701 - Icecave\Collections\LinkedListTest::testIndexOfLast
-ok 702 - Icecave\Collections\LinkedListTest::testIndexOfLastWithStartIndex
-ok 703 - Icecave\Collections\LinkedListTest::testIndexOfLastWithNoMatch
-ok 704 - Icecave\Collections\LinkedListTest::testFind
-ok 705 - Icecave\Collections\LinkedListTest::testFindLast
-ok 706 - Icecave\Collections\LinkedListTest::testSet
-ok 707 - Icecave\Collections\LinkedListTest::testSetWithNegativeIndex
-ok 708 - Icecave\Collections\LinkedListTest::testSetWithInvalidIndex
-ok 709 - Icecave\Collections\LinkedListTest::testInsert
-ok 710 - Icecave\Collections\LinkedListTest::testInsertWithNegativeIndex
-ok 711 - Icecave\Collections\LinkedListTest::testInsertAtEnd
-ok 712 - Icecave\Collections\LinkedListTest::testInsertWithInvalidIndex
-ok 713 - Icecave\Collections\LinkedListTest::testInsertMany
-ok 714 - Icecave\Collections\LinkedListTest::testInsertManyAtBegin
-ok 715 - Icecave\Collections\LinkedListTest::testInsertManyAtEnd
-ok 716 - Icecave\Collections\LinkedListTest::testInsertManyWithEmptyElements
-ok 717 - Icecave\Collections\LinkedListTest::testInsertManyWithNegativeIndex
-ok 718 - Icecave\Collections\LinkedListTest::testInsertManyWithInvalidIndex
-ok 719 - Icecave\Collections\LinkedListTest::testInsertRange
-ok 720 - Icecave\Collections\LinkedListTest::testInsertRangeEmpty
-ok 721 - Icecave\Collections\LinkedListTest::testRemove
-ok 722 - Icecave\Collections\LinkedListTest::testRemoveWithNegativeIndex
-ok 723 - Icecave\Collections\LinkedListTest::testRemoveWithInvalidIndex
-ok 724 - Icecave\Collections\LinkedListTest::testRemoveMany
-ok 725 - Icecave\Collections\LinkedListTest::testRemoveManyEverything
-ok 726 - Icecave\Collections\LinkedListTest::testRemoveManyWithCount
-ok 727 - Icecave\Collections\LinkedListTest::testRemoveManyWithCountToEnd
-ok 728 - Icecave\Collections\LinkedListTest::testRemoveManyWithNegativeIndex
-ok 729 - Icecave\Collections\LinkedListTest::testRemoveManyWithInvalidIndex
-ok 730 - Icecave\Collections\LinkedListTest::testRemoveRange
-ok 731 - Icecave\Collections\LinkedListTest::testRemoveRangeToEnd
-ok 732 - Icecave\Collections\LinkedListTest::testRemoveRangeWithNegativeIndex
-ok 733 - Icecave\Collections\LinkedListTest::testRemoveRangeWithEndBeforeBegin
-ok 734 - Icecave\Collections\LinkedListTest::testRemoveRangeWithInvalidIndex
-ok 735 - Icecave\Collections\LinkedListTest::testReplace
-ok 736 - Icecave\Collections\LinkedListTest::testReplaceWithCount
-ok 737 - Icecave\Collections\LinkedListTest::testReplaceWithNegativeIndex
-ok 738 - Icecave\Collections\LinkedListTest::testReplaceWithInvalidIndex
-ok 739 - Icecave\Collections\LinkedListTest::testReplaceRange
-ok 740 - Icecave\Collections\LinkedListTest::testReplaceRangeWithNegativeIndices
-ok 741 - Icecave\Collections\LinkedListTest::testReplaceRangeWithZeroLength
-ok 742 - Icecave\Collections\LinkedListTest::testReplaceRangeWithEndBeforeBegin
-ok 743 - Icecave\Collections\LinkedListTest::testReplaceRangeWithInvalidIndex
-ok 744 - Icecave\Collections\LinkedListTest::testSwap
-ok 745 - Icecave\Collections\LinkedListTest::testSwapWithNegativeIndices
-ok 746 - Icecave\Collections\LinkedListTest::testSwapWithInvalidIndex1
-ok 747 - Icecave\Collections\LinkedListTest::testSwapWithInvalidIndex2
-ok 748 - Icecave\Collections\LinkedListTest::testTrySwap
-ok 749 - Icecave\Collections\LinkedListTest::testTrySwapWithNegativeIndices
-ok 750 - Icecave\Collections\LinkedListTest::testTrySwapWithInvalidIndex1
-ok 751 - Icecave\Collections\LinkedListTest::testTrySwapWithInvalidIndex2
-ok 752 - Icecave\Collections\LinkedListTest::testCount
-ok 753 - Icecave\Collections\LinkedListTest::testIteration
-ok 754 - Icecave\Collections\MapTest::testConstructor
-ok 755 - Icecave\Collections\MapTest::testConstructorWithArray
-ok 756 - Icecave\Collections\MapTest::testClone
-ok 757 - Icecave\Collections\MapTest::testSerialization
-ok 758 - Icecave\Collections\MapTest::testSerializationOfHashFunction
-ok 759 - Icecave\Collections\MapTest::testSize
-ok 760 - Icecave\Collections\MapTest::testIsEmpty
-ok 761 - Icecave\Collections\MapTest::testToString
-ok 762 - Icecave\Collections\MapTest::testClear
-ok 763 - Icecave\Collections\MapTest::testIteratorTraits
-ok 764 - Icecave\Collections\MapTest::testElements
-ok 765 - Icecave\Collections\MapTest::testContains
-ok 766 - Icecave\Collections\MapTest::testFilter
-ok 767 - Icecave\Collections\MapTest::testFilterWithPredicate
-ok 768 - Icecave\Collections\MapTest::testMap
-ok 769 - Icecave\Collections\MapTest::testPartition
-ok 770 - Icecave\Collections\MapTest::testEach
-ok 771 - Icecave\Collections\MapTest::testAll
-ok 772 - Icecave\Collections\MapTest::testAny
-ok 773 - Icecave\Collections\MapTest::testFilterInPlace
-ok 774 - Icecave\Collections\MapTest::testFilterInPlaceWithPredicate
-ok 775 - Icecave\Collections\MapTest::testMapInPlace
-ok 776 - Icecave\Collections\MapTest::testHasKey
-ok 777 - Icecave\Collections\MapTest::testGet
-ok 778 - Icecave\Collections\MapTest::testGetFailure
-ok 779 - Icecave\Collections\MapTest::testTryGet
-ok 780 - Icecave\Collections\MapTest::testGetWithDefault
-ok 781 - Icecave\Collections\MapTest::testCascade
-ok 782 - Icecave\Collections\MapTest::testCascadeFailure
-ok 783 - Icecave\Collections\MapTest::testCascadeWithDefault
-ok 784 - Icecave\Collections\MapTest::testCascadeIterable
-ok 785 - Icecave\Collections\MapTest::testCascadeIterableWithDefault
-ok 786 - Icecave\Collections\MapTest::testKeys
-ok 787 - Icecave\Collections\MapTest::testValues
-ok 788 - Icecave\Collections\MapTest::testMerge
-ok 789 - Icecave\Collections\MapTest::testProject
-ok 790 - Icecave\Collections\MapTest::testProjectIterable
-ok 791 - Icecave\Collections\MapTest::testSet
-ok 792 - Icecave\Collections\MapTest::testAdd
-ok 793 - Icecave\Collections\MapTest::testAddFailure
-ok 794 - Icecave\Collections\MapTest::testTryAdd
-ok 795 - Icecave\Collections\MapTest::testReplace
-ok 796 - Icecave\Collections\MapTest::testReplaceFailure
-ok 797 - Icecave\Collections\MapTest::testTryReplace
-ok 798 - Icecave\Collections\MapTest::testTryReplaceFailure
-ok 799 - Icecave\Collections\MapTest::testRemove
-ok 800 - Icecave\Collections\MapTest::testRemoveFailure
-ok 801 - Icecave\Collections\MapTest::testTryRemove
-ok 802 - Icecave\Collections\MapTest::testMergeInPlace
-ok 803 - Icecave\Collections\MapTest::testSwap
-ok 804 - Icecave\Collections\MapTest::testSwapFailureWithUnknownSource
-ok 805 - Icecave\Collections\MapTest::testSwapFailureWithUnknownTarget
-ok 806 - Icecave\Collections\MapTest::testTrySwap
-ok 807 - Icecave\Collections\MapTest::testTrySwapFailureWithUnknownSource
-ok 808 - Icecave\Collections\MapTest::testTrySwapFailureWithUnknownTarget
-ok 809 - Icecave\Collections\MapTest::testMove
-ok 810 - Icecave\Collections\MapTest::testMoveFailure
-ok 811 - Icecave\Collections\MapTest::testTryMove
-ok 812 - Icecave\Collections\MapTest::testTryMoveFailure
-ok 813 - Icecave\Collections\MapTest::testRename
-ok 814 - Icecave\Collections\MapTest::testRenameFailureWithUnknownSource
-ok 815 - Icecave\Collections\MapTest::testRenameFailureWithDuplicateTarget
-ok 816 - Icecave\Collections\MapTest::testTryRename
-ok 817 - Icecave\Collections\MapTest::testTryRenameFailureWithUnknownSource
-ok 818 - Icecave\Collections\MapTest::testTryRenameFailureWithDuplicateTarget
-ok 819 - Icecave\Collections\MapTest::testCount
-ok 820 - Icecave\Collections\MapTest::testIteration
-ok 821 - Icecave\Collections\MapTest::testIteratorKeyLimitationWorkaround
-ok 822 - Icecave\Collections\MapTest::testOffsetExists
-ok 823 - Icecave\Collections\MapTest::testOffsetGet
-ok 824 - Icecave\Collections\MapTest::testOffsetGetFailure
-ok 825 - Icecave\Collections\MapTest::testOffsetSet
-ok 826 - Icecave\Collections\MapTest::testOffsetUnset
-ok 827 - Icecave\Collections\PriorityQueueTest::testConstructor
-ok 828 - Icecave\Collections\PriorityQueueTest::testConstructorWithArray
-ok 829 - Icecave\Collections\PriorityQueueTest::testSerialization
-ok 830 - Icecave\Collections\PriorityQueueTest::testSize
-ok 831 - Icecave\Collections\PriorityQueueTest::testIsEmpty
-ok 832 - Icecave\Collections\PriorityQueueTest::testToString
-ok 833 - Icecave\Collections\PriorityQueueTest::testClear
-ok 834 - Icecave\Collections\PriorityQueueTest::testNext
-ok 835 - Icecave\Collections\PriorityQueueTest::testNextWithEmptyCollection
-ok 836 - Icecave\Collections\PriorityQueueTest::testTryNext
-ok 837 - Icecave\Collections\PriorityQueueTest::testTryNextWithEmptyCollection
-ok 838 - Icecave\Collections\PriorityQueueTest::testPop
-ok 839 - Icecave\Collections\PriorityQueueTest::testPopWithEmptyCollection
-ok 840 - Icecave\Collections\PriorityQueueTest::testTryPop
-ok 841 - Icecave\Collections\PriorityQueueTest::testTryPopWithEmptyCollection
-ok 842 - Icecave\Collections\PriorityQueueTest::testPush
-ok 843 - Icecave\Collections\PriorityQueueTest::testPushWithExplicitPriority
-ok 844 - Icecave\Collections\QueueTest::testConstructor
-ok 845 - Icecave\Collections\QueueTest::testConstructorWithArray
-ok 846 - Icecave\Collections\QueueTest::testClone
-ok 847 - Icecave\Collections\QueueTest::testSerialization
-ok 848 - Icecave\Collections\QueueTest::testSize
-ok 849 - Icecave\Collections\QueueTest::testIsEmpty
-ok 850 - Icecave\Collections\QueueTest::testToString
-ok 851 - Icecave\Collections\QueueTest::testClear
-ok 852 - Icecave\Collections\QueueTest::testNext
-ok 853 - Icecave\Collections\QueueTest::testNextWithEmptyCollection
-ok 854 - Icecave\Collections\QueueTest::testTryNext
-ok 855 - Icecave\Collections\QueueTest::testTryNextWithEmptyCollection
-ok 856 - Icecave\Collections\QueueTest::testPop
-ok 857 - Icecave\Collections\QueueTest::testPopWithEmptyCollection
-ok 858 - Icecave\Collections\QueueTest::testTryPop
-ok 859 - Icecave\Collections\QueueTest::testTryPopWithEmptyCollection
-ok 860 - Icecave\Collections\QueueTest::testCount
-ok 861 - Icecave\Collections\SetTest::testSerialization
-ok 862 - Icecave\Collections\SetTest::testSerializationOfComparator
-ok 863 - Icecave\Collections\StackTest::testConstructor
-ok 864 - Icecave\Collections\StackTest::testConstructorWithArray
-ok 865 - Icecave\Collections\StackTest::testClone
-ok 866 - Icecave\Collections\StackTest::testSerialization
-ok 867 - Icecave\Collections\StackTest::testSize
-ok 868 - Icecave\Collections\StackTest::testIsEmpty
-ok 869 - Icecave\Collections\StackTest::testToString
-ok 870 - Icecave\Collections\StackTest::testClear
-ok 871 - Icecave\Collections\StackTest::testNext
-ok 872 - Icecave\Collections\StackTest::testNextWithEmptyCollection
-ok 873 - Icecave\Collections\StackTest::testTryNext
-ok 874 - Icecave\Collections\StackTest::testTryNextWithEmptyCollection
-ok 875 - Icecave\Collections\StackTest::testPop
-ok 876 - Icecave\Collections\StackTest::testPopWithEmptyCollection
-ok 877 - Icecave\Collections\StackTest::testTryPop
-ok 878 - Icecave\Collections\StackTest::testTryPopWithEmptyCollection
-ok 879 - Icecave\Collections\StackTest::testCount
-ok 880 - Icecave\Collections\Utility\AssociativeKeyGeneratorTest::testBoolean
-ok 881 - Icecave\Collections\Utility\AssociativeKeyGeneratorTest::testInteger
-ok 882 - Icecave\Collections\Utility\AssociativeKeyGeneratorTest::testDouble
-ok 883 - Icecave\Collections\Utility\AssociativeKeyGeneratorTest::testString
-ok 884 - Icecave\Collections\Utility\AssociativeKeyGeneratorTest::testResource
-ok 885 - Icecave\Collections\Utility\AssociativeKeyGeneratorTest::testNull
-ok 886 - Icecave\Collections\Utility\AssociativeKeyGeneratorTest::testObject
-ok 887 - Icecave\Collections\Utility\AssociativeKeyGeneratorTest::testArray
-ok 888 - Icecave\Collections\Utility\AssociativeKeyGeneratorTest::testEmptyArray
-ok 889 - Icecave\Collections\Utility\AssociativeKeyGeneratorTest::testArrayInternalImplementation
-ok 890 - Icecave\Collections\Utility\AssociativeKeyGeneratorTest::testArrayInternalImplementationWithAssociativeArray
-ok 891 - Icecave\Collections\Utility\AssociativeKeyGeneratorTest::testInvoke
-ok 892 - Icecave\Collections\Utility\AssociativeKeyGeneratorTest::testAlternativeImplementations
-ok 893 - Icecave\Collections\Utility\ObjectIdentityComparatorTest::testCompareSameObject
-ok 894 - Icecave\Collections\Utility\ObjectIdentityComparatorTest::testCompareDifferentClass
-ok 895 - Icecave\Collections\Utility\ObjectIdentityComparatorTest::testCompare
-ok 896 - Icecave\Collections\VectorTest::testConstructor
-ok 897 - Icecave\Collections\VectorTest::testConstructorWithArray
-ok 898 - Icecave\Collections\VectorTest::testClone
-ok 899 - Icecave\Collections\VectorTest::testSerialization
-ok 900 - Icecave\Collections\VectorTest::testSize
-ok 901 - Icecave\Collections\VectorTest::testIsEmpty
-ok 902 - Icecave\Collections\VectorTest::testToString
-ok 903 - Icecave\Collections\VectorTest::testClear
-ok 904 - Icecave\Collections\VectorTest::testIteratorTraits
-ok 905 - Icecave\Collections\VectorTest::testElements
-ok 906 - Icecave\Collections\VectorTest::testContains
-ok 907 - Icecave\Collections\VectorTest::testCopyFilter
-ok 908 - Icecave\Collections\VectorTest::testCopyFilterWithPredicate
-ok 909 - Icecave\Collections\VectorTest::testMap
-ok 910 - Icecave\Collections\VectorTest::testPartition
-ok 911 - Icecave\Collections\VectorTest::testEach
-ok 912 - Icecave\Collections\VectorTest::testAll
-ok 913 - Icecave\Collections\VectorTest::testAny
-ok 914 - Icecave\Collections\VectorTest::testFilterInPlace
-ok 915 - Icecave\Collections\VectorTest::testFilterInPlaceWithPredicate
-ok 916 - Icecave\Collections\VectorTest::testFilterInPlaceWithPredicateThreshold
-ok 917 - Icecave\Collections\VectorTest::testMapInPlace
-ok 918 - Icecave\Collections\VectorTest::testFront
-ok 919 - Icecave\Collections\VectorTest::testFrontWithEmptyCollection
-ok 920 - Icecave\Collections\VectorTest::testTryFront
-ok 921 - Icecave\Collections\VectorTest::testTryFrontWithEmptyCollection
-ok 922 - Icecave\Collections\VectorTest::testBack
-ok 923 - Icecave\Collections\VectorTest::testBackWithEmptyCollection
-ok 924 - Icecave\Collections\VectorTest::testTryBack
-ok 925 - Icecave\Collections\VectorTest::testTryBackWithEmptyCollection
-ok 926 - Icecave\Collections\VectorTest::testSort
-ok 927 - Icecave\Collections\VectorTest::testCopySortWithComparator
-ok 928 - Icecave\Collections\VectorTest::testCopyReverse
-ok 929 - Icecave\Collections\VectorTest::testJoin
-ok 930 - Icecave\Collections\VectorTest::testJoinOverCapacity
-ok 931 - Icecave\Collections\VectorTest::testSortInPlace
-ok 932 - Icecave\Collections\VectorTest::testSortInPlaceWithComparator
-ok 933 - Icecave\Collections\VectorTest::testSortInPlaceWithEmptyCollection
-ok 934 - Icecave\Collections\VectorTest::testSortInPlaceWithSingleElement
-ok 935 - Icecave\Collections\VectorTest::testReverseInPlace
-ok 936 - Icecave\Collections\VectorTest::testAppend
-ok 937 - Icecave\Collections\VectorTest::testPushFront
-ok 938 - Icecave\Collections\VectorTest::testPopFront
-ok 939 - Icecave\Collections\VectorTest::testPopFrontWithEmptyCollection
-ok 940 - Icecave\Collections\VectorTest::testTryPopFront
-ok 941 - Icecave\Collections\VectorTest::testTryPopFrontWithEmptyCollection
-ok 942 - Icecave\Collections\VectorTest::testPushBack
-ok 943 - Icecave\Collections\VectorTest::testPopBack
-ok 944 - Icecave\Collections\VectorTest::testPopBackWithEmptyCollection
-ok 945 - Icecave\Collections\VectorTest::testTryPopBack
-ok 946 - Icecave\Collections\VectorTest::testTryPopBackWithEmptyCollection
-ok 947 - Icecave\Collections\VectorTest::testResize
-ok 948 - Icecave\Collections\VectorTest::testResizeWithValue
-ok 949 - Icecave\Collections\VectorTest::testResizeToSmallerSize
-ok 950 - Icecave\Collections\VectorTest::testGet
-ok 951 - Icecave\Collections\VectorTest::testGetWithNegativeIndex
-ok 952 - Icecave\Collections\VectorTest::testGetWithInvalidIndex
-ok 953 - Icecave\Collections\VectorTest::testSlice
-ok 954 - Icecave\Collections\VectorTest::testSliceWithCount
-ok 955 - Icecave\Collections\VectorTest::testSliceWithCountOverflow
-ok 956 - Icecave\Collections\VectorTest::testSliceWithNegativeCount
-ok 957 - Icecave\Collections\VectorTest::testSliceWithNegativeIndex
-ok 958 - Icecave\Collections\VectorTest::testSliceWithNegativeIndexAndCount
-ok 959 - Icecave\Collections\VectorTest::testSliceWithInvalidIndex
-ok 960 - Icecave\Collections\VectorTest::testRange
-ok 961 - Icecave\Collections\VectorTest::testRangeWithNegativeIndices
-ok 962 - Icecave\Collections\VectorTest::testRangeWithEndBeforeBegin
-ok 963 - Icecave\Collections\VectorTest::testRangeWithInvalidBegin
-ok 964 - Icecave\Collections\VectorTest::testRangeWithInvalidEnd
-ok 965 - Icecave\Collections\VectorTest::testIndexOf
-ok 966 - Icecave\Collections\VectorTest::testIndexOfWithStartIndex
-ok 967 - Icecave\Collections\VectorTest::testIndexOfWithNoMatch
-ok 968 - Icecave\Collections\VectorTest::testIndexOfLast
-ok 969 - Icecave\Collections\VectorTest::testIndexOfLastWithStartIndex
-ok 970 - Icecave\Collections\VectorTest::testIndexOfLastWithNoMatch
-ok 971 - Icecave\Collections\VectorTest::testFind
-ok 972 - Icecave\Collections\VectorTest::testFindLast
-ok 973 - Icecave\Collections\VectorTest::testSet
-ok 974 - Icecave\Collections\VectorTest::testSetWithNegativeIndex
-ok 975 - Icecave\Collections\VectorTest::testSetWithInvalidIndex
-ok 976 - Icecave\Collections\VectorTest::testInsert
-ok 977 - Icecave\Collections\VectorTest::testInsertWithNegativeIndex
-ok 978 - Icecave\Collections\VectorTest::testInsertAtEnd
-ok 979 - Icecave\Collections\VectorTest::testInsertWithInvalidIndex
-ok 980 - Icecave\Collections\VectorTest::testInsertMany
-ok 981 - Icecave\Collections\VectorTest::testInsertManyAtEnd
-ok 982 - Icecave\Collections\VectorTest::testInsertManyWithEmptyElements
-ok 983 - Icecave\Collections\VectorTest::testInsertManyWithNegativeIndex
-ok 984 - Icecave\Collections\VectorTest::testInsertManyWithInvalidIndex
-ok 985 - Icecave\Collections\VectorTest::testInsertManyWithUncountableIterator
-ok 986 - Icecave\Collections\VectorTest::testInsertManyWithUncountableIteratorAndExistingCapacity
-ok 987 - Icecave\Collections\VectorTest::testInsertManyAtStartWithUncountableIterator
-ok 988 - Icecave\Collections\VectorTest::testInsertManyAtEndWithUncountableIterator
-ok 989 - Icecave\Collections\VectorTest::testInsertManyWithUncountableIteratorAndMoreElementsThanFirstExpansion
-ok 990 - Icecave\Collections\VectorTest::testInsertRange
-ok 991 - Icecave\Collections\VectorTest::testInsertRangeEmpty
-ok 992 - Icecave\Collections\VectorTest::testRemove
-ok 993 - Icecave\Collections\VectorTest::testRemoveWithNegativeIndex
-ok 994 - Icecave\Collections\VectorTest::testRemoveWithInvalidIndex
-ok 995 - Icecave\Collections\VectorTest::testRemoveMany
-ok 996 - Icecave\Collections\VectorTest::testRemoveManyWithCount
-ok 997 - Icecave\Collections\VectorTest::testRemoveManyWithCountOverflow
-ok 998 - Icecave\Collections\VectorTest::testRemoveManyWithNegativeIndex
-ok 999 - Icecave\Collections\VectorTest::testRemoveManyWithInvalidIndex
-ok 1000 - Icecave\Collections\VectorTest::testRemoveRange
-ok 1001 - Icecave\Collections\VectorTest::testRemoveRangeToEnd
-ok 1002 - Icecave\Collections\VectorTest::testRemoveRangeWithNegativeIndex
-ok 1003 - Icecave\Collections\VectorTest::testRemoveRangeWithEndBeforeBegin
-ok 1004 - Icecave\Collections\VectorTest::testRemoveRangeWithInvalidBegin
-ok 1005 - Icecave\Collections\VectorTest::testRemoveRangeWithInvalidEnd
-ok 1006 - Icecave\Collections\VectorTest::testReplace
-ok 1007 - Icecave\Collections\VectorTest::testReplaceWithCount
-ok 1008 - Icecave\Collections\VectorTest::testReplaceWithCountOverflow
-ok 1009 - Icecave\Collections\VectorTest::testReplaceWithRemoveMore
-ok 1010 - Icecave\Collections\VectorTest::testReplaceWithNegativeIndex
-ok 1011 - Icecave\Collections\VectorTest::testReplaceWithInvalidIndex
-ok 1012 - Icecave\Collections\VectorTest::testReplaceWithUncountableIterator
-ok 1013 - Icecave\Collections\VectorTest::testReplaceWithUncountableIteratorAndCount
-ok 1014 - Icecave\Collections\VectorTest::testReplaceWithUncountableIteratorAddMore
-ok 1015 - Icecave\Collections\VectorTest::testReplaceWithUncountableIteratorRemoveMore
-ok 1016 - Icecave\Collections\VectorTest::testReplaceRange
-ok 1017 - Icecave\Collections\VectorTest::testReplaceRangeWithNegativeIndices
-ok 1018 - Icecave\Collections\VectorTest::testReplaceRangeWithZeroLength
-ok 1019 - Icecave\Collections\VectorTest::testReplaceRangeWithEndBeforeBegin
-ok 1020 - Icecave\Collections\VectorTest::testReplaceRangeWithInvalidBegin
-ok 1021 - Icecave\Collections\VectorTest::testReplaceRangeWithInvalidEnd
-ok 1022 - Icecave\Collections\VectorTest::testSwap
-ok 1023 - Icecave\Collections\VectorTest::testSwapWithNegativeIndices
-ok 1024 - Icecave\Collections\VectorTest::testSwapWithInvalidIndex1
-ok 1025 - Icecave\Collections\VectorTest::testSwapWithInvalidIndex2
-ok 1026 - Icecave\Collections\VectorTest::testTrySwap
-ok 1027 - Icecave\Collections\VectorTest::testTrySwapWithNegativeIndices
-ok 1028 - Icecave\Collections\VectorTest::testTrySwapWithInvalidIndex1
-ok 1029 - Icecave\Collections\VectorTest::testTrySwapWithInvalidIndex2
-ok 1030 - Icecave\Collections\VectorTest::testCount
-ok 1031 - Icecave\Collections\VectorTest::testIteration
-ok 1032 - Icecave\Collections\VectorTest::testSeek
-ok 1033 - Icecave\Collections\VectorTest::testSeekBackwards
-ok 1034 - Icecave\Collections\VectorTest::testOffsetExists
-ok 1035 - Icecave\Collections\VectorTest::testOffsetGet
-ok 1036 - Icecave\Collections\VectorTest::testOffsetGetFailure
-ok 1037 - Icecave\Collections\VectorTest::testOffsetSet
-ok 1038 - Icecave\Collections\VectorTest::testOffsetUnset
-ok 1039 - Icecave\Collections\VectorTest::testCapacity
-ok 1040 - Icecave\Collections\VectorTest::testReserve
-ok 1041 - Icecave\Collections\VectorTest::testShrink
-1..1041
+ok 698 - Icecave\Collections\LinkedListTest::testIndexOf with data set "empty" (array(), 'foo', 0, NULL, NULL)
+ok 699 - Icecave\Collections\LinkedListTest::testIndexOf with data set "match" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'bar', 0, NULL, 1)
+ok 700 - Icecave\Collections\LinkedListTest::testIndexOf with data set "no match" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'grob', 0, NULL, NULL)
+ok 701 - Icecave\Collections\LinkedListTest::testIndexOf with data set "begin index" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'bar', 2, NULL, 3)
+ok 702 - Icecave\Collections\LinkedListTest::testIndexOf with data set "range match" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'bar', 1, 3, 1)
+ok 703 - Icecave\Collections\LinkedListTest::testIndexOf with data set "range no match" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'bar', 2, 3, NULL)
+ok 704 - Icecave\Collections\LinkedListTest::testIndexOfLast with data set "empty" (array(), 'foo', 0, NULL, NULL)
+ok 705 - Icecave\Collections\LinkedListTest::testIndexOfLast with data set "match" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'bar', 0, NULL, 3)
+ok 706 - Icecave\Collections\LinkedListTest::testIndexOfLast with data set "no match" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'grob', 0, NULL, NULL)
+ok 707 - Icecave\Collections\LinkedListTest::testIndexOfLast with data set "begin index" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'bar', 2, NULL, 3)
+ok 708 - Icecave\Collections\LinkedListTest::testIndexOfLast with data set "range match" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'bar', 1, 3, 1)
+ok 709 - Icecave\Collections\LinkedListTest::testIndexOfLast with data set "range no match" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'bar', 2, 3, NULL)
+ok 710 - Icecave\Collections\LinkedListTest::testFind with data set "empty" (array(), 'foo', 0, NULL, NULL)
+ok 711 - Icecave\Collections\LinkedListTest::testFind with data set "match" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'bar', 0, NULL, 1)
+ok 712 - Icecave\Collections\LinkedListTest::testFind with data set "no match" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'grob', 0, NULL, NULL)
+ok 713 - Icecave\Collections\LinkedListTest::testFind with data set "begin index" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'bar', 2, NULL, 3)
+ok 714 - Icecave\Collections\LinkedListTest::testFind with data set "range match" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'bar', 1, 3, 1)
+ok 715 - Icecave\Collections\LinkedListTest::testFind with data set "range no match" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'bar', 2, 3, NULL)
+ok 716 - Icecave\Collections\LinkedListTest::testFindLast with data set "empty" (array(), 'foo', 0, NULL, NULL)
+ok 717 - Icecave\Collections\LinkedListTest::testFindLast with data set "match" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'bar', 0, NULL, 3)
+ok 718 - Icecave\Collections\LinkedListTest::testFindLast with data set "no match" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'grob', 0, NULL, NULL)
+ok 719 - Icecave\Collections\LinkedListTest::testFindLast with data set "begin index" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'bar', 2, NULL, 3)
+ok 720 - Icecave\Collections\LinkedListTest::testFindLast with data set "range match" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'bar', 1, 3, 1)
+ok 721 - Icecave\Collections\LinkedListTest::testFindLast with data set "range no match" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'bar', 2, 3, NULL)
+ok 722 - Icecave\Collections\LinkedListTest::testSet
+ok 723 - Icecave\Collections\LinkedListTest::testSetWithNegativeIndex
+ok 724 - Icecave\Collections\LinkedListTest::testSetWithInvalidIndex
+ok 725 - Icecave\Collections\LinkedListTest::testInsert
+ok 726 - Icecave\Collections\LinkedListTest::testInsertWithNegativeIndex
+ok 727 - Icecave\Collections\LinkedListTest::testInsertAtEnd
+ok 728 - Icecave\Collections\LinkedListTest::testInsertWithInvalidIndex
+ok 729 - Icecave\Collections\LinkedListTest::testInsertMany
+ok 730 - Icecave\Collections\LinkedListTest::testInsertManyAtBegin
+ok 731 - Icecave\Collections\LinkedListTest::testInsertManyAtEnd
+ok 732 - Icecave\Collections\LinkedListTest::testInsertManyWithEmptyElements
+ok 733 - Icecave\Collections\LinkedListTest::testInsertManyWithNegativeIndex
+ok 734 - Icecave\Collections\LinkedListTest::testInsertManyWithInvalidIndex
+ok 735 - Icecave\Collections\LinkedListTest::testInsertRange
+ok 736 - Icecave\Collections\LinkedListTest::testInsertRangeEmpty
+ok 737 - Icecave\Collections\LinkedListTest::testRemove
+ok 738 - Icecave\Collections\LinkedListTest::testRemoveWithNegativeIndex
+ok 739 - Icecave\Collections\LinkedListTest::testRemoveWithInvalidIndex
+ok 740 - Icecave\Collections\LinkedListTest::testRemoveMany
+ok 741 - Icecave\Collections\LinkedListTest::testRemoveManyEverything
+ok 742 - Icecave\Collections\LinkedListTest::testRemoveManyWithCount
+ok 743 - Icecave\Collections\LinkedListTest::testRemoveManyWithCountToEnd
+ok 744 - Icecave\Collections\LinkedListTest::testRemoveManyWithNegativeIndex
+ok 745 - Icecave\Collections\LinkedListTest::testRemoveManyWithInvalidIndex
+ok 746 - Icecave\Collections\LinkedListTest::testRemoveRange
+ok 747 - Icecave\Collections\LinkedListTest::testRemoveRangeToEnd
+ok 748 - Icecave\Collections\LinkedListTest::testRemoveRangeWithNegativeIndex
+ok 749 - Icecave\Collections\LinkedListTest::testRemoveRangeWithEndBeforeBegin
+ok 750 - Icecave\Collections\LinkedListTest::testRemoveRangeWithInvalidIndex
+ok 751 - Icecave\Collections\LinkedListTest::testReplace
+ok 752 - Icecave\Collections\LinkedListTest::testReplaceWithCount
+ok 753 - Icecave\Collections\LinkedListTest::testReplaceWithNegativeIndex
+ok 754 - Icecave\Collections\LinkedListTest::testReplaceWithInvalidIndex
+ok 755 - Icecave\Collections\LinkedListTest::testReplaceRange
+ok 756 - Icecave\Collections\LinkedListTest::testReplaceRangeWithNegativeIndices
+ok 757 - Icecave\Collections\LinkedListTest::testReplaceRangeWithZeroLength
+ok 758 - Icecave\Collections\LinkedListTest::testReplaceRangeWithEndBeforeBegin
+ok 759 - Icecave\Collections\LinkedListTest::testReplaceRangeWithInvalidIndex
+ok 760 - Icecave\Collections\LinkedListTest::testSwap
+ok 761 - Icecave\Collections\LinkedListTest::testSwapWithNegativeIndices
+ok 762 - Icecave\Collections\LinkedListTest::testSwapWithInvalidIndex1
+ok 763 - Icecave\Collections\LinkedListTest::testSwapWithInvalidIndex2
+ok 764 - Icecave\Collections\LinkedListTest::testTrySwap
+ok 765 - Icecave\Collections\LinkedListTest::testTrySwapWithNegativeIndices
+ok 766 - Icecave\Collections\LinkedListTest::testTrySwapWithInvalidIndex1
+ok 767 - Icecave\Collections\LinkedListTest::testTrySwapWithInvalidIndex2
+ok 768 - Icecave\Collections\LinkedListTest::testCount
+ok 769 - Icecave\Collections\LinkedListTest::testIteration
+ok 770 - Icecave\Collections\MapTest::testConstructor
+ok 771 - Icecave\Collections\MapTest::testConstructorWithArray
+ok 772 - Icecave\Collections\MapTest::testClone
+ok 773 - Icecave\Collections\MapTest::testSerialization
+ok 774 - Icecave\Collections\MapTest::testSerializationOfHashFunction
+ok 775 - Icecave\Collections\MapTest::testSize
+ok 776 - Icecave\Collections\MapTest::testIsEmpty
+ok 777 - Icecave\Collections\MapTest::testToString
+ok 778 - Icecave\Collections\MapTest::testClear
+ok 779 - Icecave\Collections\MapTest::testIteratorTraits
+ok 780 - Icecave\Collections\MapTest::testElements
+ok 781 - Icecave\Collections\MapTest::testContains
+ok 782 - Icecave\Collections\MapTest::testFilter
+ok 783 - Icecave\Collections\MapTest::testFilterWithPredicate
+ok 784 - Icecave\Collections\MapTest::testMap
+ok 785 - Icecave\Collections\MapTest::testPartition
+ok 786 - Icecave\Collections\MapTest::testEach
+ok 787 - Icecave\Collections\MapTest::testAll
+ok 788 - Icecave\Collections\MapTest::testAny
+ok 789 - Icecave\Collections\MapTest::testFilterInPlace
+ok 790 - Icecave\Collections\MapTest::testFilterInPlaceWithPredicate
+ok 791 - Icecave\Collections\MapTest::testMapInPlace
+ok 792 - Icecave\Collections\MapTest::testHasKey
+ok 793 - Icecave\Collections\MapTest::testGet
+ok 794 - Icecave\Collections\MapTest::testGetFailure
+ok 795 - Icecave\Collections\MapTest::testTryGet
+ok 796 - Icecave\Collections\MapTest::testGetWithDefault
+ok 797 - Icecave\Collections\MapTest::testCascade
+ok 798 - Icecave\Collections\MapTest::testCascadeFailure
+ok 799 - Icecave\Collections\MapTest::testCascadeWithDefault
+ok 800 - Icecave\Collections\MapTest::testCascadeIterable
+ok 801 - Icecave\Collections\MapTest::testCascadeIterableWithDefault
+ok 802 - Icecave\Collections\MapTest::testKeys
+ok 803 - Icecave\Collections\MapTest::testValues
+ok 804 - Icecave\Collections\MapTest::testMerge
+ok 805 - Icecave\Collections\MapTest::testProject
+ok 806 - Icecave\Collections\MapTest::testProjectIterable
+ok 807 - Icecave\Collections\MapTest::testSet
+ok 808 - Icecave\Collections\MapTest::testAdd
+ok 809 - Icecave\Collections\MapTest::testAddFailure
+ok 810 - Icecave\Collections\MapTest::testTryAdd
+ok 811 - Icecave\Collections\MapTest::testReplace
+ok 812 - Icecave\Collections\MapTest::testReplaceFailure
+ok 813 - Icecave\Collections\MapTest::testTryReplace
+ok 814 - Icecave\Collections\MapTest::testTryReplaceFailure
+ok 815 - Icecave\Collections\MapTest::testRemove
+ok 816 - Icecave\Collections\MapTest::testRemoveFailure
+ok 817 - Icecave\Collections\MapTest::testTryRemove
+ok 818 - Icecave\Collections\MapTest::testMergeInPlace
+ok 819 - Icecave\Collections\MapTest::testSwap
+ok 820 - Icecave\Collections\MapTest::testSwapFailureWithUnknownSource
+ok 821 - Icecave\Collections\MapTest::testSwapFailureWithUnknownTarget
+ok 822 - Icecave\Collections\MapTest::testTrySwap
+ok 823 - Icecave\Collections\MapTest::testTrySwapFailureWithUnknownSource
+ok 824 - Icecave\Collections\MapTest::testTrySwapFailureWithUnknownTarget
+ok 825 - Icecave\Collections\MapTest::testMove
+ok 826 - Icecave\Collections\MapTest::testMoveFailure
+ok 827 - Icecave\Collections\MapTest::testTryMove
+ok 828 - Icecave\Collections\MapTest::testTryMoveFailure
+ok 829 - Icecave\Collections\MapTest::testRename
+ok 830 - Icecave\Collections\MapTest::testRenameFailureWithUnknownSource
+ok 831 - Icecave\Collections\MapTest::testRenameFailureWithDuplicateTarget
+ok 832 - Icecave\Collections\MapTest::testTryRename
+ok 833 - Icecave\Collections\MapTest::testTryRenameFailureWithUnknownSource
+ok 834 - Icecave\Collections\MapTest::testTryRenameFailureWithDuplicateTarget
+ok 835 - Icecave\Collections\MapTest::testCount
+ok 836 - Icecave\Collections\MapTest::testIteration
+ok 837 - Icecave\Collections\MapTest::testIteratorKeyLimitationWorkaround
+ok 838 - Icecave\Collections\MapTest::testOffsetExists
+ok 839 - Icecave\Collections\MapTest::testOffsetGet
+ok 840 - Icecave\Collections\MapTest::testOffsetGetFailure
+ok 841 - Icecave\Collections\MapTest::testOffsetSet
+ok 842 - Icecave\Collections\MapTest::testOffsetUnset
+ok 843 - Icecave\Collections\PriorityQueueTest::testConstructor
+ok 844 - Icecave\Collections\PriorityQueueTest::testConstructorWithArray
+ok 845 - Icecave\Collections\PriorityQueueTest::testSerialization
+ok 846 - Icecave\Collections\PriorityQueueTest::testSize
+ok 847 - Icecave\Collections\PriorityQueueTest::testIsEmpty
+ok 848 - Icecave\Collections\PriorityQueueTest::testToString
+ok 849 - Icecave\Collections\PriorityQueueTest::testClear
+ok 850 - Icecave\Collections\PriorityQueueTest::testNext
+ok 851 - Icecave\Collections\PriorityQueueTest::testNextWithEmptyCollection
+ok 852 - Icecave\Collections\PriorityQueueTest::testTryNext
+ok 853 - Icecave\Collections\PriorityQueueTest::testTryNextWithEmptyCollection
+ok 854 - Icecave\Collections\PriorityQueueTest::testPop
+ok 855 - Icecave\Collections\PriorityQueueTest::testPopWithEmptyCollection
+ok 856 - Icecave\Collections\PriorityQueueTest::testTryPop
+ok 857 - Icecave\Collections\PriorityQueueTest::testTryPopWithEmptyCollection
+ok 858 - Icecave\Collections\PriorityQueueTest::testPush
+ok 859 - Icecave\Collections\PriorityQueueTest::testPushWithExplicitPriority
+ok 860 - Icecave\Collections\QueueTest::testConstructor
+ok 861 - Icecave\Collections\QueueTest::testConstructorWithArray
+ok 862 - Icecave\Collections\QueueTest::testClone
+ok 863 - Icecave\Collections\QueueTest::testSerialization
+ok 864 - Icecave\Collections\QueueTest::testSize
+ok 865 - Icecave\Collections\QueueTest::testIsEmpty
+ok 866 - Icecave\Collections\QueueTest::testToString
+ok 867 - Icecave\Collections\QueueTest::testClear
+ok 868 - Icecave\Collections\QueueTest::testNext
+ok 869 - Icecave\Collections\QueueTest::testNextWithEmptyCollection
+ok 870 - Icecave\Collections\QueueTest::testTryNext
+ok 871 - Icecave\Collections\QueueTest::testTryNextWithEmptyCollection
+ok 872 - Icecave\Collections\QueueTest::testPop
+ok 873 - Icecave\Collections\QueueTest::testPopWithEmptyCollection
+ok 874 - Icecave\Collections\QueueTest::testTryPop
+ok 875 - Icecave\Collections\QueueTest::testTryPopWithEmptyCollection
+ok 876 - Icecave\Collections\QueueTest::testCount
+ok 877 - Icecave\Collections\SetTest::testSerialization
+ok 878 - Icecave\Collections\SetTest::testSerializationOfComparator
+ok 879 - Icecave\Collections\StackTest::testConstructor
+ok 880 - Icecave\Collections\StackTest::testConstructorWithArray
+ok 881 - Icecave\Collections\StackTest::testClone
+ok 882 - Icecave\Collections\StackTest::testSerialization
+ok 883 - Icecave\Collections\StackTest::testSize
+ok 884 - Icecave\Collections\StackTest::testIsEmpty
+ok 885 - Icecave\Collections\StackTest::testToString
+ok 886 - Icecave\Collections\StackTest::testClear
+ok 887 - Icecave\Collections\StackTest::testNext
+ok 888 - Icecave\Collections\StackTest::testNextWithEmptyCollection
+ok 889 - Icecave\Collections\StackTest::testTryNext
+ok 890 - Icecave\Collections\StackTest::testTryNextWithEmptyCollection
+ok 891 - Icecave\Collections\StackTest::testPop
+ok 892 - Icecave\Collections\StackTest::testPopWithEmptyCollection
+ok 893 - Icecave\Collections\StackTest::testTryPop
+ok 894 - Icecave\Collections\StackTest::testTryPopWithEmptyCollection
+ok 895 - Icecave\Collections\StackTest::testCount
+ok 896 - Icecave\Collections\Utility\AssociativeKeyGeneratorTest::testBoolean
+ok 897 - Icecave\Collections\Utility\AssociativeKeyGeneratorTest::testInteger
+ok 898 - Icecave\Collections\Utility\AssociativeKeyGeneratorTest::testDouble
+ok 899 - Icecave\Collections\Utility\AssociativeKeyGeneratorTest::testString
+ok 900 - Icecave\Collections\Utility\AssociativeKeyGeneratorTest::testResource
+ok 901 - Icecave\Collections\Utility\AssociativeKeyGeneratorTest::testNull
+ok 902 - Icecave\Collections\Utility\AssociativeKeyGeneratorTest::testObject
+ok 903 - Icecave\Collections\Utility\AssociativeKeyGeneratorTest::testArray
+ok 904 - Icecave\Collections\Utility\AssociativeKeyGeneratorTest::testEmptyArray
+ok 905 - Icecave\Collections\Utility\AssociativeKeyGeneratorTest::testArrayInternalImplementation
+ok 906 - Icecave\Collections\Utility\AssociativeKeyGeneratorTest::testArrayInternalImplementationWithAssociativeArray
+ok 907 - Icecave\Collections\Utility\AssociativeKeyGeneratorTest::testInvoke
+ok 908 - Icecave\Collections\Utility\AssociativeKeyGeneratorTest::testAlternativeImplementations
+ok 909 - Icecave\Collections\Utility\ObjectIdentityComparatorTest::testCompareSameObject
+ok 910 - Icecave\Collections\Utility\ObjectIdentityComparatorTest::testCompareDifferentClass
+ok 911 - Icecave\Collections\Utility\ObjectIdentityComparatorTest::testCompare
+ok 912 - Icecave\Collections\VectorTest::testConstructor
+ok 913 - Icecave\Collections\VectorTest::testConstructorWithArray
+ok 914 - Icecave\Collections\VectorTest::testClone
+ok 915 - Icecave\Collections\VectorTest::testSerialization
+ok 916 - Icecave\Collections\VectorTest::testSize
+ok 917 - Icecave\Collections\VectorTest::testIsEmpty
+ok 918 - Icecave\Collections\VectorTest::testToString
+ok 919 - Icecave\Collections\VectorTest::testClear
+ok 920 - Icecave\Collections\VectorTest::testIteratorTraits
+ok 921 - Icecave\Collections\VectorTest::testElements
+ok 922 - Icecave\Collections\VectorTest::testContains
+ok 923 - Icecave\Collections\VectorTest::testCopyFilter
+ok 924 - Icecave\Collections\VectorTest::testCopyFilterWithPredicate
+ok 925 - Icecave\Collections\VectorTest::testMap
+ok 926 - Icecave\Collections\VectorTest::testPartition
+ok 927 - Icecave\Collections\VectorTest::testEach
+ok 928 - Icecave\Collections\VectorTest::testAll
+ok 929 - Icecave\Collections\VectorTest::testAny
+ok 930 - Icecave\Collections\VectorTest::testFilterInPlace
+ok 931 - Icecave\Collections\VectorTest::testFilterInPlaceWithPredicate
+ok 932 - Icecave\Collections\VectorTest::testFilterInPlaceWithPredicateThreshold
+ok 933 - Icecave\Collections\VectorTest::testMapInPlace
+ok 934 - Icecave\Collections\VectorTest::testFront
+ok 935 - Icecave\Collections\VectorTest::testFrontWithEmptyCollection
+ok 936 - Icecave\Collections\VectorTest::testTryFront
+ok 937 - Icecave\Collections\VectorTest::testTryFrontWithEmptyCollection
+ok 938 - Icecave\Collections\VectorTest::testBack
+ok 939 - Icecave\Collections\VectorTest::testBackWithEmptyCollection
+ok 940 - Icecave\Collections\VectorTest::testTryBack
+ok 941 - Icecave\Collections\VectorTest::testTryBackWithEmptyCollection
+ok 942 - Icecave\Collections\VectorTest::testSort
+ok 943 - Icecave\Collections\VectorTest::testCopySortWithComparator
+ok 944 - Icecave\Collections\VectorTest::testCopyReverse
+ok 945 - Icecave\Collections\VectorTest::testJoin
+ok 946 - Icecave\Collections\VectorTest::testJoinOverCapacity
+ok 947 - Icecave\Collections\VectorTest::testSortInPlace
+ok 948 - Icecave\Collections\VectorTest::testSortInPlaceWithComparator
+ok 949 - Icecave\Collections\VectorTest::testSortInPlaceWithEmptyCollection
+ok 950 - Icecave\Collections\VectorTest::testSortInPlaceWithSingleElement
+ok 951 - Icecave\Collections\VectorTest::testReverseInPlace
+ok 952 - Icecave\Collections\VectorTest::testAppend
+ok 953 - Icecave\Collections\VectorTest::testPushFront
+ok 954 - Icecave\Collections\VectorTest::testPopFront
+ok 955 - Icecave\Collections\VectorTest::testPopFrontWithEmptyCollection
+ok 956 - Icecave\Collections\VectorTest::testTryPopFront
+ok 957 - Icecave\Collections\VectorTest::testTryPopFrontWithEmptyCollection
+ok 958 - Icecave\Collections\VectorTest::testPushBack
+ok 959 - Icecave\Collections\VectorTest::testPopBack
+ok 960 - Icecave\Collections\VectorTest::testPopBackWithEmptyCollection
+ok 961 - Icecave\Collections\VectorTest::testTryPopBack
+ok 962 - Icecave\Collections\VectorTest::testTryPopBackWithEmptyCollection
+ok 963 - Icecave\Collections\VectorTest::testResize
+ok 964 - Icecave\Collections\VectorTest::testResizeWithValue
+ok 965 - Icecave\Collections\VectorTest::testResizeToSmallerSize
+ok 966 - Icecave\Collections\VectorTest::testGet
+ok 967 - Icecave\Collections\VectorTest::testGetWithNegativeIndex
+ok 968 - Icecave\Collections\VectorTest::testGetWithInvalidIndex
+ok 969 - Icecave\Collections\VectorTest::testSlice
+ok 970 - Icecave\Collections\VectorTest::testSliceWithCount
+ok 971 - Icecave\Collections\VectorTest::testSliceWithCountOverflow
+ok 972 - Icecave\Collections\VectorTest::testSliceWithNegativeCount
+ok 973 - Icecave\Collections\VectorTest::testSliceWithNegativeIndex
+ok 974 - Icecave\Collections\VectorTest::testSliceWithNegativeIndexAndCount
+ok 975 - Icecave\Collections\VectorTest::testSliceWithInvalidIndex
+ok 976 - Icecave\Collections\VectorTest::testRange
+ok 977 - Icecave\Collections\VectorTest::testRangeWithNegativeIndices
+ok 978 - Icecave\Collections\VectorTest::testRangeWithEndBeforeBegin
+ok 979 - Icecave\Collections\VectorTest::testRangeWithInvalidBegin
+ok 980 - Icecave\Collections\VectorTest::testRangeWithInvalidEnd
+ok 981 - Icecave\Collections\VectorTest::testIndexOf with data set "empty" (array(), 'foo', 0, NULL, NULL)
+ok 982 - Icecave\Collections\VectorTest::testIndexOf with data set "match" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'bar', 0, NULL, 1)
+ok 983 - Icecave\Collections\VectorTest::testIndexOf with data set "no match" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'grob', 0, NULL, NULL)
+ok 984 - Icecave\Collections\VectorTest::testIndexOf with data set "begin index" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'bar', 2, NULL, 3)
+ok 985 - Icecave\Collections\VectorTest::testIndexOf with data set "range match" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'bar', 1, 3, 1)
+ok 986 - Icecave\Collections\VectorTest::testIndexOf with data set "range no match" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'bar', 2, 3, NULL)
+ok 987 - Icecave\Collections\VectorTest::testIndexOfLast with data set "empty" (array(), 'foo', 0, NULL, NULL)
+ok 988 - Icecave\Collections\VectorTest::testIndexOfLast with data set "match" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'bar', 0, NULL, 3)
+ok 989 - Icecave\Collections\VectorTest::testIndexOfLast with data set "no match" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'grob', 0, NULL, NULL)
+ok 990 - Icecave\Collections\VectorTest::testIndexOfLast with data set "begin index" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'bar', 2, NULL, 3)
+ok 991 - Icecave\Collections\VectorTest::testIndexOfLast with data set "range match" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'bar', 1, 3, 1)
+ok 992 - Icecave\Collections\VectorTest::testIndexOfLast with data set "range no match" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'bar', 2, 3, NULL)
+ok 993 - Icecave\Collections\VectorTest::testFind with data set "empty" (array(), 'foo', 0, NULL, NULL)
+ok 994 - Icecave\Collections\VectorTest::testFind with data set "match" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'bar', 0, NULL, 1)
+ok 995 - Icecave\Collections\VectorTest::testFind with data set "no match" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'grob', 0, NULL, NULL)
+ok 996 - Icecave\Collections\VectorTest::testFind with data set "begin index" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'bar', 2, NULL, 3)
+ok 997 - Icecave\Collections\VectorTest::testFind with data set "range match" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'bar', 1, 3, 1)
+ok 998 - Icecave\Collections\VectorTest::testFind with data set "range no match" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'bar', 2, 3, NULL)
+ok 999 - Icecave\Collections\VectorTest::testFindLast with data set "empty" (array(), 'foo', 0, NULL, NULL)
+ok 1000 - Icecave\Collections\VectorTest::testFindLast with data set "match" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'bar', 0, NULL, 3)
+ok 1001 - Icecave\Collections\VectorTest::testFindLast with data set "no match" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'grob', 0, NULL, NULL)
+ok 1002 - Icecave\Collections\VectorTest::testFindLast with data set "begin index" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'bar', 2, NULL, 3)
+ok 1003 - Icecave\Collections\VectorTest::testFindLast with data set "range match" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'bar', 1, 3, 1)
+ok 1004 - Icecave\Collections\VectorTest::testFindLast with data set "range no match" (array('foo', 'bar', 'spam', 'bar', 'doom'), 'bar', 2, 3, NULL)
+ok 1005 - Icecave\Collections\VectorTest::testSet
+ok 1006 - Icecave\Collections\VectorTest::testSetWithNegativeIndex
+ok 1007 - Icecave\Collections\VectorTest::testSetWithInvalidIndex
+ok 1008 - Icecave\Collections\VectorTest::testInsert
+ok 1009 - Icecave\Collections\VectorTest::testInsertWithNegativeIndex
+ok 1010 - Icecave\Collections\VectorTest::testInsertAtEnd
+ok 1011 - Icecave\Collections\VectorTest::testInsertWithInvalidIndex
+ok 1012 - Icecave\Collections\VectorTest::testInsertMany
+ok 1013 - Icecave\Collections\VectorTest::testInsertManyAtEnd
+ok 1014 - Icecave\Collections\VectorTest::testInsertManyWithEmptyElements
+ok 1015 - Icecave\Collections\VectorTest::testInsertManyWithNegativeIndex
+ok 1016 - Icecave\Collections\VectorTest::testInsertManyWithInvalidIndex
+ok 1017 - Icecave\Collections\VectorTest::testInsertManyWithUncountableIterator
+ok 1018 - Icecave\Collections\VectorTest::testInsertManyWithUncountableIteratorAndExistingCapacity
+ok 1019 - Icecave\Collections\VectorTest::testInsertManyAtStartWithUncountableIterator
+ok 1020 - Icecave\Collections\VectorTest::testInsertManyAtEndWithUncountableIterator
+ok 1021 - Icecave\Collections\VectorTest::testInsertManyWithUncountableIteratorAndMoreElementsThanFirstExpansion
+ok 1022 - Icecave\Collections\VectorTest::testInsertRange
+ok 1023 - Icecave\Collections\VectorTest::testInsertRangeEmpty
+ok 1024 - Icecave\Collections\VectorTest::testRemove
+ok 1025 - Icecave\Collections\VectorTest::testRemoveWithNegativeIndex
+ok 1026 - Icecave\Collections\VectorTest::testRemoveWithInvalidIndex
+ok 1027 - Icecave\Collections\VectorTest::testRemoveMany
+ok 1028 - Icecave\Collections\VectorTest::testRemoveManyWithCount
+ok 1029 - Icecave\Collections\VectorTest::testRemoveManyWithCountOverflow
+ok 1030 - Icecave\Collections\VectorTest::testRemoveManyWithNegativeIndex
+ok 1031 - Icecave\Collections\VectorTest::testRemoveManyWithInvalidIndex
+ok 1032 - Icecave\Collections\VectorTest::testRemoveRange
+ok 1033 - Icecave\Collections\VectorTest::testRemoveRangeToEnd
+ok 1034 - Icecave\Collections\VectorTest::testRemoveRangeWithNegativeIndex
+ok 1035 - Icecave\Collections\VectorTest::testRemoveRangeWithEndBeforeBegin
+ok 1036 - Icecave\Collections\VectorTest::testRemoveRangeWithInvalidBegin
+ok 1037 - Icecave\Collections\VectorTest::testRemoveRangeWithInvalidEnd
+ok 1038 - Icecave\Collections\VectorTest::testReplace
+ok 1039 - Icecave\Collections\VectorTest::testReplaceWithCount
+ok 1040 - Icecave\Collections\VectorTest::testReplaceWithCountOverflow
+ok 1041 - Icecave\Collections\VectorTest::testReplaceWithRemoveMore
+ok 1042 - Icecave\Collections\VectorTest::testReplaceWithNegativeIndex
+ok 1043 - Icecave\Collections\VectorTest::testReplaceWithInvalidIndex
+ok 1044 - Icecave\Collections\VectorTest::testReplaceWithUncountableIterator
+ok 1045 - Icecave\Collections\VectorTest::testReplaceWithUncountableIteratorAndCount
+ok 1046 - Icecave\Collections\VectorTest::testReplaceWithUncountableIteratorAddMore
+ok 1047 - Icecave\Collections\VectorTest::testReplaceWithUncountableIteratorRemoveMore
+ok 1048 - Icecave\Collections\VectorTest::testReplaceRange
+ok 1049 - Icecave\Collections\VectorTest::testReplaceRangeWithNegativeIndices
+ok 1050 - Icecave\Collections\VectorTest::testReplaceRangeWithZeroLength
+ok 1051 - Icecave\Collections\VectorTest::testReplaceRangeWithEndBeforeBegin
+ok 1052 - Icecave\Collections\VectorTest::testReplaceRangeWithInvalidBegin
+ok 1053 - Icecave\Collections\VectorTest::testReplaceRangeWithInvalidEnd
+ok 1054 - Icecave\Collections\VectorTest::testSwap
+ok 1055 - Icecave\Collections\VectorTest::testSwapWithNegativeIndices
+ok 1056 - Icecave\Collections\VectorTest::testSwapWithInvalidIndex1
+ok 1057 - Icecave\Collections\VectorTest::testSwapWithInvalidIndex2
+ok 1058 - Icecave\Collections\VectorTest::testTrySwap
+ok 1059 - Icecave\Collections\VectorTest::testTrySwapWithNegativeIndices
+ok 1060 - Icecave\Collections\VectorTest::testTrySwapWithInvalidIndex1
+ok 1061 - Icecave\Collections\VectorTest::testTrySwapWithInvalidIndex2
+ok 1062 - Icecave\Collections\VectorTest::testCount
+ok 1063 - Icecave\Collections\VectorTest::testIteration
+ok 1064 - Icecave\Collections\VectorTest::testSeek
+ok 1065 - Icecave\Collections\VectorTest::testSeekBackwards
+ok 1066 - Icecave\Collections\VectorTest::testOffsetExists
+ok 1067 - Icecave\Collections\VectorTest::testOffsetGet
+ok 1068 - Icecave\Collections\VectorTest::testOffsetGetFailure
+ok 1069 - Icecave\Collections\VectorTest::testOffsetSet
+ok 1070 - Icecave\Collections\VectorTest::testOffsetUnset
+ok 1071 - Icecave\Collections\VectorTest::testCapacity
+ok 1072 - Icecave\Collections\VectorTest::testReserve
+ok 1073 - Icecave\Collections\VectorTest::testShrink
+1..1073
