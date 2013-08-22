@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1377142431">
-  <project timestamp="1377142431">
+<coverage generated="1377142485">
+  <project timestamp="1377142485">
     <file name="/home/travis/build/IcecaveStudios/collections/lib/Icecave/Collections/AssociativeInterface.php">
       <metrics loc="154" ncloc="31" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
