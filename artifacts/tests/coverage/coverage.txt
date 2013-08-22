@@ -1,21 +1,23 @@
 
 
 Code Coverage Report 
-  2013-08-20 11:54:43
+  2013-08-22 03:33:51
 
  Summary: 
-  Classes: 100.00% (19/19)
-  Methods: 100.00% (379/379)
-  Lines:   100.00% (2668/2668)
+  Classes: 100.00% (20/20)
+  Methods: 100.00% (438/438)
+  Lines:   100.00% (3030/3030)
 
 \Icecave\Collections::Collection
   Methods: 100.00% (21/21)   Lines: 100.00% (210/210)
+\Icecave\Collections::HashMap
+  Methods: 100.00% (57/57)   Lines: 100.00% (341/341)
 \Icecave\Collections::HashSet
   Methods: 100.00% (46/46)   Lines: 100.00% (268/268)
 \Icecave\Collections::LinkedList
   Methods: 100.00% (69/69)   Lines: 100.00% (525/525)
 \Icecave\Collections::Map
-  Methods: 100.00% (57/57)   Lines: 100.00% (342/342)
+  Methods: 100.00% (59/59)   Lines: 100.00% (365/365)
 \Icecave\Collections::PriorityQueue
   Methods: 100.00% ( 8/ 8)   Lines: 100.00% ( 38/ 38)
 \Icecave\Collections::Queue

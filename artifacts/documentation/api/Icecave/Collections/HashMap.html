@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="robots" content="index, follow, all" />
-        <title>Icecave\Collections\Map | Collections API</title>
+        <title>Icecave\Collections\HashMap | Collections API</title>
                     <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
                             </head>
         <body id="class">
@@ -19,10 +19,10 @@
         <div id="title">Collections API</div>
 
             <div class="type">Class</div>
-    <h1><a href="../../Icecave/Collections.html">Icecave\Collections</a>\Map</h1>
+    <h1><a href="../../Icecave/Collections.html">Icecave\Collections</a>\HashMap</h1>
     </div>
         <div class="content">
-                <p>class    <strong>Map</strong>        implements
+                <p>class    <strong>HashMap</strong>        implements
         <a href="../../Icecave/Collections/MutableAssociativeInterface.html"><abbr title="Icecave\Collections\MutableAssociativeInterface">MutableAssociativeInterface</abbr></a>, <a href="http://php.net/Countable"><abbr title="Countable">Countable</abbr></a>, <a href="http://php.net/Iterator"><abbr title="Iterator">Iterator</abbr></a>, <a href="http://php.net/ArrayAccess"><abbr title="ArrayAccess">ArrayAccess</abbr></a>, <a href="http://php.net/Serializable"><abbr title="Serializable">Serializable</abbr></a></p>
 
             <div class="description">
@@ -41,18 +41,7 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method___construct">__construct</a>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr>|null $collection = null, <abbr title="Icecave\Collections\callable">callable</abbr>|null $comparator = null)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    
-                </td>
-                <td class="last">
-                    <a href="#method___clone">__clone</a>()
+                    <a href="#method___construct">__construct</a>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr>|null $collection = null, <abbr title="Icecave\Collections\callable">callable</abbr>|null $hashFunction = null)
                     <p>
 </p>
                 </td>
@@ -130,7 +119,7 @@
             </tr>
                     <tr>
                 <td class="type">
-                    <a href="../../Icecave/Collections/Map.html"><abbr title="Icecave\Collections\Map">Map</abbr></a>
+                    <a href="../../Icecave/Collections/HashMap.html"><abbr title="Icecave\Collections\HashMap">HashMap</abbr></a>
                 </td>
                 <td class="last">
                     <a href="#method_filter">filter</a>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)
@@ -612,7 +601,7 @@
                         <h3 id="method___construct">
         <div class="location">at line 21</div>
         <code>            public            
-    <strong>__construct</strong>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr>|null $collection = null, <abbr title="Icecave\Collections\callable">callable</abbr>|null $comparator = null)</code>
+    <strong>__construct</strong>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr>|null $collection = null, <abbr title="Icecave\Collections\callable">callable</abbr>|null $hashFunction = null)</code>
     </h3>
     <div class="details">
         <p>
@@ -630,8 +619,8 @@
             </tr>
                     <tr>
                 <td><abbr title="Icecave\Collections\callable">callable</abbr>|null</td>
-                <td>$comparator</td>
-                <td>The function to use for comparing keys, or null to use the default.</td>
+                <td>$hashFunction</td>
+                <td>The function to use for generating hashes of element values, or null to use the default.</td>
             </tr>
             </table>
 
@@ -641,25 +630,8 @@
                     </div>
     </div>
 
-                <h3 id="method___clone">
-        <div class="location">at line 39</div>
-        <code>            public            
-    <strong>__clone</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
                 <h3 id="method_size">
-        <div class="location">at line 57</div>
+        <div class="location">at line 50</div>
         <code>            public            integer
     <strong>size</strong>()</code>
     </h3>
@@ -684,7 +656,7 @@
 
                     <table>
                     <tr>
-                <td>Map::isEmpty()</td>
+                <td>HashMap::isEmpty()</td>
                 <td></td>
             </tr>
             </table>
@@ -693,7 +665,7 @@
     </div>
 
                 <h3 id="method_isEmpty">
-        <div class="location">at line 69</div>
+        <div class="location">at line 62</div>
         <code>            public            boolean
     <strong>isEmpty</strong>()</code>
     </h3>
@@ -718,7 +690,7 @@
     </div>
 
                 <h3 id="method___toString">
-        <div class="location">at line 84</div>
+        <div class="location">at line 77</div>
         <code>            public            string
     <strong>__toString</strong>()</code>
     </h3>
@@ -743,7 +715,7 @@ provide information on the type and state of the collection.</p>
     </div>
 
                 <h3 id="method_clear">
-        <div class="location">at line 114</div>
+        <div class="location">at line 115</div>
         <code>            public            
     <strong>clear</strong>()</code>
     </h3>
@@ -759,7 +731,7 @@ provide information on the type and state of the collection.</p>
     </div>
 
                 <h3 id="method_iteratorTraits">
-        <div class="location">at line 130</div>
+        <div class="location">at line 131</div>
         <code>            public            <a href="../../Icecave/Collections/Iterator/Traits.html"><abbr title="Icecave\Collections\Iterator\Traits">Traits</abbr></a>
     <strong>iteratorTraits</strong>()</code>
     </h3>
@@ -785,7 +757,7 @@ provide information on the type and state of the collection.</p>
     </div>
 
                 <h3 id="method_elements">
-        <div class="location">at line 146</div>
+        <div class="location">at line 147</div>
         <code>            public            array
     <strong>elements</strong>()</code>
     </h3>
@@ -810,7 +782,7 @@ provide information on the type and state of the collection.</p>
     </div>
 
                 <h3 id="method_contains">
-        <div class="location">at line 160</div>
+        <div class="location">at line 161</div>
         <code>            public            boolean
     <strong>contains</strong>(mixed $value)</code>
     </h3>
@@ -845,8 +817,8 @@ provide information on the type and state of the collection.</p>
     </div>
 
                 <h3 id="method_filter">
-        <div class="location">at line 184</div>
-        <code>            public            <a href="../../Icecave/Collections/Map.html"><abbr title="Icecave\Collections\Map">Map</abbr></a>
+        <div class="location">at line 185</div>
+        <code>            public            <a href="../../Icecave/Collections/HashMap.html"><abbr title="Icecave\Collections\HashMap">HashMap</abbr></a>
     <strong>filter</strong>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)</code>
     </h3>
     <div class="details">
@@ -869,7 +841,7 @@ provide information on the type and state of the collection.</p>
 
                     <table>
         <tr>
-            <td><a href="../../Icecave/Collections/Map.html"><abbr title="Icecave\Collections\Map">Map</abbr></a></td>
+            <td><a href="../../Icecave/Collections/HashMap.html"><abbr title="Icecave\Collections\HashMap">HashMap</abbr></a></td>
             <td>The filtered collection.</td>
         </tr>
     </table>
@@ -880,7 +852,7 @@ provide information on the type and state of the collection.</p>
     </div>
 
                 <h3 id="method_map">
-        <div class="location">at line 219</div>
+        <div class="location">at line 220</div>
         <code>            public            <a href="../../Icecave/Collections/IterableInterface.html"><abbr title="Icecave\Collections\IterableInterface">IterableInterface</abbr></a>
     <strong>map</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)</code>
     </h3>
@@ -918,7 +890,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_partition">
-        <div class="location">at line 245</div>
+        <div class="location">at line 248</div>
         <code>            public            <abbr title="Icecave\Collections\tuple&lt;IterableInterface,IterableInterface&gt;">tuple&lt;IterableInterface,IterableInterface&gt;</abbr>
     <strong>partition</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate)</code>
     </h3>
@@ -955,7 +927,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_each">
-        <div class="location">at line 273</div>
+        <div class="location">at line 276</div>
         <code>            public            
     <strong>each</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $callback)</code>
     </h3>
@@ -983,7 +955,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_all">
-        <div class="location">at line 296</div>
+        <div class="location">at line 297</div>
         <code>            public            boolean
     <strong>all</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate)</code>
     </h3>
@@ -1021,7 +993,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_any">
-        <div class="location">at line 319</div>
+        <div class="location">at line 322</div>
         <code>            public            boolean
     <strong>any</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate)</code>
     </h3>
@@ -1059,7 +1031,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_filterInPlace">
-        <div class="location">at line 342</div>
+        <div class="location">at line 347</div>
         <code>            public            
     <strong>filterInPlace</strong>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)</code>
     </h3>
@@ -1085,7 +1057,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_mapInPlace">
-        <div class="location">at line 369</div>
+        <div class="location">at line 375</div>
         <code>            public            
     <strong>mapInPlace</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)</code>
     </h3>
@@ -1113,7 +1085,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_hasKey">
-        <div class="location">at line 391</div>
+        <div class="location">at line 395</div>
         <code>            public            boolean
     <strong>hasKey</strong>(mixed $key)</code>
     </h3>
@@ -1148,7 +1120,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_get">
-        <div class="location">at line 406</div>
+        <div class="location">at line 410</div>
         <code>            public            mixed
     <strong>get</strong>(mixed $key)</code>
     </h3>
@@ -1192,7 +1164,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_tryGet">
-        <div class="location">at line 426</div>
+        <div class="location">at line 430</div>
         <code>            public            boolean
     <strong>tryGet</strong>(mixed $key, mixed $value)</code>
     </h3>
@@ -1232,7 +1204,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_getWithDefault">
-        <div class="location">at line 449</div>
+        <div class="location">at line 454</div>
         <code>            public            mixed
     <strong>getWithDefault</strong>(mixed $key, mixed $default = null)</code>
     </h3>
@@ -1272,7 +1244,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_cascade">
-        <div class="location">at line 473</div>
+        <div class="location">at line 478</div>
         <code>            public            mixed
     <strong>cascade</strong>($key)</code>
     </h3>
@@ -1317,7 +1289,7 @@ returns the value associated with the first key that exists.</p>
     </div>
 
                 <h3 id="method_cascadeWithDefault">
-        <div class="location">at line 489</div>
+        <div class="location">at line 494</div>
         <code>            public            mixed
     <strong>cascadeWithDefault</strong>($default, $key)</code>
     </h3>
@@ -1359,13 +1331,13 @@ returns the value associated with the first key that exists.</p>
     </div>
 
                 <h3 id="method_cascadeIterable">
-        <div class="location">at line 510</div>
+        <div class="location">at line 515</div>
         <code>            public            mixed
     <strong>cascadeIterable</strong>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $keys)</code>
     </h3>
     <div class="details">
         <p>Return the value associated with the first existing key in the given sequence.</p>
-        <p>Behaves as per {see Map::cascade()} except that the keys are provided as
+        <p>Behaves as per {see HashMap::cascade()} except that the keys are provided as
 a traversable (eg, array) instead of via a variable argument list.</p>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -1403,13 +1375,13 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_cascadeIterableWithDefault">
-        <div class="location">at line 535</div>
+        <div class="location">at line 540</div>
         <code>            public            mixed
     <strong>cascadeIterableWithDefault</strong>(mixed $default, <abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $keys)</code>
     </h3>
     <div class="details">
         <p>Return the value associated with the first existing key in the given sequence, or a default value if none of the provided keys exist.</p>
-        <p>Behaves as per {see Map::cascadeDefault()} except that the keys are provided as
+        <p>Behaves as per {see HashMap::cascadeDefault()} except that the keys are provided as
 a traversable (eg, array) instead of via a variable argument list.</p>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -1443,13 +1415,13 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_keys">
-        <div class="location">at line 556</div>
+        <div class="location">at line 561</div>
         <code>            public            array
     <strong>keys</strong>()</code>
     </h3>
     <div class="details">
         <p>Fetch a native array containing the keys in the collection.</p>
-        <p>There is no guarantee that the order of keys will match the order of values produced by {see Map::values()}.</p>
+        <p>There is no guarantee that the order of keys will match the order of values produced by {see HashMap::values()}.</p>
         <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1467,13 +1439,13 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_values">
-        <div class="location">at line 576</div>
+        <div class="location">at line 581</div>
         <code>            public            array
     <strong>values</strong>()</code>
     </h3>
     <div class="details">
         <p>Fetch a native array containing the values in the collection.</p>
-        <p>There is no guarantee that the order of values will match the order of keys produced by {see Map::keys()}.</p>
+        <p>There is no guarantee that the order of values will match the order of keys produced by {see HashMap::keys()}.</p>
         <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1491,7 +1463,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_merge">
-        <div class="location">at line 600</div>
+        <div class="location">at line 605</div>
         <code>            public            <a href="../../Icecave/Collections/AssociativeInterface.html"><abbr title="Icecave\Collections\AssociativeInterface">AssociativeInterface</abbr></a>
     <strong>merge</strong>(<a href="../../Icecave/Collections/AssociativeInterface.html"><abbr title="Icecave\Collections\AssociativeInterface">AssociativeInterface</abbr></a> $collection)</code>
     </h3>
@@ -1527,7 +1499,7 @@ It is not guaranteed that the concrete type of the merged collection will match 
     </div>
 
                 <h3 id="method_project">
-        <div class="location">at line 626</div>
+        <div class="location">at line 631</div>
         <code>            public            <a href="../../Icecave/Collections/AssociativeInterface.html"><abbr title="Icecave\Collections\AssociativeInterface">AssociativeInterface</abbr></a>
     <strong>project</strong>($key)</code>
     </h3>
@@ -1562,7 +1534,7 @@ It is not guaranteed that the concrete type of the merged collection will match 
     </div>
 
                 <h3 id="method_projectIterable">
-        <div class="location">at line 642</div>
+        <div class="location">at line 647</div>
         <code>            public            <a href="../../Icecave/Collections/AssociativeInterface.html"><abbr title="Icecave\Collections\AssociativeInterface">AssociativeInterface</abbr></a>
     <strong>projectIterable</strong>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $keys)</code>
     </h3>
@@ -1596,7 +1568,7 @@ It is not guaranteed that the concrete type of the merged collection will match 
     </div>
 
                 <h3 id="method_set">
-        <div class="location">at line 673</div>
+        <div class="location">at line 678</div>
         <code>            public            
     <strong>set</strong>(mixed $key, mixed $value)</code>
     </h3>
@@ -1626,11 +1598,11 @@ It is not guaranteed that the concrete type of the merged collection will match 
 
                     <table>
                     <tr>
-                <td>Map::add()</td>
+                <td>HashMap::add()</td>
                 <td></td>
             </tr>
                     <tr>
-                <td>Map::replace()</td>
+                <td>HashMap::replace()</td>
                 <td></td>
             </tr>
             </table>
@@ -1639,7 +1611,7 @@ It is not guaranteed that the concrete type of the merged collection will match 
     </div>
 
                 <h3 id="method_add">
-        <div class="location">at line 703</div>
+        <div class="location">at line 700</div>
         <code>            public            
     <strong>add</strong>(mixed $key, mixed $value)</code>
     </h3>
@@ -1678,15 +1650,15 @@ It is not guaranteed that the concrete type of the merged collection will match 
 
                     <table>
                     <tr>
-                <td>Map::set()</td>
+                <td>HashMap::set()</td>
                 <td></td>
             </tr>
                     <tr>
-                <td>Map::replace()</td>
+                <td>HashMap::replace()</td>
                 <td></td>
             </tr>
                     <tr>
-                <td>Map::tryAdd()</td>
+                <td>HashMap::tryAdd()</td>
                 <td></td>
             </tr>
             </table>
@@ -1695,7 +1667,7 @@ It is not guaranteed that the concrete type of the merged collection will match 
     </div>
 
                 <h3 id="method_tryAdd">
-        <div class="location">at line 724</div>
+        <div class="location">at line 721</div>
         <code>            public            boolean
     <strong>tryAdd</strong>(mixed $key, mixed $value)</code>
     </h3>
@@ -1734,7 +1706,7 @@ It is not guaranteed that the concrete type of the merged collection will match 
 
                     <table>
                     <tr>
-                <td>Map::add()</td>
+                <td>HashMap::add()</td>
                 <td></td>
             </tr>
             </table>
@@ -1743,7 +1715,7 @@ It is not guaranteed that the concrete type of the merged collection will match 
     </div>
 
                 <h3 id="method_replace">
-        <div class="location">at line 753</div>
+        <div class="location">at line 750</div>
         <code>            public            mixed
     <strong>replace</strong>(mixed $key, mixed $value)</code>
     </h3>
@@ -1791,15 +1763,15 @@ It is not guaranteed that the concrete type of the merged collection will match 
 
                     <table>
                     <tr>
-                <td>Map::add()</td>
+                <td>HashMap::add()</td>
                 <td></td>
             </tr>
                     <tr>
-                <td>Map::set()</td>
+                <td>HashMap::set()</td>
                 <td></td>
             </tr>
                     <tr>
-                <td>Map::tryReplace()</td>
+                <td>HashMap::tryReplace()</td>
                 <td></td>
             </tr>
             </table>
@@ -1808,7 +1780,7 @@ It is not guaranteed that the concrete type of the merged collection will match 
     </div>
 
                 <h3 id="method_tryReplace">
-        <div class="location">at line 778</div>
+        <div class="location">at line 775</div>
         <code>            public            boolean
     <strong>tryReplace</strong>(mixed $key, mixed $value, mixed $previous = null)</code>
     </h3>
@@ -1852,7 +1824,7 @@ It is not guaranteed that the concrete type of the merged collection will match 
 
                     <table>
                     <tr>
-                <td>Map::replace()</td>
+                <td>HashMap::replace()</td>
                 <td></td>
             </tr>
             </table>
@@ -1861,7 +1833,7 @@ It is not guaranteed that the concrete type of the merged collection will match 
     </div>
 
                 <h3 id="method_remove">
-        <div class="location">at line 802</div>
+        <div class="location">at line 798</div>
         <code>            public            mixed
     <strong>remove</strong>(mixed $key)</code>
     </h3>
@@ -1905,7 +1877,7 @@ It is not guaranteed that the concrete type of the merged collection will match 
     </div>
 
                 <h3 id="method_tryRemove">
-        <div class="location">at line 822</div>
+        <div class="location">at line 818</div>
         <code>            public            boolean
     <strong>tryRemove</strong>(mixed $key, mixed $value = null)</code>
     </h3>
@@ -1945,7 +1917,7 @@ It is not guaranteed that the concrete type of the merged collection will match 
     </div>
 
                 <h3 id="method_mergeInPlace">
-        <div class="location">at line 846</div>
+        <div class="location">at line 842</div>
         <code>            public            
     <strong>mergeInPlace</strong>(<a href="../../Icecave/Collections/AssociativeInterface.html"><abbr title="Icecave\Collections\AssociativeInterface">AssociativeInterface</abbr></a> $collection)</code>
     </h3>
@@ -1971,7 +1943,7 @@ It is not guaranteed that the concrete type of the merged collection will match 
     </div>
 
                 <h3 id="method_swap">
-        <div class="location">at line 866</div>
+        <div class="location">at line 862</div>
         <code>            public            
     <strong>swap</strong>(mixed $key1, mixed $key2)</code>
     </h3>
@@ -2011,7 +1983,7 @@ It is not guaranteed that the concrete type of the merged collection will match 
     </div>
 
                 <h3 id="method_trySwap">
-        <div class="location">at line 892</div>
+        <div class="location">at line 888</div>
         <code>            public            boolean
     <strong>trySwap</strong>(mixed $key1, mixed $key2)</code>
     </h3>
@@ -2051,7 +2023,7 @@ It is not guaranteed that the concrete type of the merged collection will match 
     </div>
 
                 <h3 id="method_move">
-        <div class="location">at line 924</div>
+        <div class="location">at line 920</div>
         <code>            public            
     <strong>move</strong>(mixed $source, mixed $target)</code>
     </h3>
@@ -2091,15 +2063,15 @@ It is not guaranteed that the concrete type of the merged collection will match 
 
                     <table>
                     <tr>
-                <td>Map::tryMove()</td>
+                <td>HashMap::tryMove()</td>
                 <td></td>
             </tr>
                     <tr>
-                <td>Map::rename()</td>
+                <td>HashMap::rename()</td>
                 <td></td>
             </tr>
                     <tr>
-                <td>Map::tryRename()</td>
+                <td>HashMap::tryRename()</td>
                 <td></td>
             </tr>
             </table>
@@ -2108,7 +2080,7 @@ It is not guaranteed that the concrete type of the merged collection will match 
     </div>
 
                 <h3 id="method_tryMove">
-        <div class="location">at line 945</div>
+        <div class="location">at line 940</div>
         <code>            public            boolean
     <strong>tryMove</strong>(mixed $source, mixed $target)</code>
     </h3>
@@ -2148,15 +2120,15 @@ It is not guaranteed that the concrete type of the merged collection will match 
 
                     <table>
                     <tr>
-                <td>Map::move()</td>
+                <td>HashMap::move()</td>
                 <td></td>
             </tr>
                     <tr>
-                <td>Map::rename()</td>
+                <td>HashMap::rename()</td>
                 <td></td>
             </tr>
                     <tr>
-                <td>Map::tryRename()</td>
+                <td>HashMap::tryRename()</td>
                 <td></td>
             </tr>
             </table>
@@ -2165,7 +2137,7 @@ It is not guaranteed that the concrete type of the merged collection will match 
     </div>
 
                 <h3 id="method_rename">
-        <div class="location">at line 995</div>
+        <div class="location">at line 969</div>
         <code>            public            
     <strong>rename</strong>(mixed $source, mixed $target)</code>
     </h3>
@@ -2208,15 +2180,15 @@ It is not guaranteed that the concrete type of the merged collection will match 
 
                     <table>
                     <tr>
-                <td>Map::move()</td>
+                <td>HashMap::move()</td>
                 <td></td>
             </tr>
                     <tr>
-                <td>Map::tryMove()</td>
+                <td>HashMap::tryMove()</td>
                 <td></td>
             </tr>
                     <tr>
-                <td>Map::tryRename()</td>
+                <td>HashMap::tryRename()</td>
                 <td></td>
             </tr>
             </table>
@@ -2225,7 +2197,7 @@ It is not guaranteed that the concrete type of the merged collection will match 
     </div>
 
                 <h3 id="method_tryRename">
-        <div class="location">at line 1036</div>
+        <div class="location">at line 1004</div>
         <code>            public            boolean
     <strong>tryRename</strong>(mixed $source, mixed $target)</code>
     </h3>
@@ -2264,15 +2236,15 @@ It is not guaranteed that the concrete type of the merged collection will match 
 
                     <table>
                     <tr>
-                <td>Map::move()</td>
+                <td>HashMap::move()</td>
                 <td></td>
             </tr>
                     <tr>
-                <td>Map::tryMove()</td>
+                <td>HashMap::tryMove()</td>
                 <td></td>
             </tr>
                     <tr>
-                <td>Map::rename()</td>
+                <td>HashMap::rename()</td>
                 <td></td>
             </tr>
             </table>
@@ -2281,7 +2253,7 @@ It is not guaranteed that the concrete type of the merged collection will match 
     </div>
 
                 <h3 id="method_count">
-        <div class="location">at line 1069</div>
+        <div class="location">at line 1031</div>
         <code>            public            
     <strong>count</strong>()</code>
     </h3>
@@ -2298,7 +2270,7 @@ It is not guaranteed that the concrete type of the merged collection will match 
     </div>
 
                 <h3 id="method_current">
-        <div class="location">at line 1080</div>
+        <div class="location">at line 1042</div>
         <code>            public            
     <strong>current</strong>()</code>
     </h3>
@@ -2315,7 +2287,7 @@ It is not guaranteed that the concrete type of the merged collection will match 
     </div>
 
                 <h3 id="method_key">
-        <div class="location">at line 1089</div>
+        <div class="location">at line 1052</div>
         <code>            public            
     <strong>key</strong>()</code>
     </h3>
@@ -2332,7 +2304,7 @@ It is not guaranteed that the concrete type of the merged collection will match 
     </div>
 
                 <h3 id="method_next">
-        <div class="location">at line 1098</div>
+        <div class="location">at line 1062</div>
         <code>            public            
     <strong>next</strong>()</code>
     </h3>
@@ -2349,7 +2321,7 @@ It is not guaranteed that the concrete type of the merged collection will match 
     </div>
 
                 <h3 id="method_rewind">
-        <div class="location">at line 1105</div>
+        <div class="location">at line 1069</div>
         <code>            public            
     <strong>rewind</strong>()</code>
     </h3>
@@ -2366,7 +2338,7 @@ It is not guaranteed that the concrete type of the merged collection will match 
     </div>
 
                 <h3 id="method_valid">
-        <div class="location">at line 1112</div>
+        <div class="location">at line 1076</div>
         <code>            public            
     <strong>valid</strong>()</code>
     </h3>
@@ -2383,7 +2355,7 @@ It is not guaranteed that the concrete type of the merged collection will match 
     </div>
 
                 <h3 id="method_offsetExists">
-        <div class="location">at line 1130</div>
+        <div class="location">at line 1094</div>
         <code>            public            boolean
     <strong>offsetExists</strong>(mixed $offset)</code>
     </h3>
@@ -2418,7 +2390,7 @@ It is not guaranteed that the concrete type of the merged collection will match 
     </div>
 
                 <h3 id="method_offsetGet">
-        <div class="location">at line 1145</div>
+        <div class="location">at line 1109</div>
         <code>            public            mixed
     <strong>offsetGet</strong>(mixed $offset)</code>
     </h3>
@@ -2462,7 +2434,7 @@ It is not guaranteed that the concrete type of the merged collection will match 
     </div>
 
                 <h3 id="method_offsetSet">
-        <div class="location">at line 1160</div>
+        <div class="location">at line 1124</div>
         <code>            public            
     <strong>offsetSet</strong>(mixed $offset, mixed $value)</code>
     </h3>
@@ -2492,7 +2464,7 @@ It is not guaranteed that the concrete type of the merged collection will match 
     </div>
 
                 <h3 id="method_offsetUnset">
-        <div class="location">at line 1172</div>
+        <div class="location">at line 1136</div>
         <code>            public            
     <strong>offsetUnset</strong>(mixed $offset)</code>
     </h3>
@@ -2518,7 +2490,7 @@ It is not guaranteed that the concrete type of the merged collection will match 
     </div>
 
                 <h3 id="method_serialize">
-        <div class="location">at line 1188</div>
+        <div class="location">at line 1152</div>
         <code>            public            string
     <strong>serialize</strong>()</code>
     </h3>
@@ -2543,7 +2515,7 @@ It is not guaranteed that the concrete type of the merged collection will match 
     </div>
 
                 <h3 id="method_unserialize">
-        <div class="location">at line 1205</div>
+        <div class="location">at line 1169</div>
         <code>            public            
     <strong>unserialize</strong>(string $packet)</code>
     </h3>
