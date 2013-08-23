@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="robots" content="index, follow, all" />
-        <title>Icecave\Collections\Set | Collections API</title>
+        <title>Icecave\Collections\SetInterface | Collections API</title>
                     <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
                             </head>
         <body id="class">
@@ -18,12 +18,12 @@
 
         <div id="title">Collections API</div>
 
-            <div class="type">Class</div>
-    <h1><a href="../../Icecave/Collections.html">Icecave\Collections</a>\Set</h1>
+            <div class="type">Interface</div>
+    <h1><a href="../../Icecave/Collections.html">Icecave\Collections</a>\SetInterface</h1>
     </div>
         <div class="content">
-                <p>class    <strong>Set</strong>        implements
-        <a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a>, <a href="http://php.net/IteratorAggregate"><abbr title="IteratorAggregate">IteratorAggregate</abbr></a>, <a href="http://php.net/Serializable"><abbr title="Serializable">Serializable</abbr></a></p>
+                <p>interface    <strong>SetInterface</strong>        implements
+        <a href="../../Icecave/Collections/MutableIterableInterface.html"><abbr title="Icecave\Collections\MutableIterableInterface">MutableIterableInterface</abbr></a>, <a href="http://php.net/Countable"><abbr title="Countable">Countable</abbr></a></p>
 
             <div class="description">
             <p>An iterable collection with unique elements.</p>
@@ -41,162 +41,10 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method___construct">__construct</a>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr>|null $collection = null, <abbr title="Icecave\Collections\callable">callable</abbr>|null $comparator = null)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    
-                </td>
-                <td class="last">
-                    <a href="#method___clone">__clone</a>()
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    integer
-                </td>
-                <td class="last">
-                    <a href="#method_size">size</a>()
-                    <p>Fetch the number of elements in the collection.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    boolean
-                </td>
-                <td class="last">
-                    <a href="#method_isEmpty">isEmpty</a>()
-                    <p>Check if the collection is empty.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    string
-                </td>
-                <td class="last">
-                    <a href="#method___toString">__toString</a>()
-                    <p>Fetch a string representation of the collection.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    
-                </td>
-                <td class="last">
-                    <a href="#method_clear">clear</a>()
-                    <p>Remove all elements from the collection.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    <a href="../../Icecave/Collections/Iterator/Traits.html"><abbr title="Icecave\Collections\Iterator\Traits">Traits</abbr></a>
-                </td>
-                <td class="last">
-                    <a href="#method_iteratorTraits">iteratorTraits</a>()
-                    <p>Return traits describing the collection's iteration capabilities.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    array
-                </td>
-                <td class="last">
-                    <a href="#method_elements">elements</a>()
-                    <p>Fetch a native array containing the elements in the collection.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    boolean
-                </td>
-                <td class="last">
-                    <a href="#method_contains">contains</a>(mixed $element)
-                    <p>Check if the collection contains an element with the given value.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    <a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>
-                </td>
-                <td class="last">
-                    <a href="#method_filter">filter</a>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)
-                    <p>Fetch a new collection with a subset of the elements from this collection.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    <a href="../../Icecave/Collections/IterableInterface.html"><abbr title="Icecave\Collections\IterableInterface">IterableInterface</abbr></a>
-                </td>
-                <td class="last">
-                    <a href="#method_map">map</a>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)
-                    <p>Produce a new collection by applying a transformation to each element.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    <abbr title="Icecave\Collections\tuple&lt;IterableInterface,IterableInterface&gt;">tuple&lt;IterableInterface,IterableInterface&gt;</abbr>
-                </td>
-                <td class="last">
-                    <a href="#method_partition">partition</a>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate)
-                    <p>Partitions this collection into two collections according to a predicate.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    
-                </td>
-                <td class="last">
-                    <a href="#method_each">each</a>(<abbr title="Icecave\Collections\callable">callable</abbr> $callback)
-                    <p>Invokes the given callback on every element in the collection.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    boolean
-                </td>
-                <td class="last">
-                    <a href="#method_all">all</a>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate)
-                    <p>Returns true if the given predicate returns true for all elements.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    boolean
-                </td>
-                <td class="last">
-                    <a href="#method_any">any</a>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate)
-                    <p>Returns true if the given predicate returns true for any element.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    
-                </td>
-                <td class="last">
                     <a href="#method_filterInPlace">filterInPlace</a>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)
                     <p>Filter this collection in-place.</p>
                 </td>
-                <td></td>
+                <td><small>from&nbsp;<a href="../../Icecave/Collections/MutableIterableInterface.html#method_filterInPlace"><abbr title="Icecave\Collections\MutableIterableInterface">MutableIterableInterface</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -206,49 +54,7 @@
                     <a href="#method_mapInPlace">mapInPlace</a>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)
                     <p>Replace each element in the collection with the result of a transformation on that element.</p>
                 </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    
-                </td>
-                <td class="last">
-                    <a href="#method_count">count</a>()
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    
-                </td>
-                <td class="last">
-                    <a href="#method_getIterator">getIterator</a>()
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    string
-                </td>
-                <td class="last">
-                    <a href="#method_serialize">serialize</a>()
-                    <p>Serialize the collection.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    
-                </td>
-                <td class="last">
-                    <a href="#method_unserialize">unserialize</a>(string $packet)
-                    <p>Unserialize collection data.</p>
-                </td>
-                <td></td>
+                <td><small>from&nbsp;<a href="../../Icecave/Collections/MutableIterableInterface.html#method_mapInPlace"><abbr title="Icecave\Collections\MutableIterableInterface">MutableIterableInterface</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -392,7 +198,7 @@
             </tr>
                     <tr>
                 <td class="type">
-                    <a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>
+                    <a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a>
                 </td>
                 <td class="last">
                     <a href="#method_union">union</a>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)
@@ -412,7 +218,7 @@
             </tr>
                     <tr>
                 <td class="type">
-                    <a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>
+                    <a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a>
                 </td>
                 <td class="last">
                     <a href="#method_intersect">intersect</a>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)
@@ -432,7 +238,7 @@
             </tr>
                     <tr>
                 <td class="type">
-                    <a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>
+                    <a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a>
                 </td>
                 <td class="last">
                     <a href="#method_diff">diff</a>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)
@@ -452,7 +258,7 @@
             </tr>
                     <tr>
                 <td class="type">
-                    <a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>
+                    <a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a>
                 </td>
                 <td class="last">
                     <a href="#method_symmetricDiff">symmetricDiff</a>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)
@@ -475,452 +281,15 @@
 
         <h2>Details</h2>
 
-                        <h3 id="method___construct">
-        <div class="location">at line 21</div>
-        <code>            public            
-    <strong>__construct</strong>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr>|null $collection = null, <abbr title="Icecave\Collections\callable">callable</abbr>|null $comparator = null)</code>
-    </h3>
-    <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table>
-                    <tr>
-                <td><abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr>|null</td>
-                <td>$collection</td>
-                <td>An iterable type containing the elements to include in this set, or null to create an empty set.</td>
-            </tr>
-                    <tr>
-                <td><abbr title="Icecave\Collections\callable">callable</abbr>|null</td>
-                <td>$comparator</td>
-                <td>The function to use for comparing elements, or null to use the default.</td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method___clone">
-        <div class="location">at line 39</div>
-        <code>            public            
-    <strong>__clone</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method_size">
-        <div class="location">at line 57</div>
-        <code>            public            integer
-    <strong>size</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>Fetch the number of elements in the collection.</p>
-        <p>
-</p>
-        <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table>
-        <tr>
-            <td>integer</td>
-            <td>The number of elements in the collection.</td>
-        </tr>
-    </table>
-
-            
-            
-                            <h4>See also</h4>
-
-                    <table>
-                    <tr>
-                <td>Set::isEmpty()</td>
-                <td></td>
-            </tr>
-            </table>
-
-                    </div>
-    </div>
-
-                <h3 id="method_isEmpty">
-        <div class="location">at line 69</div>
-        <code>            public            boolean
-    <strong>isEmpty</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>Check if the collection is empty.</p>
-        <p>
-</p>
-        <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table>
-        <tr>
-            <td>boolean</td>
-            <td>True if the collection is empty; otherwise, false.</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method___toString">
-        <div class="location">at line 84</div>
-        <code>            public            string
-    <strong>__toString</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>Fetch a string representation of the collection.</p>
-        <p>The string may not describe all elements of the collection, but should at least
-provide information on the type and state of the collection.</p>
-        <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table>
-        <tr>
-            <td>string</td>
-            <td>A string representation of the collection.</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method_clear">
-        <div class="location">at line 115</div>
-        <code>            public            
-    <strong>clear</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>Remove all elements from the collection.</p>
-        <p>
-</p>
-        <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method_iteratorTraits">
-        <div class="location">at line 131</div>
-        <code>            public            <a href="../../Icecave/Collections/Iterator/Traits.html"><abbr title="Icecave\Collections\Iterator\Traits">Traits</abbr></a>
-    <strong>iteratorTraits</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>Return traits describing the collection's iteration capabilities.</p>
-        <p>
-</p>
-        <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table>
-        <tr>
-            <td><a href="../../Icecave/Collections/Iterator/Traits.html"><abbr title="Icecave\Collections\Iterator\Traits">Traits</abbr></a></td>
-            <td>
-</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method_elements">
-        <div class="location">at line 147</div>
-        <code>            public            array
-    <strong>elements</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>Fetch a native array containing the elements in the collection.</p>
-        <p>
-</p>
-        <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table>
-        <tr>
-            <td>array</td>
-            <td>An array containing the elements in the collection.</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method_contains">
-        <div class="location">at line 161</div>
-        <code>            public            boolean
-    <strong>contains</strong>(mixed $element)</code>
-    </h3>
-    <div class="details">
-        <p>Check if the collection contains an element with the given value.</p>
-        <p>
-</p>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table>
-                    <tr>
-                <td>mixed</td>
-                <td>$element</td>
-                <td>The value to check.</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table>
-        <tr>
-            <td>boolean</td>
-            <td>True if the collection contains $element; otherwise, false.</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method_filter">
-        <div class="location">at line 178</div>
-        <code>            public            <a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>
-    <strong>filter</strong>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)</code>
-    </h3>
-    <div class="details">
-        <p>Fetch a new collection with a subset of the elements from this collection.</p>
-        <p>The predicate must be a callable with the following signature:
- function (mixed $element) { return $true<em>to</em>retain_element; }</p>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table>
-                    <tr>
-                <td><abbr title="Icecave\Collections\callable">callable</abbr>|null</td>
-                <td>$predicate</td>
-                <td>A predicate function used to determine which elements to include, or null to include all non-null elements.</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table>
-        <tr>
-            <td><a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a></td>
-            <td>The filtered collection.</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method_map">
-        <div class="location">at line 201</div>
-        <code>            public            <a href="../../Icecave/Collections/IterableInterface.html"><abbr title="Icecave\Collections\IterableInterface">IterableInterface</abbr></a>
-    <strong>map</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)</code>
-    </h3>
-    <div class="details">
-        <p>Produce a new collection by applying a transformation to each element.</p>
-        <p>The new elements produced by the transform need not be of the same type.
-It is not guaranteed that the concrete type of the resulting collection will match this collection.</p>
-
-<p>The transform must be a callable with the following signature:
- function (mixed $element) { return $new_element; }</p>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table>
-                    <tr>
-                <td><abbr title="Icecave\Collections\callable">callable</abbr></td>
-                <td>$transform</td>
-                <td>The transform to apply to each element.</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table>
-        <tr>
-            <td><a href="../../Icecave/Collections/IterableInterface.html"><abbr title="Icecave\Collections\IterableInterface">IterableInterface</abbr></a></td>
-            <td>A new collection produced by applying $transform to each element in this collection.</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method_partition">
-        <div class="location">at line 222</div>
-        <code>            public            <abbr title="Icecave\Collections\tuple&lt;IterableInterface,IterableInterface&gt;">tuple&lt;IterableInterface,IterableInterface&gt;</abbr>
-    <strong>partition</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate)</code>
-    </h3>
-    <div class="details">
-        <p>Partitions this collection into two collections according to a predicate.</p>
-        <p>It is not guaranteed that the concrete type of the partitioned collections will match this collection.</p>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table>
-                    <tr>
-                <td><abbr title="Icecave\Collections\callable">callable</abbr></td>
-                <td>$predicate</td>
-                <td>A predicate function used to determine which partitioned collection to place the elements in.</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table>
-        <tr>
-            <td><abbr title="Icecave\Collections\tuple&lt;IterableInterface,IterableInterface&gt;">tuple&lt;IterableInterface,IterableInterface&gt;</abbr></td>
-            <td>A 2-tuple containing the partitioned collections. The first collection contains the element for which the predicate returned true.</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method_each">
-        <div class="location">at line 247</div>
-        <code>            public            
-    <strong>each</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $callback)</code>
-    </h3>
-    <div class="details">
-        <p>Invokes the given callback on every element in the collection.</p>
-        <p>This method behaves the same as {see IterableInterface::map()} except that the return value of the callback is not retained.</p>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table>
-                    <tr>
-                <td><abbr title="Icecave\Collections\callable">callable</abbr></td>
-                <td>$callback</td>
-                <td>The callback to invoke with each element.</td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method_all">
-        <div class="location">at line 263</div>
-        <code>            public            boolean
-    <strong>all</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate)</code>
-    </h3>
-    <div class="details">
-        <p>Returns true if the given predicate returns true for all elements.</p>
-        <p>The loop is short-circuited, exiting after the first element for which the predicate returns false.</p>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table>
-                    <tr>
-                <td><abbr title="Icecave\Collections\callable">callable</abbr></td>
-                <td>$predicate</td>
-                <td>
-</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table>
-        <tr>
-            <td>boolean</td>
-            <td>True if $predicate($element) returns true for all elements; otherwise, false.</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method_any">
-        <div class="location">at line 279</div>
-        <code>            public            boolean
-    <strong>any</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate)</code>
-    </h3>
-    <div class="details">
-        <p>Returns true if the given predicate returns true for any element.</p>
-        <p>The loop is short-circuited, exiting after the first element for which the predicate returns false.</p>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table>
-                    <tr>
-                <td><abbr title="Icecave\Collections\callable">callable</abbr></td>
-                <td>$predicate</td>
-                <td>
-</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table>
-        <tr>
-            <td>boolean</td>
-            <td>True if $predicate($element) returns true for any element; otherwise, false.</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method_filterInPlace">
-        <div class="location">at line 298</div>
+                        <h3 id="method_filterInPlace">
+        <div class="location">in <a href="../../Icecave/Collections/MutableIterableInterface.html#method_filterInPlace"><abbr title="Icecave\Collections\MutableIterableInterface">MutableIterableInterface</abbr></a> at line 14</div>
         <code>            public            
     <strong>filterInPlace</strong>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)</code>
     </h3>
     <div class="details">
         <p>Filter this collection in-place.</p>
-        <p>The predicate must be a callable with the following signature:
- function (mixed $element) { return $true<em>to</em>retain_element; }</p>
+        <p>
+</p>
         <div class="tags">
                             <h4>Parameters</h4>
 
@@ -928,7 +297,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
                     <tr>
                 <td><abbr title="Icecave\Collections\callable">callable</abbr>|null</td>
                 <td>$predicate</td>
-                <td>A predicate function used to determine which elements to retain, or null to retain all elements with non-null values.</td>
+                <td>A predicate function used to determine which elements to retain, or null to retain all non-null elements.</td>
             </tr>
             </table>
 
@@ -939,16 +308,13 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_mapInPlace">
-        <div class="location">at line 315</div>
+        <div class="location">in <a href="../../Icecave/Collections/MutableIterableInterface.html#method_mapInPlace"><abbr title="Icecave\Collections\MutableIterableInterface">MutableIterableInterface</abbr></a> at line 23</div>
         <code>            public            
     <strong>mapInPlace</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)</code>
     </h3>
     <div class="details">
         <p>Replace each element in the collection with the result of a transformation on that element.</p>
         <p>The new elements produced by the transform must be the same type.</p>
-
-<p>The transform must be a callable with the following signature:
- function (mixed $element) { return $element; }</p>
         <div class="tags">
                             <h4>Parameters</h4>
 
@@ -966,93 +332,8 @@ It is not guaranteed that the concrete type of the resulting collection will mat
                     </div>
     </div>
 
-                <h3 id="method_count">
-        <div class="location">at line 327</div>
-        <code>            public            
-    <strong>count</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method_getIterator">
-        <div class="location">at line 338</div>
-        <code>            public            
-    <strong>getIterator</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method_serialize">
-        <div class="location">at line 354</div>
-        <code>            public            string
-    <strong>serialize</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>Serialize the collection.</p>
-        <p>
-</p>
-        <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table>
-        <tr>
-            <td>string</td>
-            <td>The serialized data.</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method_unserialize">
-        <div class="location">at line 371</div>
-        <code>            public            
-    <strong>unserialize</strong>(string $packet)</code>
-    </h3>
-    <div class="details">
-        <p>Unserialize collection data.</p>
-        <p>
-</p>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table>
-                    <tr>
-                <td>string</td>
-                <td>$packet</td>
-                <td>The serialized data.</td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
                 <h3 id="method_cascade">
-        <div class="location">at line 393</div>
+        <div class="location">at line 20</div>
         <code>            public            mixed
     <strong>cascade</strong>($element)</code>
     </h3>
@@ -1097,7 +378,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_cascadeWithDefault">
-        <div class="location">at line 409</div>
+        <div class="location">at line 31</div>
         <code>            public            mixed
     <strong>cascadeWithDefault</strong>($default, $element)</code>
     </h3>
@@ -1139,13 +420,13 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_cascadeIterable">
-        <div class="location">at line 430</div>
+        <div class="location">at line 44</div>
         <code>            public            mixed
     <strong>cascadeIterable</strong>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $elements)</code>
     </h3>
     <div class="details">
         <p>Return the first of the given elements that is contained in the set.</p>
-        <p>Behaves as per {see Set::cascade()} except that the elements are provided as
+        <p>Behaves as per {see SetInterface::cascade()} except that the elements are provided as
 a traversable (eg, array) instead of via a variable argument list.</p>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -1183,13 +464,13 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_cascadeIterableWithDefault">
-        <div class="location">at line 454</div>
+        <div class="location">at line 57</div>
         <code>            public            mixed
     <strong>cascadeIterableWithDefault</strong>(mixed $default, <abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $elements)</code>
     </h3>
     <div class="details">
         <p>Return the first of the given elements that is contained in the set, or a default if none are found.</p>
-        <p>Behaves as per {see Set::cascadeDefault()} except that the elements are provided as
+        <p>Behaves as per {see SetInterface::cascadeDefault()} except that the elements are provided as
 a traversable (eg, array) instead of via a variable argument list.</p>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -1223,7 +504,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_add">
-        <div class="location">at line 474</div>
+        <div class="location">at line 66</div>
         <code>            public            boolean
     <strong>add</strong>(mixed $element)</code>
     </h3>
@@ -1258,7 +539,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_addMany">
-        <div class="location">at line 496</div>
+        <div class="location">at line 75</div>
         <code>            public            
     <strong>addMany</strong>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $elements)</code>
     </h3>
@@ -1284,7 +565,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
 
                     <table>
                     <tr>
-                <td>Set::unionInPlace()</td>
+                <td>SetInterface::unionInPlace()</td>
                 <td>may be faster when adding all elements from a another set.</td>
             </tr>
             </table>
@@ -1293,7 +574,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_remove">
-        <div class="location">at line 512</div>
+        <div class="location">at line 84</div>
         <code>            public            boolean
     <strong>remove</strong>(mixed $element)</code>
     </h3>
@@ -1328,7 +609,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_removeMany">
-        <div class="location">at line 534</div>
+        <div class="location">at line 93</div>
         <code>            public            
     <strong>removeMany</strong>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $elements)</code>
     </h3>
@@ -1354,7 +635,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
 
                     <table>
                     <tr>
-                <td>Set::diffInPlace()</td>
+                <td>SetInterface::diffInPlace()</td>
                 <td>may be faster when removing all elements from a another set.</td>
             </tr>
             </table>
@@ -1363,7 +644,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_isEqualSet">
-        <div class="location">at line 550</div>
+        <div class="location">at line 102</div>
         <code>            public            boolean
     <strong>isEqualSet</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1398,7 +679,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_isSuperSet">
-        <div class="location">at line 586</div>
+        <div class="location">at line 111</div>
         <code>            public            boolean
     <strong>isSuperSet</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1433,7 +714,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_isSubSet">
-        <div class="location">at line 632</div>
+        <div class="location">at line 120</div>
         <code>            public            boolean
     <strong>isSubSet</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1468,7 +749,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_isProperSuperSet">
-        <div class="location">at line 648</div>
+        <div class="location">at line 129</div>
         <code>            public            boolean
     <strong>isProperSuperSet</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1503,7 +784,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_isProperSubSet">
-        <div class="location">at line 672</div>
+        <div class="location">at line 138</div>
         <code>            public            boolean
     <strong>isProperSubSet</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1538,7 +819,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_isIntersecting">
-        <div class="location">at line 688</div>
+        <div class="location">at line 147</div>
         <code>            public            boolean
     <strong>isIntersecting</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1573,8 +854,8 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_union">
-        <div class="location">at line 753</div>
-        <code>            public            <a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>
+        <div class="location">at line 156</div>
+        <code>            public            <a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a>
     <strong>union</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
     <div class="details">
@@ -1597,7 +878,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
 
                     <table>
         <tr>
-            <td><a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a></td>
+            <td><a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a></td>
             <td>A set containing all elements of $this and $elements.</td>
         </tr>
     </table>
@@ -1608,7 +889,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_unionInPlace">
-        <div class="location">at line 859</div>
+        <div class="location">at line 163</div>
         <code>            public            
     <strong>unionInPlace</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1634,8 +915,8 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_intersect">
-        <div class="location">at line 953</div>
-        <code>            public            <a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>
+        <div class="location">at line 172</div>
+        <code>            public            <a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a>
     <strong>intersect</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
     <div class="details">
@@ -1658,7 +939,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
 
                     <table>
         <tr>
-            <td><a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a></td>
+            <td><a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a></td>
             <td>A set containing only the elements present in $this and $elements.</td>
         </tr>
     </table>
@@ -1669,7 +950,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_intersectInPlace">
-        <div class="location">at line 1026</div>
+        <div class="location">at line 179</div>
         <code>            public            
     <strong>intersectInPlace</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1695,8 +976,8 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_diff">
-        <div class="location">at line 1109</div>
-        <code>            public            <a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>
+        <div class="location">at line 188</div>
+        <code>            public            <a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a>
     <strong>diff</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
     <div class="details">
@@ -1719,7 +1000,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
 
                     <table>
         <tr>
-            <td><a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a></td>
+            <td><a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a></td>
             <td>A set containing only the elements present in $this, but not $elements.</td>
         </tr>
     </table>
@@ -1730,7 +1011,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_diffInPlace">
-        <div class="location">at line 1201</div>
+        <div class="location">at line 195</div>
         <code>            public            
     <strong>diffInPlace</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1756,8 +1037,8 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_symmetricDiff">
-        <div class="location">at line 1275</div>
-        <code>            public            <a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>
+        <div class="location">at line 206</div>
+        <code>            public            <a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a>
     <strong>symmetricDiff</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
     <div class="details">
@@ -1779,7 +1060,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
 
                     <table>
         <tr>
-            <td><a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a></td>
+            <td><a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a></td>
             <td>A set containing only the elements present in $this, or $elements, but not both.</td>
         </tr>
     </table>
@@ -1790,7 +1071,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_symmetricDiffInPlace">
-        <div class="location">at line 1378</div>
+        <div class="location">at line 215</div>
         <code>            public            
     <strong>symmetricDiffInPlace</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>

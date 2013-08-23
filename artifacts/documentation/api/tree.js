@@ -34,6 +34,7 @@ var tree = [["Icecave",,"",
                 [        ]],["RandomAccessInterface","Icecave\/Collections\/RandomAccessInterface.html","",
                 [        ]],["SequenceInterface","Icecave\/Collections\/SequenceInterface.html","",
                 [        ]],["Set","Icecave\/Collections\/Set.html","",
+                [        ]],["SetInterface","Icecave\/Collections\/SetInterface.html","",
                 [        ]],["Stack","Icecave\/Collections\/Stack.html","",
                 [        ]],["Vector","Icecave\/Collections\/Vector.html","",
                 [        ]]        ]]        ]]        ]

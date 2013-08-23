@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1377218800">
-  <project timestamp="1377218800">
+<coverage generated="1377221833">
+  <project timestamp="1377221833">
     <file name="/home/travis/build/IcecaveStudios/collections/lib/Icecave/Collections/AssociativeInterface.php">
       <metrics loc="154" ncloc="31" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
@@ -186,7 +186,7 @@
         <line num="467" type="stmt" count="1"/>
         <line num="468" type="stmt" count="1"/>
         <line num="470" type="stmt" count="8"/>
-        <line num="479" type="method" name="addElement" crap="6" count="14"/>
+        <line num="479" type="method" name="addElement" crap="5" count="14"/>
         <line num="481" type="stmt" count="14"/>
         <line num="483" type="stmt" count="14"/>
         <line num="484" type="stmt" count="2"/>
@@ -319,7 +319,7 @@
         <line num="753" type="stmt" count="3"/>
         <line num="756" type="stmt" count="5"/>
         <line num="759" type="stmt" count="0"/>
-        <metrics loc="758" ncloc="518" classes="1" methods="26" coveredmethods="26" conditionals="0" coveredconditionals="0" statements="284" coveredstatements="284" elements="310" coveredelements="310"/>
+        <metrics loc="758" ncloc="520" classes="1" methods="26" coveredmethods="26" conditionals="0" coveredconditionals="0" statements="284" coveredstatements="284" elements="310" coveredelements="310"/>
       </file>
       <file name="/home/travis/build/IcecaveStudios/collections/lib/Icecave/Collections/HashMap.php">
         <class name="HashMap" namespace="Icecave\Collections">
@@ -723,7 +723,7 @@
       </file>
       <file name="/home/travis/build/IcecaveStudios/collections/lib/Icecave/Collections/HashSet.php">
         <class name="HashSet" namespace="Icecave\Collections">
-          <metrics methods="46" coveredmethods="46" conditionals="0" coveredconditionals="0" statements="268" coveredstatements="268" elements="314" coveredelements="314"/>
+          <metrics methods="46" coveredmethods="46" conditionals="0" coveredconditionals="0" statements="271" coveredstatements="271" elements="317" coveredelements="317"/>
         </class>
         <line num="23" type="method" name="__construct" crap="4" count="189"/>
         <line num="25" type="stmt" count="189"/>
@@ -927,9 +927,9 @@
         <line num="582" type="stmt" count="1"/>
         <line num="583" type="stmt" count="1"/>
         <line num="584" type="stmt" count="1"/>
-        <line num="593" type="method" name="isEqualSet" crap="4" count="14"/>
-        <line num="595" type="stmt" count="14"/>
-        <line num="597" type="stmt" count="14"/>
+        <line num="593" type="method" name="isEqualSet" crap="4" count="15"/>
+        <line num="595" type="stmt" count="15"/>
+        <line num="597" type="stmt" count="15"/>
         <line num="599" type="stmt" count="13"/>
         <line num="600" type="stmt" count="7"/>
         <line num="603" type="stmt" count="6"/>
@@ -937,9 +937,9 @@
         <line num="605" type="stmt" count="4"/>
         <line num="607" type="stmt" count="4"/>
         <line num="609" type="stmt" count="2"/>
-        <line num="619" type="method" name="isSuperSet" crap="4" count="27"/>
-        <line num="621" type="stmt" count="27"/>
-        <line num="623" type="stmt" count="27"/>
+        <line num="619" type="method" name="isSuperSet" crap="4" count="28"/>
+        <line num="621" type="stmt" count="28"/>
+        <line num="623" type="stmt" count="28"/>
         <line num="625" type="stmt" count="26"/>
         <line num="626" type="stmt" count="7"/>
         <line num="629" type="stmt" count="19"/>
@@ -947,13 +947,13 @@
         <line num="631" type="stmt" count="11"/>
         <line num="633" type="stmt" count="11"/>
         <line num="635" type="stmt" count="8"/>
-        <line num="645" type="method" name="isSubSet" crap="1" count="14"/>
-        <line num="647" type="stmt" count="14"/>
-        <line num="649" type="stmt" count="14"/>
+        <line num="645" type="method" name="isSubSet" crap="1" count="15"/>
+        <line num="647" type="stmt" count="15"/>
+        <line num="649" type="stmt" count="15"/>
         <line num="651" type="stmt" count="13"/>
-        <line num="661" type="method" name="isProperSuperSet" crap="4" count="27"/>
-        <line num="663" type="stmt" count="27"/>
-        <line num="665" type="stmt" count="27"/>
+        <line num="661" type="method" name="isProperSuperSet" crap="4" count="28"/>
+        <line num="663" type="stmt" count="28"/>
+        <line num="665" type="stmt" count="28"/>
         <line num="667" type="stmt" count="26"/>
         <line num="668" type="stmt" count="19"/>
         <line num="671" type="stmt" count="7"/>
@@ -961,68 +961,68 @@
         <line num="673" type="stmt" count="3"/>
         <line num="675" type="stmt" count="5"/>
         <line num="677" type="stmt" count="4"/>
-        <line num="687" type="method" name="isProperSubSet" crap="1" count="14"/>
-        <line num="689" type="stmt" count="14"/>
-        <line num="691" type="stmt" count="14"/>
+        <line num="687" type="method" name="isProperSubSet" crap="1" count="15"/>
+        <line num="689" type="stmt" count="15"/>
+        <line num="691" type="stmt" count="15"/>
         <line num="693" type="stmt" count="13"/>
-        <line num="703" type="method" name="isIntersecting" crap="3" count="14"/>
-        <line num="705" type="stmt" count="14"/>
-        <line num="707" type="stmt" count="14"/>
+        <line num="703" type="method" name="isIntersecting" crap="3" count="15"/>
+        <line num="705" type="stmt" count="15"/>
+        <line num="707" type="stmt" count="15"/>
         <line num="709" type="stmt" count="13"/>
         <line num="710" type="stmt" count="12"/>
         <line num="711" type="stmt" count="6"/>
         <line num="713" type="stmt" count="10"/>
         <line num="715" type="stmt" count="7"/>
-        <line num="725" type="method" name="union" crap="1" count="27"/>
-        <line num="727" type="stmt" count="27"/>
-        <line num="729" type="stmt" count="27"/>
+        <line num="725" type="method" name="union" crap="1" count="28"/>
+        <line num="727" type="stmt" count="28"/>
+        <line num="729" type="stmt" count="28"/>
         <line num="731" type="stmt" count="26"/>
         <line num="732" type="stmt" count="26"/>
         <line num="734" type="stmt" count="26"/>
-        <line num="742" type="method" name="unionInPlace" crap="1" count="27"/>
-        <line num="744" type="stmt" count="27"/>
-        <line num="746" type="stmt" count="27"/>
+        <line num="742" type="method" name="unionInPlace" crap="1" count="28"/>
+        <line num="744" type="stmt" count="28"/>
+        <line num="746" type="stmt" count="28"/>
         <line num="748" type="stmt" count="26"/>
         <line num="749" type="stmt" count="26"/>
-        <line num="758" type="method" name="intersect" crap="1" count="40"/>
-        <line num="760" type="stmt" count="40"/>
-        <line num="762" type="stmt" count="40"/>
+        <line num="758" type="method" name="intersect" crap="1" count="41"/>
+        <line num="760" type="stmt" count="41"/>
+        <line num="762" type="stmt" count="41"/>
         <line num="764" type="stmt" count="39"/>
         <line num="765" type="stmt" count="39"/>
         <line num="767" type="stmt" count="39"/>
-        <line num="775" type="method" name="intersectInPlace" crap="3" count="14"/>
-        <line num="777" type="stmt" count="14"/>
-        <line num="779" type="stmt" count="14"/>
+        <line num="775" type="method" name="intersectInPlace" crap="3" count="15"/>
+        <line num="777" type="stmt" count="15"/>
+        <line num="779" type="stmt" count="15"/>
         <line num="781" type="stmt" count="13"/>
         <line num="782" type="stmt" count="11"/>
         <line num="783" type="stmt" count="9"/>
         <line num="784" type="stmt" count="9"/>
         <line num="785" type="stmt" count="13"/>
         <line num="786" type="stmt" count="13"/>
-        <line num="795" type="method" name="diff" crap="1" count="14"/>
-        <line num="797" type="stmt" count="14"/>
-        <line num="799" type="stmt" count="14"/>
+        <line num="795" type="method" name="diff" crap="1" count="15"/>
+        <line num="797" type="stmt" count="15"/>
+        <line num="799" type="stmt" count="15"/>
         <line num="801" type="stmt" count="13"/>
         <line num="802" type="stmt" count="13"/>
         <line num="804" type="stmt" count="13"/>
-        <line num="812" type="method" name="diffInPlace" crap="2" count="40"/>
-        <line num="814" type="stmt" count="40"/>
-        <line num="816" type="stmt" count="40"/>
+        <line num="812" type="method" name="diffInPlace" crap="2" count="41"/>
+        <line num="814" type="stmt" count="41"/>
+        <line num="816" type="stmt" count="41"/>
         <line num="818" type="stmt" count="39"/>
         <line num="819" type="stmt" count="23"/>
         <line num="820" type="stmt" count="39"/>
         <line num="821" type="stmt" count="39"/>
-        <line num="832" type="method" name="symmetricDiff" crap="1" count="14"/>
-        <line num="834" type="stmt" count="14"/>
-        <line num="836" type="stmt" count="14"/>
+        <line num="832" type="method" name="symmetricDiff" crap="1" count="15"/>
+        <line num="834" type="stmt" count="15"/>
+        <line num="836" type="stmt" count="15"/>
         <line num="838" type="stmt" count="13"/>
         <line num="839" type="stmt" count="13"/>
         <line num="840" type="stmt" count="13"/>
         <line num="841" type="stmt" count="13"/>
         <line num="843" type="stmt" count="13"/>
-        <line num="853" type="method" name="symmetricDiffInPlace" crap="1" count="14"/>
-        <line num="855" type="stmt" count="14"/>
-        <line num="857" type="stmt" count="14"/>
+        <line num="853" type="method" name="symmetricDiffInPlace" crap="1" count="15"/>
+        <line num="855" type="stmt" count="15"/>
+        <line num="857" type="stmt" count="15"/>
         <line num="859" type="stmt" count="13"/>
         <line num="860" type="stmt" count="13"/>
         <line num="861" type="stmt" count="13"/>
@@ -1031,11 +1031,14 @@
         <line num="871" type="stmt" count="200"/>
         <line num="877" type="method" name="createSet" crap="1" count="69"/>
         <line num="879" type="stmt" count="69"/>
-        <line num="885" type="method" name="assertCompatible" crap="2" count="196"/>
-        <line num="887" type="stmt" count="196"/>
-        <line num="888" type="stmt" count="14"/>
-        <line num="890" type="stmt" count="182"/>
-        <metrics loc="895" ncloc="536" classes="1" methods="46" coveredmethods="46" conditionals="0" coveredconditionals="0" statements="265" coveredstatements="265" elements="311" coveredelements="311"/>
+        <line num="885" type="method" name="assertCompatible" crap="3" count="210"/>
+        <line num="887" type="stmt" count="210"/>
+        <line num="889" type="stmt" count="210"/>
+        <line num="890" type="stmt" count="14"/>
+        <line num="891" type="stmt" count="196"/>
+        <line num="892" type="stmt" count="14"/>
+        <line num="894" type="stmt" count="182"/>
+        <metrics loc="899" ncloc="540" classes="1" methods="46" coveredmethods="46" conditionals="0" coveredconditionals="0" statements="268" coveredstatements="268" elements="314" coveredelements="314"/>
       </file>
       <file name="/home/travis/build/IcecaveStudios/collections/lib/Icecave/Collections/LinkedList.php">
         <class name="LinkedList" namespace="Icecave\Collections">
@@ -2192,7 +2195,7 @@
       </file>
       <file name="/home/travis/build/IcecaveStudios/collections/lib/Icecave/Collections/Set.php">
         <class name="Set" namespace="Icecave\Collections">
-          <metrics methods="47" coveredmethods="47" conditionals="0" coveredconditionals="0" statements="565" coveredstatements="565" elements="612" coveredelements="612"/>
+          <metrics methods="47" coveredmethods="47" conditionals="0" coveredconditionals="0" statements="568" coveredstatements="568" elements="615" coveredelements="615"/>
         </class>
         <line num="21" type="method" name="__construct" crap="4" count="189"/>
         <line num="23" type="stmt" count="189"/>
@@ -2357,9 +2360,9 @@
         <line num="539" type="stmt" count="1"/>
         <line num="540" type="stmt" count="1"/>
         <line num="541" type="stmt" count="1"/>
-        <line num="550" type="method" name="isEqualSet" crap="7" count="14"/>
-        <line num="552" type="stmt" count="14"/>
-        <line num="554" type="stmt" count="14"/>
+        <line num="550" type="method" name="isEqualSet" crap="7" count="15"/>
+        <line num="552" type="stmt" count="15"/>
+        <line num="554" type="stmt" count="15"/>
         <line num="556" type="stmt" count="13"/>
         <line num="557" type="stmt" count="7"/>
         <line num="558" type="stmt" count="6"/>
@@ -2373,9 +2376,9 @@
         <line num="572" type="stmt" count="2"/>
         <line num="574" type="stmt" count="1"/>
         <line num="576" type="stmt" count="1"/>
-        <line num="586" type="method" name="isSuperSet" crap="9" count="32"/>
-        <line num="588" type="stmt" count="32"/>
-        <line num="590" type="stmt" count="32"/>
+        <line num="586" type="method" name="isSuperSet" crap="9" count="33"/>
+        <line num="588" type="stmt" count="33"/>
+        <line num="590" type="stmt" count="33"/>
         <line num="593" type="stmt" count="31"/>
         <line num="594" type="stmt" count="4"/>
         <line num="596" type="stmt" count="27"/>
@@ -2397,25 +2400,25 @@
         <line num="618" type="stmt" count="6"/>
         <line num="620" type="stmt" count="12"/>
         <line num="622" type="stmt" count="6"/>
-        <line num="632" type="method" name="isSubSet" crap="1" count="14"/>
-        <line num="634" type="stmt" count="14"/>
-        <line num="636" type="stmt" count="14"/>
+        <line num="632" type="method" name="isSubSet" crap="1" count="15"/>
+        <line num="634" type="stmt" count="15"/>
+        <line num="636" type="stmt" count="15"/>
         <line num="638" type="stmt" count="13"/>
-        <line num="648" type="method" name="isProperSuperSet" crap="4" count="27"/>
-        <line num="650" type="stmt" count="27"/>
-        <line num="652" type="stmt" count="27"/>
+        <line num="648" type="method" name="isProperSuperSet" crap="4" count="28"/>
+        <line num="650" type="stmt" count="28"/>
+        <line num="652" type="stmt" count="28"/>
         <line num="655" type="stmt" count="26"/>
         <line num="656" type="stmt" count="2"/>
         <line num="658" type="stmt" count="24"/>
         <line num="659" type="stmt" count="19"/>
         <line num="661" type="stmt" count="5"/>
-        <line num="672" type="method" name="isProperSubSet" crap="1" count="14"/>
-        <line num="674" type="stmt" count="14"/>
-        <line num="676" type="stmt" count="14"/>
+        <line num="672" type="method" name="isProperSubSet" crap="1" count="15"/>
+        <line num="674" type="stmt" count="15"/>
+        <line num="676" type="stmt" count="15"/>
         <line num="678" type="stmt" count="13"/>
-        <line num="688" type="method" name="isIntersecting" crap="11" count="14"/>
-        <line num="690" type="stmt" count="14"/>
-        <line num="692" type="stmt" count="14"/>
+        <line num="688" type="method" name="isIntersecting" crap="11" count="15"/>
+        <line num="690" type="stmt" count="15"/>
+        <line num="692" type="stmt" count="15"/>
         <line num="695" type="stmt" count="13"/>
         <line num="696" type="stmt" count="3"/>
         <line num="699" type="stmt" count="10"/>
@@ -2449,9 +2452,9 @@
         <line num="739" type="stmt" count="4"/>
         <line num="741" type="stmt" count="3"/>
         <line num="743" type="stmt" count="2"/>
-        <line num="753" type="method" name="union" crap="13" count="14"/>
-        <line num="755" type="stmt" count="14"/>
-        <line num="757" type="stmt" count="14"/>
+        <line num="753" type="method" name="union" crap="13" count="15"/>
+        <line num="755" type="stmt" count="15"/>
+        <line num="757" type="stmt" count="15"/>
         <line num="762" type="stmt" count="13"/>
         <line num="763" type="stmt" count="2"/>
         <line num="764" type="stmt" count="11"/>
@@ -2503,9 +2506,9 @@
         <line num="847" type="stmt" count="3"/>
         <line num="849" type="stmt" count="6"/>
         <line num="851" type="stmt" count="6"/>
-        <line num="859" type="method" name="unionInPlace" crap="13" count="14"/>
-        <line num="861" type="stmt" count="14"/>
-        <line num="863" type="stmt" count="14"/>
+        <line num="859" type="method" name="unionInPlace" crap="13" count="15"/>
+        <line num="861" type="stmt" count="15"/>
+        <line num="863" type="stmt" count="15"/>
         <line num="868" type="stmt" count="13"/>
         <line num="869" type="stmt" count="2"/>
         <line num="871" type="stmt" count="2"/>
@@ -2548,9 +2551,9 @@
         <line num="941" type="stmt" count="3"/>
         <line num="943" type="stmt" count="6"/>
         <line num="944" type="stmt" count="6"/>
-        <line num="953" type="method" name="intersect" crap="11" count="14"/>
-        <line num="955" type="stmt" count="14"/>
-        <line num="957" type="stmt" count="14"/>
+        <line num="953" type="method" name="intersect" crap="11" count="15"/>
+        <line num="955" type="stmt" count="15"/>
+        <line num="957" type="stmt" count="15"/>
         <line num="962" type="stmt" count="13"/>
         <line num="963" type="stmt" count="3"/>
         <line num="969" type="stmt" count="14"/>
@@ -2582,9 +2585,9 @@
         <line num="1014" type="stmt" count="4"/>
         <line num="1016" type="stmt" count="6"/>
         <line num="1018" type="stmt" count="6"/>
-        <line num="1026" type="method" name="intersectInPlace" crap="12" count="14"/>
-        <line num="1028" type="stmt" count="14"/>
-        <line num="1030" type="stmt" count="14"/>
+        <line num="1026" type="method" name="intersectInPlace" crap="12" count="15"/>
+        <line num="1028" type="stmt" count="15"/>
+        <line num="1030" type="stmt" count="15"/>
         <line num="1035" type="stmt" count="13"/>
         <line num="1036" type="stmt" count="2"/>
         <line num="1037" type="stmt" count="11"/>
@@ -2620,9 +2623,9 @@
         <line num="1098" type="stmt" count="2"/>
         <line num="1099" type="stmt" count="2"/>
         <line num="1100" type="stmt" count="6"/>
-        <line num="1109" type="method" name="diff" crap="13" count="14"/>
-        <line num="1111" type="stmt" count="14"/>
-        <line num="1113" type="stmt" count="14"/>
+        <line num="1109" type="method" name="diff" crap="13" count="15"/>
+        <line num="1111" type="stmt" count="15"/>
+        <line num="1113" type="stmt" count="15"/>
         <line num="1118" type="stmt" count="13"/>
         <line num="1119" type="stmt" count="2"/>
         <line num="1125" type="stmt" count="11"/>
@@ -2664,9 +2667,9 @@
         <line num="1189" type="stmt" count="2"/>
         <line num="1191" type="stmt" count="6"/>
         <line num="1193" type="stmt" count="6"/>
-        <line num="1201" type="method" name="diffInPlace" crap="11" count="14"/>
-        <line num="1203" type="stmt" count="14"/>
-        <line num="1205" type="stmt" count="14"/>
+        <line num="1201" type="method" name="diffInPlace" crap="11" count="15"/>
+        <line num="1203" type="stmt" count="15"/>
+        <line num="1205" type="stmt" count="15"/>
         <line num="1211" type="stmt" count="13"/>
         <line num="1212" type="stmt" count="3"/>
         <line num="1218" type="stmt" count="10"/>
@@ -2695,9 +2698,9 @@
         <line num="1261" type="stmt" count="4"/>
         <line num="1263" type="stmt" count="6"/>
         <line num="1264" type="stmt" count="6"/>
-        <line num="1275" type="method" name="symmetricDiff" crap="13" count="14"/>
-        <line num="1277" type="stmt" count="14"/>
-        <line num="1279" type="stmt" count="14"/>
+        <line num="1275" type="method" name="symmetricDiff" crap="13" count="15"/>
+        <line num="1277" type="stmt" count="15"/>
+        <line num="1279" type="stmt" count="15"/>
         <line num="1284" type="stmt" count="13"/>
         <line num="1285" type="stmt" count="2"/>
         <line num="1286" type="stmt" count="11"/>
@@ -2744,9 +2747,9 @@
         <line num="1364" type="stmt" count="3"/>
         <line num="1366" type="stmt" count="6"/>
         <line num="1368" type="stmt" count="6"/>
-        <line num="1378" type="method" name="symmetricDiffInPlace" crap="13" count="14"/>
-        <line num="1380" type="stmt" count="14"/>
-        <line num="1382" type="stmt" count="14"/>
+        <line num="1378" type="method" name="symmetricDiffInPlace" crap="13" count="15"/>
+        <line num="1380" type="stmt" count="15"/>
+        <line num="1382" type="stmt" count="15"/>
         <line num="1387" type="stmt" count="13"/>
         <line num="1388" type="stmt" count="2"/>
         <line num="1390" type="stmt" count="2"/>
@@ -2794,19 +2797,22 @@
         <line num="1477" type="stmt" count="115"/>
         <line num="1485" type="method" name="createSet" crap="1" count="45"/>
         <line num="1487" type="stmt" count="45"/>
-        <line num="1493" type="method" name="assertCompatible" crap="2" count="196"/>
-        <line num="1495" type="stmt" count="196"/>
-        <line num="1496" type="stmt" count="14"/>
-        <line num="1498" type="stmt" count="182"/>
-        <line num="1507" type="method" name="binarySearch" crap="1" count="200"/>
-        <line num="1509" type="stmt" count="200"/>
-        <line num="1510" type="stmt" count="200"/>
-        <line num="1511" type="stmt" count="200"/>
-        <line num="1512" type="stmt" count="200"/>
+        <line num="1493" type="method" name="assertCompatible" crap="3" count="210"/>
+        <line num="1495" type="stmt" count="210"/>
+        <line num="1497" type="stmt" count="210"/>
+        <line num="1498" type="stmt" count="14"/>
+        <line num="1499" type="stmt" count="196"/>
+        <line num="1500" type="stmt" count="14"/>
+        <line num="1502" type="stmt" count="182"/>
+        <line num="1511" type="method" name="binarySearch" crap="1" count="200"/>
         <line num="1513" type="stmt" count="200"/>
         <line num="1514" type="stmt" count="200"/>
+        <line num="1515" type="stmt" count="200"/>
         <line num="1516" type="stmt" count="200"/>
-        <metrics loc="1522" ncloc="827" classes="1" methods="47" coveredmethods="47" conditionals="0" coveredconditionals="0" statements="565" coveredstatements="565" elements="612" coveredelements="612"/>
+        <line num="1517" type="stmt" count="200"/>
+        <line num="1518" type="stmt" count="200"/>
+        <line num="1520" type="stmt" count="200"/>
+        <metrics loc="1526" ncloc="831" classes="1" methods="47" coveredmethods="47" conditionals="0" coveredconditionals="0" statements="568" coveredstatements="568" elements="615" coveredelements="615"/>
       </file>
       <file name="/home/travis/build/IcecaveStudios/collections/lib/Icecave/Collections/Stack.php">
         <class name="Stack" namespace="Icecave\Collections">
@@ -3648,6 +3654,9 @@
     <file name="/home/travis/build/IcecaveStudios/collections/lib/Icecave/Collections/SequenceInterface.php">
       <metrics loc="72" ncloc="19" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
+    <file name="/home/travis/build/IcecaveStudios/collections/lib/Icecave/Collections/SetInterface.php">
+      <metrics loc="216" ncloc="51" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
     <package name="Icecave\Collections\Utility">
       <file name="/home/travis/build/IcecaveStudios/collections/lib/Icecave/Collections/Utility/AssociativeKeyGenerator.php">
         <class name="AssociativeKeyGenerator" namespace="Icecave\Collections\Utility">
@@ -3721,6 +3730,6 @@
         <metrics loc="51" ncloc="34" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="12" elements="14" coveredelements="14"/>
       </file>
     </package>
-    <metrics files="33" loc="10763" ncloc="6133" classes="20" methods="443" coveredmethods="443" conditionals="0" coveredconditionals="0" statements="3105" coveredstatements="3105" elements="3548" coveredelements="3548"/>
+    <metrics files="34" loc="10987" ncloc="6194" classes="20" methods="443" coveredmethods="443" conditionals="0" coveredconditionals="0" statements="3111" coveredstatements="3111" elements="3554" coveredelements="3554"/>
   </project>
 </coverage>
