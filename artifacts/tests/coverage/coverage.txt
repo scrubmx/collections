@@ -1,15 +1,15 @@
 
 
 Code Coverage Report 
-  2013-08-22 03:34:45
+  2013-08-23 00:46:40
 
  Summary: 
   Classes: 100.00% (20/20)
-  Methods: 100.00% (438/438)
-  Lines:   100.00% (3030/3030)
+  Methods: 100.00% (443/443)
+  Lines:   100.00% (3105/3105)
 
 \Icecave\Collections::Collection
-  Methods: 100.00% (21/21)   Lines: 100.00% (210/210)
+  Methods: 100.00% (26/26)   Lines: 100.00% (287/287)
 \Icecave\Collections::HashMap
   Methods: 100.00% (57/57)   Lines: 100.00% (341/341)
 \Icecave\Collections::HashSet

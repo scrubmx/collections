@@ -197,6 +197,56 @@
             </tr>
                     <tr>
                 <td class="type">
+                    static&nbsp;<abbr title="Icecave\Collections\Iterator">Iterator</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_getIterator">getIterator</a>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $collection)
+                    <p>Get an iterator for any traversable type.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;
+                </td>
+                <td class="last">
+                    <a href="#method_addElement">addElement</a>(<a href="../../Icecave/Collections/MutableSequenceInterface.html"><abbr title="Icecave\Collections\MutableSequenceInterface">MutableSequenceInterface</abbr></a>|<a href="../../Icecave/Collections/QueuedAccessInterface.html"><abbr title="Icecave\Collections\QueuedAccessInterface">QueuedAccessInterface</abbr></a>|<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>|<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a>|<a href="http://php.net/ArrayAccess"><abbr title="ArrayAccess">ArrayAccess</abbr></a>|array $collection, mixed $element)
+                    <p>Add an element to a collection.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;
+                </td>
+                <td class="last">
+                    <a href="#method_addElements">addElements</a>(<a href="../../Icecave/Collections/MutableSequenceInterface.html"><abbr title="Icecave\Collections\MutableSequenceInterface">MutableSequenceInterface</abbr></a>|<a href="../../Icecave/Collections/QueuedAccessInterface.html"><abbr title="Icecave\Collections\QueuedAccessInterface">QueuedAccessInterface</abbr></a>|<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>|<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a>|<a href="http://php.net/ArrayAccess"><abbr title="ArrayAccess">ArrayAccess</abbr></a>|array $collection, <abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $elements)
+                    <p>Add elements from one collection to another.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;string
+                </td>
+                <td class="last">
+                    <a href="#method_implode">implode</a>(string $separator, <abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $collection, string $emptyResult = &#039;&#039;, <abbr title="Icecave\Collections\callable">callable</abbr>|null $transform = null)
+                    <p>Create a string by joining the elements in a collection.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    static&nbsp;<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_explode">explode</a>(string $separator, string $string, integer|null $limit = null, <a href="../../Icecave/Collections/MutableSequenceInterface.html"><abbr title="Icecave\Collections\MutableSequenceInterface">MutableSequenceInterface</abbr></a>|<a href="../../Icecave/Collections/QueuedAccessInterface.html"><abbr title="Icecave\Collections\QueuedAccessInterface">QueuedAccessInterface</abbr></a>|<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>|<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a>|<a href="http://php.net/ArrayAccess"><abbr title="ArrayAccess">ArrayAccess</abbr></a>|array $collection = array(), <abbr title="Icecave\Collections\callable">callable</abbr>|null $transform = null, string|null $encoding = null)
+                    <p>Split a string based on a separator.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
                     static&nbsp;<a href="../../Icecave/Collections/Iterator/Traits.html"><abbr title="Icecave\Collections\Iterator\Traits">Traits</abbr></a>
                 </td>
                 <td class="last">
@@ -241,7 +291,7 @@
         <h2>Details</h2>
 
                         <h3 id="method_isEmpty">
-        <div class="location">at line 28</div>
+        <div class="location">at line 30</div>
         <code>        static    public            boolean
     <strong>isEmpty</strong>(array|<a href="http://php.net/Traversable"><abbr title="Traversable">Traversable</abbr></a>|<a href="../../Icecave/Collections/CollectionInterface.html"><abbr title="Icecave\Collections\CollectionInterface">CollectionInterface</abbr></a> $collection)</code>
     </h3>
@@ -277,7 +327,7 @@
     </div>
 
                 <h3 id="method_size">
-        <div class="location">at line 46</div>
+        <div class="location">at line 48</div>
         <code>        static    public            integer
     <strong>size</strong>(array|<a href="http://php.net/Traversable"><abbr title="Traversable">Traversable</abbr></a>|<a href="http://php.net/Countable"><abbr title="Countable">Countable</abbr></a>|<a href="../../Icecave/Collections/CollectionInterface.html"><abbr title="Icecave\Collections\CollectionInterface">CollectionInterface</abbr></a> $collection)</code>
     </h3>
@@ -313,7 +363,7 @@
     </div>
 
                 <h3 id="method_get">
-        <div class="location">at line 75</div>
+        <div class="location">at line 77</div>
         <code>        static    public            mixed
     <strong>get</strong>(array|<a href="http://php.net/Traversable"><abbr title="Traversable">Traversable</abbr></a>|<a href="../../Icecave/Collections/AssociativeInterface.html"><abbr title="Icecave\Collections\AssociativeInterface">AssociativeInterface</abbr></a> $collection, mixed $key)</code>
     </h3>
@@ -363,7 +413,7 @@
     </div>
 
                 <h3 id="method_tryGet">
-        <div class="location">at line 96</div>
+        <div class="location">at line 98</div>
         <code>        static    public            boolean
     <strong>tryGet</strong>(array|<a href="http://php.net/Traversable"><abbr title="Traversable">Traversable</abbr></a>|<a href="../../Icecave/Collections/AssociativeInterface.html"><abbr title="Icecave\Collections\AssociativeInterface">AssociativeInterface</abbr></a> $collection, mixed $key, mixed $value)</code>
     </h3>
@@ -409,7 +459,7 @@
     </div>
 
                 <h3 id="method_getWithDefault">
-        <div class="location">at line 135</div>
+        <div class="location">at line 137</div>
         <code>        static    public            mixed
     <strong>getWithDefault</strong>(array|<a href="http://php.net/Traversable"><abbr title="Traversable">Traversable</abbr></a>|<a href="../../Icecave/Collections/IterableInterface.html"><abbr title="Icecave\Collections\IterableInterface">IterableInterface</abbr></a> $collection, mixed $key, mixed $default = null)</code>
     </h3>
@@ -455,7 +505,7 @@
     </div>
 
                 <h3 id="method_hasKey">
-        <div class="location">at line 155</div>
+        <div class="location">at line 157</div>
         <code>        static    public            boolean
     <strong>hasKey</strong>(array|<a href="http://php.net/Traversable"><abbr title="Traversable">Traversable</abbr></a>|<a href="../../Icecave/Collections/IterableInterface.html"><abbr title="Icecave\Collections\IterableInterface">IterableInterface</abbr></a> $collection, mixed $key)</code>
     </h3>
@@ -496,7 +546,7 @@
     </div>
 
                 <h3 id="method_contains">
-        <div class="location">at line 183</div>
+        <div class="location">at line 185</div>
         <code>        static    public            boolean
     <strong>contains</strong>(array|<a href="http://php.net/Traversable"><abbr title="Traversable">Traversable</abbr></a>|<a href="../../Icecave/Collections/IterableInterface.html"><abbr title="Icecave\Collections\IterableInterface">IterableInterface</abbr></a> $collection, mixed $value)</code>
     </h3>
@@ -537,7 +587,7 @@
     </div>
 
                 <h3 id="method_keys">
-        <div class="location">at line 208</div>
+        <div class="location">at line 210</div>
         <code>        static    public            array
     <strong>keys</strong>(array|<a href="http://php.net/Traversable"><abbr title="Traversable">Traversable</abbr></a>|<a href="../../Icecave/Collections/AssociativeInterface.html"><abbr title="Icecave\Collections\AssociativeInterface">AssociativeInterface</abbr></a>|<a href="../../Icecave/Collections/SequenceInterface.html"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a> $collection)</code>
     </h3>
@@ -573,7 +623,7 @@
     </div>
 
                 <h3 id="method_values">
-        <div class="location">at line 235</div>
+        <div class="location">at line 237</div>
         <code>        static    public            array
     <strong>values</strong>(array|<a href="http://php.net/Traversable"><abbr title="Traversable">Traversable</abbr></a>|<a href="../../Icecave/Collections/AssociativeInterface.html"><abbr title="Icecave\Collections\AssociativeInterface">AssociativeInterface</abbr></a>|<a href="../../Icecave/Collections/SequenceInterface.html"><abbr title="Icecave\Collections\SequenceInterface">SequenceInterface</abbr></a> $collection)</code>
     </h3>
@@ -609,7 +659,7 @@
     </div>
 
                 <h3 id="method_elements">
-        <div class="location">at line 264</div>
+        <div class="location">at line 266</div>
         <code>        static    public            array
     <strong>elements</strong>(array|<a href="http://php.net/Traversable"><abbr title="Traversable">Traversable</abbr></a>|<a href="../../Icecave/Collections/CollectionInterface.html"><abbr title="Icecave\Collections\CollectionInterface">CollectionInterface</abbr></a> $collection)</code>
     </h3>
@@ -644,7 +694,7 @@
     </div>
 
                 <h3 id="method_map">
-        <div class="location">at line 296</div>
+        <div class="location">at line 298</div>
         <code>        static    public            array|<a href="http://php.net/ArrayAccess"><abbr title="ArrayAccess">ArrayAccess</abbr></a>
     <strong>map</strong>(array|<a href="http://php.net/Traversable"><abbr title="Traversable">Traversable</abbr></a>|<a href="../../Icecave/Collections/IterableInterface.html"><abbr title="Icecave\Collections\IterableInterface">IterableInterface</abbr></a> $collection, <abbr title="Icecave\Collections\callable">callable</abbr> $transform, array|<a href="http://php.net/ArrayAccess"><abbr title="ArrayAccess">ArrayAccess</abbr></a> $result = array())</code>
     </h3>
@@ -691,7 +741,7 @@
     </div>
 
                 <h3 id="method_filter">
-        <div class="location">at line 323</div>
+        <div class="location">at line 325</div>
         <code>        static    public            array|<a href="http://php.net/ArrayAccess"><abbr title="ArrayAccess">ArrayAccess</abbr></a>
     <strong>filter</strong>(array|<a href="http://php.net/Traversable"><abbr title="Traversable">Traversable</abbr></a>|<a href="../../Icecave/Collections/IterableInterface.html"><abbr title="Icecave\Collections\IterableInterface">IterableInterface</abbr></a> $collection, <abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate, array|<a href="http://php.net/ArrayAccess"><abbr title="ArrayAccess">ArrayAccess</abbr></a> $result = array())</code>
     </h3>
@@ -738,7 +788,7 @@
     </div>
 
                 <h3 id="method_each">
-        <div class="location">at line 347</div>
+        <div class="location">at line 349</div>
         <code>        static    public            
     <strong>each</strong>(array|<a href="http://php.net/Traversable"><abbr title="Traversable">Traversable</abbr></a>|<a href="../../Icecave/Collections/IterableInterface.html"><abbr title="Icecave\Collections\IterableInterface">IterableInterface</abbr></a> $collection, <abbr title="Icecave\Collections\callable">callable</abbr> $callback)</code>
     </h3>
@@ -769,7 +819,7 @@
     </div>
 
                 <h3 id="method_all">
-        <div class="location">at line 371</div>
+        <div class="location">at line 373</div>
         <code>        static    public            boolean
     <strong>all</strong>(array|<a href="http://php.net/Traversable"><abbr title="Traversable">Traversable</abbr></a>|<a href="../../Icecave/Collections/IterableInterface.html"><abbr title="Icecave\Collections\IterableInterface">IterableInterface</abbr></a> $collection, <abbr title="Icecave\Collections\callable">callable</abbr> $predicate)</code>
     </h3>
@@ -810,7 +860,7 @@
     </div>
 
                 <h3 id="method_any">
-        <div class="location">at line 414</div>
+        <div class="location">at line 416</div>
         <code>        static    public            boolean
     <strong>any</strong>(array|<a href="http://php.net/Traversable"><abbr title="Traversable">Traversable</abbr></a>|<a href="../../Icecave/Collections/IterableInterface.html"><abbr title="Icecave\Collections\IterableInterface">IterableInterface</abbr></a> $collection, <abbr title="Icecave\Collections\callable">callable</abbr> $predicate)</code>
     </h3>
@@ -851,7 +901,7 @@
     </div>
 
                 <h3 id="method_isSequential">
-        <div class="location">at line 433</div>
+        <div class="location">at line 435</div>
         <code>        static    public            boolean
     <strong>isSequential</strong>(array|<a href="http://php.net/Traversable"><abbr title="Traversable">Traversable</abbr></a>|<a href="../../Icecave/Collections/CollectionInterface.html"><abbr title="Icecave\Collections\CollectionInterface">CollectionInterface</abbr></a> $collection)</code>
     </h3>
@@ -886,8 +936,217 @@
                     </div>
     </div>
 
+                <h3 id="method_getIterator">
+        <div class="location">at line 460</div>
+        <code>        static    public            <abbr title="Icecave\Collections\Iterator">Iterator</abbr>
+    <strong>getIterator</strong>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $collection)</code>
+    </h3>
+    <div class="details">
+        <p>Get an iterator for any traversable type.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr></td>
+                <td>$collection</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="Icecave\Collections\Iterator">Iterator</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addElement">
+        <div class="location">at line 479</div>
+        <code>        static    public            
+    <strong>addElement</strong>(<a href="../../Icecave/Collections/MutableSequenceInterface.html"><abbr title="Icecave\Collections\MutableSequenceInterface">MutableSequenceInterface</abbr></a>|<a href="../../Icecave/Collections/QueuedAccessInterface.html"><abbr title="Icecave\Collections\QueuedAccessInterface">QueuedAccessInterface</abbr></a>|<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>|<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a>|<a href="http://php.net/ArrayAccess"><abbr title="ArrayAccess">ArrayAccess</abbr></a>|array $collection, mixed $element)</code>
+    </h3>
+    <div class="details">
+        <p>Add an element to a collection.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../Icecave/Collections/MutableSequenceInterface.html"><abbr title="Icecave\Collections\MutableSequenceInterface">MutableSequenceInterface</abbr></a>|<a href="../../Icecave/Collections/QueuedAccessInterface.html"><abbr title="Icecave\Collections\QueuedAccessInterface">QueuedAccessInterface</abbr></a>|<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>|<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a>|<a href="http://php.net/ArrayAccess"><abbr title="ArrayAccess">ArrayAccess</abbr></a>|array</td>
+                <td>$collection</td>
+                <td>The collection to add to.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$element</td>
+                <td>The element to add.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addElements">
+        <div class="location">at line 502</div>
+        <code>        static    public            
+    <strong>addElements</strong>(<a href="../../Icecave/Collections/MutableSequenceInterface.html"><abbr title="Icecave\Collections\MutableSequenceInterface">MutableSequenceInterface</abbr></a>|<a href="../../Icecave/Collections/QueuedAccessInterface.html"><abbr title="Icecave\Collections\QueuedAccessInterface">QueuedAccessInterface</abbr></a>|<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>|<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a>|<a href="http://php.net/ArrayAccess"><abbr title="ArrayAccess">ArrayAccess</abbr></a>|array $collection, <abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $elements)</code>
+    </h3>
+    <div class="details">
+        <p>Add elements from one collection to another.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../Icecave/Collections/MutableSequenceInterface.html"><abbr title="Icecave\Collections\MutableSequenceInterface">MutableSequenceInterface</abbr></a>|<a href="../../Icecave/Collections/QueuedAccessInterface.html"><abbr title="Icecave\Collections\QueuedAccessInterface">QueuedAccessInterface</abbr></a>|<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>|<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a>|<a href="http://php.net/ArrayAccess"><abbr title="ArrayAccess">ArrayAccess</abbr></a>|array</td>
+                <td>$collection</td>
+                <td>The collection to append to.</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr></td>
+                <td>$elements</td>
+                <td>The elements to be appended.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_implode">
+        <div class="location">at line 521</div>
+        <code>        static    public            string
+    <strong>implode</strong>(string $separator, <abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $collection, string $emptyResult = &#039;&#039;, <abbr title="Icecave\Collections\callable">callable</abbr>|null $transform = null)</code>
+    </h3>
+    <div class="details">
+        <p>Create a string by joining the elements in a collection.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$separator</td>
+                <td>The separator string to place between elements.</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr></td>
+                <td>$collection</td>
+                <td>The collection to join.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$emptyResult</td>
+                <td>The result to return when there are no elements in the collection.</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Icecave\Collections\callable">callable</abbr>|null</td>
+                <td>$transform</td>
+                <td>The transform to apply to convert each element to a string.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>A string containing each element in $collection, transformed by $transform, separated by $separator.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_explode">
+        <div class="location">at line 566</div>
+        <code>        static    public            <abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr>
+    <strong>explode</strong>(string $separator, string $string, integer|null $limit = null, <a href="../../Icecave/Collections/MutableSequenceInterface.html"><abbr title="Icecave\Collections\MutableSequenceInterface">MutableSequenceInterface</abbr></a>|<a href="../../Icecave/Collections/QueuedAccessInterface.html"><abbr title="Icecave\Collections\QueuedAccessInterface">QueuedAccessInterface</abbr></a>|<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>|<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a>|<a href="http://php.net/ArrayAccess"><abbr title="ArrayAccess">ArrayAccess</abbr></a>|array $collection = array(), <abbr title="Icecave\Collections\callable">callable</abbr>|null $transform = null, string|null $encoding = null)</code>
+    </h3>
+    <div class="details">
+        <p>Split a string based on a separator.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$separator</td>
+                <td>The separator string to place between elements.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td>The string to split.</td>
+            </tr>
+                    <tr>
+                <td>integer|null</td>
+                <td>$limit</td>
+                <td>The maximum number of elements to insert into $collection, or null for unlimited.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../Icecave/Collections/MutableSequenceInterface.html"><abbr title="Icecave\Collections\MutableSequenceInterface">MutableSequenceInterface</abbr></a>|<a href="../../Icecave/Collections/QueuedAccessInterface.html"><abbr title="Icecave\Collections\QueuedAccessInterface">QueuedAccessInterface</abbr></a>|<a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>|<a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a>|<a href="http://php.net/ArrayAccess"><abbr title="ArrayAccess">ArrayAccess</abbr></a>|array</td>
+                <td>$collection</td>
+                <td>The collection to append to, can be any type supported by {see Collection::addElement()}.</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Icecave\Collections\callable">callable</abbr>|null</td>
+                <td>$transform</td>
+                <td>The transform to apply to each element before insertion into $collection.</td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$encoding</td>
+                <td>The string encoding to use, or null to use the internal encoding ({see mb<em>internal</em>encoding()}).</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr></td>
+            <td>Returns $collection.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
                 <h3 id="method_iteratorTraits">
-        <div class="location">at line 458</div>
+        <div class="location">at line 631</div>
         <code>        static    public            <a href="../../Icecave/Collections/Iterator/Traits.html"><abbr title="Icecave\Collections\Iterator\Traits">Traits</abbr></a>
     <strong>iteratorTraits</strong>(array|<a href="http://php.net/Traversable"><abbr title="Traversable">Traversable</abbr></a>|<a href="http://php.net/Countable"><abbr title="Countable">Countable</abbr></a>|<a href="../../Icecave/Collections/Iterator/TraitsProviderInterface.html"><abbr title="Icecave\Collections\Iterator\TraitsProviderInterface">TraitsProviderInterface</abbr></a> $iterator)</code>
     </h3>
@@ -924,7 +1183,7 @@
     </div>
 
                 <h3 id="method_lowerBound">
-        <div class="location">at line 492</div>
+        <div class="location">at line 665</div>
         <code>        static    public            
     <strong>lowerBound</strong>(array|<a href="http://php.net/ArrayAccess"><abbr title="ArrayAccess">ArrayAccess</abbr></a> $collection, mixed $element, <abbr title="Icecave\Collections\callable">callable</abbr> $comparator, integer $begin, integer|null $end = null)</code>
     </h3>
@@ -969,7 +1228,7 @@
     </div>
 
                 <h3 id="method_upperBound">
-        <div class="location">at line 528</div>
+        <div class="location">at line 701</div>
         <code>        static    public            
     <strong>upperBound</strong>(array|<a href="http://php.net/ArrayAccess"><abbr title="ArrayAccess">ArrayAccess</abbr></a> $collection, mixed $element, <abbr title="Icecave\Collections\callable">callable</abbr> $comparator, integer $begin, integer|null $end = null)</code>
     </h3>
@@ -1014,7 +1273,7 @@
     </div>
 
                 <h3 id="method_binarySearch">
-        <div class="location">at line 567</div>
+        <div class="location">at line 740</div>
         <code>        static    public            integer|null
     <strong>binarySearch</strong>(array|<a href="http://php.net/ArrayAccess"><abbr title="ArrayAccess">ArrayAccess</abbr></a> $collection, mixed $element, <abbr title="Icecave\Collections\callable">callable</abbr> $comparator, integer $begin, integer|null $end = null, integer|null $insertIndex = null)</code>
     </h3>
