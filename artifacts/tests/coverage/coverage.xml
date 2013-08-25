@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1377417081">
-  <project timestamp="1377417081">
+<coverage generated="1377417367">
+  <project timestamp="1377417367">
     <file name="/home/travis/build/IcecaveStudios/collections/lib/Icecave/Collections/AssociativeInterface.php">
       <metrics loc="154" ncloc="31" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
@@ -2227,16 +2227,16 @@
         <class name="PriorityQueue" namespace="Icecave\Collections">
           <metrics methods="11" coveredmethods="11" conditionals="0" coveredconditionals="0" statements="52" coveredstatements="52" elements="63" coveredelements="63"/>
         </class>
-        <line num="25" type="method" name="__construct" crap="2" count="19"/>
-        <line num="27" type="stmt" count="19"/>
-        <line num="29" type="stmt" count="19"/>
+        <line num="25" type="method" name="__construct" crap="2" count="20"/>
+        <line num="27" type="stmt" count="20"/>
+        <line num="29" type="stmt" count="20"/>
         <line num="30" type="method" name="anonymous function" crap="1" count="1"/>
         <line num="31" type="stmt" count="1"/>
         <line num="32" type="stmt" count="1"/>
         <line num="33" type="stmt" count="1"/>
-        <line num="34" type="stmt" count="19"/>
-        <line num="36" type="stmt" count="19"/>
-        <line num="37" type="stmt" count="19"/>
+        <line num="34" type="stmt" count="20"/>
+        <line num="36" type="stmt" count="20"/>
+        <line num="37" type="stmt" count="20"/>
         <line num="46" type="method" name="create" crap="1" count="1"/>
         <line num="48" type="stmt" count="1"/>
         <line num="50" type="stmt" count="1"/>
@@ -2248,22 +2248,22 @@
         <line num="73" type="stmt" count="1"/>
         <line num="74" type="stmt" count="1"/>
         <line num="75" type="stmt" count="1"/>
-        <line num="85" type="method" name="clear" crap="1" count="19"/>
-        <line num="87" type="stmt" count="19"/>
-        <line num="89" type="stmt" count="19"/>
-        <line num="90" type="stmt" count="19"/>
-        <line num="102" type="method" name="next" crap="2" count="6"/>
-        <line num="104" type="stmt" count="6"/>
-        <line num="106" type="stmt" count="6"/>
+        <line num="85" type="method" name="clear" crap="1" count="20"/>
+        <line num="87" type="stmt" count="20"/>
+        <line num="89" type="stmt" count="20"/>
+        <line num="90" type="stmt" count="20"/>
+        <line num="102" type="method" name="next" crap="2" count="7"/>
+        <line num="104" type="stmt" count="7"/>
+        <line num="106" type="stmt" count="7"/>
         <line num="107" type="stmt" count="1"/>
-        <line num="110" type="stmt" count="5"/>
-        <line num="119" type="method" name="push" crap="2" count="13"/>
-        <line num="121" type="stmt" count="13"/>
-        <line num="123" type="stmt" count="13"/>
+        <line num="110" type="stmt" count="6"/>
+        <line num="119" type="method" name="push" crap="2" count="14"/>
+        <line num="121" type="stmt" count="14"/>
+        <line num="123" type="stmt" count="14"/>
         <line num="124" type="stmt" count="13"/>
         <line num="125" type="stmt" count="13"/>
-        <line num="127" type="stmt" count="13"/>
-        <line num="128" type="stmt" count="13"/>
+        <line num="127" type="stmt" count="14"/>
+        <line num="128" type="stmt" count="14"/>
         <line num="136" type="method" name="pop" crap="2" count="6"/>
         <line num="138" type="stmt" count="6"/>
         <line num="140" type="stmt" count="6"/>
