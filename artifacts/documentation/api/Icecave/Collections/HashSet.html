@@ -459,13 +459,99 @@
                 </td>
                 <td></td>
             </tr>
+                    <tr>
+                <td class="type">
+                    integer
+                </td>
+                <td class="last">
+                    <a href="#method_compare">compare</a>(mixed $value)
+                    <p>Compare this object with another value, yielding a result according to the following table:</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_canCompare">canCompare</a>(mixed $value)
+                    <p>Check if $this is able to be compared to another value.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_isEqualTo">isEqualTo</a>(mixed $value)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_isNotEqualTo">isNotEqualTo</a>(mixed $value)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_isLessThan">isLessThan</a>(mixed $value)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_isGreaterThan">isGreaterThan</a>(mixed $value)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_isLessThanOrEqualTo">isLessThanOrEqualTo</a>(mixed $value)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_isGreaterThanOrEqualTo">isGreaterThanOrEqualTo</a>(mixed $value)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
             </table>
 
 
         <h2>Details</h2>
 
                         <h3 id="method___construct">
-        <div class="location">at line 23</div>
+        <div class="location">at line 24</div>
         <code>            public            
     <strong>__construct</strong>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr>|null $collection = null, <abbr title="Icecave\Collections\callable">callable</abbr>|null $hashFunction = null)</code>
     </h3>
@@ -497,7 +583,7 @@
     </div>
 
                 <h3 id="method_size">
-        <div class="location">at line 52</div>
+        <div class="location">at line 53</div>
         <code>            public            integer
     <strong>size</strong>()</code>
     </h3>
@@ -531,7 +617,7 @@
     </div>
 
                 <h3 id="method_isEmpty">
-        <div class="location">at line 64</div>
+        <div class="location">at line 65</div>
         <code>            public            boolean
     <strong>isEmpty</strong>()</code>
     </h3>
@@ -556,7 +642,7 @@
     </div>
 
                 <h3 id="method___toString">
-        <div class="location">at line 79</div>
+        <div class="location">at line 80</div>
         <code>            public            string
     <strong>__toString</strong>()</code>
     </h3>
@@ -581,7 +667,7 @@ provide information on the type and state of the collection.</p>
     </div>
 
                 <h3 id="method_clear">
-        <div class="location">at line 111</div>
+        <div class="location">at line 112</div>
         <code>            public            
     <strong>clear</strong>()</code>
     </h3>
@@ -597,7 +683,7 @@ provide information on the type and state of the collection.</p>
     </div>
 
                 <h3 id="method_iteratorTraits">
-        <div class="location">at line 127</div>
+        <div class="location">at line 128</div>
         <code>            public            <a href="../../Icecave/Collections/Iterator/Traits.html"><abbr title="Icecave\Collections\Iterator\Traits">Traits</abbr></a>
     <strong>iteratorTraits</strong>()</code>
     </h3>
@@ -623,7 +709,7 @@ provide information on the type and state of the collection.</p>
     </div>
 
                 <h3 id="method_elements">
-        <div class="location">at line 143</div>
+        <div class="location">at line 144</div>
         <code>            public            array
     <strong>elements</strong>()</code>
     </h3>
@@ -648,7 +734,7 @@ provide information on the type and state of the collection.</p>
     </div>
 
                 <h3 id="method_contains">
-        <div class="location">at line 157</div>
+        <div class="location">at line 158</div>
         <code>            public            boolean
     <strong>contains</strong>(mixed $element)</code>
     </h3>
@@ -683,7 +769,7 @@ provide information on the type and state of the collection.</p>
     </div>
 
                 <h3 id="method_filter">
-        <div class="location">at line 177</div>
+        <div class="location">at line 178</div>
         <code>            public            <a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a>
     <strong>filter</strong>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)</code>
     </h3>
@@ -718,7 +804,7 @@ provide information on the type and state of the collection.</p>
     </div>
 
                 <h3 id="method_map">
-        <div class="location">at line 211</div>
+        <div class="location">at line 212</div>
         <code>            public            <a href="../../Icecave/Collections/IterableInterface.html"><abbr title="Icecave\Collections\IterableInterface">IterableInterface</abbr></a>
     <strong>map</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)</code>
     </h3>
@@ -756,7 +842,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_partition">
-        <div class="location">at line 232</div>
+        <div class="location">at line 233</div>
         <code>            public            <abbr title="Icecave\Collections\tuple&lt;IterableInterface,IterableInterface&gt;">tuple&lt;IterableInterface,IterableInterface&gt;</abbr>
     <strong>partition</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate)</code>
     </h3>
@@ -790,7 +876,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_each">
-        <div class="location">at line 257</div>
+        <div class="location">at line 258</div>
         <code>            public            
     <strong>each</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $callback)</code>
     </h3>
@@ -815,7 +901,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_all">
-        <div class="location">at line 275</div>
+        <div class="location">at line 276</div>
         <code>            public            boolean
     <strong>all</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate)</code>
     </h3>
@@ -850,7 +936,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_any">
-        <div class="location">at line 297</div>
+        <div class="location">at line 298</div>
         <code>            public            boolean
     <strong>any</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $predicate)</code>
     </h3>
@@ -885,7 +971,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_filterInPlace">
-        <div class="location">at line 322</div>
+        <div class="location">at line 323</div>
         <code>            public            
     <strong>filterInPlace</strong>(<abbr title="Icecave\Collections\callable">callable</abbr>|null $predicate = null)</code>
     </h3>
@@ -911,7 +997,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_mapInPlace">
-        <div class="location">at line 349</div>
+        <div class="location">at line 350</div>
         <code>            public            
     <strong>mapInPlace</strong>(<abbr title="Icecave\Collections\callable">callable</abbr> $transform)</code>
     </h3>
@@ -939,7 +1025,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_count">
-        <div class="location">at line 373</div>
+        <div class="location">at line 374</div>
         <code>            public            
     <strong>count</strong>()</code>
     </h3>
@@ -956,7 +1042,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_getIterator">
-        <div class="location">at line 384</div>
+        <div class="location">at line 385</div>
         <code>            public            
     <strong>getIterator</strong>()</code>
     </h3>
@@ -973,7 +1059,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_serialize">
-        <div class="location">at line 402</div>
+        <div class="location">at line 403</div>
         <code>            public            string
     <strong>serialize</strong>()</code>
     </h3>
@@ -998,7 +1084,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_unserialize">
-        <div class="location">at line 419</div>
+        <div class="location">at line 420</div>
         <code>            public            
     <strong>unserialize</strong>(string $packet)</code>
     </h3>
@@ -1024,7 +1110,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_cascade">
-        <div class="location">at line 440</div>
+        <div class="location">at line 441</div>
         <code>            public            mixed
     <strong>cascade</strong>($element)</code>
     </h3>
@@ -1069,7 +1155,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_cascadeWithDefault">
-        <div class="location">at line 456</div>
+        <div class="location">at line 457</div>
         <code>            public            mixed
     <strong>cascadeWithDefault</strong>($default, $element)</code>
     </h3>
@@ -1111,7 +1197,7 @@ It is not guaranteed that the concrete type of the resulting collection will mat
     </div>
 
                 <h3 id="method_cascadeIterable">
-        <div class="location">at line 477</div>
+        <div class="location">at line 478</div>
         <code>            public            mixed
     <strong>cascadeIterable</strong>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $elements)</code>
     </h3>
@@ -1155,7 +1241,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_cascadeIterableWithDefault">
-        <div class="location">at line 501</div>
+        <div class="location">at line 502</div>
         <code>            public            mixed
     <strong>cascadeIterableWithDefault</strong>(mixed $default, <abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $elements)</code>
     </h3>
@@ -1195,7 +1281,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_add">
-        <div class="location">at line 521</div>
+        <div class="location">at line 522</div>
         <code>            public            boolean
     <strong>add</strong>(mixed $element)</code>
     </h3>
@@ -1230,7 +1316,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_addMany">
-        <div class="location">at line 540</div>
+        <div class="location">at line 541</div>
         <code>            public            
     <strong>addMany</strong>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $elements)</code>
     </h3>
@@ -1265,7 +1351,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_remove">
-        <div class="location">at line 557</div>
+        <div class="location">at line 558</div>
         <code>            public            boolean
     <strong>remove</strong>(mixed $element)</code>
     </h3>
@@ -1300,7 +1386,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_removeMany">
-        <div class="location">at line 576</div>
+        <div class="location">at line 577</div>
         <code>            public            
     <strong>removeMany</strong>(<abbr title="Icecave\Collections\mixed&lt;mixed&gt;">mixed&lt;mixed&gt;</abbr> $elements)</code>
     </h3>
@@ -1335,7 +1421,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_isEqualSet">
-        <div class="location">at line 593</div>
+        <div class="location">at line 594</div>
         <code>            public            boolean
     <strong>isEqualSet</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1370,7 +1456,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_isSuperSet">
-        <div class="location">at line 619</div>
+        <div class="location">at line 620</div>
         <code>            public            boolean
     <strong>isSuperSet</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1405,7 +1491,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_isSubSet">
-        <div class="location">at line 645</div>
+        <div class="location">at line 646</div>
         <code>            public            boolean
     <strong>isSubSet</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1440,7 +1526,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_isProperSuperSet">
-        <div class="location">at line 661</div>
+        <div class="location">at line 662</div>
         <code>            public            boolean
     <strong>isProperSuperSet</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1475,7 +1561,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_isProperSubSet">
-        <div class="location">at line 687</div>
+        <div class="location">at line 688</div>
         <code>            public            boolean
     <strong>isProperSubSet</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1510,7 +1596,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_isIntersecting">
-        <div class="location">at line 703</div>
+        <div class="location">at line 704</div>
         <code>            public            boolean
     <strong>isIntersecting</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1545,7 +1631,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_union">
-        <div class="location">at line 725</div>
+        <div class="location">at line 726</div>
         <code>            public            <a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a>
     <strong>union</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1580,7 +1666,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_unionInPlace">
-        <div class="location">at line 742</div>
+        <div class="location">at line 743</div>
         <code>            public            
     <strong>unionInPlace</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1606,7 +1692,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_intersect">
-        <div class="location">at line 758</div>
+        <div class="location">at line 759</div>
         <code>            public            <a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a>
     <strong>intersect</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1641,7 +1727,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_intersectInPlace">
-        <div class="location">at line 775</div>
+        <div class="location">at line 776</div>
         <code>            public            
     <strong>intersectInPlace</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1667,7 +1753,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_diff">
-        <div class="location">at line 795</div>
+        <div class="location">at line 796</div>
         <code>            public            <a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a>
     <strong>diff</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1702,7 +1788,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_diffInPlace">
-        <div class="location">at line 812</div>
+        <div class="location">at line 813</div>
         <code>            public            
     <strong>diffInPlace</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1728,7 +1814,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_symmetricDiff">
-        <div class="location">at line 832</div>
+        <div class="location">at line 833</div>
         <code>            public            <a href="../../Icecave/Collections/HashSet.html"><abbr title="Icecave\Collections\HashSet">HashSet</abbr></a>
     <strong>symmetricDiff</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1762,7 +1848,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_symmetricDiffInPlace">
-        <div class="location">at line 853</div>
+        <div class="location">at line 854</div>
         <code>            public            
     <strong>symmetricDiffInPlace</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1781,6 +1867,306 @@ a traversable (eg, array) instead of via a variable argument list.</p>
             </table>
 
             
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_compare">
+        <div class="location">at line 885</div>
+        <code>            public            integer
+    <strong>compare</strong>(mixed $value)</code>
+    </h3>
+    <div class="details">
+        <p>Compare this object with another value, yielding a result according to the following table:</p>
+        <p>+--------------------+---------------+
+| Condition          | Result        |
++--------------------+---------------+
+| $this == $value    | $result === 0 |
+| $this &lt; $value     | $result &lt; 0   |
+| $this > $value     | $result > 0   |
++--------------------+---------------+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value to compare.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>integer</td>
+            <td>The result of the comparison.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Icecave\Parity\Exception\NotComparableException">NotComparableException</abbr></td>
+                <td>Indicates that the implementation does not know how to compare $this to $value.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_canCompare">
+        <div class="location">at line 913</div>
+        <code>            public            boolean
+    <strong>canCompare</strong>(mixed $value)</code>
+    </h3>
+    <div class="details">
+        <p>Check if $this is able to be compared to another value.</p>
+        <p>A return value of false indicates that calling $this->compare($value)
+will throw an exception.</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value to compare.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
+            <td>True if $this can be compared to $value.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isEqualTo">
+        <div class="location">at line 931</div>
+        <code>            public            boolean
+    <strong>isEqualTo</strong>(mixed $value)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value to compare.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
+            <td>True if $this == $value.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isNotEqualTo">
+        <div class="location">at line 943</div>
+        <code>            public            boolean
+    <strong>isNotEqualTo</strong>(mixed $value)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value to compare.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
+            <td>True if $this != $value.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isLessThan">
+        <div class="location">at line 955</div>
+        <code>            public            boolean
+    <strong>isLessThan</strong>(mixed $value)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value to compare.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
+            <td>True if $this &lt; $value.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isGreaterThan">
+        <div class="location">at line 967</div>
+        <code>            public            boolean
+    <strong>isGreaterThan</strong>(mixed $value)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value to compare.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
+            <td>True if $this > $value.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isLessThanOrEqualTo">
+        <div class="location">at line 979</div>
+        <code>            public            boolean
+    <strong>isLessThanOrEqualTo</strong>(mixed $value)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value to compare.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
+            <td>True if $this &lt;= $value.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isGreaterThanOrEqualTo">
+        <div class="location">at line 991</div>
+        <code>            public            boolean
+    <strong>isGreaterThanOrEqualTo</strong>(mixed $value)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value to compare.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
+            <td>True if $this >= $value.</td>
+        </tr>
+    </table>
+
             
             
                     </div>
