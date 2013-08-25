@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1377416875">
-  <project timestamp="1377416875">
+<coverage generated="1377417081">
+  <project timestamp="1377417081">
     <file name="/home/travis/build/IcecaveStudios/collections/lib/Icecave/Collections/AssociativeInterface.php">
       <metrics loc="154" ncloc="31" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
     <package name="Icecave\Collections">
       <file name="/home/travis/build/IcecaveStudios/collections/lib/Icecave/Collections/Collection.php">
         <class name="Collection" namespace="Icecave\Collections">
-          <metrics methods="28" coveredmethods="28" conditionals="0" coveredconditionals="0" statements="307" coveredstatements="307" elements="335" coveredelements="335"/>
+          <metrics methods="28" coveredmethods="28" conditionals="0" coveredconditionals="0" statements="308" coveredstatements="308" elements="336" coveredelements="336"/>
         </class>
         <line num="30" type="method" name="isEmpty" crap="2" count="5"/>
         <line num="32" type="stmt" count="5"/>
@@ -274,74 +274,75 @@
         <line num="648" type="stmt" count="2"/>
         <line num="661" type="method" name="compare" crap="7" count="48"/>
         <line num="663" type="stmt" count="48"/>
-        <line num="664" type="stmt" count="48"/>
+        <line num="665" type="stmt" count="48"/>
         <line num="666" type="stmt" count="48"/>
-        <line num="667" type="stmt" count="4"/>
-        <line num="670" type="stmt" count="44"/>
-        <line num="671" type="stmt" count="44"/>
+        <line num="668" type="stmt" count="48"/>
+        <line num="669" type="stmt" count="4"/>
+        <line num="672" type="stmt" count="44"/>
         <line num="673" type="stmt" count="44"/>
-        <line num="674" type="stmt" count="44"/>
+        <line num="675" type="stmt" count="44"/>
         <line num="676" type="stmt" count="44"/>
-        <line num="677" type="stmt" count="36"/>
-        <line num="678" type="stmt" count="36"/>
-        <line num="679" type="stmt" count="16"/>
-        <line num="682" type="stmt" count="36"/>
-        <line num="683" type="stmt" count="36"/>
+        <line num="678" type="stmt" count="44"/>
+        <line num="679" type="stmt" count="36"/>
+        <line num="680" type="stmt" count="36"/>
+        <line num="681" type="stmt" count="16"/>
         <line num="684" type="stmt" count="36"/>
-        <line num="686" type="stmt" count="28"/>
-        <line num="700" type="method" name="lowerBound" crap="4" count="24"/>
-        <line num="702" type="stmt" count="24"/>
+        <line num="685" type="stmt" count="36"/>
+        <line num="686" type="stmt" count="36"/>
+        <line num="688" type="stmt" count="28"/>
+        <line num="702" type="method" name="lowerBound" crap="4" count="24"/>
         <line num="704" type="stmt" count="24"/>
-        <line num="705" type="stmt" count="6"/>
-        <line num="706" type="stmt" count="6"/>
-        <line num="708" type="stmt" count="24"/>
+        <line num="706" type="stmt" count="24"/>
+        <line num="707" type="stmt" count="6"/>
+        <line num="708" type="stmt" count="6"/>
         <line num="710" type="stmt" count="24"/>
-        <line num="711" type="stmt" count="24"/>
         <line num="712" type="stmt" count="24"/>
+        <line num="713" type="stmt" count="24"/>
         <line num="714" type="stmt" count="24"/>
-        <line num="715" type="stmt" count="16"/>
-        <line num="716" type="stmt" count="16"/>
+        <line num="716" type="stmt" count="24"/>
         <line num="717" type="stmt" count="16"/>
-        <line num="718" type="stmt" count="18"/>
-        <line num="720" type="stmt" count="24"/>
+        <line num="718" type="stmt" count="16"/>
+        <line num="719" type="stmt" count="16"/>
+        <line num="720" type="stmt" count="18"/>
         <line num="722" type="stmt" count="24"/>
-        <line num="736" type="method" name="upperBound" crap="4" count="12"/>
-        <line num="738" type="stmt" count="12"/>
+        <line num="724" type="stmt" count="24"/>
+        <line num="738" type="method" name="upperBound" crap="4" count="12"/>
         <line num="740" type="stmt" count="12"/>
-        <line num="741" type="stmt" count="6"/>
-        <line num="742" type="stmt" count="6"/>
-        <line num="744" type="stmt" count="12"/>
+        <line num="742" type="stmt" count="12"/>
+        <line num="743" type="stmt" count="6"/>
+        <line num="744" type="stmt" count="6"/>
         <line num="746" type="stmt" count="12"/>
-        <line num="747" type="stmt" count="12"/>
         <line num="748" type="stmt" count="12"/>
+        <line num="749" type="stmt" count="12"/>
         <line num="750" type="stmt" count="12"/>
-        <line num="751" type="stmt" count="10"/>
-        <line num="752" type="stmt" count="10"/>
+        <line num="752" type="stmt" count="12"/>
         <line num="753" type="stmt" count="10"/>
-        <line num="754" type="stmt" count="7"/>
-        <line num="756" type="stmt" count="12"/>
+        <line num="754" type="stmt" count="10"/>
+        <line num="755" type="stmt" count="10"/>
+        <line num="756" type="stmt" count="7"/>
         <line num="758" type="stmt" count="12"/>
-        <line num="775" type="method" name="binarySearch" crap="4" count="12"/>
-        <line num="777" type="stmt" count="12"/>
+        <line num="760" type="stmt" count="12"/>
+        <line num="777" type="method" name="binarySearch" crap="4" count="12"/>
         <line num="779" type="stmt" count="12"/>
-        <line num="780" type="stmt" count="6"/>
-        <line num="781" type="stmt" count="6"/>
-        <line num="783" type="stmt" count="12"/>
+        <line num="781" type="stmt" count="12"/>
+        <line num="782" type="stmt" count="6"/>
+        <line num="783" type="stmt" count="6"/>
         <line num="785" type="stmt" count="12"/>
-        <line num="786" type="stmt" count="4"/>
-        <line num="787" type="stmt" count="8"/>
-        <line num="788" type="stmt" count="3"/>
-        <line num="791" type="stmt" count="5"/>
-        <line num="799" type="method" name="trySize" crap="4" count="74"/>
-        <line num="801" type="stmt" count="74"/>
-        <line num="802" type="stmt" count="3"/>
-        <line num="803" type="stmt" count="71"/>
-        <line num="804" type="stmt" count="2"/>
-        <line num="805" type="stmt" count="69"/>
-        <line num="806" type="stmt" count="55"/>
-        <line num="809" type="stmt" count="38"/>
-        <line num="812" type="stmt" count="0"/>
-        <metrics loc="811" ncloc="559" classes="1" methods="28" coveredmethods="28" conditionals="0" coveredconditionals="0" statements="304" coveredstatements="304" elements="332" coveredelements="332"/>
+        <line num="787" type="stmt" count="12"/>
+        <line num="788" type="stmt" count="4"/>
+        <line num="789" type="stmt" count="8"/>
+        <line num="790" type="stmt" count="3"/>
+        <line num="793" type="stmt" count="5"/>
+        <line num="801" type="method" name="trySize" crap="4" count="74"/>
+        <line num="803" type="stmt" count="74"/>
+        <line num="804" type="stmt" count="3"/>
+        <line num="805" type="stmt" count="71"/>
+        <line num="806" type="stmt" count="2"/>
+        <line num="807" type="stmt" count="69"/>
+        <line num="808" type="stmt" count="55"/>
+        <line num="811" type="stmt" count="38"/>
+        <line num="814" type="stmt" count="0"/>
+        <metrics loc="813" ncloc="561" classes="1" methods="28" coveredmethods="28" conditionals="0" coveredconditionals="0" statements="305" coveredstatements="305" elements="333" coveredelements="333"/>
       </file>
       <file name="/home/travis/build/IcecaveStudios/collections/lib/Icecave/Collections/HashMap.php">
         <class name="HashMap" namespace="Icecave\Collections">
@@ -1618,25 +1619,25 @@
         <line num="1270" type="method" name="count" crap="1" count="1"/>
         <line num="1272" type="stmt" count="1"/>
         <line num="1274" type="stmt" count="1"/>
-        <line num="1281" type="method" name="current" crap="1" count="5"/>
-        <line num="1283" type="stmt" count="5"/>
-        <line num="1285" type="stmt" count="5"/>
-        <line num="1288" type="method" name="key" crap="1" count="4"/>
-        <line num="1290" type="stmt" count="4"/>
-        <line num="1292" type="stmt" count="4"/>
-        <line num="1295" type="method" name="next" crap="1" count="5"/>
-        <line num="1297" type="stmt" count="5"/>
-        <line num="1299" type="stmt" count="5"/>
-        <line num="1300" type="stmt" count="5"/>
-        <line num="1301" type="stmt" count="5"/>
-        <line num="1303" type="method" name="rewind" crap="1" count="10"/>
-        <line num="1305" type="stmt" count="10"/>
-        <line num="1307" type="stmt" count="10"/>
-        <line num="1308" type="stmt" count="10"/>
-        <line num="1309" type="stmt" count="10"/>
-        <line num="1311" type="method" name="valid" crap="1" count="5"/>
-        <line num="1313" type="stmt" count="5"/>
-        <line num="1315" type="stmt" count="5"/>
+        <line num="1281" type="method" name="current" crap="1" count="7"/>
+        <line num="1283" type="stmt" count="7"/>
+        <line num="1285" type="stmt" count="7"/>
+        <line num="1288" type="method" name="key" crap="1" count="6"/>
+        <line num="1290" type="stmt" count="6"/>
+        <line num="1292" type="stmt" count="6"/>
+        <line num="1295" type="method" name="next" crap="1" count="7"/>
+        <line num="1297" type="stmt" count="7"/>
+        <line num="1299" type="stmt" count="7"/>
+        <line num="1300" type="stmt" count="7"/>
+        <line num="1301" type="stmt" count="7"/>
+        <line num="1303" type="method" name="rewind" crap="1" count="12"/>
+        <line num="1305" type="stmt" count="12"/>
+        <line num="1307" type="stmt" count="12"/>
+        <line num="1308" type="stmt" count="12"/>
+        <line num="1309" type="stmt" count="12"/>
+        <line num="1311" type="method" name="valid" crap="1" count="7"/>
+        <line num="1313" type="stmt" count="7"/>
+        <line num="1315" type="stmt" count="7"/>
         <line num="1327" type="method" name="serialize" crap="1" count="1"/>
         <line num="1329" type="stmt" count="1"/>
         <line num="1331" type="stmt" count="1"/>
@@ -2653,7 +2654,7 @@
         <line num="752" type="stmt" count="4"/>
         <line num="754" type="stmt" count="3"/>
         <line num="756" type="stmt" count="2"/>
-        <line num="766" type="method" name="union" crap="13" count="26"/>
+        <line num="766" type="method" name="union" crap="13" count="15"/>
         <line num="768" type="stmt" count="15"/>
         <line num="770" type="stmt" count="15"/>
         <line num="775" type="stmt" count="13"/>
@@ -2662,7 +2663,7 @@
         <line num="778" type="stmt" count="1"/>
         <line num="781" type="stmt" count="10"/>
         <line num="782" type="stmt" count="10"/>
-        <line num="787" type="stmt" count="26"/>
+        <line num="787" type="stmt" count="10"/>
         <line num="790" type="stmt" count="10"/>
         <line num="791" type="stmt" count="1"/>
         <line num="792" type="stmt" count="1"/>
@@ -4019,6 +4020,6 @@
         <metrics loc="51" ncloc="34" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="12" elements="14" coveredelements="14"/>
       </file>
     </package>
-    <metrics files="34" loc="12269" ncloc="6777" classes="20" methods="520" coveredmethods="520" conditionals="0" coveredconditionals="0" statements="3324" coveredstatements="3324" elements="3844" coveredelements="3844"/>
+    <metrics files="34" loc="12271" ncloc="6779" classes="20" methods="520" coveredmethods="520" conditionals="0" coveredconditionals="0" statements="3325" coveredstatements="3325" elements="3845" coveredelements="3845"/>
   </project>
 </coverage>
