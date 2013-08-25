@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1377417367">
-  <project timestamp="1377417367">
+<coverage generated="1377422194">
+  <project timestamp="1377422194">
     <file name="/home/travis/build/IcecaveStudios/collections/lib/Icecave/Collections/AssociativeInterface.php">
       <metrics loc="154" ncloc="31" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
@@ -3762,6 +3762,79 @@
     <file name="/home/travis/build/IcecaveStudios/collections/lib/Icecave/Collections/CollectionInterface.php">
       <metrics loc="37" ncloc="14" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
+    <package name="Icecave\Collections\Detail">
+      <file name="/home/travis/build/IcecaveStudios/collections/lib/Icecave/Collections/Detail/AssociativeKeyGenerator.php">
+        <class name="AssociativeKeyGenerator" namespace="Icecave\Collections\Detail">
+          <metrics methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="41" coveredstatements="41" elements="45" coveredelements="45"/>
+        </class>
+        <line num="17" type="method" name="__construct" crap="1" count="13"/>
+        <line num="19" type="stmt" count="13"/>
+        <line num="21" type="stmt" count="13"/>
+        <line num="22" type="stmt" count="13"/>
+        <line num="23" type="stmt" count="13"/>
+        <line num="32" type="method" name="__invoke" crap="1" count="1"/>
+        <line num="34" type="stmt" count="1"/>
+        <line num="36" type="stmt" count="1"/>
+        <line num="46" type="method" name="generate" crap="9" count="13"/>
+        <line num="48" type="stmt" count="13"/>
+        <line num="50" type="stmt" count="13"/>
+        <line num="51" type="stmt" count="13"/>
+        <line num="52" type="stmt" count="1"/>
+        <line num="53" type="stmt" count="12"/>
+        <line num="54" type="stmt" count="5"/>
+        <line num="55" type="stmt" count="11"/>
+        <line num="56" type="stmt" count="1"/>
+        <line num="57" type="stmt" count="10"/>
+        <line num="58" type="stmt" count="3"/>
+        <line num="59" type="stmt" count="8"/>
+        <line num="60" type="stmt" count="1"/>
+        <line num="61" type="stmt" count="7"/>
+        <line num="62" type="stmt" count="1"/>
+        <line num="63" type="stmt" count="6"/>
+        <line num="64" type="stmt" count="2"/>
+        <line num="65" type="stmt" count="5"/>
+        <line num="67" type="stmt" count="5"/>
+        <line num="77" type="method" name="generateForArray" crap="6" count="5"/>
+        <line num="79" type="stmt" count="5"/>
+        <line num="81" type="stmt" count="5"/>
+        <line num="82" type="stmt" count="1"/>
+        <line num="85" type="stmt" count="4"/>
+        <line num="86" type="stmt" count="4"/>
+        <line num="87" type="stmt" count="4"/>
+        <line num="88" type="stmt" count="4"/>
+        <line num="90" type="stmt" count="4"/>
+        <line num="91" type="stmt" count="4"/>
+        <line num="92" type="stmt" count="4"/>
+        <line num="94" type="stmt" count="4"/>
+        <line num="95" type="stmt" count="1"/>
+        <line num="96" type="stmt" count="1"/>
+        <line num="97" type="stmt" count="4"/>
+        <line num="99" type="stmt" count="4"/>
+        <line num="100" type="stmt" count="1"/>
+        <line num="103" type="stmt" count="3"/>
+        <metrics loc="109" ncloc="79" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="41" coveredstatements="41" elements="45" coveredelements="45"/>
+      </file>
+      <file name="/home/travis/build/IcecaveStudios/collections/lib/Icecave/Collections/Detail/ObjectIdentityComparator.php">
+        <class name="ObjectIdentityComparator" namespace="Icecave\Collections\Detail">
+          <metrics methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="12" elements="14" coveredelements="14"/>
+        </class>
+        <line num="20" type="method" name="compareObject" crap="3" count="3"/>
+        <line num="22" type="stmt" count="3"/>
+        <line num="24" type="stmt" count="3"/>
+        <line num="25" type="stmt" count="1"/>
+        <line num="28" type="stmt" count="2"/>
+        <line num="29" type="stmt" count="2"/>
+        <line num="30" type="stmt" count="1"/>
+        <line num="33" type="stmt" count="1"/>
+        <line num="34" type="stmt" count="1"/>
+        <line num="35" type="stmt" count="1"/>
+        <line num="36" type="stmt" count="1"/>
+        <line num="45" type="method" name="__invoke" crap="1" count="3"/>
+        <line num="47" type="stmt" count="3"/>
+        <line num="49" type="stmt" count="3"/>
+        <metrics loc="51" ncloc="34" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="12" elements="14" coveredelements="14"/>
+      </file>
+    </package>
     <file name="/home/travis/build/IcecaveStudios/collections/lib/Icecave/Collections/Exception/CollectionExceptionInterface.php">
       <metrics loc="9" ncloc="6" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
@@ -3947,79 +4020,6 @@
     <file name="/home/travis/build/IcecaveStudios/collections/lib/Icecave/Collections/SetInterface.php">
       <metrics loc="216" ncloc="51" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
-    <package name="Icecave\Collections\Utility">
-      <file name="/home/travis/build/IcecaveStudios/collections/lib/Icecave/Collections/Utility/AssociativeKeyGenerator.php">
-        <class name="AssociativeKeyGenerator" namespace="Icecave\Collections\Utility">
-          <metrics methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="41" coveredstatements="41" elements="45" coveredelements="45"/>
-        </class>
-        <line num="17" type="method" name="__construct" crap="1" count="13"/>
-        <line num="19" type="stmt" count="13"/>
-        <line num="21" type="stmt" count="13"/>
-        <line num="22" type="stmt" count="13"/>
-        <line num="23" type="stmt" count="13"/>
-        <line num="32" type="method" name="__invoke" crap="1" count="1"/>
-        <line num="34" type="stmt" count="1"/>
-        <line num="36" type="stmt" count="1"/>
-        <line num="46" type="method" name="generate" crap="9" count="13"/>
-        <line num="48" type="stmt" count="13"/>
-        <line num="50" type="stmt" count="13"/>
-        <line num="51" type="stmt" count="13"/>
-        <line num="52" type="stmt" count="1"/>
-        <line num="53" type="stmt" count="12"/>
-        <line num="54" type="stmt" count="5"/>
-        <line num="55" type="stmt" count="11"/>
-        <line num="56" type="stmt" count="1"/>
-        <line num="57" type="stmt" count="10"/>
-        <line num="58" type="stmt" count="3"/>
-        <line num="59" type="stmt" count="8"/>
-        <line num="60" type="stmt" count="1"/>
-        <line num="61" type="stmt" count="7"/>
-        <line num="62" type="stmt" count="1"/>
-        <line num="63" type="stmt" count="6"/>
-        <line num="64" type="stmt" count="2"/>
-        <line num="65" type="stmt" count="5"/>
-        <line num="67" type="stmt" count="5"/>
-        <line num="77" type="method" name="generateForArray" crap="6" count="5"/>
-        <line num="79" type="stmt" count="5"/>
-        <line num="81" type="stmt" count="5"/>
-        <line num="82" type="stmt" count="1"/>
-        <line num="85" type="stmt" count="4"/>
-        <line num="86" type="stmt" count="4"/>
-        <line num="87" type="stmt" count="4"/>
-        <line num="88" type="stmt" count="4"/>
-        <line num="90" type="stmt" count="4"/>
-        <line num="91" type="stmt" count="4"/>
-        <line num="92" type="stmt" count="4"/>
-        <line num="94" type="stmt" count="4"/>
-        <line num="95" type="stmt" count="1"/>
-        <line num="96" type="stmt" count="1"/>
-        <line num="97" type="stmt" count="4"/>
-        <line num="99" type="stmt" count="4"/>
-        <line num="100" type="stmt" count="1"/>
-        <line num="103" type="stmt" count="3"/>
-        <metrics loc="109" ncloc="79" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="41" coveredstatements="41" elements="45" coveredelements="45"/>
-      </file>
-      <file name="/home/travis/build/IcecaveStudios/collections/lib/Icecave/Collections/Utility/ObjectIdentityComparator.php">
-        <class name="ObjectIdentityComparator" namespace="Icecave\Collections\Utility">
-          <metrics methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="12" elements="14" coveredelements="14"/>
-        </class>
-        <line num="20" type="method" name="compareObject" crap="3" count="3"/>
-        <line num="22" type="stmt" count="3"/>
-        <line num="24" type="stmt" count="3"/>
-        <line num="25" type="stmt" count="1"/>
-        <line num="28" type="stmt" count="2"/>
-        <line num="29" type="stmt" count="2"/>
-        <line num="30" type="stmt" count="1"/>
-        <line num="33" type="stmt" count="1"/>
-        <line num="34" type="stmt" count="1"/>
-        <line num="35" type="stmt" count="1"/>
-        <line num="36" type="stmt" count="1"/>
-        <line num="45" type="method" name="__invoke" crap="1" count="3"/>
-        <line num="47" type="stmt" count="3"/>
-        <line num="49" type="stmt" count="3"/>
-        <metrics loc="51" ncloc="34" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="12" elements="14" coveredelements="14"/>
-      </file>
-    </package>
     <metrics files="34" loc="12271" ncloc="6779" classes="20" methods="520" coveredmethods="520" conditionals="0" coveredconditionals="0" statements="3325" coveredstatements="3325" elements="3845" coveredelements="3845"/>
   </project>
 </coverage>

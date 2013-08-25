@@ -1,7 +1,7 @@
 
 
 Code Coverage Report 
-  2013-08-25 07:56:07
+  2013-08-25 09:16:34
 
  Summary: 
   Classes: 100.00% (20/20)
@@ -28,6 +28,10 @@ Code Coverage Report
   Methods: 100.00% (23/23)   Lines: 100.00% ( 79/ 79)
 \Icecave\Collections::Vector
   Methods: 100.00% (83/83)   Lines: 100.00% (519/519)
+\Icecave\Collections\Detail::AssociativeKeyGenerator
+  Methods: 100.00% ( 4/ 4)   Lines: 100.00% ( 41/ 41)
+\Icecave\Collections\Detail::ObjectIdentityComparator
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% ( 12/ 12)
 \Icecave\Collections\Exception::DuplicateKeyException
   Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  3/  3)
 \Icecave\Collections\Exception::EmptyCollectionException
@@ -44,7 +48,3 @@ Code Coverage Report
   Methods: 100.00% ( 4/ 4)   Lines: 100.00% ( 14/ 14)
 \Icecave\Collections\Iterator::Traits
   Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  4/  4)
-\Icecave\Collections\Utility::AssociativeKeyGenerator
-  Methods: 100.00% ( 4/ 4)   Lines: 100.00% ( 41/ 41)
-\Icecave\Collections\Utility::ObjectIdentityComparator
-  Methods: 100.00% ( 2/ 2)   Lines: 100.00% ( 12/ 12)
