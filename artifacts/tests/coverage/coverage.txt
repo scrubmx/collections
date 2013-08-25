@@ -1,33 +1,33 @@
 
 
 Code Coverage Report 
-  2013-08-25 04:27:36
+  2013-08-25 07:47:55
 
  Summary: 
   Classes: 100.00% (20/20)
-  Methods: 100.00% (510/510)
-  Lines:   100.00% (3296/3296)
+  Methods: 100.00% (520/520)
+  Lines:   100.00% (3324/3324)
 
 \Icecave\Collections::Collection
   Methods: 100.00% (28/28)   Lines: 100.00% (307/307)
 \Icecave\Collections::HashMap
-  Methods: 100.00% (65/65)   Lines: 100.00% (363/363)
+  Methods: 100.00% (66/66)   Lines: 100.00% (370/370)
 \Icecave\Collections::HashSet
-  Methods: 100.00% (54/54)   Lines: 100.00% (293/293)
+  Methods: 100.00% (55/55)   Lines: 100.00% (293/293)
 \Icecave\Collections::LinkedList
-  Methods: 100.00% (77/77)   Lines: 100.00% (544/544)
+  Methods: 100.00% (78/78)   Lines: 100.00% (546/546)
 \Icecave\Collections::Map
-  Methods: 100.00% (67/67)   Lines: 100.00% (386/386)
+  Methods: 100.00% (68/68)   Lines: 100.00% (392/392)
 \Icecave\Collections::PriorityQueue
-  Methods: 100.00% ( 9/ 9)   Lines: 100.00% ( 42/ 42)
+  Methods: 100.00% (11/11)   Lines: 100.00% ( 52/ 52)
 \Icecave\Collections::Queue
-  Methods: 100.00% (22/22)   Lines: 100.00% ( 73/ 73)
+  Methods: 100.00% (23/23)   Lines: 100.00% ( 75/ 75)
 \Icecave\Collections::Set
-  Methods: 100.00% (55/55)   Lines: 100.00% (588/588)
+  Methods: 100.00% (56/56)   Lines: 100.00% (588/588)
 \Icecave\Collections::Stack
-  Methods: 100.00% (22/22)   Lines: 100.00% ( 77/ 77)
+  Methods: 100.00% (23/23)   Lines: 100.00% ( 79/ 79)
 \Icecave\Collections::Vector
-  Methods: 100.00% (82/82)   Lines: 100.00% (517/517)
+  Methods: 100.00% (83/83)   Lines: 100.00% (519/519)
 \Icecave\Collections\Exception::DuplicateKeyException
   Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  3/  3)
 \Icecave\Collections\Exception::EmptyCollectionException
