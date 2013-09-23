@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="robots" content="index, follow, all" />
-        <title>Icecave\Collections\Iterator\RandomAccessIterator | Collections API</title>
+        <title>Icecave\Collections\Detail\LinkedListIterator | Collections API</title>
                     <link rel="stylesheet" type="text/css" href="../../../stylesheet.css">
                             </head>
         <body id="class">
@@ -19,17 +19,12 @@
         <div id="title">Collections API</div>
 
             <div class="type">Class</div>
-    <h1><a href="../../../Icecave/Collections/Iterator.html">Icecave\Collections\Iterator</a>\RandomAccessIterator</h1>
+    <h1><a href="../../../Icecave/Collections/Detail.html">Icecave\Collections\Detail</a>\LinkedListIterator</h1>
     </div>
         <div class="content">
-                <p>class    <strong>RandomAccessIterator</strong>        implements
-        <a href="http://php.net/Iterator"><abbr title="Iterator">Iterator</abbr></a>, <a href="http://php.net/SeekableIterator"><abbr title="SeekableIterator">SeekableIterator</abbr></a></p>
+                <p>class    <strong>LinkedListIterator</strong>        implements
+        <a href="http://php.net/Iterator"><abbr title="Iterator">Iterator</abbr></a></p>
 
-            <div class="description">
-            <p>A generic iterator for any collection that implement RandomAccessInterface.</p>
-            <p>Note that the concrete implementations provided in this package may provide their own
-iterator for performance reasons.</p>
-        </div>
     
     
     
@@ -41,19 +36,9 @@ iterator for performance reasons.</p>
                     
                 </td>
                 <td class="last">
-                    <a href="#method___construct">__construct</a>(<a href="../../../Icecave/Collections/RandomAccessInterface.html"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a> $collection)
+                    <a href="#method___construct">__construct</a>(<a href="http://php.net/stdClass"><abbr title="stdClass">stdClass</abbr></a> $head = null, <a href="http://php.net/stdClass"><abbr title="stdClass">stdClass</abbr></a> $tail = null)
                     <p>
 </p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    <a href="../../../Icecave/Collections/RandomAccessInterface.html"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a>
-                </td>
-                <td class="last">
-                    <a href="#method_collection">collection</a>()
-                    <p>Fetch the collection to be iterated.</p>
                 </td>
                 <td></td>
             </tr>
@@ -107,26 +92,15 @@ iterator for performance reasons.</p>
                 </td>
                 <td></td>
             </tr>
-                    <tr>
-                <td class="type">
-                    
-                </td>
-                <td class="last">
-                    <a href="#method_seek">seek</a>(integer $index)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
             </table>
 
 
         <h2>Details</h2>
 
                         <h3 id="method___construct">
-        <div class="location">at line 20</div>
+        <div class="location">at line 14</div>
         <code>            public            
-    <strong>__construct</strong>(<a href="../../../Icecave/Collections/RandomAccessInterface.html"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a> $collection)</code>
+    <strong>__construct</strong>(<a href="http://php.net/stdClass"><abbr title="stdClass">stdClass</abbr></a> $head = null, <a href="http://php.net/stdClass"><abbr title="stdClass">stdClass</abbr></a> $tail = null)</code>
     </h3>
     <div class="details">
         <p>
@@ -138,9 +112,16 @@ iterator for performance reasons.</p>
 
                     <table>
                     <tr>
-                <td><a href="../../../Icecave/Collections/RandomAccessInterface.html"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a></td>
-                <td>$collection</td>
-                <td>The collection to be iterated.</td>
+                <td><a href="http://php.net/stdClass"><abbr title="stdClass">stdClass</abbr></a></td>
+                <td>$head</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><a href="http://php.net/stdClass"><abbr title="stdClass">stdClass</abbr></a></td>
+                <td>$tail</td>
+                <td>
+</td>
             </tr>
             </table>
 
@@ -150,33 +131,8 @@ iterator for performance reasons.</p>
                     </div>
     </div>
 
-                <h3 id="method_collection">
-        <div class="location">at line 33</div>
-        <code>            public            <a href="../../../Icecave/Collections/RandomAccessInterface.html"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a>
-    <strong>collection</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>Fetch the collection to be iterated.</p>
-        <p>
-</p>
-        <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table>
-        <tr>
-            <td><a href="../../../Icecave/Collections/RandomAccessInterface.html"><abbr title="Icecave\Collections\RandomAccessInterface">RandomAccessInterface</abbr></a></td>
-            <td>The collection to be iterated.</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
                 <h3 id="method_current">
-        <div class="location">at line 45</div>
+        <div class="location">at line 29</div>
         <code>            public            mixed
     <strong>current</strong>()</code>
     </h3>
@@ -201,7 +157,7 @@ iterator for performance reasons.</p>
     </div>
 
                 <h3 id="method_key">
-        <div class="location">at line 57</div>
+        <div class="location">at line 41</div>
         <code>            public            mixed
     <strong>key</strong>()</code>
     </h3>
@@ -226,7 +182,7 @@ iterator for performance reasons.</p>
     </div>
 
                 <h3 id="method_next">
-        <div class="location">at line 67</div>
+        <div class="location">at line 51</div>
         <code>            public            
     <strong>next</strong>()</code>
     </h3>
@@ -242,7 +198,7 @@ iterator for performance reasons.</p>
     </div>
 
                 <h3 id="method_rewind">
-        <div class="location">at line 77</div>
+        <div class="location">at line 62</div>
         <code>            public            
     <strong>rewind</strong>()</code>
     </h3>
@@ -258,7 +214,7 @@ iterator for performance reasons.</p>
     </div>
 
                 <h3 id="method_valid">
-        <div class="location">at line 89</div>
+        <div class="location">at line 75</div>
         <code>            public            boolean
     <strong>valid</strong>()</code>
     </h3>
@@ -277,34 +233,6 @@ iterator for performance reasons.</p>
         </tr>
     </table>
 
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method_seek">
-        <div class="location">at line 99</div>
-        <code>            public            
-    <strong>seek</strong>(integer $index)</code>
-    </h3>
-    <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table>
-                    <tr>
-                <td>integer</td>
-                <td>$index</td>
-                <td>
-</td>
-            </tr>
-            </table>
-
-            
             
             
                     </div>
