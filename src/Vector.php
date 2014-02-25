@@ -595,7 +595,10 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
         if (!$this->size) {
             return false;
         }
-        $element = $this->popFront();
+
+        $element = $this->elements[0];
+        $this->shiftLeft(1, 1);
+        --$this->size;
 
         return true;
     }
@@ -648,7 +651,9 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
         if (!$this->size) {
             return false;
         }
-        $element = $this->popBack();
+
+        $element = $this->elements[--$this->size];
+        $this->elements[$this->size] = null;
 
         return true;
     }
@@ -904,7 +909,8 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
 
             foreach ($elements as $element) {
                 if ($index === $shiftIndex) {
-                    $actualExpansion = $this->expand(1);
+                    $this->expand(1);
+                    $actualExpansion = $this->capacity - $this->size;
                     $this->shiftRight($index, $actualExpansion);
                     $shiftIndex += $actualExpansion;
                 }
@@ -1435,20 +1441,16 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
         $targetCapacity = $this->size + $count;
 
         if ($this->capacity >= $targetCapacity) {
-            return $this->capacity - $this->size;
+            return;
         } elseif (0 === $this->capacity) {
-            $newCapacity = $targetCapacity;
+            $this->capacity = $targetCapacity;
         } else {
-            $newCapacity = $this->capacity;
-            while ($newCapacity < $targetCapacity) {
-                $newCapacity <<= 1;
+            while ($this->capacity < $targetCapacity) {
+                $this->capacity <<= 1;
             }
         }
 
-        $this->elements->setSize($newCapacity);
-        $this->capacity = $newCapacity;
-
-        return $newCapacity - $this->size;
+        $this->elements->setSize($this->capacity);
     }
 
     private $elements;
