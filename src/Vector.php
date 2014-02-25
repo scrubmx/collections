@@ -23,7 +23,9 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
         if (is_array($elements)) {
             $this->elements = SplFixedArray::fromArray($elements, false);
             $this->size = count($elements);
+            $this->capacity = $this->size;
         } else {
+            $this->capacity = 0;
             $this->clear();
             if (null !== $elements) {
                 $this->insertMany(0, $elements);
@@ -71,7 +73,7 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
      */
     public function isEmpty()
     {
-        return 0 === $this->size;
+        return !$this->size;
     }
 
     /**
@@ -84,7 +86,7 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
      */
     public function __toString()
     {
-        if ($this->isEmpty()) {
+        if (!$this->size) {
             return '<Vector 0>';
         }
 
@@ -116,6 +118,7 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
     {
         $this->elements = new SplFixedArray;
         $this->size = 0;
+        $this->capacity = 0;
     }
 
     //////////////////////////////////////////////
@@ -374,7 +377,7 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
      */
     public function front()
     {
-        if ($this->isEmpty()) {
+        if (!$this->size) {
             throw new Exception\EmptyCollectionException;
         }
 
@@ -390,7 +393,7 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
      */
     public function tryFront(&$element)
     {
-        if ($this->isEmpty()) {
+        if (!$this->size) {
             return false;
         }
         $element = $this->front();
@@ -406,7 +409,7 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
      */
     public function back()
     {
-        if ($this->isEmpty()) {
+        if (!$this->size) {
             throw new Exception\EmptyCollectionException;
         }
 
@@ -422,7 +425,7 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
      */
     public function tryBack(&$element)
     {
-        if ($this->isEmpty()) {
+        if (!$this->size) {
             return false;
         }
         $element = $this->back();
@@ -512,6 +515,7 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
         }
 
         $this->elements = SplFixedArray::fromArray($elements);
+        $this->capacity = $this->elements->count();
     }
 
     /**
@@ -547,7 +551,15 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
      */
     public function pushFront($element)
     {
-        $this->shiftRight(0, 1);
+        if ($this->capacity === 0) {
+            $this->capacity = 1;
+            $this->elements->setSize($this->capacity);
+        } elseif ($this->size === $this->capacity) {
+            $this->capacity *= 2;
+            $this->elements->setSize($this->capacity);
+            $this->shiftRight(0, 1);
+        }
+
         $this->elements[0] = $element;
         ++$this->size;
     }
@@ -560,7 +572,11 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
      */
     public function popFront()
     {
-        $element = $this->front();
+        if (!$this->size) {
+            throw new Exception\EmptyCollectionException;
+        }
+
+        $element = $this->elements[0];
         $this->shiftLeft(1, 1);
         --$this->size;
 
@@ -576,7 +592,7 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
      */
     public function tryPopFront(&$element = null)
     {
-        if ($this->isEmpty()) {
+        if (!$this->size) {
             return false;
         }
         $element = $this->popFront();
@@ -591,7 +607,14 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
      */
     public function pushBack($element)
     {
-        $this->expand(1);
+        if ($this->capacity === 0) {
+            $this->capacity = 1;
+            $this->elements->setSize($this->capacity);
+        } elseif ($this->size === $this->capacity) {
+            $this->capacity *= 2;
+            $this->elements->setSize($this->capacity);
+        }
+
         $this->elements[$this->size++] = $element;
     }
 
@@ -603,8 +626,12 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
      */
     public function popBack()
     {
-        $element = $this->back();
-        $this->elements[--$this->size] = null;
+        if (!$this->size) {
+            throw new Exception\EmptyCollectionException;
+        }
+
+        $element = $this->elements[--$this->size];
+        $this->elements[$this->size] = null;
 
         return $element;
     }
@@ -618,7 +645,7 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
      */
     public function tryPopBack(&$element = null)
     {
-        if ($this->isEmpty()) {
+        if (!$this->size) {
             return false;
         }
         $element = $this->popBack();
@@ -636,6 +663,7 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
     {
         if ($this->size > $size) {
             $this->elements->setSize($size);
+            $this->capacity = $size;
             $this->size = $size;
         } elseif (null === $element) {
             $this->reserve($size);
@@ -783,7 +811,7 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
      */
     public function find($predicate, $begin = 0, $end = null)
     {
-        if ($this->isEmpty()) {
+        if (!$this->size) {
             return null;
         }
 
@@ -813,7 +841,7 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
      */
     public function findLast($predicate, $begin = 0, $end = null)
     {
-        if ($this->isEmpty()) {
+        if (!$this->size) {
             return null;
         }
 
@@ -889,6 +917,7 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
 
         // The number of elements is known, expand the vector once and insert the elements.
         } elseif ($count = count($elements)) {
+            $this->expand($count);
             $this->shiftRight($index, $count);
             $this->size += $count;
 
@@ -921,6 +950,7 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
         $elements->validateIndex($end, $elements->size);
 
         $size = $end - $begin;
+        $this->expand($size);
         $this->shiftRight($index, $size);
         $this->size += $size;
 
@@ -995,6 +1025,7 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
             $diff = count($elements) - $count;
 
             if ($diff > 0) {
+                $this->expand($diff);
                 $this->shiftRight($index + $count, $diff);
             } elseif ($diff < 0) {
                 $this->shiftLeft($index + $count, abs($diff));
@@ -1298,7 +1329,7 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
      */
     public function capacity()
     {
-        return $this->elements->count();
+        return $this->capacity;
     }
 
     /**
@@ -1308,8 +1339,9 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
      */
     public function reserve($size)
     {
-        if ($size > $this->capacity()) {
+        if ($size > $this->capacity) {
             $this->elements->setSize($size);
+            $this->capacity = $size;
         }
     }
 
@@ -1319,6 +1351,7 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
     public function shrink()
     {
         $this->elements->setSize($this->size);
+        $this->capacity = $this->size;
     }
 
     /**
@@ -1348,15 +1381,14 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
      */
     private function shiftLeft($index, $count)
     {
-        $capacity = $this->capacity();
         $target = $index - $count;
         $source = $index;
 
-        while ($source < $capacity) {
+        while ($source < $this->capacity) {
             $this->elements[$target++] = $this->elements[$source++];
         }
 
-        while ($target < $capacity) {
+        while ($target < $this->capacity) {
             $this->elements[$target++] = null;
         }
     }
@@ -1367,8 +1399,6 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
      */
     private function shiftRight($index, $count)
     {
-        $this->expand($count);
-
         $source = $this->size - 1;
         $target = $source + $count;
 
@@ -1402,23 +1432,26 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
      */
     private function expand($count)
     {
-        $currentCapacity = $this->capacity();
-        $targetCapacity  = $this->size + $count;
+        $targetCapacity = $this->size + $count;
 
-        if (0 === $currentCapacity) {
+        if ($this->capacity >= $targetCapacity) {
+            return $this->capacity - $this->size;
+        } elseif (0 === $this->capacity) {
             $newCapacity = $targetCapacity;
         } else {
-            $newCapacity = $currentCapacity;
+            $newCapacity = $this->capacity;
             while ($newCapacity < $targetCapacity) {
                 $newCapacity <<= 1;
             }
         }
 
-        $this->reserve($newCapacity);
+        $this->elements->setSize($newCapacity);
+        $this->capacity = $newCapacity;
 
-        return $this->capacity() - $this->size;
+        return $newCapacity - $this->size;
     }
 
     private $elements;
     private $size;
+    private $capacity;
 }
