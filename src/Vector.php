@@ -25,7 +25,6 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
             $this->size = count($elements);
             $this->capacity = $this->size;
         } else {
-            $this->capacity = 0;
             $this->clear();
             if (null !== $elements) {
                 $this->insertMany(0, $elements);
@@ -467,13 +466,9 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
         $result = new static;
         $result->resize($this->size);
 
-        $target = $this->size - 1;
-        foreach ($this->elements as $index => $element) {
-            if ($index >= $this->size) {
-                break;
-            } else {
-                $result->elements[$target--] = $element;
-            }
+        $target = 0;
+        for ($source = $this->size - 1; $source >= 0; --$source) {
+            $result->elements[$target++] = $this->elements[$source];
         }
 
         return $result;
