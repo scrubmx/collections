@@ -146,12 +146,9 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
     public function elements()
     {
         $elements = array();
-        foreach ($this->elements as $index => $element) {
-            if ($index >= $this->size) {
-                break;
-            } else {
-                $elements[] = $element;
-            }
+
+        for ($index = 0; $index < $this->size; ++$index) {
+            $elements[] = $this->elements[$index];
         }
 
         return $elements;
