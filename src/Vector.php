@@ -396,7 +396,8 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
         if (!$this->size) {
             return false;
         }
-        $element = $this->front();
+
+        $element = $this->elements[0];
 
         return true;
     }
@@ -428,7 +429,8 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
         if (!$this->size) {
             return false;
         }
-        $element = $this->back();
+
+        $element = $this->elements[$this->size - 1];
 
         return true;
     }
