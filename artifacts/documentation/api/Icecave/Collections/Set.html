@@ -342,6 +342,16 @@
             </tr>
                     <tr>
                 <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_pop">pop</a>()
+                    <p>Remove and return an element from the set.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
                     boolean
                 </td>
                 <td class="last">
@@ -1484,8 +1494,41 @@ a traversable (eg, array) instead of via a variable argument list.</p>
                     </div>
     </div>
 
+                <h3 id="method_pop">
+        <div class="location">at line 512</div>
+        <code>            public            mixed
+    <strong>pop</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Remove and return an element from the set.</p>
+        <p>There is no guarantee as to which element will be returned.</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>The element.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Exception\EmptyCollectionException">EmptyCollectionException</abbr></td>
+                <td>if the collection is empty.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
                 <h3 id="method_isEqualSet">
-        <div class="location">at line 511</div>
+        <div class="location">at line 524</div>
         <code>            public            boolean
     <strong>isEqualSet</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1520,7 +1563,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_isSuperSet">
-        <div class="location">at line 545</div>
+        <div class="location">at line 558</div>
         <code>            public            boolean
     <strong>isSuperSet</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1555,7 +1598,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_isSubSet">
-        <div class="location">at line 589</div>
+        <div class="location">at line 602</div>
         <code>            public            boolean
     <strong>isSubSet</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1590,7 +1633,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_isProperSuperSet">
-        <div class="location">at line 603</div>
+        <div class="location">at line 616</div>
         <code>            public            boolean
     <strong>isProperSuperSet</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1625,7 +1668,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_isProperSubSet">
-        <div class="location">at line 625</div>
+        <div class="location">at line 638</div>
         <code>            public            boolean
     <strong>isProperSubSet</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1660,7 +1703,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_isIntersecting">
-        <div class="location">at line 639</div>
+        <div class="location">at line 652</div>
         <code>            public            boolean
     <strong>isIntersecting</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1695,7 +1738,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_union">
-        <div class="location">at line 702</div>
+        <div class="location">at line 715</div>
         <code>            public            <a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>
     <strong>union</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1730,7 +1773,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_unionInPlace">
-        <div class="location">at line 806</div>
+        <div class="location">at line 819</div>
         <code>            public            
     <strong>unionInPlace</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1756,7 +1799,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_intersect">
-        <div class="location">at line 898</div>
+        <div class="location">at line 911</div>
         <code>            public            <a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>
     <strong>intersect</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1791,7 +1834,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_intersectInPlace">
-        <div class="location">at line 969</div>
+        <div class="location">at line 982</div>
         <code>            public            
     <strong>intersectInPlace</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1817,7 +1860,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_diff">
-        <div class="location">at line 1050</div>
+        <div class="location">at line 1063</div>
         <code>            public            <a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>
     <strong>diff</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1852,7 +1895,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_diffInPlace">
-        <div class="location">at line 1140</div>
+        <div class="location">at line 1153</div>
         <code>            public            
     <strong>diffInPlace</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1878,7 +1921,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_symmetricDiff">
-        <div class="location">at line 1212</div>
+        <div class="location">at line 1225</div>
         <code>            public            <a href="../../Icecave/Collections/Set.html"><abbr title="Icecave\Collections\Set">Set</abbr></a>
     <strong>symmetricDiff</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1912,7 +1955,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_symmetricDiffInPlace">
-        <div class="location">at line 1313</div>
+        <div class="location">at line 1326</div>
         <code>            public            
     <strong>symmetricDiffInPlace</strong>(<a href="../../Icecave/Collections/SetInterface.html"><abbr title="Icecave\Collections\SetInterface">SetInterface</abbr></a> $set)</code>
     </h3>
@@ -1937,7 +1980,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_compare">
-        <div class="location">at line 1422</div>
+        <div class="location">at line 1435</div>
         <code>            public            integer
     <strong>compare</strong>(mixed $value)</code>
     </h3>
@@ -1986,7 +2029,7 @@ a traversable (eg, array) instead of via a variable argument list.</p>
     </div>
 
                 <h3 id="method_canCompare">
-        <div class="location">at line 1445</div>
+        <div class="location">at line 1458</div>
         <code>            public            boolean
     <strong>canCompare</strong>(mixed $value)</code>
     </h3>
@@ -2021,7 +2064,7 @@ will throw an exception.</p>
     </div>
 
                 <h3 id="method_isEqualTo">
-        <div class="location">at line 1461</div>
+        <div class="location">at line 1474</div>
         <code>            public            boolean
     <strong>isEqualTo</strong>(mixed $value)</code>
     </h3>
@@ -2057,7 +2100,7 @@ will throw an exception.</p>
     </div>
 
                 <h3 id="method_isNotEqualTo">
-        <div class="location">at line 1471</div>
+        <div class="location">at line 1484</div>
         <code>            public            boolean
     <strong>isNotEqualTo</strong>(mixed $value)</code>
     </h3>
@@ -2093,7 +2136,7 @@ will throw an exception.</p>
     </div>
 
                 <h3 id="method_isLessThan">
-        <div class="location">at line 1481</div>
+        <div class="location">at line 1494</div>
         <code>            public            boolean
     <strong>isLessThan</strong>(mixed $value)</code>
     </h3>
@@ -2129,7 +2172,7 @@ will throw an exception.</p>
     </div>
 
                 <h3 id="method_isGreaterThan">
-        <div class="location">at line 1491</div>
+        <div class="location">at line 1504</div>
         <code>            public            boolean
     <strong>isGreaterThan</strong>(mixed $value)</code>
     </h3>
@@ -2165,7 +2208,7 @@ will throw an exception.</p>
     </div>
 
                 <h3 id="method_isLessThanOrEqualTo">
-        <div class="location">at line 1501</div>
+        <div class="location">at line 1514</div>
         <code>            public            boolean
     <strong>isLessThanOrEqualTo</strong>(mixed $value)</code>
     </h3>
@@ -2201,7 +2244,7 @@ will throw an exception.</p>
     </div>
 
                 <h3 id="method_isGreaterThanOrEqualTo">
-        <div class="location">at line 1511</div>
+        <div class="location">at line 1524</div>
         <code>            public            boolean
     <strong>isGreaterThanOrEqualTo</strong>(mixed $value)</code>
     </h3>
