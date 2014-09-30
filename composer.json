@@ -1,7 +1,16 @@
 {
     "name": "icecave/collections",
     "description": "A PHP collection library loosely inspired by the .NET runtime and the C++ STL.",
-    "keywords": ["collection", "container", "array", "sequence", "map", "hash", "stack", "queue"],
+    "keywords": [
+        "collection",
+        "container",
+        "array",
+        "sequence",
+        "map",
+        "hash",
+        "stack",
+        "queue"
+    ],
     "homepage": "https://github.com/IcecaveStudios/collections",
     "license": "MIT",
     "authors": [
@@ -29,6 +38,11 @@
     "autoload": {
         "psr-4": {
             "Icecave\\Collections\\": "src"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "1.1.x-dev"
         }
     }
 }
