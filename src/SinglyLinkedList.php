@@ -202,7 +202,7 @@ class SinglyLinkedList implements MutableRandomAccessInterface, Countable, Itera
             };
         }
 
-        $result = new static;
+        $result = new static();
 
         for ($node = $this->head; null !== $node; $node = $node->next) {
             if (call_user_func($predicate, $node->element)) {
@@ -225,7 +225,7 @@ class SinglyLinkedList implements MutableRandomAccessInterface, Countable, Itera
      */
     public function map($transform)
     {
-        $result = new static;
+        $result = new static();
 
         for ($node = $this->head; null !== $node; $node = $node->next) {
             $result->pushBack(call_user_func($transform, $node->element));
@@ -245,8 +245,8 @@ class SinglyLinkedList implements MutableRandomAccessInterface, Countable, Itera
      */
     public function partition($predicate)
     {
-        $left = new static;
-        $right = new static;
+        $left = new static();
+        $right = new static();
 
         for ($node = $this->head; null !== $node; $node = $node->next) {
             if (call_user_func($predicate, $node->element)) {
@@ -381,7 +381,7 @@ class SinglyLinkedList implements MutableRandomAccessInterface, Countable, Itera
     public function front()
     {
         if ($this->isEmpty()) {
-            throw new Exception\EmptyCollectionException;
+            throw new Exception\EmptyCollectionException();
         }
 
         return $this->head->element;
@@ -414,7 +414,7 @@ class SinglyLinkedList implements MutableRandomAccessInterface, Countable, Itera
     public function back()
     {
         if ($this->isEmpty()) {
-            throw new Exception\EmptyCollectionException;
+            throw new Exception\EmptyCollectionException();
         }
 
         return $this->tail->element;
@@ -462,7 +462,7 @@ class SinglyLinkedList implements MutableRandomAccessInterface, Countable, Itera
      */
     public function reverse()
     {
-        $result = new static;
+        $result = new static();
 
         for ($node = $this->head; null !== $node; $node = $node->next) {
             $result->pushFront($node->element);
@@ -481,7 +481,7 @@ class SinglyLinkedList implements MutableRandomAccessInterface, Countable, Itera
      */
     public function join($sequence)
     {
-        $result = new static;
+        $result = new static();
         list($result->head, $result->tail, $result->size) = $this->cloneNodes($this->head);
 
         foreach (func_get_args() as $sequence) {
@@ -640,7 +640,7 @@ class SinglyLinkedList implements MutableRandomAccessInterface, Countable, Itera
     public function popFront()
     {
         if ($this->isEmpty()) {
-            throw new Exception\EmptyCollectionException;
+            throw new Exception\EmptyCollectionException();
         }
 
         $element    = $this->head->element;
@@ -698,7 +698,7 @@ class SinglyLinkedList implements MutableRandomAccessInterface, Countable, Itera
     public function popBack()
     {
         if ($this->isEmpty()) {
-            throw new Exception\EmptyCollectionException;
+            throw new Exception\EmptyCollectionException();
         }
 
         $element = $this->tail->element;
@@ -792,7 +792,7 @@ class SinglyLinkedList implements MutableRandomAccessInterface, Countable, Itera
             $stop = $this->nodeFrom($start, $count);
         }
 
-        $result = new static;
+        $result = new static();
         list($result->head, $result->tail, $result->size) = $this->cloneNodes($start, $stop);
 
         return $result;
@@ -1358,7 +1358,7 @@ class SinglyLinkedList implements MutableRandomAccessInterface, Countable, Itera
      */
     private function createNode($element = null, stdClass $next = null)
     {
-        $node = new stdClass;
+        $node = new stdClass();
         $node->next = $next;
         $node->element = $element;
 

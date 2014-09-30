@@ -13,7 +13,7 @@ class MapTest extends PHPUnit_Framework_TestCase
 {
     public function setUp()
     {
-        $this->collection = new Map;
+        $this->collection = new Map();
     }
 
     private function verifyElements()
@@ -81,7 +81,7 @@ class MapTest extends PHPUnit_Framework_TestCase
 
     public function testSerialization()
     {
-        $collection = new Map;
+        $collection = new Map();
 
         $collection->set('a', 1);
         $collection->set('b', 2);
@@ -108,9 +108,9 @@ class MapTest extends PHPUnit_Framework_TestCase
 
     public function testCanCompare()
     {
-        $collection = new Map;
+        $collection = new Map();
 
-        $this->assertTrue($collection->canCompare(new Map));
+        $this->assertTrue($collection->canCompare(new Map()));
         $this->assertFalse($collection->canCompare(new Map(null, function () {})));
         $this->assertFalse($collection->canCompare(array()));
     }
@@ -505,7 +505,7 @@ class MapTest extends PHPUnit_Framework_TestCase
         $this->collection->set(10, 1);
         $this->collection->set(30, 3);
 
-        $collection = new Map;
+        $collection = new Map();
         $collection->set(10, 10);
         $collection->set(20, 20);
 
@@ -661,7 +661,7 @@ class MapTest extends PHPUnit_Framework_TestCase
         $this->collection->set(10, 1);
         $this->collection->set(30, 3);
 
-        $collection = new Map;
+        $collection = new Map();
         $collection->set(10, 10);
         $collection->set(20, 20);
 
@@ -895,11 +895,11 @@ class MapTest extends PHPUnit_Framework_TestCase
      */
     public function testIteratorKeyLimitationWorkaround()
     {
-        $key1 = new stdClass;
+        $key1 = new stdClass();
         $key1->expectedValue = 'a';
         $this->collection->set($key1, 'a');
 
-        $key2 = new stdClass;
+        $key2 = new stdClass();
         $key2->expectedValue = 'b';
         $this->collection->set($key2, 'b');
 
@@ -1007,7 +1007,7 @@ class MapTest extends PHPUnit_Framework_TestCase
     public function testCompareFailure()
     {
         $this->setExpectedException('Icecave\Parity\Exception\NotComparableException');
-        $collection = new Map;
+        $collection = new Map();
         $collection->compare(array());
     }
 

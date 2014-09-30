@@ -7,7 +7,7 @@ class QueueTest extends PHPUnit_Framework_TestCase
 {
     public function setUp()
     {
-        $this->collection = new Queue;
+        $this->collection = new Queue();
     }
 
     public function testConstructor()
@@ -258,7 +258,7 @@ class QueueTest extends PHPUnit_Framework_TestCase
 
     public function testCanCompare()
     {
-        $this->assertTrue($this->collection->canCompare(new Queue));
+        $this->assertTrue($this->collection->canCompare(new Queue()));
         $this->assertFalse($this->collection->canCompare(new PriorityQueue(null, function () {})));
         $this->assertFalse($this->collection->canCompare(array()));
     }

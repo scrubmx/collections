@@ -79,7 +79,7 @@ class PriorityQueue extends Queue implements Serializable
      */
     public function clear()
     {
-        $this->elements = new SplPriorityQueue;
+        $this->elements = new SplPriorityQueue();
     }
 
     /////////////////////////////////////////////
@@ -95,7 +95,7 @@ class PriorityQueue extends Queue implements Serializable
     public function next()
     {
         if ($this->isEmpty()) {
-            throw new Exception\EmptyCollectionException;
+            throw new Exception\EmptyCollectionException();
         }
 
         return $this->elements->top();
@@ -125,7 +125,7 @@ class PriorityQueue extends Queue implements Serializable
     public function pop()
     {
         if ($this->isEmpty()) {
-            throw new Exception\EmptyCollectionException;
+            throw new Exception\EmptyCollectionException();
         }
 
         return $this->elements->extract();

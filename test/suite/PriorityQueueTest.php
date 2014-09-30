@@ -230,7 +230,7 @@ class PriorityQueueTest extends PHPUnit_Framework_TestCase
     {
         $this->assertTrue($this->collection->canCompare(new PriorityQueue(null, $this->prioritizer)));
         $this->assertFalse($this->collection->canCompare(new PriorityQueue(null, function () {})));
-        $this->assertFalse($this->collection->canCompare(new Queue));
+        $this->assertFalse($this->collection->canCompare(new Queue()));
         $this->assertFalse($this->collection->canCompare(array()));
     }
 

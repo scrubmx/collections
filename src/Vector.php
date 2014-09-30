@@ -114,7 +114,7 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
      */
     public function clear()
     {
-        $this->elements = new SplFixedArray;
+        $this->elements = new SplFixedArray();
         $this->size = 0;
     }
 
@@ -182,7 +182,7 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
             };
         }
 
-        $result = new static;
+        $result = new static();
         $result->reserve($this->size);
 
         foreach ($this->elements as $index => $element) {
@@ -208,7 +208,7 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
      */
     public function map($transform)
     {
-        $result = new static;
+        $result = new static();
         $result->resize($this->size);
 
         foreach ($this->elements as $index => $element) {
@@ -233,8 +233,8 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
      */
     public function partition($predicate)
     {
-        $left = new static;
-        $right = new static;
+        $left = new static();
+        $right = new static();
 
         foreach ($this->elements as $index => $element) {
             if ($index >= $this->size) {
@@ -375,7 +375,7 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
     public function front()
     {
         if ($this->isEmpty()) {
-            throw new Exception\EmptyCollectionException;
+            throw new Exception\EmptyCollectionException();
         }
 
         return $this->elements[0];
@@ -407,7 +407,7 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
     public function back()
     {
         if ($this->isEmpty()) {
-            throw new Exception\EmptyCollectionException;
+            throw new Exception\EmptyCollectionException();
         }
 
         return $this->elements[$this->size - 1];
@@ -459,7 +459,7 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
      */
     public function reverse()
     {
-        $result = new static;
+        $result = new static();
         $result->resize($this->size);
 
         $target = $this->size - 1;
@@ -713,7 +713,7 @@ class Vector implements MutableRandomAccessInterface, Countable, IteratorAggrega
         $this->validateIndex($begin);
         $this->validateIndex($end, $this->size);
 
-        $result = new static;
+        $result = new static();
 
         if ($begin < $end) {
             $result->resize($end - $begin);

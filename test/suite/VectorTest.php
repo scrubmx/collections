@@ -10,7 +10,7 @@ class VectorTest extends PHPUnit_Framework_TestCase
 {
     public function setUp()
     {
-        $this->collection = new Vector;
+        $this->collection = new Vector();
     }
 
     public function tearDown()
@@ -1043,7 +1043,7 @@ class VectorTest extends PHPUnit_Framework_TestCase
             'The given collection is not an instance of Icecave\Collections\Vector.'
         );
 
-        $this->collection->insertRange(0, new LinkedList, 0);
+        $this->collection->insertRange(0, new LinkedList(), 0);
     }
 
     public function testInsertRangeEmpty()
@@ -1564,7 +1564,7 @@ class VectorTest extends PHPUnit_Framework_TestCase
 
     public function testCanCompare()
     {
-        $this->assertTrue($this->collection->canCompare(new Vector));
+        $this->assertTrue($this->collection->canCompare(new Vector()));
         $this->assertFalse($this->collection->canCompare(array()));
     }
 

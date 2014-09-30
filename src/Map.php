@@ -26,13 +26,13 @@ class Map implements MutableAssociativeInterface, Countable, IteratorAggregate, 
         if (null === $comparator) {
             $comparator = new ObjectIdentityComparator(
                 new DeepComparator(
-                    new StrictPhpComparator
+                    new StrictPhpComparator()
                 )
             );
         }
 
         $this->comparator = $comparator;
-        $this->elements = new Vector;
+        $this->elements = new Vector();
 
         if (null !== $elements) {
             foreach ($elements as $key => $value) {
@@ -55,7 +55,7 @@ class Map implements MutableAssociativeInterface, Countable, IteratorAggregate, 
      */
     public static function create()
     {
-        $map = new static;
+        $map = new static();
 
         foreach (func_get_args() as $element) {
             list($key, $value) = $element;

@@ -7,7 +7,7 @@ class StackTest extends PHPUnit_Framework_TestCase
 {
     public function setUp()
     {
-        $this->collection = new Stack;
+        $this->collection = new Stack();
     }
 
     public function testConstructor()
@@ -258,7 +258,7 @@ class StackTest extends PHPUnit_Framework_TestCase
 
     public function testCanCompare()
     {
-        $this->assertTrue($this->collection->canCompare(new Stack));
+        $this->assertTrue($this->collection->canCompare(new Stack()));
         $this->assertFalse($this->collection->canCompare(array()));
     }
 

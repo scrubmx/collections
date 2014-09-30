@@ -26,13 +26,13 @@ class Set implements SetInterface, IteratorAggregate, Serializable
         if (null === $comparator) {
             $comparator = new ObjectIdentityComparator(
                 new DeepComparator(
-                    new StrictPhpComparator
+                    new StrictPhpComparator()
                 )
             );
         }
 
         $this->comparator = $comparator;
-        $this->elements = new Vector;
+        $this->elements = new Vector();
 
         if (null !== $elements) {
             $this->addMany($elements);

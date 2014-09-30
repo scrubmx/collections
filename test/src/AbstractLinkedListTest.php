@@ -982,7 +982,7 @@ abstract class AbstractLinkedListTest extends PHPUnit_Framework_TestCase
             'The given collection is not an instance of ' . $this->className . '.'
         );
 
-        $this->collection->insertRange(0, new Vector, 0);
+        $this->collection->insertRange(0, new Vector(), 0);
     }
 
     public function testRemove()

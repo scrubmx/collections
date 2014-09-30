@@ -99,7 +99,7 @@ class Stack implements QueuedAccessInterface, Countable, Serializable
      */
     public function clear()
     {
-        $this->elements = new SplStack;
+        $this->elements = new SplStack();
     }
 
     /////////////////////////////////////////////
@@ -115,7 +115,7 @@ class Stack implements QueuedAccessInterface, Countable, Serializable
     public function next()
     {
         if ($this->isEmpty()) {
-            throw new Exception\EmptyCollectionException;
+            throw new Exception\EmptyCollectionException();
         }
 
         return $this->elements->top();
@@ -158,7 +158,7 @@ class Stack implements QueuedAccessInterface, Countable, Serializable
     public function pop()
     {
         if ($this->isEmpty()) {
-            throw new Exception\EmptyCollectionException;
+            throw new Exception\EmptyCollectionException();
         }
 
         return $this->elements->pop();

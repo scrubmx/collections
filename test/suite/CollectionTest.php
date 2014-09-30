@@ -213,7 +213,7 @@ class CollectionTest extends PHPUnit_Framework_TestCase
      */
     public function testMapWithArrayAccess($collection)
     {
-        $map = new Map;
+        $map = new Map();
 
         $result = Collection::map(
             $collection,
@@ -285,7 +285,7 @@ class CollectionTest extends PHPUnit_Framework_TestCase
      */
     public function testFilterWithArrayAccess($collection)
     {
-        $map = new Map;
+        $map = new Map();
 
         $result = Collection::filter(
             $collection,
@@ -562,7 +562,7 @@ class CollectionTest extends PHPUnit_Framework_TestCase
 
     public function testExplodeNonArray()
     {
-        $collection = new Vector;
+        $collection = new Vector();
         $result = Collection::explode(', ', 'foo, bar, spam', null, $collection);
         $this->assertSame($collection, $result);
         $this->assertSame(array('foo', 'bar', 'spam'), $collection->elements());
@@ -621,14 +621,14 @@ class CollectionTest extends PHPUnit_Framework_TestCase
 
         return array(
             array(new Traits(true,  true),  array()),
-            array(new Traits(true,  true),  new SplDoublyLinkedList),
-            array(new Traits(true,  true),  new SplStack),
-            array(new Traits(true,  true),  new SplQueue),
-            array(new Traits(true,  true),  new SplMaxHeap),
-            array(new Traits(true,  true),  new SplMinHeap),
-            array(new Traits(true,  true),  new SplPriorityQueue),
-            array(new Traits(true,  true),  new SplFixedArray),
-            array(new Traits(true,  true),  new SplObjectStorage),
+            array(new Traits(true,  true),  new SplDoublyLinkedList()),
+            array(new Traits(true,  true),  new SplStack()),
+            array(new Traits(true,  true),  new SplQueue()),
+            array(new Traits(true,  true),  new SplMaxHeap()),
+            array(new Traits(true,  true),  new SplMinHeap()),
+            array(new Traits(true,  true),  new SplPriorityQueue()),
+            array(new Traits(true,  true),  new SplFixedArray()),
+            array(new Traits(true,  true),  new SplObjectStorage()),
             array(new Traits(true,  false), $this->countable),
             array(new Traits(false, false), $this->traversable),
         );
