@@ -60,6 +60,11 @@ the elements contained within the collection are also serializable.
 The provided collection implementations support [cloning](http://php.net/manual/en/language.oop5.cloning.php). Cloning a
 collection produces a copy of the collection containing the same elements. The elements themselves are not cloned.
 
+## Contact us
+
+* Follow [@IcecaveStudios](https://twitter.com/IcecaveStudios) on Twitter
+* Visit the [Icecave Studios website](http://icecave.com.au)
+
 <!-- references -->
 [Build Status]: http://img.shields.io/travis/IcecaveStudios/collections/develop.svg?style=flat-square
 [Test Coverage]: http://img.shields.io/coveralls/IcecaveStudios/collections/develop.svg?style=flat-square
